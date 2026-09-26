@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "family": "micro",
+  "status": "experimental",
+  "sourceFamily": "line",
+  "sourceMaster": "24px canonical geometry",
+  "reviewSizes": [12, 16],
+  "derivationRules": [
+    "Micro is derived from the canonical 24px Line master.",
+    "Semantic identity and canonical naming never change.",
+    "Remove secondary detail before altering the primary contour.",
+    "Merge or omit geometry only when recognition improves at 12px or 16px.",
+    "Preserve directional terminals and interaction cues.",
+    "Protect critical counters and negative-space gaps.",
+    "Micro geometry may be optically rebalanced, but never becomes a second semantic source."
+  ],
+  "icons": [
+    {"name":"bug","source":"/icons/developer/bug.svg","path":"/icons/micro/bug.svg","changes":["removed antenna strokes"],"review":"Legs remain as the recognition cue while the antennae are sacrificed first at dense sizes."},
+    {"name":"calendar","source":"/icons/objects/calendar.svg","path":"/icons/micro/calendar.svg","changes":["removed date-grid marks"],"review":"Calendar frame, header line and binding posts carry the semantic silhouette without tiny date counters."},
+    {"name":"camera","source":"/icons/media/camera.svg","path":"/icons/micro/camera.svg","changes":["enlarged lens counter"],"review":"The lens is optically enlarged so the camera remains immediately legible at 12px."},
+    {"name":"delete","source":"/icons/actions/delete.svg","path":"/icons/micro/delete.svg","changes":["removed bin slat detail","simplified lid"],"review":"The container and lid remain; interior slats are non-essential at Micro sizes."},
+    {"name":"file-plus","source":"/icons/files/file-plus.svg","path":"/icons/micro/file-plus.svg","changes":["removed fold seam","simplified plus spacing"],"review":"File silhouette plus the creation cue are retained; the fold seam is secondary."},
+    {"name":"refresh","source":"/icons/actions/refresh.svg","path":"/icons/micro/refresh.svg","changes":["reduced to single directional loop","removed second arrow"],"review":"A single clockwise loop with a strong terminal reads more reliably than two competing arrows at 12px."},
+    {"name":"settings","source":"/icons/system/settings.svg","path":"/icons/micro/settings.svg","changes":["simplified gear contour","enlarged centre counter"],"review":"The gear remains the primary contour while the centre opening is protected from collapse."},
+    {"name":"volume","source":"/icons/media/volume.svg","path":"/icons/micro/volume.svg","changes":["removed outer sound wave"],"review":"Speaker body plus one wave preserves the sound cue without stacking two low-resolution arcs."}
+  ]
+}
