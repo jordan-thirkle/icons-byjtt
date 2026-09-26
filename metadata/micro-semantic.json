@@ -69,7 +69,6 @@
         ],
         "micro": [
           "M5 7h14",
-          "M8 7V4",
           "M8 7v13h8V7"
         ]
       },
@@ -224,8 +223,7 @@
         ],
         "micro": [
           "<ellipse cx=\"12\" cy=\"5\"",
-          "M4 5v12",
-          "M4 17v1"
+          "M4 5v12"
         ]
       },
       "forbiddenPatterns": {
