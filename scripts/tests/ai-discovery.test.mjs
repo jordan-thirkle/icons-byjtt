@@ -1,0 +1,3 @@
+import test from "node:test"; import assert from "node:assert/strict"; import fs from "node:fs"; import path from "node:path"; import catalogue from "../../metadata/icons.json" with {type:"json"};
+test("AI discovery surfaces exist",()=>{assert.ok(fs.existsSync(path.join(process.cwd(),"llms.txt")));assert.ok(fs.existsSync(path.join(process.cwd(),"llms-full.txt")));});
+test("full AI reference resolves every canonical icon",()=>{const text=fs.readFileSync(path.join(process.cwd(),"llms-full.txt"),"utf8");for(const icon of catalogue.icons){assert.ok(text.includes("`"+icon.name+"`"));assert.ok(text.includes("`"+icon.path+"`"));}});

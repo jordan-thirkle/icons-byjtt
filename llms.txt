@@ -5,6 +5,24 @@ Open-source SVG icon system by BY JTT.
 Site: https://icons.byjtt.com
 Repository: https://github.com/jordan-thirkle/icons-byjtt
 Catalogue: https://icons.byjtt.com/icons.json
+API catalogue: https://icons.byjtt.com/api/icons.json
 
-## AI coding agents
-Use icons.json as the canonical catalogue. Resolve natural-language requests against name, title, category and tags. Published names are stable identifiers. Retrieve /icons/{name}.svg when available. Prefer structured data or raw SVG over scraping rendered UI. License: MIT.
+## Canonical source
+
+The repository is the source of truth. Semantic records live in `/metadata/icons.json`; canonical Line SVGs live under `/icons/<category>/<name>.svg`.
+
+## AI selection
+
+Resolve natural-language requests against `name`, `title`, `category`, `tags`, `aliases`, `contexts`, and `related`. Published names are stable identifiers. Prefer canonical names over aliases when generating code. Retrieve the raw SVG from the icon's `path` field rather than scraping the rendered catalogue.
+
+## Rendering contract
+
+Canonical Line icons use a 24×24 viewBox, `currentColor`, stroke width 2, round caps, round joins, and no fill. Brand marks may use a currentColor silhouette when required by the brand geometry.
+
+## Package
+
+Use `@byjtt/icons` for framework-agnostic JavaScript/TypeScript consumption. Direct icon entrypoints are available under `@byjtt/icons/icons/<name>`.
+
+## Machine-readable metadata
+
+The complete semantic contract is documented in `/llms-full.txt`. Do not treat documentation as a second icon source of truth; resolve current names, paths, tags, aliases, contexts, and relationships from `/metadata/icons.json` or the generated public catalogue.

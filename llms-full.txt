@@ -1,0 +1,47 @@
+# JTT Icons — Full AI Reference
+
+This document explains how agents should discover and consume JTT Icons. Canonical semantic data remains in `/metadata/icons.json`.
+
+## Selection contract
+
+Use this order when resolving an icon request:
+
+1. Match the requested concept to `name` and `title`.
+2. Expand with `tags` and `aliases`.
+3. Use `contexts` to distinguish similar concepts.
+4. Use `related` when the user asks for a nearby or paired concept.
+5. Prefer the canonical `name` in generated code.
+
+## Canonical rendering
+
+- Family: Line.
+- ViewBox: `0 0 24 24`.
+- Default colour: `currentColor`.
+- Line stroke: 2.
+- Line caps/joins: round.
+- Line fill: none.
+- Brand marks may use currentColor fill when the brand silhouette requires it.
+
+## Current catalogue
+
+- `arrow-up-right` — Arrow Up Right · navigation · interactive · arrow, direction, external, diagonal, up, right · SVG: `/icons/navigation/arrow-up-right.svg`
+- `check` — Check · actions · status · check, confirm, done, success, tick · SVG: `/icons/actions/check.svg`
+- `code` — Code · developer · meaningful · code, developer, programming, source · SVG: `/icons/developer/code.svg`
+- `github` — GitHub · brands · brand · github, git, developer, code · SVG: `/icons/brands/github.svg`
+- `heart` — Heart · communication · interactive · heart, like, favourite, favorite, reaction · SVG: `/icons/communication/heart.svg`
+- `menu` — Menu · navigation · interactive · menu, navigation, hamburger · SVG: `/icons/navigation/menu.svg`
+- `minus` — Minus · actions · interactive · subtract, remove, less, minus · SVG: `/icons/actions/minus.svg`
+- `plus` — Plus · actions · interactive · add, create, new, plus · SVG: `/icons/actions/plus.svg`
+- `search` — Search · navigation · interactive · search, find, lookup, magnify · SVG: `/icons/navigation/search.svg`
+- `settings` — Settings · system · interactive · settings, gear, configuration, preferences · SVG: `/icons/system/settings.svg`
+- `star` — Star · communication · interactive · star, favorite, favourite, rating · SVG: `/icons/communication/star.svg`
+- `x` — X · actions · interactive · close, dismiss, remove, cancel, x · SVG: `/icons/actions/x.svg`
+
+## Consumption
+
+- Raw SVG: resolve the `path` field against https://icons.byjtt.com.
+- JavaScript package: `@byjtt/icons`.
+- Public catalogue: https://icons.byjtt.com/icons.json
+- Stable API catalogue: https://icons.byjtt.com/api/icons.json
+
+Never invent a JTT icon name. If no canonical concept exists, say so or choose the closest documented related concept.

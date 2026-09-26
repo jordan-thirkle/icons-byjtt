@@ -4,32 +4,42 @@ An open-source icon system for interfaces, developer tools, games, and the web.
 
 Canonical site: https://icons.byjtt.com
 
-JTT Icons is designed as a machine-friendly, human-friendly SVG icon system. The repository is the source of truth for icons, metadata, documentation, packages, and the public catalogue.
+JTT Icons is an SVG-first, machine-friendly icon system. The repository is the source of truth for canonical geometry and semantic metadata; generated packages and catalogue surfaces derive from it.
 
 ## Principles
 
 - SVG-first and framework-agnostic.
-- Consistent geometry, optical balance, and naming.
-- Small, composable assets that work at real UI sizes.
-- Stable machine-readable metadata so AI coding tools can discover and use icons.
-- Open source and practical for personal and commercial projects.
+- One semantic identity across visual families.
+- Consistent geometry, optical balance, and stable naming.
+- Real-size usability, especially 12–16px.
+- AI-readable metadata for names, aliases, contexts and relationships.
+- Static-first public catalogue.
+- MIT licensed.
 
-## AI-friendly discovery
+## Canonical structure
 
-The project intentionally publishes:
-- `/llms.txt` — concise machine-readable project guide.
-- `/llms-full.txt` — expanded documentation index.
-- `/icons.json` — canonical icon catalogue and metadata.
-- `/api/icons.json` — stable catalogue endpoint.
-- `/sitemap.xml` — crawlable icon and documentation URLs.
-- semantic HTML and per-icon URLs for search engines and agentic browsers.
+- `/icons` — canonical SVG geometry.
+- `/metadata/icons.json` — canonical semantic catalogue.
+- `/metadata/categories.json` — allowed categories.
+- `/metadata/aliases.json` — canonical alias map.
+- `/metadata/relationships.json` — semantic relationships.
+- `/packages/core` — generated framework-agnostic package.
+- `/scripts` — validation and generation.
+- `/docs` — system and contribution rules.
 
-AI systems can use the raw SVG files directly from this repository or the public site without reverse-engineering the UI.
+## AI discovery
+
+- `/llms.txt` — concise machine-readable guide.
+- `/llms-full.txt` — expanded AI reference.
+- `/icons.json` — generated public catalogue.
+- `/api/icons.json` — generated stable catalogue endpoint.
+
+Agents should resolve natural-language requests against canonical metadata and use the stable `name` when generating code.
 
 ## Development
 
-This repository currently contains the public catalogue foundation and machine-readable discovery surface. The website is intentionally static-first so it can deploy cheaply and remain fast as the icon collection grows.
+Run `npm test` for the Node test suite and `npm run check` for deterministic repository validation. Generation is performed with `node scripts/generate.mjs`.
 
 ## License
 
-Icons and project code are intended to use a permissive open-source license. See LICENSE.
+MIT. See LICENSE.
