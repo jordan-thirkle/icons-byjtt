@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "master": {
+    "viewBox": 24,
+    "liveArea": 18,
+    "liveAreaOffset": 3,
+    "strokeWidth": 2
+  },
+  "reviewSizes": [12, 16, 20, 24],
+  "optical": {
+    "primaryLiveAreaRatio": 0.75,
+    "principle": "optical alignment takes precedence over mathematical centering",
+    "volume": "icons should occupy comparable perceived visual weight, not identical geometric bounds",
+    "negativeSpace": "critical counters and gaps must remain legible at the target size"
+  },
+  "micro": {
+    "sourceFamily": "line",
+    "sourceMaster": "24px canonical geometry",
+    "derivedOnly": true,
+    "reviewScoreThreshold": 12,
+    "rules": [
+      "Preserve the canonical semantic silhouette.",
+      "Remove secondary detail before changing the primary contour.",
+      "Merge geometry only when the merge improves recognition at the target size.",
+      "Preserve directional terminals and interaction cues.",
+      "Protect critical counters and negative-space gaps from collapsing.",
+      "Do not independently redraw a Micro icon without a canonical 24px source.",
+      "A Micro variant may simplify geometry but must retain the canonical icon name and semantic metadata."
+    ]
+  }
+}
