@@ -7,6 +7,235 @@
   "family": "line",
   "icons": [
     {
+      "name": "apple",
+      "title": "Apple",
+      "category": "brands",
+      "tags": [
+        "apple",
+        "ios"
+      ],
+      "aliases": [
+        "ios"
+      ],
+      "contexts": [
+        "brand",
+        "social"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "brand"
+      },
+      "path": "/icons/brands/apple.svg",
+      "family": "line"
+    },
+    {
+      "name": "archive",
+      "title": "Archive",
+      "category": "files",
+      "tags": [
+        "archive",
+        "storage"
+      ],
+      "aliases": [
+        "storage"
+      ],
+      "contexts": [
+        "files",
+        "editor"
+      ],
+      "related": [
+        "folder"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/files/archive.svg",
+      "family": "line"
+    },
+    {
+      "name": "arrow-down",
+      "title": "Arrow Down",
+      "category": "navigation",
+      "tags": [
+        "arrow-down",
+        "arrow",
+        "down"
+      ],
+      "aliases": [
+        "down"
+      ],
+      "contexts": [
+        "navigation",
+        "interface"
+      ],
+      "related": [
+        "arrow-up"
+      ],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/navigation/arrow-down.svg",
+      "family": "line"
+    },
+    {
+      "name": "arrow-down-left",
+      "title": "Arrow Down Left",
+      "category": "navigation",
+      "tags": [
+        "arrow-down-left",
+        "arrow",
+        "down",
+        "left",
+        "southwest"
+      ],
+      "aliases": [
+        "southwest"
+      ],
+      "contexts": [
+        "navigation",
+        "interface"
+      ],
+      "related": [
+        "arrow-up-left"
+      ],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/navigation/arrow-down-left.svg",
+      "family": "line"
+    },
+    {
+      "name": "arrow-down-right",
+      "title": "Arrow Down Right",
+      "category": "navigation",
+      "tags": [
+        "arrow-down-right",
+        "arrow",
+        "down",
+        "right",
+        "southeast"
+      ],
+      "aliases": [
+        "southeast"
+      ],
+      "contexts": [
+        "navigation",
+        "interface"
+      ],
+      "related": [
+        "arrow-up-left"
+      ],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/navigation/arrow-down-right.svg",
+      "family": "line"
+    },
+    {
+      "name": "arrow-left",
+      "title": "Arrow Left",
+      "category": "navigation",
+      "tags": [
+        "arrow-left",
+        "arrow",
+        "left",
+        "back"
+      ],
+      "aliases": [
+        "back"
+      ],
+      "contexts": [
+        "navigation",
+        "interface"
+      ],
+      "related": [
+        "arrow-right"
+      ],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/navigation/arrow-left.svg",
+      "family": "line"
+    },
+    {
+      "name": "arrow-right",
+      "title": "Arrow Right",
+      "category": "navigation",
+      "tags": [
+        "arrow-right",
+        "arrow",
+        "right",
+        "forward"
+      ],
+      "aliases": [
+        "forward"
+      ],
+      "contexts": [
+        "navigation",
+        "interface"
+      ],
+      "related": [
+        "arrow-left"
+      ],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/navigation/arrow-right.svg",
+      "family": "line"
+    },
+    {
+      "name": "arrow-up",
+      "title": "Arrow Up",
+      "category": "navigation",
+      "tags": [
+        "arrow-up",
+        "arrow",
+        "up"
+      ],
+      "aliases": [
+        "up"
+      ],
+      "contexts": [
+        "navigation",
+        "interface"
+      ],
+      "related": [
+        "arrow-down"
+      ],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/navigation/arrow-up.svg",
+      "family": "line"
+    },
+    {
+      "name": "arrow-up-left",
+      "title": "Arrow Up Left",
+      "category": "navigation",
+      "tags": [
+        "arrow-up-left",
+        "arrow",
+        "up",
+        "left",
+        "northwest"
+      ],
+      "aliases": [
+        "northwest"
+      ],
+      "contexts": [
+        "navigation",
+        "interface"
+      ],
+      "related": [
+        "arrow-down-right"
+      ],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/navigation/arrow-up-left.svg",
+      "family": "line"
+    },
+    {
       "name": "arrow-up-right",
       "title": "Arrow Up Right",
       "category": "navigation",
@@ -31,6 +260,222 @@
         "default": "interactive"
       },
       "path": "/icons/navigation/arrow-up-right.svg",
+      "family": "line"
+    },
+    {
+      "name": "attachment",
+      "title": "Attachment",
+      "category": "files",
+      "tags": [
+        "attachment",
+        "paperclip"
+      ],
+      "aliases": [
+        "paperclip"
+      ],
+      "contexts": [
+        "files",
+        "editor"
+      ],
+      "related": [
+        "file"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/files/attachment.svg",
+      "family": "line"
+    },
+    {
+      "name": "bag",
+      "title": "Bag",
+      "category": "commerce",
+      "tags": [
+        "bag",
+        "shopping-bag"
+      ],
+      "aliases": [
+        "shopping-bag"
+      ],
+      "contexts": [
+        "commerce",
+        "checkout"
+      ],
+      "related": [
+        "cart"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/commerce/bag.svg",
+      "family": "line"
+    },
+    {
+      "name": "bell",
+      "title": "Bell",
+      "category": "communication",
+      "tags": [
+        "bell",
+        "notification"
+      ],
+      "aliases": [
+        "notification"
+      ],
+      "contexts": [
+        "communication",
+        "content"
+      ],
+      "related": [
+        "message"
+      ],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/communication/bell.svg",
+      "family": "line"
+    },
+    {
+      "name": "bookmark",
+      "title": "Bookmark",
+      "category": "communication",
+      "tags": [
+        "bookmark",
+        "saved"
+      ],
+      "aliases": [
+        "saved"
+      ],
+      "contexts": [
+        "communication",
+        "content"
+      ],
+      "related": [
+        "save"
+      ],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/communication/bookmark.svg",
+      "family": "line"
+    },
+    {
+      "name": "braces",
+      "title": "Braces",
+      "category": "developer",
+      "tags": [
+        "braces",
+        "code-braces"
+      ],
+      "aliases": [
+        "code-braces"
+      ],
+      "contexts": [
+        "developer",
+        "tooling"
+      ],
+      "related": [
+        "code"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/developer/braces.svg",
+      "family": "line"
+    },
+    {
+      "name": "bug",
+      "title": "Bug",
+      "category": "developer",
+      "tags": [
+        "bug",
+        "issue"
+      ],
+      "aliases": [
+        "issue"
+      ],
+      "contexts": [
+        "developer",
+        "tooling"
+      ],
+      "related": [
+        "code"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/developer/bug.svg",
+      "family": "line"
+    },
+    {
+      "name": "calendar",
+      "title": "Calendar",
+      "category": "objects",
+      "tags": [
+        "calendar",
+        "date"
+      ],
+      "aliases": [
+        "date"
+      ],
+      "contexts": [
+        "utility",
+        "interface"
+      ],
+      "related": [
+        "clock"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/objects/calendar.svg",
+      "family": "line"
+    },
+    {
+      "name": "camera",
+      "title": "Camera",
+      "category": "media",
+      "tags": [
+        "camera",
+        "photo-camera"
+      ],
+      "aliases": [
+        "photo-camera"
+      ],
+      "contexts": [
+        "media",
+        "content"
+      ],
+      "related": [
+        "image"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/media/camera.svg",
+      "family": "line"
+    },
+    {
+      "name": "cart",
+      "title": "Cart",
+      "category": "commerce",
+      "tags": [
+        "cart",
+        "shopping-cart"
+      ],
+      "aliases": [
+        "shopping-cart"
+      ],
+      "contexts": [
+        "commerce",
+        "checkout"
+      ],
+      "related": [
+        "bag"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/commerce/cart.svg",
       "family": "line"
     },
     {
@@ -61,144 +506,685 @@
       "family": "line"
     },
     {
-      "name": "x",
-      "title": "X",
-      "category": "actions",
+      "name": "chevron-down",
+      "title": "Chevron Down",
+      "category": "navigation",
       "tags": [
-        "close",
-        "dismiss",
-        "remove",
-        "cancel",
-        "x"
+        "chevron-down",
+        "chevron",
+        "down"
       ],
-      "aliases": [
-        "close",
-        "dismiss"
-      ],
+      "aliases": [],
       "contexts": [
-        "dialogs",
-        "forms",
-        "toolbar"
+        "navigation",
+        "interface"
       ],
       "related": [
-        "check",
-        "plus"
+        "chevron-up"
       ],
       "accessibility": {
         "default": "interactive"
       },
-      "path": "/icons/actions/x.svg",
+      "path": "/icons/navigation/chevron-down.svg",
       "family": "line"
     },
     {
-      "name": "plus",
-      "title": "Plus",
-      "category": "actions",
+      "name": "chevron-left",
+      "title": "Chevron Left",
+      "category": "navigation",
       "tags": [
-        "add",
-        "create",
-        "new",
-        "plus"
+        "chevron-left",
+        "chevron",
+        "left"
+      ],
+      "aliases": [],
+      "contexts": [
+        "navigation",
+        "interface"
+      ],
+      "related": [
+        "chevron-right"
+      ],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/navigation/chevron-left.svg",
+      "family": "line"
+    },
+    {
+      "name": "chevron-right",
+      "title": "Chevron Right",
+      "category": "navigation",
+      "tags": [
+        "chevron-right",
+        "chevron",
+        "right"
+      ],
+      "aliases": [],
+      "contexts": [
+        "navigation",
+        "interface"
+      ],
+      "related": [
+        "chevron-left"
+      ],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/navigation/chevron-right.svg",
+      "family": "line"
+    },
+    {
+      "name": "chevron-up",
+      "title": "Chevron Up",
+      "category": "navigation",
+      "tags": [
+        "chevron-up",
+        "chevron",
+        "up"
+      ],
+      "aliases": [],
+      "contexts": [
+        "navigation",
+        "interface"
+      ],
+      "related": [
+        "chevron-down"
+      ],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/navigation/chevron-up.svg",
+      "family": "line"
+    },
+    {
+      "name": "clipboard",
+      "title": "Clipboard",
+      "category": "files",
+      "tags": [
+        "clipboard",
+        "copy-board"
       ],
       "aliases": [
-        "add",
-        "create"
+        "copy-board"
       ],
       "contexts": [
-        "toolbar",
-        "forms",
+        "files",
         "editor"
       ],
       "related": [
-        "minus"
+        "copy"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/files/clipboard.svg",
+      "family": "line"
+    },
+    {
+      "name": "clock",
+      "title": "Clock",
+      "category": "objects",
+      "tags": [
+        "clock",
+        "time"
+      ],
+      "aliases": [
+        "time"
+      ],
+      "contexts": [
+        "utility",
+        "interface"
+      ],
+      "related": [
+        "calendar"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/objects/clock.svg",
+      "family": "line"
+    },
+    {
+      "name": "code",
+      "title": "Code",
+      "category": "developer",
+      "tags": [
+        "code",
+        "developer",
+        "programming",
+        "source"
+      ],
+      "aliases": [
+        "programming",
+        "source-code"
+      ],
+      "contexts": [
+        "developer",
+        "editor",
+        "documentation"
+      ],
+      "related": [
+        "github"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/developer/code.svg",
+      "family": "line"
+    },
+    {
+      "name": "copy",
+      "title": "Copy",
+      "category": "actions",
+      "tags": [
+        "copy",
+        "duplicate"
+      ],
+      "aliases": [
+        "duplicate"
+      ],
+      "contexts": [
+        "toolbar",
+        "editor"
+      ],
+      "related": [
+        "share"
       ],
       "accessibility": {
         "default": "interactive"
       },
-      "path": "/icons/actions/plus.svg",
+      "path": "/icons/actions/copy.svg",
       "family": "line"
     },
     {
-      "name": "minus",
-      "title": "Minus",
-      "category": "actions",
+      "name": "credit-card",
+      "title": "Credit Card",
+      "category": "commerce",
       "tags": [
-        "subtract",
-        "remove",
-        "less",
-        "minus"
+        "credit-card",
+        "credit",
+        "card",
+        "payment"
       ],
       "aliases": [
-        "subtract",
+        "payment"
+      ],
+      "contexts": [
+        "commerce",
+        "checkout"
+      ],
+      "related": [
+        "receipt"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/commerce/credit-card.svg",
+      "family": "line"
+    },
+    {
+      "name": "database",
+      "title": "Database",
+      "category": "developer",
+      "tags": [
+        "database",
+        "db"
+      ],
+      "aliases": [
+        "db"
+      ],
+      "contexts": [
+        "developer",
+        "tooling"
+      ],
+      "related": [
+        "server"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/developer/database.svg",
+      "family": "line"
+    },
+    {
+      "name": "delete",
+      "title": "Delete",
+      "category": "actions",
+      "tags": [
+        "delete",
+        "remove"
+      ],
+      "aliases": [
         "remove"
       ],
       "contexts": [
         "toolbar",
-        "forms",
+        "editor"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/actions/delete.svg",
+      "family": "line"
+    },
+    {
+      "name": "discord",
+      "title": "Discord",
+      "category": "brands",
+      "tags": [
+        "discord",
+        "chat"
+      ],
+      "aliases": [
+        "chat"
+      ],
+      "contexts": [
+        "brand",
+        "social"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "brand"
+      },
+      "path": "/icons/brands/discord.svg",
+      "family": "line"
+    },
+    {
+      "name": "document",
+      "title": "Document",
+      "category": "files",
+      "tags": [
+        "document",
+        "text-file"
+      ],
+      "aliases": [
+        "text-file"
+      ],
+      "contexts": [
+        "files",
         "editor"
       ],
       "related": [
-        "plus"
+        "file"
       ],
       "accessibility": {
-        "default": "interactive"
+        "default": "meaningful"
       },
-      "path": "/icons/actions/minus.svg",
+      "path": "/icons/files/document.svg",
       "family": "line"
     },
     {
-      "name": "search",
-      "title": "Search",
-      "category": "navigation",
+      "name": "download",
+      "title": "Download",
+      "category": "actions",
       "tags": [
-        "search",
-        "find",
-        "lookup",
-        "magnify"
+        "download",
+        "export"
       ],
       "aliases": [
-        "find",
-        "lookup"
+        "export"
       ],
       "contexts": [
-        "navigation",
         "toolbar",
-        "command"
+        "editor"
       ],
       "related": [
-        "menu"
+        "upload"
       ],
       "accessibility": {
         "default": "interactive"
       },
-      "path": "/icons/navigation/search.svg",
+      "path": "/icons/actions/download.svg",
       "family": "line"
     },
     {
-      "name": "menu",
-      "title": "Menu",
-      "category": "navigation",
+      "name": "edit",
+      "title": "Edit",
+      "category": "actions",
       "tags": [
-        "menu",
-        "navigation",
-        "hamburger"
+        "edit",
+        "modify"
       ],
       "aliases": [
-        "hamburger",
-        "navigation-menu"
+        "modify"
       ],
       "contexts": [
-        "navigation",
-        "mobile",
-        "toolbar"
+        "toolbar",
+        "editor"
       ],
       "related": [
-        "x"
+        "save"
       ],
       "accessibility": {
         "default": "interactive"
       },
-      "path": "/icons/navigation/menu.svg",
+      "path": "/icons/actions/edit.svg",
+      "family": "line"
+    },
+    {
+      "name": "error",
+      "title": "Error",
+      "category": "system",
+      "tags": [
+        "error",
+        "failure"
+      ],
+      "aliases": [
+        "failure"
+      ],
+      "contexts": [
+        "system",
+        "status"
+      ],
+      "related": [
+        "warning"
+      ],
+      "accessibility": {
+        "default": "status"
+      },
+      "path": "/icons/system/error.svg",
+      "family": "line"
+    },
+    {
+      "name": "eye",
+      "title": "Eye",
+      "category": "objects",
+      "tags": [
+        "eye",
+        "view"
+      ],
+      "aliases": [
+        "view"
+      ],
+      "contexts": [
+        "utility",
+        "interface"
+      ],
+      "related": [
+        "lock"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/objects/eye.svg",
+      "family": "line"
+    },
+    {
+      "name": "file",
+      "title": "File",
+      "category": "files",
+      "tags": [
+        "file",
+        "document-file"
+      ],
+      "aliases": [
+        "document-file"
+      ],
+      "contexts": [
+        "files",
+        "editor"
+      ],
+      "related": [
+        "folder"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/files/file.svg",
+      "family": "line"
+    },
+    {
+      "name": "file-minus",
+      "title": "File Minus",
+      "category": "files",
+      "tags": [
+        "file-minus",
+        "file",
+        "minus",
+        "remove-file"
+      ],
+      "aliases": [
+        "remove-file"
+      ],
+      "contexts": [
+        "files",
+        "editor"
+      ],
+      "related": [
+        "file"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/files/file-minus.svg",
+      "family": "line"
+    },
+    {
+      "name": "file-plus",
+      "title": "File Plus",
+      "category": "files",
+      "tags": [
+        "file-plus",
+        "file",
+        "plus",
+        "new-file"
+      ],
+      "aliases": [
+        "new-file"
+      ],
+      "contexts": [
+        "files",
+        "editor"
+      ],
+      "related": [
+        "file"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/files/file-plus.svg",
+      "family": "line"
+    },
+    {
+      "name": "filter",
+      "title": "Filter",
+      "category": "objects",
+      "tags": [
+        "filter",
+        "refine"
+      ],
+      "aliases": [
+        "refine"
+      ],
+      "contexts": [
+        "utility",
+        "interface"
+      ],
+      "related": [
+        "sort"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/objects/filter.svg",
+      "family": "line"
+    },
+    {
+      "name": "folder",
+      "title": "Folder",
+      "category": "files",
+      "tags": [
+        "folder",
+        "directory"
+      ],
+      "aliases": [
+        "directory"
+      ],
+      "contexts": [
+        "files",
+        "editor"
+      ],
+      "related": [
+        "file"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/files/folder.svg",
+      "family": "line"
+    },
+    {
+      "name": "folder-open",
+      "title": "Folder Open",
+      "category": "files",
+      "tags": [
+        "folder-open",
+        "folder",
+        "open",
+        "open-folder"
+      ],
+      "aliases": [
+        "open-folder"
+      ],
+      "contexts": [
+        "files",
+        "editor"
+      ],
+      "related": [
+        "folder"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/files/folder-open.svg",
+      "family": "line"
+    },
+    {
+      "name": "folder-plus",
+      "title": "Folder Plus",
+      "category": "files",
+      "tags": [
+        "folder-plus",
+        "folder",
+        "plus",
+        "new-folder"
+      ],
+      "aliases": [
+        "new-folder"
+      ],
+      "contexts": [
+        "files",
+        "editor"
+      ],
+      "related": [
+        "folder"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/files/folder-plus.svg",
+      "family": "line"
+    },
+    {
+      "name": "git-branch",
+      "title": "Git Branch",
+      "category": "developer",
+      "tags": [
+        "git-branch",
+        "git",
+        "branch"
+      ],
+      "aliases": [
+        "branch"
+      ],
+      "contexts": [
+        "developer",
+        "tooling"
+      ],
+      "related": [
+        "git-merge"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/developer/git-branch.svg",
+      "family": "line"
+    },
+    {
+      "name": "git-commit",
+      "title": "Git Commit",
+      "category": "developer",
+      "tags": [
+        "git-commit",
+        "git",
+        "commit"
+      ],
+      "aliases": [
+        "commit"
+      ],
+      "contexts": [
+        "developer",
+        "tooling"
+      ],
+      "related": [
+        "git-branch"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/developer/git-commit.svg",
+      "family": "line"
+    },
+    {
+      "name": "git-merge",
+      "title": "Git Merge",
+      "category": "developer",
+      "tags": [
+        "git-merge",
+        "git",
+        "merge"
+      ],
+      "aliases": [
+        "merge"
+      ],
+      "contexts": [
+        "developer",
+        "tooling"
+      ],
+      "related": [
+        "git-branch"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/developer/git-merge.svg",
+      "family": "line"
+    },
+    {
+      "name": "github",
+      "title": "GitHub",
+      "category": "brands",
+      "tags": [
+        "github",
+        "git",
+        "developer",
+        "code"
+      ],
+      "aliases": [],
+      "contexts": [
+        "developer",
+        "source-control",
+        "brand"
+      ],
+      "related": [
+        "code"
+      ],
+      "accessibility": {
+        "default": "brand"
+      },
+      "path": "/icons/brands/github.svg",
       "family": "line"
     },
     {
@@ -232,30 +1218,668 @@
       "family": "line"
     },
     {
-      "name": "star",
-      "title": "Star",
-      "category": "communication",
+      "name": "help",
+      "title": "Help",
+      "category": "system",
       "tags": [
-        "star",
-        "favorite",
-        "favourite",
-        "rating"
+        "help",
+        "question"
       ],
       "aliases": [
-        "rating"
+        "question"
       ],
       "contexts": [
-        "rating",
-        "reaction",
-        "content"
+        "system",
+        "status"
       ],
       "related": [
-        "heart"
+        "info"
+      ],
+      "accessibility": {
+        "default": "status"
+      },
+      "path": "/icons/system/help.svg",
+      "family": "line"
+    },
+    {
+      "name": "home",
+      "title": "Home",
+      "category": "navigation",
+      "tags": [
+        "home",
+        "house"
+      ],
+      "aliases": [
+        "house"
+      ],
+      "contexts": [
+        "navigation",
+        "interface"
+      ],
+      "related": [
+        "menu"
       ],
       "accessibility": {
         "default": "interactive"
       },
-      "path": "/icons/communication/star.svg",
+      "path": "/icons/navigation/home.svg",
+      "family": "line"
+    },
+    {
+      "name": "image",
+      "title": "Image",
+      "category": "media",
+      "tags": [
+        "image",
+        "photo"
+      ],
+      "aliases": [
+        "photo"
+      ],
+      "contexts": [
+        "media",
+        "content"
+      ],
+      "related": [
+        "camera"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/media/image.svg",
+      "family": "line"
+    },
+    {
+      "name": "info",
+      "title": "Info",
+      "category": "system",
+      "tags": [
+        "info",
+        "information"
+      ],
+      "aliases": [
+        "information"
+      ],
+      "contexts": [
+        "system",
+        "status"
+      ],
+      "related": [
+        "help"
+      ],
+      "accessibility": {
+        "default": "status"
+      },
+      "path": "/icons/system/info.svg",
+      "family": "line"
+    },
+    {
+      "name": "link",
+      "title": "Link",
+      "category": "communication",
+      "tags": [
+        "link",
+        "url"
+      ],
+      "aliases": [
+        "url"
+      ],
+      "contexts": [
+        "communication",
+        "content"
+      ],
+      "related": [
+        "share"
+      ],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/communication/link.svg",
+      "family": "line"
+    },
+    {
+      "name": "loading",
+      "title": "Loading",
+      "category": "system",
+      "tags": [
+        "loading",
+        "progress"
+      ],
+      "aliases": [
+        "progress"
+      ],
+      "contexts": [
+        "system",
+        "status"
+      ],
+      "related": [
+        "refresh"
+      ],
+      "accessibility": {
+        "default": "status"
+      },
+      "path": "/icons/system/loading.svg",
+      "family": "line"
+    },
+    {
+      "name": "location",
+      "title": "Location",
+      "category": "objects",
+      "tags": [
+        "location",
+        "pin"
+      ],
+      "aliases": [
+        "pin"
+      ],
+      "contexts": [
+        "utility",
+        "interface"
+      ],
+      "related": [
+        "map"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/objects/location.svg",
+      "family": "line"
+    },
+    {
+      "name": "lock",
+      "title": "Lock",
+      "category": "objects",
+      "tags": [
+        "lock",
+        "private"
+      ],
+      "aliases": [
+        "private"
+      ],
+      "contexts": [
+        "utility",
+        "interface"
+      ],
+      "related": [
+        "unlock"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/objects/lock.svg",
+      "family": "line"
+    },
+    {
+      "name": "mail",
+      "title": "Mail",
+      "category": "communication",
+      "tags": [
+        "mail",
+        "email"
+      ],
+      "aliases": [
+        "email"
+      ],
+      "contexts": [
+        "communication",
+        "content"
+      ],
+      "related": [
+        "message"
+      ],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/communication/mail.svg",
+      "family": "line"
+    },
+    {
+      "name": "map",
+      "title": "Map",
+      "category": "objects",
+      "tags": [
+        "map",
+        "maps"
+      ],
+      "aliases": [
+        "maps"
+      ],
+      "contexts": [
+        "utility",
+        "interface"
+      ],
+      "related": [
+        "location"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/objects/map.svg",
+      "family": "line"
+    },
+    {
+      "name": "menu",
+      "title": "Menu",
+      "category": "navigation",
+      "tags": [
+        "menu",
+        "navigation",
+        "hamburger"
+      ],
+      "aliases": [
+        "hamburger",
+        "navigation-menu"
+      ],
+      "contexts": [
+        "navigation",
+        "mobile",
+        "toolbar"
+      ],
+      "related": [
+        "x"
+      ],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/navigation/menu.svg",
+      "family": "line"
+    },
+    {
+      "name": "message",
+      "title": "Message",
+      "category": "communication",
+      "tags": [
+        "message",
+        "chat"
+      ],
+      "aliases": [
+        "chat"
+      ],
+      "contexts": [
+        "communication",
+        "content"
+      ],
+      "related": [
+        "mail"
+      ],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/communication/message.svg",
+      "family": "line"
+    },
+    {
+      "name": "mic",
+      "title": "Mic",
+      "category": "media",
+      "tags": [
+        "mic",
+        "microphone"
+      ],
+      "aliases": [
+        "microphone"
+      ],
+      "contexts": [
+        "media",
+        "content"
+      ],
+      "related": [
+        "volume"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/media/mic.svg",
+      "family": "line"
+    },
+    {
+      "name": "minus",
+      "title": "Minus",
+      "category": "actions",
+      "tags": [
+        "subtract",
+        "remove",
+        "less",
+        "minus"
+      ],
+      "aliases": [
+        "subtract",
+        "remove"
+      ],
+      "contexts": [
+        "toolbar",
+        "forms",
+        "editor"
+      ],
+      "related": [
+        "plus"
+      ],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/actions/minus.svg",
+      "family": "line"
+    },
+    {
+      "name": "music",
+      "title": "Music",
+      "category": "media",
+      "tags": [
+        "music",
+        "audio"
+      ],
+      "aliases": [
+        "audio"
+      ],
+      "contexts": [
+        "media",
+        "content"
+      ],
+      "related": [
+        "volume"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/media/music.svg",
+      "family": "line"
+    },
+    {
+      "name": "pause",
+      "title": "Pause",
+      "category": "media",
+      "tags": [
+        "pause",
+        "paused"
+      ],
+      "aliases": [
+        "paused"
+      ],
+      "contexts": [
+        "media",
+        "content"
+      ],
+      "related": [
+        "play"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/media/pause.svg",
+      "family": "line"
+    },
+    {
+      "name": "play",
+      "title": "Play",
+      "category": "actions",
+      "tags": [
+        "play",
+        "start"
+      ],
+      "aliases": [
+        "start"
+      ],
+      "contexts": [
+        "toolbar",
+        "editor"
+      ],
+      "related": [
+        "pause"
+      ],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/actions/play.svg",
+      "family": "line"
+    },
+    {
+      "name": "play-circle",
+      "title": "Play Circle",
+      "category": "media",
+      "tags": [
+        "play-circle",
+        "play",
+        "circle",
+        "video-play"
+      ],
+      "aliases": [
+        "video-play"
+      ],
+      "contexts": [
+        "media",
+        "content"
+      ],
+      "related": [
+        "play"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/media/play-circle.svg",
+      "family": "line"
+    },
+    {
+      "name": "plus",
+      "title": "Plus",
+      "category": "actions",
+      "tags": [
+        "add",
+        "create",
+        "new",
+        "plus"
+      ],
+      "aliases": [
+        "add",
+        "create"
+      ],
+      "contexts": [
+        "toolbar",
+        "forms",
+        "editor"
+      ],
+      "related": [
+        "minus"
+      ],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/actions/plus.svg",
+      "family": "line"
+    },
+    {
+      "name": "receipt",
+      "title": "Receipt",
+      "category": "commerce",
+      "tags": [
+        "receipt",
+        "invoice"
+      ],
+      "aliases": [
+        "invoice"
+      ],
+      "contexts": [
+        "commerce",
+        "checkout"
+      ],
+      "related": [
+        "credit-card"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/commerce/receipt.svg",
+      "family": "line"
+    },
+    {
+      "name": "redo",
+      "title": "Redo",
+      "category": "actions",
+      "tags": [
+        "redo",
+        "forward"
+      ],
+      "aliases": [
+        "forward"
+      ],
+      "contexts": [
+        "toolbar",
+        "editor"
+      ],
+      "related": [
+        "undo"
+      ],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/actions/redo.svg",
+      "family": "line"
+    },
+    {
+      "name": "refresh",
+      "title": "Refresh",
+      "category": "actions",
+      "tags": [
+        "refresh",
+        "reload"
+      ],
+      "aliases": [
+        "reload"
+      ],
+      "contexts": [
+        "toolbar",
+        "editor"
+      ],
+      "related": [
+        "undo"
+      ],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/actions/refresh.svg",
+      "family": "line"
+    },
+    {
+      "name": "rocket",
+      "title": "Rocket",
+      "category": "developer",
+      "tags": [
+        "rocket",
+        "launch"
+      ],
+      "aliases": [
+        "launch"
+      ],
+      "contexts": [
+        "developer",
+        "tooling"
+      ],
+      "related": [
+        "play"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/developer/rocket.svg",
+      "family": "line"
+    },
+    {
+      "name": "save",
+      "title": "Save",
+      "category": "actions",
+      "tags": [
+        "save",
+        "store"
+      ],
+      "aliases": [
+        "store"
+      ],
+      "contexts": [
+        "toolbar",
+        "editor"
+      ],
+      "related": [
+        "download"
+      ],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/actions/save.svg",
+      "family": "line"
+    },
+    {
+      "name": "search",
+      "title": "Search",
+      "category": "navigation",
+      "tags": [
+        "search",
+        "find",
+        "lookup",
+        "magnify"
+      ],
+      "aliases": [
+        "find",
+        "lookup"
+      ],
+      "contexts": [
+        "navigation",
+        "toolbar",
+        "command"
+      ],
+      "related": [
+        "menu"
+      ],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/navigation/search.svg",
+      "family": "line"
+    },
+    {
+      "name": "send",
+      "title": "Send",
+      "category": "communication",
+      "tags": [
+        "send",
+        "submit"
+      ],
+      "aliases": [
+        "submit"
+      ],
+      "contexts": [
+        "communication",
+        "content"
+      ],
+      "related": [
+        "share"
+      ],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/communication/send.svg",
+      "family": "line"
+    },
+    {
+      "name": "server",
+      "title": "Server",
+      "category": "developer",
+      "tags": [
+        "server",
+        "backend"
+      ],
+      "aliases": [
+        "backend"
+      ],
+      "contexts": [
+        "developer",
+        "tooling"
+      ],
+      "related": [
+        "database"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/developer/server.svg",
       "family": "line"
     },
     {
@@ -288,56 +1912,569 @@
       "family": "line"
     },
     {
-      "name": "github",
-      "title": "GitHub",
-      "category": "brands",
+      "name": "share",
+      "title": "Share",
+      "category": "actions",
       "tags": [
-        "github",
-        "git",
-        "developer",
-        "code"
+        "share",
+        "send"
       ],
-      "aliases": [],
+      "aliases": [
+        "send"
+      ],
       "contexts": [
-        "developer",
-        "source-control",
-        "brand"
+        "toolbar",
+        "editor"
       ],
       "related": [
-        "code"
+        "link"
       ],
       "accessibility": {
-        "default": "brand"
+        "default": "interactive"
       },
-      "path": "/icons/brands/github.svg",
+      "path": "/icons/actions/share.svg",
       "family": "line"
     },
     {
-      "name": "code",
-      "title": "Code",
-      "category": "developer",
+      "name": "sort",
+      "title": "Sort",
+      "category": "objects",
       "tags": [
-        "code",
-        "developer",
-        "programming",
-        "source"
+        "sort",
+        "order"
       ],
       "aliases": [
-        "programming",
-        "source-code"
+        "order"
       ],
       "contexts": [
-        "developer",
-        "editor",
-        "documentation"
+        "utility",
+        "interface"
       ],
       "related": [
-        "github"
+        "filter"
       ],
       "accessibility": {
         "default": "meaningful"
       },
-      "path": "/icons/developer/code.svg",
+      "path": "/icons/objects/sort.svg",
+      "family": "line"
+    },
+    {
+      "name": "star",
+      "title": "Star",
+      "category": "communication",
+      "tags": [
+        "star",
+        "favorite",
+        "favourite",
+        "rating"
+      ],
+      "aliases": [
+        "rating"
+      ],
+      "contexts": [
+        "rating",
+        "reaction",
+        "content"
+      ],
+      "related": [
+        "heart"
+      ],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/communication/star.svg",
+      "family": "line"
+    },
+    {
+      "name": "stop",
+      "title": "Stop",
+      "category": "media",
+      "tags": [
+        "stop",
+        "halt"
+      ],
+      "aliases": [
+        "halt"
+      ],
+      "contexts": [
+        "media",
+        "content"
+      ],
+      "related": [
+        "play"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/media/stop.svg",
+      "family": "line"
+    },
+    {
+      "name": "success",
+      "title": "Success",
+      "category": "system",
+      "tags": [
+        "success",
+        "passed"
+      ],
+      "aliases": [
+        "passed"
+      ],
+      "contexts": [
+        "system",
+        "status"
+      ],
+      "related": [
+        "check"
+      ],
+      "accessibility": {
+        "default": "status"
+      },
+      "path": "/icons/system/success.svg",
+      "family": "line"
+    },
+    {
+      "name": "sun",
+      "title": "Sun",
+      "category": "system",
+      "tags": [
+        "sun",
+        "light"
+      ],
+      "aliases": [
+        "light"
+      ],
+      "contexts": [
+        "system",
+        "status"
+      ],
+      "related": [
+        "settings"
+      ],
+      "accessibility": {
+        "default": "status"
+      },
+      "path": "/icons/system/sun.svg",
+      "family": "line"
+    },
+    {
+      "name": "tag",
+      "title": "Tag",
+      "category": "commerce",
+      "tags": [
+        "tag",
+        "label"
+      ],
+      "aliases": [
+        "label"
+      ],
+      "contexts": [
+        "commerce",
+        "checkout"
+      ],
+      "related": [
+        "bag"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/commerce/tag.svg",
+      "family": "line"
+    },
+    {
+      "name": "terminal",
+      "title": "Terminal",
+      "category": "developer",
+      "tags": [
+        "terminal",
+        "console"
+      ],
+      "aliases": [
+        "console"
+      ],
+      "contexts": [
+        "developer",
+        "tooling"
+      ],
+      "related": [
+        "code"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/developer/terminal.svg",
+      "family": "line"
+    },
+    {
+      "name": "undo",
+      "title": "Undo",
+      "category": "actions",
+      "tags": [
+        "undo",
+        "revert"
+      ],
+      "aliases": [
+        "revert"
+      ],
+      "contexts": [
+        "toolbar",
+        "editor"
+      ],
+      "related": [
+        "redo"
+      ],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/actions/undo.svg",
+      "family": "line"
+    },
+    {
+      "name": "unlock",
+      "title": "Unlock",
+      "category": "objects",
+      "tags": [
+        "unlock",
+        "public"
+      ],
+      "aliases": [
+        "public"
+      ],
+      "contexts": [
+        "utility",
+        "interface"
+      ],
+      "related": [
+        "lock"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/objects/unlock.svg",
+      "family": "line"
+    },
+    {
+      "name": "upload",
+      "title": "Upload",
+      "category": "actions",
+      "tags": [
+        "upload",
+        "import"
+      ],
+      "aliases": [
+        "import"
+      ],
+      "contexts": [
+        "toolbar",
+        "editor"
+      ],
+      "related": [
+        "download"
+      ],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/actions/upload.svg",
+      "family": "line"
+    },
+    {
+      "name": "user",
+      "title": "User",
+      "category": "people",
+      "tags": [
+        "user",
+        "account"
+      ],
+      "aliases": [
+        "account"
+      ],
+      "contexts": [
+        "accounts",
+        "social"
+      ],
+      "related": [
+        "users"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/people/user.svg",
+      "family": "line"
+    },
+    {
+      "name": "user-circle",
+      "title": "User Circle",
+      "category": "people",
+      "tags": [
+        "user-circle",
+        "user",
+        "circle",
+        "profile"
+      ],
+      "aliases": [
+        "profile"
+      ],
+      "contexts": [
+        "accounts",
+        "social"
+      ],
+      "related": [
+        "user"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/people/user-circle.svg",
+      "family": "line"
+    },
+    {
+      "name": "user-minus",
+      "title": "User Minus",
+      "category": "people",
+      "tags": [
+        "user-minus",
+        "user",
+        "minus",
+        "remove-user"
+      ],
+      "aliases": [
+        "remove-user"
+      ],
+      "contexts": [
+        "accounts",
+        "social"
+      ],
+      "related": [
+        "user"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/people/user-minus.svg",
+      "family": "line"
+    },
+    {
+      "name": "user-plus",
+      "title": "User Plus",
+      "category": "people",
+      "tags": [
+        "user-plus",
+        "user",
+        "plus",
+        "add-user"
+      ],
+      "aliases": [
+        "add-user"
+      ],
+      "contexts": [
+        "accounts",
+        "social"
+      ],
+      "related": [
+        "user"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/people/user-plus.svg",
+      "family": "line"
+    },
+    {
+      "name": "users",
+      "title": "Users",
+      "category": "people",
+      "tags": [
+        "users",
+        "people"
+      ],
+      "aliases": [
+        "people"
+      ],
+      "contexts": [
+        "accounts",
+        "social"
+      ],
+      "related": [
+        "user"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/people/users.svg",
+      "family": "line"
+    },
+    {
+      "name": "video",
+      "title": "Video",
+      "category": "media",
+      "tags": [
+        "video",
+        "film"
+      ],
+      "aliases": [
+        "film"
+      ],
+      "contexts": [
+        "media",
+        "content"
+      ],
+      "related": [
+        "play-circle"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/media/video.svg",
+      "family": "line"
+    },
+    {
+      "name": "volume",
+      "title": "Volume",
+      "category": "media",
+      "tags": [
+        "volume",
+        "sound"
+      ],
+      "aliases": [
+        "sound"
+      ],
+      "contexts": [
+        "media",
+        "content"
+      ],
+      "related": [
+        "volume-off"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/media/volume.svg",
+      "family": "line"
+    },
+    {
+      "name": "volume-off",
+      "title": "Volume Off",
+      "category": "media",
+      "tags": [
+        "volume-off",
+        "volume",
+        "off",
+        "mute"
+      ],
+      "aliases": [
+        "mute"
+      ],
+      "contexts": [
+        "media",
+        "content"
+      ],
+      "related": [
+        "volume"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/media/volume-off.svg",
+      "family": "line"
+    },
+    {
+      "name": "warning",
+      "title": "Warning",
+      "category": "system",
+      "tags": [
+        "warning",
+        "caution"
+      ],
+      "aliases": [
+        "caution"
+      ],
+      "contexts": [
+        "system",
+        "status"
+      ],
+      "related": [
+        "error"
+      ],
+      "accessibility": {
+        "default": "status"
+      },
+      "path": "/icons/system/warning.svg",
+      "family": "line"
+    },
+    {
+      "name": "x",
+      "title": "X",
+      "category": "actions",
+      "tags": [
+        "close",
+        "dismiss",
+        "remove",
+        "cancel",
+        "x"
+      ],
+      "aliases": [
+        "close",
+        "dismiss"
+      ],
+      "contexts": [
+        "dialogs",
+        "forms",
+        "toolbar"
+      ],
+      "related": [
+        "check",
+        "plus"
+      ],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/actions/x.svg",
+      "family": "line"
+    },
+    {
+      "name": "x-twitter",
+      "title": "X Twitter",
+      "category": "brands",
+      "tags": [
+        "x-twitter",
+        "x",
+        "twitter"
+      ],
+      "aliases": [
+        "twitter"
+      ],
+      "contexts": [
+        "brand",
+        "social"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "brand"
+      },
+      "path": "/icons/brands/x-twitter.svg",
+      "family": "line"
+    },
+    {
+      "name": "youtube",
+      "title": "Youtube",
+      "category": "brands",
+      "tags": [
+        "youtube",
+        "video"
+      ],
+      "aliases": [
+        "video"
+      ],
+      "contexts": [
+        "brand",
+        "social"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "brand"
+      },
+      "path": "/icons/brands/youtube.svg",
       "family": "line"
     }
   ]
