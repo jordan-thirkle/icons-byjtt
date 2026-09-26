@@ -86,9 +86,7 @@
   "delete": [
     "remove"
   ],
-  "discord": [
-    "chat"
-  ],
+  "discord": [],
   "document": [
     "text-file"
   ],
@@ -181,8 +179,7 @@
     "microphone"
   ],
   "minus": [
-    "subtract",
-    "remove"
+    "subtract"
   ],
   "music": [
     "audio"
@@ -203,9 +200,7 @@
   "receipt": [
     "invoice"
   ],
-  "redo": [
-    "forward"
-  ],
+  "redo": [],
   "refresh": [
     "reload"
   ],

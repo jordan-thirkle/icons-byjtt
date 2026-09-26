@@ -777,9 +777,7 @@
         "discord",
         "chat"
       ],
-      "aliases": [
-        "chat"
-      ],
+      "aliases": [],
       "contexts": [
         "brand",
         "social"
@@ -1543,8 +1541,7 @@
         "minus"
       ],
       "aliases": [
-        "subtract",
-        "remove"
+        "subtract"
       ],
       "contexts": [
         "toolbar",
@@ -1718,9 +1715,7 @@
         "redo",
         "forward"
       ],
-      "aliases": [
-        "forward"
-      ],
+      "aliases": [],
       "contexts": [
         "toolbar",
         "editor"
