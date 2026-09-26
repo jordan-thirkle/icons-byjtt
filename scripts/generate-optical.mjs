@@ -102,8 +102,8 @@ if (fs.existsSync(microManifestPath)) {
     const cells = microIcons.map((icon, index) => {
       const sourceSvg = fs.readFileSync(path.join(root, icon.source.slice(1)), "utf8");
       const microSvg = fs.readFileSync(path.join(root, icon.path.slice(1)), "utf8");
-      const sourceBody = sourceSvg.replace(/^<svg[^>]*>/, "").replace(/<\/svg>\\s*$/, "");
-      const microBody = microSvg.replace(/^<svg[^>]*>/, "").replace(/<\/svg>\\s*$/, "");
+      const sourceBody = sourceSvg.replace(/^<svg[^>]*>/, "").replace(/<\/svg>\s*$/, "");
+      const microBody = microSvg.replace(/^<svg[^>]*>/, "").replace(/<\/svg>\s*$/, "");
       const x = (index % columns) * cellWidth;
       const y = headerHeight + Math.floor(index / columns) * cellHeight;
       const iconX = x + (cellWidth - size) / 2;
