@@ -1,0 +1,345 @@
+{
+  "version": 1,
+  "method": "deterministic structural semantic guardrails",
+  "limitation": "These assertions protect declared semantic cues and known failure reads; they do not replace native-size human visual review.",
+  "contracts": {
+    "bug": {
+      "primaryCue": "insect body with legs",
+      "requiredPatterns": {
+        "source": [
+          "M9 7",
+          "M4 10h4"
+        ],
+        "micro": [
+          "M9 7",
+          "M4 10h4"
+        ]
+      },
+      "forbiddenPatterns": {
+        "micro": [
+          "M9 3l-1-2",
+          "M15 3l1-2"
+        ]
+      }
+    },
+    "calendar": {
+      "primaryCue": "calendar frame with header and binding posts",
+      "requiredPatterns": {
+        "source": [
+          "<rect x=\"3\" y=\"5\"",
+          "M7 3v4",
+          "M3 10h18"
+        ],
+        "micro": [
+          "<rect x=\"4\" y=\"5\"",
+          "M8 3v4",
+          "M4 10h16"
+        ]
+      },
+      "forbiddenPatterns": {
+        "micro": [
+          "M8 14h2",
+          "M14 14h2"
+        ]
+      }
+    },
+    "camera": {
+      "primaryCue": "camera body with lens",
+      "requiredPatterns": {
+        "source": [
+          "M5 7h3l2-3",
+          "<circle cx=\"12\" cy=\"13\" r=\"4\""
+        ],
+        "micro": [
+          "M5 7h3l2-3",
+          "<circle cx=\"12\" cy=\"13\" r=\"4.5\""
+        ]
+      },
+      "forbiddenPatterns": {
+        "micro": []
+      }
+    },
+    "delete": {
+      "primaryCue": "bin body with lid",
+      "requiredPatterns": {
+        "source": [
+          "M4 7h16",
+          "M9 7V4",
+          "m7 7 1 13"
+        ],
+        "micro": [
+          "M5 7h14",
+          "M8 7V4",
+          "M8 7v13h8V7"
+        ]
+      },
+      "forbiddenPatterns": {
+        "micro": [
+          "M10 11v5",
+          "M14 11v5"
+        ]
+      }
+    },
+    "file-plus": {
+      "primaryCue": "document silhouette plus creation cue",
+      "requiredPatterns": {
+        "source": [
+          "M6 3h8l4 4v14H6z",
+          "M12 12v6",
+          "M9.5 15h5"
+        ],
+        "micro": [
+          "M6 3h8l4 4v14H6z",
+          "M12 12v6",
+          "M9 15h6"
+        ]
+      },
+      "forbiddenPatterns": {
+        "micro": [
+          "M14 3v5h5"
+        ]
+      }
+    },
+    "refresh": {
+      "primaryCue": "clockwise refresh loop with arrow terminal",
+      "requiredPatterns": {
+        "source": [
+          "M20 11",
+          "M3 5v6h6",
+          "M4 13",
+          "M21 19v-6h-6"
+        ],
+        "micro": [
+          "M19.5 11",
+          "M4 5v5h5"
+        ]
+      },
+      "forbiddenPatterns": {
+        "micro": [
+          "M4 13",
+          "M21 19v-6h-6"
+        ]
+      }
+    },
+    "settings": {
+      "primaryCue": "gear contour with centre counter",
+      "requiredPatterns": {
+        "source": [
+          "<circle cx=\"12\" cy=\"12\" r=\"3.5\"",
+          "M19 13.4"
+        ],
+        "micro": [
+          "<circle cx=\"12\" cy=\"12\" r=\"3.5\"",
+          "M20 13.7"
+        ]
+      },
+      "forbiddenPatterns": {
+        "micro": [
+          "M12 3v2",
+          "M3 12h2",
+          "M18.4 5.6"
+        ]
+      }
+    },
+    "volume": {
+      "primaryCue": "speaker body with sound wave",
+      "requiredPatterns": {
+        "source": [
+          "M4 10v4h4l5 4V6",
+          "M17 9a5 5 0 0 1 0 6",
+          "M19 6a9 9 0 0 1 0 12"
+        ],
+        "micro": [
+          "M4 10v4h4l5 4V6",
+          "M17 9a5 5 0 0 1 0 6"
+        ]
+      },
+      "forbiddenPatterns": {
+        "micro": [
+          "M19 6a9 9 0 0 1 0 12"
+        ]
+      }
+    },
+    "archive": {
+      "primaryCue": "archive container with recessed slot",
+      "requiredPatterns": {
+        "source": [
+          "M4 5h16v4H4z",
+          "M6 9v10h12V9",
+          "M10 13h4"
+        ],
+        "micro": [
+          "M4 5h16v4H4z",
+          "M6 9v10h12V9",
+          "M10 14h4"
+        ]
+      },
+      "forbiddenPatterns": {
+        "micro": []
+      }
+    },
+    "cart": {
+      "primaryCue": "shopping cart body with two wheels",
+      "requiredPatterns": {
+        "source": [
+          "M3 4h2l2 11h10l3-8H6",
+          "<circle cx=\"9\" cy=\"19\"",
+          "<circle cx=\"17\" cy=\"19\""
+        ],
+        "micro": [
+          "M3 4h2l2 11h10l3-8H6",
+          "<circle cx=\"9\" cy=\"19\"",
+          "<circle cx=\"17\" cy=\"19\""
+        ]
+      },
+      "forbiddenPatterns": {
+        "micro": []
+      }
+    },
+    "copy": {
+      "primaryCue": "two offset document sheets",
+      "requiredPatterns": {
+        "source": [
+          "<rect x=\"8\" y=\"8\"",
+          "M16 8V6",
+          "M6 4h8"
+        ],
+        "micro": [
+          "<rect x=\"8\" y=\"8\"",
+          "M16 8V6",
+          "M6 4h8"
+        ]
+      },
+      "forbiddenPatterns": {
+        "micro": []
+      }
+    },
+    "database": {
+      "primaryCue": "stacked cylindrical database",
+      "requiredPatterns": {
+        "source": [
+          "<ellipse cx=\"12\" cy=\"5\"",
+          "M4 5v7",
+          "M4 12v7"
+        ],
+        "micro": [
+          "<ellipse cx=\"12\" cy=\"5\"",
+          "M4 5v12",
+          "M4 17v1"
+        ]
+      },
+      "forbiddenPatterns": {
+        "micro": []
+      }
+    },
+    "edit": {
+      "primaryCue": "diagonal pencil body",
+      "requiredPatterns": {
+        "source": [
+          "M4 20h4L19 9l-4-4L4 16v4Z"
+        ],
+        "micro": [
+          "M4 20h4L19 9l-4-4L4 16v4Z"
+        ]
+      },
+      "forbiddenPatterns": {
+        "micro": [
+          "m13.5 6.5 4 4"
+        ]
+      }
+    },
+    "git-branch": {
+      "primaryCue": "branch topology with three nodes",
+      "requiredPatterns": {
+        "source": [
+          "<circle cx=\"6\" cy=\"5\"",
+          "<circle cx=\"18\" cy=\"19\"",
+          "M6 7v6"
+        ],
+        "micro": [
+          "<circle cx=\"6\" cy=\"5\"",
+          "<circle cx=\"18\" cy=\"19\"",
+          "M6 7v6"
+        ]
+      },
+      "forbiddenPatterns": {
+        "micro": []
+      }
+    },
+    "loading": {
+      "primaryCue": "open circular activity arc",
+      "requiredPatterns": {
+        "source": [
+          "M12 3v3",
+          "M5.6 5.6"
+        ],
+        "micro": [
+          "M19 12a7 7 0 0 1-7 7",
+          "A7 7 0 0 1 12 5"
+        ]
+      },
+      "forbiddenPatterns": {
+        "micro": [
+          "M12 3v3",
+          "M3 12h3",
+          "M18 12h3",
+          "M5.6 5.6"
+        ]
+      }
+    },
+    "map": {
+      "primaryCue": "folded map with panel divisions",
+      "requiredPatterns": {
+        "source": [
+          "m3 6 6-3 6 3 6-3v15",
+          "M9 3v15",
+          "M15 6v15"
+        ],
+        "micro": [
+          "m3 6 6-3 6 3 6-3v15",
+          "M9 3v15",
+          "M15 6v15"
+        ]
+      },
+      "forbiddenPatterns": {
+        "micro": []
+      }
+    },
+    "volume-off": {
+      "primaryCue": "speaker body with mute cross",
+      "requiredPatterns": {
+        "source": [
+          "m4 10 4 4h1l5 4V6",
+          "m17 9 4 6",
+          "M21 9l-4 6"
+        ],
+        "micro": [
+          "m4 10 4 4h1l5 4V6",
+          "m17 9 4 6",
+          "M21 9l-4 6"
+        ]
+      },
+      "forbiddenPatterns": {
+        "micro": []
+      }
+    },
+    "warning": {
+      "primaryCue": "warning triangle with exclamation",
+      "requiredPatterns": {
+        "source": [
+          "m12 3 9 17H3L12 3Z",
+          "M12 9v5",
+          "M12 17h.01"
+        ],
+        "micro": [
+          "m12 3 9 17H3L12 3Z",
+          "M12 9v5",
+          "M12 17h.01"
+        ]
+      },
+      "forbiddenPatterns": {
+        "micro": []
+      }
+    }
+  }
+}
