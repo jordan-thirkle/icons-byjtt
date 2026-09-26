@@ -26,3 +26,11 @@ An icon has one stable semantic identity. Visual families change rendering, not 
 ## Brand exception
 
 Brand marks may use currentColor fill when their silhouette requires it. This is a system-level exception, not a general alternative to the Line geometry contract.
+
+## Optical Infrastructure
+
+- Review every icon at 12px, 16px, 20px and 24px.
+- Use the 18×18 centred optical live area as the default keyline guide.
+- Match perceived visual volume rather than forcing identical geometric bounds.
+- Keep 24px Line geometry canonical.
+- Derive Micro variants from canonical geometry; never create an unrelated Micro source.
