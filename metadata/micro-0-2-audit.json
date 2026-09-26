@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "generatedAt": "deterministic",
+  "family": "micro",
+  "reviewSizes": [12, 16],
+  "summary": {
+    "icons": 6,
+    "averageComplexityReduction": 0.231
+  },
+  "icons": [
+    {"name":"archive","source":"/icons/files/archive.svg","path":"/icons/micro/archive.svg","sourceComplexityScore":15,"microComplexityScore":15,"complexityReduction":0,"changes":["converted internal plus into a short archive slot","preserved lid and container silhouette"]},
+    {"name":"cart","source":"/icons/commerce/cart.svg","path":"/icons/micro/cart.svg","sourceComplexityScore":12,"microComplexityScore":12,"complexityReduction":0,"changes":["enlarged wheel counters to 1.5px radius"]},
+    {"name":"database","source":"/icons/developer/database.svg","path":"/icons/micro/database.svg","sourceComplexityScore":14,"microComplexityScore":9,"complexityReduction":0.357,"changes":["reduced three repeated body rows to one continuous cylinder body"]},
+    {"name":"edit","source":"/icons/actions/edit.svg","path":"/icons/micro/edit.svg","sourceComplexityScore":12,"microComplexityScore":9,"complexityReduction":0.25,"changes":["removed redundant pencil seam"]},
+    {"name":"git-branch","source":"/icons/developer/git-branch.svg","path":"/icons/micro/git-branch.svg","sourceComplexityScore":14,"microComplexityScore":14,"complexityReduction":0,"changes":["enlarged branch nodes to 2.5px"]},
+    {"name":"loading","source":"/icons/system/loading.svg","path":"/icons/micro/loading.svg","sourceComplexityScore":18,"microComplexityScore":4,"complexityReduction":0.778,"changes":["replaced eight radial spokes with one open activity arc"]}
+  ]
+}
