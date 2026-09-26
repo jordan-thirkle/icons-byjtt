@@ -1,0 +1,5 @@
+export const name="star";
+export const title="Star";
+export const category="communication";
+export const svg="<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3 1.1-6.2L3 9.6l6.2-.9L12 3Z\"/></svg>\n";
+export const metadata={"name":"star","title":"Star","category":"communication","tags":["star","favorite","favourite","rating"],"aliases":["favourite","favorite","rating"],"contexts":["rating","reaction","content"],"related":["heart"],"accessibility":{"default":"interactive"},"path":"/icons/communication/star.svg","family":"line"};
