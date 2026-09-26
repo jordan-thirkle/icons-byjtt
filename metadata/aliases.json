@@ -225,9 +225,7 @@
     "configuration",
     "preferences"
   ],
-  "share": [
-    "send"
-  ],
+  "share": [],
   "sort": [
     "order"
   ],
@@ -292,7 +290,5 @@
   "x-twitter": [
     "twitter"
   ],
-  "youtube": [
-    "video"
-  ]
+  "youtube": []
 }

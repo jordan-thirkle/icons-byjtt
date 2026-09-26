@@ -240,6 +240,7 @@
       "title": "Arrow Up Right",
       "category": "navigation",
       "tags": [
+        "arrow-up-right",
         "arrow",
         "direction",
         "external",
@@ -1535,10 +1536,10 @@
       "title": "Minus",
       "category": "actions",
       "tags": [
+        "minus",
         "subtract",
         "remove",
-        "less",
-        "minus"
+        "less"
       ],
       "aliases": [
         "subtract"
@@ -1660,10 +1661,10 @@
       "title": "Plus",
       "category": "actions",
       "tags": [
+        "plus",
         "add",
         "create",
-        "new",
-        "plus"
+        "new"
       ],
       "aliases": [
         "add",
@@ -1914,9 +1915,7 @@
         "share",
         "send"
       ],
-      "aliases": [
-        "send"
-      ],
+      "aliases": [],
       "contexts": [
         "toolbar",
         "editor"
@@ -2402,11 +2401,11 @@
       "title": "X",
       "category": "actions",
       "tags": [
+        "x",
         "close",
         "dismiss",
         "remove",
-        "cancel",
-        "x"
+        "cancel"
       ],
       "aliases": [
         "close",
@@ -2458,9 +2457,7 @@
         "youtube",
         "video"
       ],
-      "aliases": [
-        "video"
-      ],
+      "aliases": [],
       "contexts": [
         "brand",
         "social"
