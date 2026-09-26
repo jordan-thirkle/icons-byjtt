@@ -1,64 +1,52 @@
 # Core 100 Release Audit
 
-Status: **release pipeline green**
+Status: **Core 100 + Optical Infrastructure operational**
 
 ## Release integrity
 
-The Core 100 now has one canonical source and reproducible generated surfaces:
-
 - 100 canonical SVGs.
-- 100 package icon modules.
-- 100 public icon pages.
+- 100 generated package icon modules.
+- 100 generated public icon pages.
 - 100 catalogue records.
-- 100 sitemap icon routes.
+- 100 sitemap routes.
 - AI reference generated from canonical metadata.
-- Package root exports generated from the same catalogue.
-- Generation, tests, metadata validation, SVG validation, and generated-drift checks run in CI.
+- deterministic generation and generated-surface integrity tests.
+- semantic metadata and SVG validation in CI.
 
-Main-branch generation owns regeneration and commits generated artifacts. Pull-request validation owns the zero-drift check. This prevents an expected generated commit from appearing as a false-red validation run.
+## Optical Infrastructure
 
-## Semantic audit
+The repository now generates four deterministic review grids:
 
-### Passed
+- 12px
+- 16px
+- 20px
+- 24px canonical master
 
-- 100 unique canonical names.
-- Kebab-case naming remains stable.
-- No alias collisions remain.
-- Alias and relationship maps validate against canonical metadata.
-- All related references resolve.
-- Accessibility defaults are present and valid.
-- Category assignments are internally consistent enough for Core 100 release.
+The default optical keyline is an 18 × 18 live area centred inside the 24 × 24 master grid. The keyline is a guide rather than a rigid geometric boundary.
 
-### Deliberate observations
+Every Core 100 icon is represented in every review grid. The generated optical audit also records drawable-element and path-command complexity for deterministic Micro triage.
 
-- `heart` and `star` remain in `communication` because their metadata is explicitly centred on reactions, social/content, and rating contexts.
-- `settings` remains in `system`, matching its configuration/system contexts.
-- Related links are intentionally directional; 40 relationships are currently one-way. They are treated as semantic recommendations rather than graph edges that must be symmetric.
-- Brand marks are a documented exception to the line-rendering contract: they use solid `currentColor` silhouettes while remaining in the same catalogue.
+Current automated triage identifies **39 of 100** masters for Micro review. The highest-complexity examples include `settings`, `discord`, `bug`, `delete`, `refresh`, `sun`, `camera`, `loading`, and `save`.
 
-No semantic change is warranted solely to make the numbers look more symmetrical.
+This is a review queue, not an automatic redesign list. Complexity alone does not establish that an icon is visually wrong.
 
-## Visual / optical audit
+## Visual findings
 
-The canonical SVG contract passes for all 100 icons: 24×24 viewBox, currentColor rendering, 2px line weight, round caps/joins, with the documented brand exception.
+The earlier visual review exposed a real geometry defect in `star`; its canonical path has been corrected. The current optical system exists specifically to prevent source-contract compliance from being mistaken for finished visual quality.
 
-A manual rendered sample exposed one real geometry defect in `star`: the previous path self-intersected and produced an optically broken star. It has been corrected and regenerated through the normal pipeline.
+The 12px boundary remains important: dense masters may remain recognisable while becoming optically noisy. That is the intended reason for a derived Micro family.
 
-The sample also confirms an important size-system boundary: complex line masters can remain recognisable at 12px, but they do not all retain professional optical weight at that size. In particular, `star` becomes visibly heavy/noisy when rasterised at 12px. This supports the planned Micro family rather than forcing the 24px master to carry every optical size.
+## Semantic findings
 
-### Rule going forward
-
-Do not add Core 101+ icons until the next visual milestone exists:
-
-1. rendered 12/16/20/24px audit grid;
-2. optical-volume/keyline review;
-3. dedicated Micro simplification rules;
-4. repeatable visual regression snapshots.
-
-The canonical 24px line masters remain the source geometry. Small-size variants must derive from them rather than becoming independent drawings.
+- no alias collisions remain;
+- related references resolve;
+- accessibility classifications remain valid;
+- `heart`, `star` and `settings` classifications remain defensible within their documented contexts;
+- directional related links are intentionally not required to be symmetric;
+- brand marks remain an explicit rendering exception.
 
 ## Decision
 
-**Core 100 is structurally releasable, but the icon system is not being expanded yet.**
+**Do not expand the catalogue yet.**
 
-The next work is optical infrastructure and visual regression, followed by the first derived Micro family. Only after that should the catalogue grow beyond 100.
+The next work is to use the 39-icon Micro review queue to establish actual derived simplifications, then add visual regression snapshots around those derived variants. Core 101+ should wait until the Micro rules have been proven on representative icons.
