@@ -22,18 +22,106 @@ This document explains how agents should discover and consume JTT Icons. Canonic
 
 ## Current catalogue
 
+- `apple` — Apple · brands · brand · apple, ios · SVG: `/icons/brands/apple.svg`
+- `archive` — Archive · files · meaningful · archive, storage · SVG: `/icons/files/archive.svg`
+- `arrow-down` — Arrow Down · navigation · interactive · arrow-down, arrow, down · SVG: `/icons/navigation/arrow-down.svg`
+- `arrow-down-left` — Arrow Down Left · navigation · interactive · arrow-down-left, arrow, down, left, southwest · SVG: `/icons/navigation/arrow-down-left.svg`
+- `arrow-down-right` — Arrow Down Right · navigation · interactive · arrow-down-right, arrow, down, right, southeast · SVG: `/icons/navigation/arrow-down-right.svg`
+- `arrow-left` — Arrow Left · navigation · interactive · arrow-left, arrow, left, back · SVG: `/icons/navigation/arrow-left.svg`
+- `arrow-right` — Arrow Right · navigation · interactive · arrow-right, arrow, right, forward · SVG: `/icons/navigation/arrow-right.svg`
+- `arrow-up` — Arrow Up · navigation · interactive · arrow-up, arrow, up · SVG: `/icons/navigation/arrow-up.svg`
+- `arrow-up-left` — Arrow Up Left · navigation · interactive · arrow-up-left, arrow, up, left, northwest · SVG: `/icons/navigation/arrow-up-left.svg`
 - `arrow-up-right` — Arrow Up Right · navigation · interactive · arrow, direction, external, diagonal, up, right · SVG: `/icons/navigation/arrow-up-right.svg`
+- `attachment` — Attachment · files · meaningful · attachment, paperclip · SVG: `/icons/files/attachment.svg`
+- `bag` — Bag · commerce · meaningful · bag, shopping-bag · SVG: `/icons/commerce/bag.svg`
+- `bell` — Bell · communication · interactive · bell, notification · SVG: `/icons/communication/bell.svg`
+- `bookmark` — Bookmark · communication · interactive · bookmark, saved · SVG: `/icons/communication/bookmark.svg`
+- `braces` — Braces · developer · meaningful · braces, code-braces · SVG: `/icons/developer/braces.svg`
+- `bug` — Bug · developer · meaningful · bug, issue · SVG: `/icons/developer/bug.svg`
+- `calendar` — Calendar · objects · meaningful · calendar, date · SVG: `/icons/objects/calendar.svg`
+- `camera` — Camera · media · meaningful · camera, photo-camera · SVG: `/icons/media/camera.svg`
+- `cart` — Cart · commerce · meaningful · cart, shopping-cart · SVG: `/icons/commerce/cart.svg`
 - `check` — Check · actions · status · check, confirm, done, success, tick · SVG: `/icons/actions/check.svg`
+- `chevron-down` — Chevron Down · navigation · interactive · chevron-down, chevron, down · SVG: `/icons/navigation/chevron-down.svg`
+- `chevron-left` — Chevron Left · navigation · interactive · chevron-left, chevron, left · SVG: `/icons/navigation/chevron-left.svg`
+- `chevron-right` — Chevron Right · navigation · interactive · chevron-right, chevron, right · SVG: `/icons/navigation/chevron-right.svg`
+- `chevron-up` — Chevron Up · navigation · interactive · chevron-up, chevron, up · SVG: `/icons/navigation/chevron-up.svg`
+- `clipboard` — Clipboard · files · meaningful · clipboard, copy-board · SVG: `/icons/files/clipboard.svg`
+- `clock` — Clock · objects · meaningful · clock, time · SVG: `/icons/objects/clock.svg`
 - `code` — Code · developer · meaningful · code, developer, programming, source · SVG: `/icons/developer/code.svg`
+- `copy` — Copy · actions · interactive · copy, duplicate · SVG: `/icons/actions/copy.svg`
+- `credit-card` — Credit Card · commerce · meaningful · credit-card, credit, card, payment · SVG: `/icons/commerce/credit-card.svg`
+- `database` — Database · developer · meaningful · database, db · SVG: `/icons/developer/database.svg`
+- `delete` — Delete · actions · interactive · delete, remove · SVG: `/icons/actions/delete.svg`
+- `discord` — Discord · brands · brand · discord, chat · SVG: `/icons/brands/discord.svg`
+- `document` — Document · files · meaningful · document, text-file · SVG: `/icons/files/document.svg`
+- `download` — Download · actions · interactive · download, export · SVG: `/icons/actions/download.svg`
+- `edit` — Edit · actions · interactive · edit, modify · SVG: `/icons/actions/edit.svg`
+- `error` — Error · system · status · error, failure · SVG: `/icons/system/error.svg`
+- `eye` — Eye · objects · meaningful · eye, view · SVG: `/icons/objects/eye.svg`
+- `file` — File · files · meaningful · file, document-file · SVG: `/icons/files/file.svg`
+- `file-minus` — File Minus · files · meaningful · file-minus, file, minus, remove-file · SVG: `/icons/files/file-minus.svg`
+- `file-plus` — File Plus · files · meaningful · file-plus, file, plus, new-file · SVG: `/icons/files/file-plus.svg`
+- `filter` — Filter · objects · meaningful · filter, refine · SVG: `/icons/objects/filter.svg`
+- `folder` — Folder · files · meaningful · folder, directory · SVG: `/icons/files/folder.svg`
+- `folder-open` — Folder Open · files · meaningful · folder-open, folder, open, open-folder · SVG: `/icons/files/folder-open.svg`
+- `folder-plus` — Folder Plus · files · meaningful · folder-plus, folder, plus, new-folder · SVG: `/icons/files/folder-plus.svg`
+- `git-branch` — Git Branch · developer · meaningful · git-branch, git, branch · SVG: `/icons/developer/git-branch.svg`
+- `git-commit` — Git Commit · developer · meaningful · git-commit, git, commit · SVG: `/icons/developer/git-commit.svg`
+- `git-merge` — Git Merge · developer · meaningful · git-merge, git, merge · SVG: `/icons/developer/git-merge.svg`
 - `github` — GitHub · brands · brand · github, git, developer, code · SVG: `/icons/brands/github.svg`
 - `heart` — Heart · communication · interactive · heart, like, favourite, favorite, reaction · SVG: `/icons/communication/heart.svg`
+- `help` — Help · system · status · help, question · SVG: `/icons/system/help.svg`
+- `home` — Home · navigation · interactive · home, house · SVG: `/icons/navigation/home.svg`
+- `image` — Image · media · meaningful · image, photo · SVG: `/icons/media/image.svg`
+- `info` — Info · system · status · info, information · SVG: `/icons/system/info.svg`
+- `link` — Link · communication · interactive · link, url · SVG: `/icons/communication/link.svg`
+- `loading` — Loading · system · status · loading, progress · SVG: `/icons/system/loading.svg`
+- `location` — Location · objects · meaningful · location, pin · SVG: `/icons/objects/location.svg`
+- `lock` — Lock · objects · meaningful · lock, private · SVG: `/icons/objects/lock.svg`
+- `mail` — Mail · communication · interactive · mail, email · SVG: `/icons/communication/mail.svg`
+- `map` — Map · objects · meaningful · map, maps · SVG: `/icons/objects/map.svg`
 - `menu` — Menu · navigation · interactive · menu, navigation, hamburger · SVG: `/icons/navigation/menu.svg`
+- `message` — Message · communication · interactive · message, chat · SVG: `/icons/communication/message.svg`
+- `mic` — Mic · media · meaningful · mic, microphone · SVG: `/icons/media/mic.svg`
 - `minus` — Minus · actions · interactive · subtract, remove, less, minus · SVG: `/icons/actions/minus.svg`
+- `music` — Music · media · meaningful · music, audio · SVG: `/icons/media/music.svg`
+- `pause` — Pause · media · meaningful · pause, paused · SVG: `/icons/media/pause.svg`
+- `play` — Play · actions · interactive · play, start · SVG: `/icons/actions/play.svg`
+- `play-circle` — Play Circle · media · meaningful · play-circle, play, circle, video-play · SVG: `/icons/media/play-circle.svg`
 - `plus` — Plus · actions · interactive · add, create, new, plus · SVG: `/icons/actions/plus.svg`
+- `receipt` — Receipt · commerce · meaningful · receipt, invoice · SVG: `/icons/commerce/receipt.svg`
+- `redo` — Redo · actions · interactive · redo, forward · SVG: `/icons/actions/redo.svg`
+- `refresh` — Refresh · actions · interactive · refresh, reload · SVG: `/icons/actions/refresh.svg`
+- `rocket` — Rocket · developer · meaningful · rocket, launch · SVG: `/icons/developer/rocket.svg`
+- `save` — Save · actions · interactive · save, store · SVG: `/icons/actions/save.svg`
 - `search` — Search · navigation · interactive · search, find, lookup, magnify · SVG: `/icons/navigation/search.svg`
+- `send` — Send · communication · interactive · send, submit · SVG: `/icons/communication/send.svg`
+- `server` — Server · developer · meaningful · server, backend · SVG: `/icons/developer/server.svg`
 - `settings` — Settings · system · interactive · settings, gear, configuration, preferences · SVG: `/icons/system/settings.svg`
+- `share` — Share · actions · interactive · share, send · SVG: `/icons/actions/share.svg`
+- `sort` — Sort · objects · meaningful · sort, order · SVG: `/icons/objects/sort.svg`
 - `star` — Star · communication · interactive · star, favorite, favourite, rating · SVG: `/icons/communication/star.svg`
+- `stop` — Stop · media · meaningful · stop, halt · SVG: `/icons/media/stop.svg`
+- `success` — Success · system · status · success, passed · SVG: `/icons/system/success.svg`
+- `sun` — Sun · system · status · sun, light · SVG: `/icons/system/sun.svg`
+- `tag` — Tag · commerce · meaningful · tag, label · SVG: `/icons/commerce/tag.svg`
+- `terminal` — Terminal · developer · meaningful · terminal, console · SVG: `/icons/developer/terminal.svg`
+- `undo` — Undo · actions · interactive · undo, revert · SVG: `/icons/actions/undo.svg`
+- `unlock` — Unlock · objects · meaningful · unlock, public · SVG: `/icons/objects/unlock.svg`
+- `upload` — Upload · actions · interactive · upload, import · SVG: `/icons/actions/upload.svg`
+- `user` — User · people · meaningful · user, account · SVG: `/icons/people/user.svg`
+- `user-circle` — User Circle · people · meaningful · user-circle, user, circle, profile · SVG: `/icons/people/user-circle.svg`
+- `user-minus` — User Minus · people · meaningful · user-minus, user, minus, remove-user · SVG: `/icons/people/user-minus.svg`
+- `user-plus` — User Plus · people · meaningful · user-plus, user, plus, add-user · SVG: `/icons/people/user-plus.svg`
+- `users` — Users · people · meaningful · users, people · SVG: `/icons/people/users.svg`
+- `video` — Video · media · meaningful · video, film · SVG: `/icons/media/video.svg`
+- `volume` — Volume · media · meaningful · volume, sound · SVG: `/icons/media/volume.svg`
+- `volume-off` — Volume Off · media · meaningful · volume-off, volume, off, mute · SVG: `/icons/media/volume-off.svg`
+- `warning` — Warning · system · status · warning, caution · SVG: `/icons/system/warning.svg`
 - `x` — X · actions · interactive · close, dismiss, remove, cancel, x · SVG: `/icons/actions/x.svg`
+- `x-twitter` — X Twitter · brands · brand · x-twitter, x, twitter · SVG: `/icons/brands/x-twitter.svg`
+- `youtube` — Youtube · brands · brand · youtube, video · SVG: `/icons/brands/youtube.svg`
 
 ## Consumption
 
