@@ -6,7 +6,12 @@
     "liveAreaOffset": 3,
     "strokeWidth": 2
   },
-  "reviewSizes": [12, 16, 20, 24],
+  "reviewSizes": [
+    12,
+    16,
+    20,
+    24
+  ],
   "optical": {
     "primaryLiveAreaRatio": 0.75,
     "principle": "optical alignment takes precedence over mathematical centering",
@@ -25,7 +30,8 @@
       "Preserve directional terminals and interaction cues.",
       "Protect critical counters and negative-space gaps from collapsing.",
       "Do not independently redraw a Micro icon without a canonical 24px source.",
-      "A Micro variant may simplify geometry but must retain the canonical icon name and semantic metadata."
+      "A Micro variant may simplify geometry but must retain the canonical icon name and semantic metadata.",
+      "Complexity reduction is supporting evidence, not a requirement; an explicit optical rebalancing may keep complexity flat when it improves recognition at 12px or 16px."
     ]
   }
 }
