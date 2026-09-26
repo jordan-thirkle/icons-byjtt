@@ -12,14 +12,10 @@
   "classes": [
     "container-detail",
     "compound-wheels",
-    "nested-geometry",
     "stacked-repetition",
     "diagonal-compound",
     "branch-topology",
-    "radial-repetition",
-    "segmented-object",
-    "semantic-modifier",
-    "status-symbol"
+    "radial-repetition"
   ],
   "derivationRules": [
     "Micro is derived from the canonical 24px Line master.",
@@ -52,16 +48,6 @@
         "enlarged wheel counters to 1.5px radius"
       ],
       "review": "The cart remains unchanged semantically; the wheels receive optical emphasis because they are the only small detached components."
-    },
-    {
-      "name": "copy",
-      "source": "/icons/actions/copy.svg",
-      "path": "/icons/micro/copy.svg",
-      "class": "nested-geometry",
-      "changes": [
-        "preserved two-sheet overlap with simplified rear-sheet termination"
-      ],
-      "review": "Two offset sheets remain the semantic cue; the rear sheet terminates cleanly before the overlap becomes a dark corner."
     },
     {
       "name": "database",
@@ -102,36 +88,24 @@
         "replaced eight radial spokes with one open activity arc"
       ],
       "review": "The open arc keeps the activity/loading cue while removing the sun-like radial reading risk from the canonical spoke wheel."
+    }
+  ],
+  "gatedCandidates": [
+    {
+      "name": "copy",
+      "reason": "canonical nested-sheet geometry survives the first Micro review without a necessary semantic-preserving simplification"
     },
     {
       "name": "map",
-      "source": "/icons/objects/map.svg",
-      "path": "/icons/micro/map.svg",
-      "class": "segmented-object",
-      "changes": [
-        "preserved both fold divisions and outer silhouette"
-      ],
-      "review": "The map's three-panel topology is already the minimum semantic structure; no detail was removed because doing so would collapse the map metaphor."
+      "reason": "both fold divisions are essential; no safe simplification has yet earned a derivative"
     },
     {
       "name": "volume-off",
-      "source": "/icons/media/volume-off.svg",
-      "path": "/icons/micro/volume-off.svg",
-      "class": "semantic-modifier",
-      "changes": [
-        "shortened speaker stem while preserving mute cross"
-      ],
-      "review": "The speaker body and crossing mute mark are both semantic; the speaker stem is shortened to keep the cross visually separate."
+      "reason": "speaker plus mute cross already carries the minimum semantic structure"
     },
     {
       "name": "warning",
-      "source": "/icons/system/warning.svg",
-      "path": "/icons/micro/warning.svg",
-      "class": "status-symbol",
-      "changes": [
-        "preserved triangle and enlarged exclamation terminal spacing"
-      ],
-      "review": "The warning triangle and exclamation are both essential; the Micro treatment keeps both cues intact rather than simplifying the status symbol into a generic triangle."
+      "reason": "triangle plus exclamation are both essential; no safe simplification has yet earned a derivative"
     }
   ]
 }
