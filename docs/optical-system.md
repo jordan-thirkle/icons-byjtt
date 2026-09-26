@@ -75,3 +75,12 @@ Core expansion is blocked until:
 - optical rules remain versioned;
 - generated optical artifacts are deterministic;
 - Micro remains downstream of the canonical 24px master.
+
+
+## Micro 0.1 proof family
+
+The first Micro proof is deliberately experimental and contains eight representative non-brand derivatives. It is reviewed at 12px and 16px with side-by-side Line/Micro snapshots.
+
+Micro is not added to the canonical catalogue or framework package until the family rules survive this proof.
+
+The Micro audit treats complexity as supporting evidence. A derivative may legitimately keep complexity flat when its purpose is optical rebalancing, such as enlarging a critical counter or changing repeated directional geometry for small-size recognition.
