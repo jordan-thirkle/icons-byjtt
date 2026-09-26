@@ -15,7 +15,7 @@ fs.mkdirSync(outputDir, { recursive: true });
 const escapeXml = value => String(value).replace(/[&<>]/g, character => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[character]));
 const icons = [...metadata.icons].sort((a, b) => a.name.localeCompare(b.name));
 const count = (value, expression) => [...value.matchAll(expression)].length;
-const pathCommands = data => count(data, /\b[AaCcHhLlMmQqSsTtVvZz]\b/g);
+const pathCommands = data => count(data, /[AaCcHhLlMmQqSsTtVvZz]/g);
 
 const audit = icons.map(icon => {
   const svg = fs.readFileSync(path.join(root, icon.path.slice(1)), "utf8");
