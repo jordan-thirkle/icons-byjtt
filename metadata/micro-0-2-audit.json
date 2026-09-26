@@ -1,7 +1,16 @@
+{
+  "version": 1,
+  "generatedAt": "deterministic",
+  "family": "micro",
   "reviewSizes": [
     12,
     16
   ],
+  "summary": {
+    "icons": 6,
+    "averageComplexityReduction": 0.231
+  },
+  "icons": [
     {
       "name": "archive",
       "source": "/icons/files/archive.svg",
@@ -69,3 +78,5 @@
         "replaced eight radial spokes with one open activity arc"
       ]
     }
+  ]
+}
