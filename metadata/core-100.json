@@ -1,0 +1,707 @@
+{
+  "name": "JTT Icons Core 100",
+  "version": "1.0.0",
+  "purpose": "Coverage manifest for the first 100 semantic concepts. Planned entries are not published until canonical SVG and metadata exist.",
+  "icons": [
+    {
+      "name": "plus",
+      "category": "actions",
+      "intent": "plus concept",
+      "priority": 1,
+      "status": "implemented"
+    },
+    {
+      "name": "minus",
+      "category": "actions",
+      "intent": "minus concept",
+      "priority": 1,
+      "status": "implemented"
+    },
+    {
+      "name": "check",
+      "category": "actions",
+      "intent": "check concept",
+      "priority": 1,
+      "status": "implemented"
+    },
+    {
+      "name": "x",
+      "category": "actions",
+      "intent": "x concept",
+      "priority": 1,
+      "status": "implemented"
+    },
+    {
+      "name": "edit",
+      "category": "actions",
+      "intent": "edit concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "delete",
+      "category": "actions",
+      "intent": "delete concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "save",
+      "category": "actions",
+      "intent": "save concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "download",
+      "category": "actions",
+      "intent": "download concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "upload",
+      "category": "actions",
+      "intent": "upload concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "copy",
+      "category": "actions",
+      "intent": "copy concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "share",
+      "category": "actions",
+      "intent": "share concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "refresh",
+      "category": "actions",
+      "intent": "refresh concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "undo",
+      "category": "actions",
+      "intent": "undo concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "redo",
+      "category": "actions",
+      "intent": "redo concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "play",
+      "category": "actions",
+      "intent": "play concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "arrow-up",
+      "category": "navigation",
+      "intent": "arrow up concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "arrow-down",
+      "category": "navigation",
+      "intent": "arrow down concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "arrow-left",
+      "category": "navigation",
+      "intent": "arrow left concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "arrow-right",
+      "category": "navigation",
+      "intent": "arrow right concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "arrow-up-right",
+      "category": "navigation",
+      "intent": "arrow up right concept",
+      "priority": 2,
+      "status": "implemented"
+    },
+    {
+      "name": "arrow-down-right",
+      "category": "navigation",
+      "intent": "arrow down right concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "arrow-down-left",
+      "category": "navigation",
+      "intent": "arrow down left concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "arrow-up-left",
+      "category": "navigation",
+      "intent": "arrow up left concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "chevron-up",
+      "category": "navigation",
+      "intent": "chevron up concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "chevron-down",
+      "category": "navigation",
+      "intent": "chevron down concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "chevron-left",
+      "category": "navigation",
+      "intent": "chevron left concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "chevron-right",
+      "category": "navigation",
+      "intent": "chevron right concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "menu",
+      "category": "navigation",
+      "intent": "menu concept",
+      "priority": 1,
+      "status": "implemented"
+    },
+    {
+      "name": "search",
+      "category": "navigation",
+      "intent": "search concept",
+      "priority": 1,
+      "status": "implemented"
+    },
+    {
+      "name": "home",
+      "category": "navigation",
+      "intent": "home concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "heart",
+      "category": "communication",
+      "intent": "heart concept",
+      "priority": 2,
+      "status": "implemented"
+    },
+    {
+      "name": "star",
+      "category": "communication",
+      "intent": "star concept",
+      "priority": 2,
+      "status": "implemented"
+    },
+    {
+      "name": "message",
+      "category": "communication",
+      "intent": "message concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "mail",
+      "category": "communication",
+      "intent": "mail concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "send",
+      "category": "communication",
+      "intent": "send concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "bell",
+      "category": "communication",
+      "intent": "bell concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "link",
+      "category": "communication",
+      "intent": "link concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "bookmark",
+      "category": "communication",
+      "intent": "bookmark concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "play-circle",
+      "category": "media",
+      "intent": "play circle concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "pause",
+      "category": "media",
+      "intent": "pause concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "stop",
+      "category": "media",
+      "intent": "stop concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "volume",
+      "category": "media",
+      "intent": "volume concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "volume-off",
+      "category": "media",
+      "intent": "volume off concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "mic",
+      "category": "media",
+      "intent": "mic concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "image",
+      "category": "media",
+      "intent": "image concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "video",
+      "category": "media",
+      "intent": "video concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "music",
+      "category": "media",
+      "intent": "music concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "camera",
+      "category": "media",
+      "intent": "camera concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "file",
+      "category": "files",
+      "intent": "file concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "file-plus",
+      "category": "files",
+      "intent": "file plus concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "file-minus",
+      "category": "files",
+      "intent": "file minus concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "folder",
+      "category": "files",
+      "intent": "folder concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "folder-plus",
+      "category": "files",
+      "intent": "folder plus concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "folder-open",
+      "category": "files",
+      "intent": "folder open concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "document",
+      "category": "files",
+      "intent": "document concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "archive",
+      "category": "files",
+      "intent": "archive concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "attachment",
+      "category": "files",
+      "intent": "attachment concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "clipboard",
+      "category": "files",
+      "intent": "clipboard concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "settings",
+      "category": "objects",
+      "intent": "settings concept",
+      "priority": 1,
+      "status": "implemented"
+    },
+    {
+      "name": "calendar",
+      "category": "objects",
+      "intent": "calendar concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "clock",
+      "category": "objects",
+      "intent": "clock concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "location",
+      "category": "objects",
+      "intent": "location concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "map",
+      "category": "objects",
+      "intent": "map concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "filter",
+      "category": "objects",
+      "intent": "filter concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "sort",
+      "category": "objects",
+      "intent": "sort concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "eye",
+      "category": "objects",
+      "intent": "eye concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "lock",
+      "category": "objects",
+      "intent": "lock concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "unlock",
+      "category": "objects",
+      "intent": "unlock concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "user",
+      "category": "people",
+      "intent": "user concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "users",
+      "category": "people",
+      "intent": "users concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "user-plus",
+      "category": "people",
+      "intent": "user plus concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "user-minus",
+      "category": "people",
+      "intent": "user minus concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "user-circle",
+      "category": "people",
+      "intent": "user circle concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "cart",
+      "category": "commerce",
+      "intent": "cart concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "bag",
+      "category": "commerce",
+      "intent": "bag concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "credit-card",
+      "category": "commerce",
+      "intent": "credit card concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "receipt",
+      "category": "commerce",
+      "intent": "receipt concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "tag",
+      "category": "commerce",
+      "intent": "tag concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "code",
+      "category": "developer",
+      "intent": "code concept",
+      "priority": 1,
+      "status": "implemented"
+    },
+    {
+      "name": "terminal",
+      "category": "developer",
+      "intent": "terminal concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "git-branch",
+      "category": "developer",
+      "intent": "git branch concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "git-commit",
+      "category": "developer",
+      "intent": "git commit concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "git-merge",
+      "category": "developer",
+      "intent": "git merge concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "braces",
+      "category": "developer",
+      "intent": "braces concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "database",
+      "category": "developer",
+      "intent": "database concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "server",
+      "category": "developer",
+      "intent": "server concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "bug",
+      "category": "developer",
+      "intent": "bug concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "rocket",
+      "category": "developer",
+      "intent": "rocket concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "info",
+      "category": "system",
+      "intent": "info concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "help",
+      "category": "system",
+      "intent": "help concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "warning",
+      "category": "system",
+      "intent": "warning concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "error",
+      "category": "system",
+      "intent": "error concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "success",
+      "category": "system",
+      "intent": "success concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "loading",
+      "category": "system",
+      "intent": "loading concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "sun",
+      "category": "system",
+      "intent": "sun concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "github",
+      "category": "brands",
+      "intent": "github concept",
+      "priority": 1,
+      "status": "implemented"
+    },
+    {
+      "name": "x-twitter",
+      "category": "brands",
+      "intent": "x twitter concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "discord",
+      "category": "brands",
+      "intent": "discord concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "youtube",
+      "category": "brands",
+      "intent": "youtube concept",
+      "priority": 2,
+      "status": "planned"
+    },
+    {
+      "name": "apple",
+      "category": "brands",
+      "intent": "apple concept",
+      "priority": 2,
+      "status": "planned"
+    }
+  ]
+}
