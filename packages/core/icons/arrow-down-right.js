@@ -1,0 +1,5 @@
+export const name = "arrow-down-right";
+export const title = "Arrow Down Right";
+export const category = "navigation";
+export const svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 6l12 12\"/><path d=\"M10 18h8v-8\"/></svg>\n";
+export const metadata = {"name":"arrow-down-right","title":"Arrow Down Right","category":"navigation","tags":["arrow-down-right","arrow","down","right","southeast"],"aliases":["southeast"],"contexts":["navigation","interface"],"related":["arrow-up-left"],"accessibility":{"default":"interactive"},"path":"/icons/navigation/arrow-down-right.svg","family":"line"};

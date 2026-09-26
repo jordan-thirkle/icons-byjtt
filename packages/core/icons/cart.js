@@ -1,0 +1,5 @@
+export const name = "cart";
+export const title = "Cart";
+export const category = "commerce";
+export const svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 4h2l2 11h10l3-8H6\"/><circle cx=\"9\" cy=\"19\" r=\"1\"/><circle cx=\"17\" cy=\"19\" r=\"1\"/></svg>\n";
+export const metadata = {"name":"cart","title":"Cart","category":"commerce","tags":["cart","shopping-cart"],"aliases":["shopping-cart"],"contexts":["commerce","checkout"],"related":["bag"],"accessibility":{"default":"meaningful"},"path":"/icons/commerce/cart.svg","family":"line"};

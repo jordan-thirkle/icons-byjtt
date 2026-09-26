@@ -1,0 +1,5 @@
+export const name = "git-branch";
+export const title = "Git Branch";
+export const category = "developer";
+export const svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"6\" cy=\"5\" r=\"2\"/><circle cx=\"18\" cy=\"19\" r=\"2\"/><circle cx=\"18\" cy=\"5\" r=\"2\"/><path d=\"M6 7v6a6 6 0 0 0 6 6h4M18 7v6\"/></svg>\n";
+export const metadata = {"name":"git-branch","title":"Git Branch","category":"developer","tags":["git-branch","git","branch"],"aliases":["branch"],"contexts":["developer","tooling"],"related":["git-merge"],"accessibility":{"default":"meaningful"},"path":"/icons/developer/git-branch.svg","family":"line"};

@@ -1,0 +1,5 @@
+export const name = "attachment";
+export const title = "Attachment";
+export const category = "files";
+export const svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m8 12 5.5-5.5a3.5 3.5 0 0 1 5 5L11 19a5 5 0 0 1-7-7l7-7\"/></svg>\n";
+export const metadata = {"name":"attachment","title":"Attachment","category":"files","tags":["attachment","paperclip"],"aliases":["paperclip"],"contexts":["files","editor"],"related":["file"],"accessibility":{"default":"meaningful"},"path":"/icons/files/attachment.svg","family":"line"};
