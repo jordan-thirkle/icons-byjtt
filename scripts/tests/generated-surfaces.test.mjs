@@ -37,8 +37,8 @@ test("generated surfaces materialize every canonical Core 100 icon", () => {
   }
 
   const sitemap = fs.readFileSync(path.join(root, "sitemap.xml"), "utf8");
-  for (const icon of metadata.icons) assert.match(sitemap, new RegExp(`/icons/${icon.name}/`));
+  for (const icon of metadata.icons) assert.ok(sitemap.includes(`/icons/${icon.name}/`));
 
   const aiReference = fs.readFileSync(path.join(root, "llms-full.txt"), "utf8");
-  for (const icon of metadata.icons) assert.match(aiReference, new RegExp(`\\\`\\${icon.name}\\\``));
+  for (const icon of metadata.icons) assert.ok(aiReference.includes(`\`${icon.name}\``));
 });
