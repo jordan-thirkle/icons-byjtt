@@ -31,9 +31,9 @@ test("generated surfaces materialize every canonical Core 100 icon", () => {
   for (const icon of metadata.icons) {
     const identifier = icon.name.replace(/-([a-z])/g, (_, c) => c.toUpperCase());
     const safeIdentifier = new Set(["delete"]).has(identifier) ? `icon${identifier[0].toUpperCase()}${identifier.slice(1)}` : identifier;
-    assert.match(rootPackage, new RegExp(`from "./icons/${icon.name}\\\\.js";`));
-    assert.match(rootPackage, new RegExp(`\\\\b${safeIdentifier}\\\\b`));
-    assert.match(declaration, new RegExp(`const ${safeIdentifier}: JttIconModule`));
+    assert.ok(rootPackage.includes(`from "./icons/${icon.name}.js";`));
+    assert.match(rootPackage, new RegExp(`\\b${safeIdentifier}\\b`));
+    assert.ok(declaration.includes(`const ${safeIdentifier}: JttIconModule`));
   }
 
   const sitemap = fs.readFileSync(path.join(root, "sitemap.xml"), "utf8");
