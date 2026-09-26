@@ -1,0 +1,3 @@
+import test from "node:test"; import assert from "node:assert/strict"; import fs from "node:fs"; import path from "node:path"; import {sitemap} from "../lib/generate-site.mjs"; import catalogue from "../../metadata/icons.json" with {type:"json"};
+test("catalogue homepage uses generated catalogue data",()=>{const html=fs.readFileSync(path.join(process.cwd(),"index.html"),"utf8");assert.match(html,/fetch\(["']\/icons\.json/);assert.doesNotMatch(html,/const I\s*=\s*\[/);});
+test("sitemap includes every canonical icon page",()=>{const xml=sitemap(catalogue);for(const icon of catalogue.icons)assert.match(xml,new RegExp("/icons/"+icon.name+"/"));});
