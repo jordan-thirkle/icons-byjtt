@@ -1,5 +1,18 @@
-const RESERVED_IDENTIFIERS = new Set(["await","break","case","catch","class","const","continue","debugger","default","delete","do","else","enum","export","extends","false","finally","for","function","if","implements","import","in","instanceof","interface","let","new","null","package","private","protected","public","return","static","super","switch","this","throw","true","try","typeof","var","void","while","with","yield"]);
-const jsIdentifier = name => { const identifier = name.replace(/-([a-z])/g, (_, character) => character.toUpperCase()); return RESERVED_IDENTIFIERS.has(identifier) ? `icon${identifier[0].toUpperCase()}${identifier.slice(1)}` : identifier; };
+const RESERVED_IDENTIFIERS = new Set([
+  "await", "break", "case", "catch", "class", "const", "continue", "debugger",
+  "default", "delete", "do", "else", "enum", "export", "extends", "false",
+  "finally", "for", "function", "if", "implements", "import", "in",
+  "instanceof", "interface", "let", "new", "null", "package", "private",
+  "protected", "public", "return", "static", "super", "switch", "this",
+  "throw", "true", "try", "typeof", "var", "void", "while", "with", "yield"
+]);
+
+const jsIdentifier = name => {
+  const identifier = name.replace(/-([a-z])/g, (_, character) => character.toUpperCase());
+  return RESERVED_IDENTIFIERS.has(identifier)
+    ? `icon${identifier[0].toUpperCase()}${identifier.slice(1)}`
+    : identifier;
+};
 
 export function generatePackage(metadata, svgByName = {}) {
   const icons = [...metadata.icons].sort((a,b) => a.name.localeCompare(b.name));
