@@ -80,10 +80,10 @@
       "source": "/icons/system/settings.svg",
       "path": "/icons/micro/settings.svg",
       "changes": [
-        "simplified gear to radial teeth",
-        "enlarged centre counter"
+        "reduced gear to six-lobe contour",
+        "protected centre counter"
       ],
-      "review": "A radial six/eight-tooth treatment keeps the settings cue while reducing the dense outer contour; the centre opening remains protected."
+      "review": "First optical review rejected the radial-spoke treatment because it read as brightness/sun. A six-lobe gear retains the settings silhouette at 12px and 16px while protecting the centre opening."
     },
     {
       "name": "volume",
