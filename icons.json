@@ -1,0 +1,93 @@
+{
+  "name": "JTT Icons",
+  "version": "0.1.0",
+  "license": "MIT",
+  "prefix": "jtt",
+  "baseUrl": "https://icons.byjtt.com",
+  "icons": [
+    {
+      "name": "arrow-up-right",
+      "title": "Arrow Up Right",
+      "category": "navigation",
+      "tags": ["arrow", "direction", "external", "diagonal", "up", "right"],
+      "path": "/icons/arrow-up-right.svg"
+    },
+    {
+      "name": "check",
+      "title": "Check",
+      "category": "actions",
+      "tags": ["check", "confirm", "done", "success", "tick"],
+      "path": "/icons/check.svg"
+    },
+    {
+      "name": "x",
+      "title": "X",
+      "category": "actions",
+      "tags": ["close", "dismiss", "remove", "cancel", "x"],
+      "path": "/icons/x.svg"
+    },
+    {
+      "name": "plus",
+      "title": "Plus",
+      "category": "actions",
+      "tags": ["add", "create", "new", "plus"],
+      "path": "/icons/plus.svg"
+    },
+    {
+      "name": "minus",
+      "title": "Minus",
+      "category": "actions",
+      "tags": ["subtract", "remove", "less", "minus"],
+      "path": "/icons/minus.svg"
+    },
+    {
+      "name": "search",
+      "title": "Search",
+      "category": "interface",
+      "tags": ["search", "find", "lookup", "magnify"],
+      "path": "/icons/search.svg"
+    },
+    {
+      "name": "menu",
+      "title": "Menu",
+      "category": "navigation",
+      "tags": ["menu", "navigation", "hamburger"],
+      "path": "/icons/menu.svg"
+    },
+    {
+      "name": "heart",
+      "title": "Heart",
+      "category": "communication",
+      "tags": ["heart", "like", "favourite", "favorite"],
+      "path": "/icons/heart.svg"
+    },
+    {
+      "name": "star",
+      "title": "Star",
+      "category": "interface",
+      "tags": ["star", "favorite", "favourite", "rating"],
+      "path": "/icons/star.svg"
+    },
+    {
+      "name": "settings",
+      "title": "Settings",
+      "category": "interface",
+      "tags": ["settings", "gear", "configuration", "preferences"],
+      "path": "/icons/settings.svg"
+    },
+    {
+      "name": "github",
+      "title": "GitHub",
+      "category": "brands",
+      "tags": ["github", "git", "developer", "code"],
+      "path": "/icons/github.svg"
+    },
+    {
+      "name": "code",
+      "title": "Code",
+      "category": "developer",
+      "tags": ["code", "developer", "programming", "source"],
+      "path": "/icons/code.svg"
+    }
+  ]
+}
