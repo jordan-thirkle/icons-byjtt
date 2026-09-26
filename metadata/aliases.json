@@ -1,47 +1,303 @@
 {
+  "apple": [
+    "ios"
+  ],
+  "archive": [
+    "storage"
+  ],
+  "arrow-down": [
+    "down"
+  ],
+  "arrow-down-left": [
+    "southwest"
+  ],
+  "arrow-down-right": [
+    "southeast"
+  ],
+  "arrow-left": [
+    "back"
+  ],
+  "arrow-right": [
+    "forward"
+  ],
+  "arrow-up": [
+    "up"
+  ],
+  "arrow-up-left": [
+    "northwest"
+  ],
   "arrow-up-right": [
     "external-link"
+  ],
+  "attachment": [
+    "paperclip"
+  ],
+  "bag": [
+    "shopping-bag"
+  ],
+  "bell": [
+    "notification"
+  ],
+  "bookmark": [
+    "saved"
+  ],
+  "braces": [
+    "code-braces"
+  ],
+  "bug": [
+    "issue"
+  ],
+  "calendar": [
+    "date"
+  ],
+  "camera": [
+    "photo-camera"
+  ],
+  "cart": [
+    "shopping-cart"
   ],
   "check": [
     "tick",
     "confirm"
   ],
-  "x": [
-    "close",
-    "dismiss"
+  "chevron-down": [],
+  "chevron-left": [],
+  "chevron-right": [],
+  "chevron-up": [],
+  "clipboard": [
+    "copy-board"
   ],
-  "plus": [
-    "add",
-    "create"
+  "clock": [
+    "time"
   ],
-  "minus": [
-    "subtract",
+  "code": [
+    "programming",
+    "source-code"
+  ],
+  "copy": [
+    "duplicate"
+  ],
+  "credit-card": [
+    "payment"
+  ],
+  "database": [
+    "db"
+  ],
+  "delete": [
     "remove"
   ],
-  "search": [
-    "find",
-    "lookup"
+  "discord": [
+    "chat"
   ],
-  "menu": [
-    "hamburger",
-    "navigation-menu"
+  "document": [
+    "text-file"
   ],
+  "download": [
+    "export"
+  ],
+  "edit": [
+    "modify"
+  ],
+  "error": [
+    "failure"
+  ],
+  "eye": [
+    "view"
+  ],
+  "file": [
+    "document-file"
+  ],
+  "file-minus": [
+    "remove-file"
+  ],
+  "file-plus": [
+    "new-file"
+  ],
+  "filter": [
+    "refine"
+  ],
+  "folder": [
+    "directory"
+  ],
+  "folder-open": [
+    "open-folder"
+  ],
+  "folder-plus": [
+    "new-folder"
+  ],
+  "git-branch": [
+    "branch"
+  ],
+  "git-commit": [
+    "commit"
+  ],
+  "git-merge": [
+    "merge"
+  ],
+  "github": [],
   "heart": [
     "like",
     "favourite",
     "favorite"
   ],
-  "star": [
-    "rating"
+  "help": [
+    "question"
+  ],
+  "home": [
+    "house"
+  ],
+  "image": [
+    "photo"
+  ],
+  "info": [
+    "information"
+  ],
+  "link": [
+    "url"
+  ],
+  "loading": [
+    "progress"
+  ],
+  "location": [
+    "pin"
+  ],
+  "lock": [
+    "private"
+  ],
+  "mail": [
+    "email"
+  ],
+  "map": [
+    "maps"
+  ],
+  "menu": [
+    "hamburger",
+    "navigation-menu"
+  ],
+  "message": [
+    "chat"
+  ],
+  "mic": [
+    "microphone"
+  ],
+  "minus": [
+    "subtract",
+    "remove"
+  ],
+  "music": [
+    "audio"
+  ],
+  "pause": [
+    "paused"
+  ],
+  "play": [
+    "start"
+  ],
+  "play-circle": [
+    "video-play"
+  ],
+  "plus": [
+    "add",
+    "create"
+  ],
+  "receipt": [
+    "invoice"
+  ],
+  "redo": [
+    "forward"
+  ],
+  "refresh": [
+    "reload"
+  ],
+  "rocket": [
+    "launch"
+  ],
+  "save": [
+    "store"
+  ],
+  "search": [
+    "find",
+    "lookup"
+  ],
+  "send": [
+    "submit"
+  ],
+  "server": [
+    "backend"
   ],
   "settings": [
     "gear",
     "configuration",
     "preferences"
   ],
-  "github": [],
-  "code": [
-    "programming",
-    "source-code"
+  "share": [
+    "send"
+  ],
+  "sort": [
+    "order"
+  ],
+  "star": [
+    "rating"
+  ],
+  "stop": [
+    "halt"
+  ],
+  "success": [
+    "passed"
+  ],
+  "sun": [
+    "light"
+  ],
+  "tag": [
+    "label"
+  ],
+  "terminal": [
+    "console"
+  ],
+  "undo": [
+    "revert"
+  ],
+  "unlock": [
+    "public"
+  ],
+  "upload": [
+    "import"
+  ],
+  "user": [
+    "account"
+  ],
+  "user-circle": [
+    "profile"
+  ],
+  "user-minus": [
+    "remove-user"
+  ],
+  "user-plus": [
+    "add-user"
+  ],
+  "users": [
+    "people"
+  ],
+  "video": [
+    "film"
+  ],
+  "volume": [
+    "sound"
+  ],
+  "volume-off": [
+    "mute"
+  ],
+  "warning": [
+    "caution"
+  ],
+  "x": [
+    "close",
+    "dismiss"
+  ],
+  "x-twitter": [
+    "twitter"
+  ],
+  "youtube": [
+    "video"
   ]
 }

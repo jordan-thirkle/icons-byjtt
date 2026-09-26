@@ -1,35 +1,289 @@
 {
+  "apple": [],
+  "archive": [
+    "folder"
+  ],
+  "arrow-down": [
+    "arrow-up"
+  ],
+  "arrow-down-left": [
+    "arrow-up-left"
+  ],
+  "arrow-down-right": [
+    "arrow-up-left"
+  ],
+  "arrow-left": [
+    "arrow-right"
+  ],
+  "arrow-right": [
+    "arrow-left"
+  ],
+  "arrow-up": [
+    "arrow-down"
+  ],
+  "arrow-up-left": [
+    "arrow-down-right"
+  ],
   "arrow-up-right": [],
+  "attachment": [
+    "file"
+  ],
+  "bag": [
+    "cart"
+  ],
+  "bell": [
+    "message"
+  ],
+  "bookmark": [
+    "save"
+  ],
+  "braces": [
+    "code"
+  ],
+  "bug": [
+    "code"
+  ],
+  "calendar": [
+    "clock"
+  ],
+  "camera": [
+    "image"
+  ],
+  "cart": [
+    "bag"
+  ],
   "check": [],
-  "x": [
-    "check",
-    "plus"
+  "chevron-down": [
+    "chevron-up"
   ],
-  "plus": [
-    "minus"
+  "chevron-left": [
+    "chevron-right"
   ],
-  "minus": [
-    "plus"
+  "chevron-right": [
+    "chevron-left"
   ],
-  "search": [
-    "menu"
+  "chevron-up": [
+    "chevron-down"
   ],
-  "menu": [
-    "x"
+  "clipboard": [
+    "copy"
   ],
-  "heart": [
-    "star"
+  "clock": [
+    "calendar"
   ],
-  "star": [
-    "heart"
+  "code": [
+    "github"
   ],
-  "settings": [
-    "menu"
+  "copy": [
+    "share"
+  ],
+  "credit-card": [
+    "receipt"
+  ],
+  "database": [
+    "server"
+  ],
+  "delete": [],
+  "discord": [],
+  "document": [
+    "file"
+  ],
+  "download": [
+    "upload"
+  ],
+  "edit": [
+    "save"
+  ],
+  "error": [
+    "warning"
+  ],
+  "eye": [
+    "lock"
+  ],
+  "file": [
+    "folder"
+  ],
+  "file-minus": [
+    "file"
+  ],
+  "file-plus": [
+    "file"
+  ],
+  "filter": [
+    "sort"
+  ],
+  "folder": [
+    "file"
+  ],
+  "folder-open": [
+    "folder"
+  ],
+  "folder-plus": [
+    "folder"
+  ],
+  "git-branch": [
+    "git-merge"
+  ],
+  "git-commit": [
+    "git-branch"
+  ],
+  "git-merge": [
+    "git-branch"
   ],
   "github": [
     "code"
   ],
-  "code": [
-    "github"
-  ]
+  "heart": [
+    "star"
+  ],
+  "help": [
+    "info"
+  ],
+  "home": [
+    "menu"
+  ],
+  "image": [
+    "camera"
+  ],
+  "info": [
+    "help"
+  ],
+  "link": [
+    "share"
+  ],
+  "loading": [
+    "refresh"
+  ],
+  "location": [
+    "map"
+  ],
+  "lock": [
+    "unlock"
+  ],
+  "mail": [
+    "message"
+  ],
+  "map": [
+    "location"
+  ],
+  "menu": [
+    "x"
+  ],
+  "message": [
+    "mail"
+  ],
+  "mic": [
+    "volume"
+  ],
+  "minus": [
+    "plus"
+  ],
+  "music": [
+    "volume"
+  ],
+  "pause": [
+    "play"
+  ],
+  "play": [
+    "pause"
+  ],
+  "play-circle": [
+    "play"
+  ],
+  "plus": [
+    "minus"
+  ],
+  "receipt": [
+    "credit-card"
+  ],
+  "redo": [
+    "undo"
+  ],
+  "refresh": [
+    "undo"
+  ],
+  "rocket": [
+    "play"
+  ],
+  "save": [
+    "download"
+  ],
+  "search": [
+    "menu"
+  ],
+  "send": [
+    "share"
+  ],
+  "server": [
+    "database"
+  ],
+  "settings": [
+    "menu"
+  ],
+  "share": [
+    "link"
+  ],
+  "sort": [
+    "filter"
+  ],
+  "star": [
+    "heart"
+  ],
+  "stop": [
+    "play"
+  ],
+  "success": [
+    "check"
+  ],
+  "sun": [
+    "settings"
+  ],
+  "tag": [
+    "bag"
+  ],
+  "terminal": [
+    "code"
+  ],
+  "undo": [
+    "redo"
+  ],
+  "unlock": [
+    "lock"
+  ],
+  "upload": [
+    "download"
+  ],
+  "user": [
+    "users"
+  ],
+  "user-circle": [
+    "user"
+  ],
+  "user-minus": [
+    "user"
+  ],
+  "user-plus": [
+    "user"
+  ],
+  "users": [
+    "user"
+  ],
+  "video": [
+    "play-circle"
+  ],
+  "volume": [
+    "volume-off"
+  ],
+  "volume-off": [
+    "volume"
+  ],
+  "warning": [
+    "error"
+  ],
+  "x": [
+    "check",
+    "plus"
+  ],
+  "x-twitter": [],
+  "youtube": []
 }
