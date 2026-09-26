@@ -66,3 +66,12 @@ Do **not** convert the remaining 31 review candidates yet.
 First review the eight Micro 0.1 derivatives at 12px and 16px, adjust the derivation rules if necessary, then add visual regression assertions around the rules that actually held up.
 
 Only after that should Micro expand to the remaining candidates.
+
+
+## Micro 0.2 proof lane
+
+Micro 0.2 deliberately expands by failure mode rather than by candidate count. Six derivatives currently prove container/detail, compound-wheel, repeated-stack, diagonal-compound, branch-topology, and radial-repetition behaviour.
+
+Four candidates were reviewed but remain gated because their canonical geometry already carries the minimum semantic structure without an earned Micro change: copy, map, volume-off, and warning. A no-op derivative is not considered progress.
+
+Every Micro manifest is checked by the semantic recognition regression layer in `metadata/micro-semantic.json`. The layer protects primary semantic cues and known forbidden reads; it is a deterministic structural guardrail, not a substitute for native-size visual review.
