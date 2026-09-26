@@ -18,12 +18,3 @@ export function assertSemanticContract(sourceSvg, microSvg, contract, name) {
   testPatterns(microSvg, contract.requiredPatterns?.micro, name + " Micro");
   testForbidden(microSvg, contract.forbiddenPatterns?.micro, name + " Micro");
 }
-
-export function assertSemanticMetadataStable(sourceMetadata, microMetadata, name) {
-  assert.equal(sourceMetadata.name, name);
-  assert.equal(microMetadata.name, name);
-  assert.equal(sourceMetadata.title, microMetadata.title);
-  assert.deepEqual(sourceMetadata.tags, microMetadata.tags);
-  assert.deepEqual(sourceMetadata.contexts, microMetadata.contexts);
-  assert.equal(sourceMetadata.accessibility.default, microMetadata.accessibility.default);
-}
