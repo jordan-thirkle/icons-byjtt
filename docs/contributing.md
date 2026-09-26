@@ -9,13 +9,13 @@ A new icon must follow the system rather than invent a new local convention.
 3. Add semantic metadata: title, tags, aliases, contexts and relationships.
 4. Draw the canonical Line SVG on the 24 × 24 grid.
 5. Review optical balance.
-6. Check 12–16px rendering.
+6. Run the optical infrastructure at 12px, 16px, 20px and 24px.
 7. Assign the accessibility classification.
 8. Run `npm test`.
 9. Run `npm run check`.
 10. Regenerate with `node scripts/generate.mjs`.
 11. Confirm generated outputs are deterministic.
-12. Review the public catalogue page.
+12. Review the optical snapshots and public catalogue page.
 
 ## Source of truth
 
