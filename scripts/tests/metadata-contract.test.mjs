@@ -8,7 +8,7 @@ const categorySet=new Set(categories.categories);
 const names=new Set(catalogue.icons.map(i=>i.name));
 test("metadata records satisfy the v1 semantic contract",()=>{
   assert.equal(catalogue.family,"line");
-  assert.equal(catalogue.icons.length,12);
+  assert.equal(catalogue.icons.length,100);
   for(const icon of catalogue.icons){
     assert.match(icon.name,/^[a-z0-9]+(?:-[a-z0-9]+)*$/);
     assert.ok(icon.title);
