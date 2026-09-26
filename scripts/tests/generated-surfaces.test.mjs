@@ -6,7 +6,7 @@ import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const metadata = JSON.parse(fs.readFileSync(path.join(root, "metadata/icons.json"), "utf8"));
-const names = metadata.icons.map(icon => icon.name).sort();
+const names = metadata.icons.map(icon => icon.name).sort((a, b) => a.localeCompare(b));
 
 const filesIn = directory => fs.readdirSync(directory).filter(name => name.endsWith(".js")).sort((a, b) => a.localeCompare(b));
 const dirsIn = directory => fs.readdirSync(directory, { withFileTypes: true }).filter(entry => entry.isDirectory() && fs.existsSync(path.join(directory, entry.name, "index.html"))).map(entry => entry.name).sort((a, b) => a.localeCompare(b));
