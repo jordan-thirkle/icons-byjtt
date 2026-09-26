@@ -4,12 +4,10 @@ This document explains how agents should discover and consume JTT Icons. Canonic
 
 ## Selection contract
 
-Use this order when resolving an icon request:
-
 1. Match the requested concept to `name` and `title`.
 2. Expand with `tags` and `aliases`.
 3. Use `contexts` to distinguish similar concepts.
-4. Use `related` when the user asks for a nearby or paired concept.
+4. Use `related` for nearby or paired concepts.
 5. Prefer the canonical `name` in generated code.
 
 ## Canonical rendering
