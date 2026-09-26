@@ -1,0 +1,16 @@
+{
+  "name": "@byjtt/icons",
+  "version": "0.1.0",
+  "description": "Open-source JTT Icons SVG system.",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js"
+    },
+    "./icons/*": "./icons/*.js"
+  },
+  "files": ["index.js","index.d.ts","icons"]
+}

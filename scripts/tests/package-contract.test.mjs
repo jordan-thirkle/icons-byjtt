@@ -1,0 +1,3 @@
+import test from "node:test"; import assert from "node:assert/strict"; import {search,arrowUpRight,iconNames} from "../../packages/core/index.js";
+test("core package exposes canonical icon modules",()=>{assert.equal(search.name,"search");assert.match(search.svg,/viewBox="0 0 24 24"/);assert.equal(arrowUpRight.metadata.name,"arrow-up-right");assert.ok(iconNames.includes("search"));});
+test("core package preserves direct icon entrypoints",async()=>{const direct=await import("../../packages/core/icons/search.js");assert.equal(direct.name,"search");assert.equal(direct.metadata.path,"/icons/navigation/search.svg");});
