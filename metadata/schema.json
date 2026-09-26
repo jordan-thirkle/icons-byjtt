@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://icons.byjtt.com/schema/jtt-icons-v1.json",
+  "title": "JTT Icons v1 Icon Record",
+  "type": "object",
+  "required": ["name", "title", "category", "tags", "aliases", "contexts", "related", "accessibility", "path", "family"],
+  "additionalProperties": false,
+  "properties": {
+    "name": {"type":"string","pattern":"^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "title": {"type":"string","minLength":1},
+    "category": {"type":"string"},
+    "tags": {"type":"array","items":{"type":"string"},"minItems":1,"uniqueItems":true},
+    "aliases": {"type":"array","items":{"type":"string"},"uniqueItems":true},
+    "contexts": {"type":"array","items":{"type":"string"},"uniqueItems":true},
+    "related": {"type":"array","items":{"type":"string"},"uniqueItems":true},
+    "accessibility": {
+      "type":"object",
+      "required":["default"],
+      "additionalProperties":false,
+      "properties":{"default":{"enum":["decorative","meaningful","interactive","status","brand"]}}
+    },
+    "path": {"type":"string","pattern":"^/icons/[a-z0-9-]+/[a-z0-9]+(?:-[a-z0-9]+)*\\.svg$"},
+    "family": {"const":"line"}
+  }
+}

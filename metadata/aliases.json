@@ -1,0 +1,49 @@
+{
+  "arrow-up-right": [
+    "external-link"
+  ],
+  "check": [
+    "tick",
+    "confirm"
+  ],
+  "x": [
+    "close",
+    "dismiss"
+  ],
+  "plus": [
+    "add",
+    "create"
+  ],
+  "minus": [
+    "subtract",
+    "remove"
+  ],
+  "search": [
+    "find",
+    "lookup"
+  ],
+  "menu": [
+    "hamburger",
+    "navigation-menu"
+  ],
+  "heart": [
+    "like",
+    "favourite",
+    "favorite"
+  ],
+  "star": [
+    "favourite",
+    "favorite",
+    "rating"
+  ],
+  "settings": [
+    "gear",
+    "configuration",
+    "preferences"
+  ],
+  "github": [],
+  "code": [
+    "programming",
+    "source-code"
+  ]
+}

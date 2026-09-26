@@ -1,0 +1,35 @@
+{
+  "arrow-up-right": [],
+  "check": [],
+  "x": [
+    "check",
+    "plus"
+  ],
+  "plus": [
+    "minus"
+  ],
+  "minus": [
+    "plus"
+  ],
+  "search": [
+    "menu"
+  ],
+  "menu": [
+    "x"
+  ],
+  "heart": [
+    "star"
+  ],
+  "star": [
+    "heart"
+  ],
+  "settings": [
+    "menu"
+  ],
+  "github": [
+    "code"
+  ],
+  "code": [
+    "github"
+  ]
+}
