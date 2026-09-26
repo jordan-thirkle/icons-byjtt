@@ -8,100 +8,100 @@
   ],
   "summary": {
     "icons": 8,
-    "averageComplexityReduction": 0.224
+    "averageComplexityReduction": 0.259
   },
   "icons": [
     {
       "name": "bug",
-      "source": "/icons/developer/bug.svg",
-      "path": "/icons/micro/bug.svg",
       "sourceComplexityScore": 21,
       "microComplexityScore": 17,
       "complexityReduction": 0.19,
       "changes": [
         "removed antenna strokes"
-      ]
+      ],
+      "source": "/icons/developer/bug.svg",
+      "path": "/icons/micro/bug.svg"
     },
     {
       "name": "calendar",
-      "source": "/icons/objects/calendar.svg",
-      "path": "/icons/micro/calendar.svg",
       "sourceComplexityScore": 16,
       "microComplexityScore": 10,
       "complexityReduction": 0.375,
       "changes": [
         "removed date-grid marks"
-      ]
+      ],
+      "source": "/icons/objects/calendar.svg",
+      "path": "/icons/micro/calendar.svg"
     },
     {
       "name": "camera",
-      "source": "/icons/media/camera.svg",
-      "path": "/icons/micro/camera.svg",
       "sourceComplexityScore": 18,
       "microComplexityScore": 18,
       "complexityReduction": 0,
       "changes": [
         "enlarged lens counter"
-      ]
+      ],
+      "source": "/icons/media/camera.svg",
+      "path": "/icons/micro/camera.svg"
     },
     {
       "name": "delete",
-      "source": "/icons/actions/delete.svg",
-      "path": "/icons/micro/delete.svg",
       "sourceComplexityScore": 21,
       "microComplexityScore": 12,
       "complexityReduction": 0.429,
       "changes": [
         "removed bin slat detail",
         "simplified lid"
-      ]
+      ],
+      "source": "/icons/actions/delete.svg",
+      "path": "/icons/micro/delete.svg"
     },
     {
       "name": "file-plus",
-      "source": "/icons/files/file-plus.svg",
-      "path": "/icons/micro/file-plus.svg",
       "sourceComplexityScore": 17,
       "microComplexityScore": 14,
       "complexityReduction": 0.176,
       "changes": [
         "removed fold seam",
         "simplified plus spacing"
-      ]
+      ],
+      "source": "/icons/files/file-plus.svg",
+      "path": "/icons/micro/file-plus.svg"
     },
     {
       "name": "refresh",
-      "source": "/icons/actions/refresh.svg",
-      "path": "/icons/micro/refresh.svg",
       "sourceComplexityScore": 20,
       "microComplexityScore": 10,
       "complexityReduction": 0.5,
       "changes": [
         "reduced to single directional loop",
         "removed second arrow"
-      ]
+      ],
+      "source": "/icons/actions/refresh.svg",
+      "path": "/icons/micro/refresh.svg"
     },
     {
       "name": "settings",
-      "source": "/icons/system/settings.svg",
-      "path": "/icons/micro/settings.svg",
       "sourceComplexityScore": 25,
-      "microComplexityScore": 25,
-      "complexityReduction": 0,
+      "microComplexityScore": 18,
+      "complexityReduction": 0.28,
       "changes": [
-        "simplified gear contour",
+        "simplified gear to radial teeth",
         "enlarged centre counter"
-      ]
+      ],
+      "source": "/icons/system/settings.svg",
+      "path": "/icons/micro/settings.svg"
     },
     {
       "name": "volume",
-      "source": "/icons/media/volume.svg",
-      "path": "/icons/micro/volume.svg",
       "sourceComplexityScore": 16,
       "microComplexityScore": 14,
       "complexityReduction": 0.125,
       "changes": [
         "removed outer sound wave"
-      ]
+      ],
+      "source": "/icons/media/volume.svg",
+      "path": "/icons/micro/volume.svg"
     }
   ]
 }
