@@ -1,0 +1,137 @@
+{
+  "version": 1,
+  "family": "micro",
+  "status": "experimental",
+  "sourceFamily": "line",
+  "sourceMaster": "24px canonical geometry",
+  "reviewSizes": [
+    12,
+    16
+  ],
+  "candidateStrategy": "representative failure-mode coverage; remaining candidates stay gated",
+  "classes": [
+    "container-detail",
+    "compound-wheels",
+    "nested-geometry",
+    "stacked-repetition",
+    "diagonal-compound",
+    "branch-topology",
+    "radial-repetition",
+    "segmented-object",
+    "semantic-modifier",
+    "status-symbol"
+  ],
+  "derivationRules": [
+    "Micro is derived from the canonical 24px Line master.",
+    "Semantic identity and canonical naming never change.",
+    "Remove secondary detail before altering the primary contour.",
+    "Merge or omit geometry only when recognition improves at 12px or 16px.",
+    "Preserve directional terminals and interaction cues.",
+    "Protect critical counters, nodes, modifiers and negative-space gaps.",
+    "Optical rebalancing may keep complexity flat when it improves recognition.",
+    "Brand marks remain separately gated and are not included in Micro 0.2."
+  ],
+  "icons": [
+    {
+      "name": "archive",
+      "source": "/icons/files/archive.svg",
+      "path": "/icons/micro/archive.svg",
+      "class": "container-detail",
+      "changes": [
+        "converted internal plus into a short archive slot",
+        "preserved lid and container silhouette"
+      ],
+      "review": "The archive box remains the dominant cue while the small plus is prevented from competing with the object metaphor."
+    },
+    {
+      "name": "cart",
+      "source": "/icons/commerce/cart.svg",
+      "path": "/icons/micro/cart.svg",
+      "class": "compound-wheels",
+      "changes": [
+        "enlarged wheel counters to 1.5px radius"
+      ],
+      "review": "The cart remains unchanged semantically; the wheels receive optical emphasis because they are the only small detached components."
+    },
+    {
+      "name": "copy",
+      "source": "/icons/actions/copy.svg",
+      "path": "/icons/micro/copy.svg",
+      "class": "nested-geometry",
+      "changes": [
+        "preserved two-sheet overlap with simplified rear-sheet termination"
+      ],
+      "review": "Two offset sheets remain the semantic cue; the rear sheet terminates cleanly before the overlap becomes a dark corner."
+    },
+    {
+      "name": "database",
+      "source": "/icons/developer/database.svg",
+      "path": "/icons/micro/database.svg",
+      "class": "stacked-repetition",
+      "changes": [
+        "reduced three repeated body rows to one continuous cylinder body"
+      ],
+      "review": "The top ellipse and continuous cylindrical body retain the database metaphor while removing a stacked line that collapses at 12px."
+    },
+    {
+      "name": "edit",
+      "source": "/icons/actions/edit.svg",
+      "path": "/icons/micro/edit.svg",
+      "class": "diagonal-compound",
+      "changes": [
+        "removed redundant pencil seam"
+      ],
+      "review": "The diagonal pencil silhouette remains dominant; the internal seam was secondary and visually merges at Micro sizes."
+    },
+    {
+      "name": "git-branch",
+      "source": "/icons/developer/git-branch.svg",
+      "path": "/icons/micro/git-branch.svg",
+      "class": "branch-topology",
+      "changes": [
+        "enlarged branch nodes to 2.5px"
+      ],
+      "review": "All three branch nodes remain because topology is the semantic cue; only node scale is optically rebalanced."
+    },
+    {
+      "name": "loading",
+      "source": "/icons/system/loading.svg",
+      "path": "/icons/micro/loading.svg",
+      "class": "radial-repetition",
+      "changes": [
+        "replaced eight radial spokes with one open activity arc"
+      ],
+      "review": "The open arc keeps the activity/loading cue while removing the sun-like radial reading risk from the canonical spoke wheel."
+    },
+    {
+      "name": "map",
+      "source": "/icons/objects/map.svg",
+      "path": "/icons/micro/map.svg",
+      "class": "segmented-object",
+      "changes": [
+        "preserved both fold divisions and outer silhouette"
+      ],
+      "review": "The map's three-panel topology is already the minimum semantic structure; no detail was removed because doing so would collapse the map metaphor."
+    },
+    {
+      "name": "volume-off",
+      "source": "/icons/media/volume-off.svg",
+      "path": "/icons/micro/volume-off.svg",
+      "class": "semantic-modifier",
+      "changes": [
+        "shortened speaker stem while preserving mute cross"
+      ],
+      "review": "The speaker body and crossing mute mark are both semantic; the speaker stem is shortened to keep the cross visually separate."
+    },
+    {
+      "name": "warning",
+      "source": "/icons/system/warning.svg",
+      "path": "/icons/micro/warning.svg",
+      "class": "status-symbol",
+      "changes": [
+        "preserved triangle and enlarged exclamation terminal spacing"
+      ],
+      "review": "The warning triangle and exclamation are both essential; the Micro treatment keeps both cues intact rather than simplifying the status symbol into a generic triangle."
+    }
+  ]
+}
