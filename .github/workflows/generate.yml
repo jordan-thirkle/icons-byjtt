@@ -1,0 +1,33 @@
+name: Generate JTT Icons
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          package-manager-cache: false
+      - run: node scripts/generate.mjs
+      - run: npm test
+      - run: npm run check
+      - name: Commit generated surfaces
+        run: |
+          if git diff --quiet; then
+            echo "Generated surfaces are already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add icons.json api/icons.json sitemap.xml llms-full.txt packages/core icons
+          git commit -m "build: regenerate public and package surfaces"
+          git push
