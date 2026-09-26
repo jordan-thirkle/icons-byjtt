@@ -8,7 +8,7 @@
   ],
   "summary": {
     "icons": 8,
-    "averageComplexityReduction": 0.259
+    "averageComplexityReduction": 0.239
   },
   "icons": [
     {
@@ -85,11 +85,11 @@
       "source": "/icons/system/settings.svg",
       "path": "/icons/micro/settings.svg",
       "sourceComplexityScore": 25,
-      "microComplexityScore": 18,
-      "complexityReduction": 0.28,
+      "microComplexityScore": 22,
+      "complexityReduction": 0.12,
       "changes": [
-        "simplified gear to radial teeth",
-        "enlarged centre counter"
+        "reduced gear to six-lobe contour",
+        "protected centre counter"
       ]
     },
     {
