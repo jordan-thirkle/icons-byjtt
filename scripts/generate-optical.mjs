@@ -63,4 +63,87 @@ const opticalAudit = {
   icons: audit
 };
 fs.writeFileSync(path.join(root, "metadata/optical-audit.json"), JSON.stringify(opticalAudit, null, 2) + "\n");
+
+const microManifestPath = path.join(root, "metadata/micro-0-1.json");
+if (fs.existsSync(microManifestPath)) {
+  const microManifest = JSON.parse(fs.readFileSync(microManifestPath, "utf8"));
+  const microSizes = microManifest.reviewSizes;
+  const microIcons = [...microManifest.icons].sort((a, b) => a.name.localeCompare(b.name));
+  const microAudit = microIcons.map(icon => {
+    const sourceSvg = fs.readFileSync(path.join(root, icon.source.slice(1)), "utf8");
+    const microSvg = fs.readFileSync(path.join(root, icon.path.slice(1)), "utf8");
+    const score = svg => {
+      const drawableElements = count(svg, /<(?:path|circle|rect|line|polyline|polygon|ellipse)\\b/g);
+      const paths = [...svg.matchAll(/<path\\b[^>]*\\bd="([^"]+)"/g)].map(match => match[1]);
+      const commands = paths.reduce((total, data) => total + pathCommands(data), 0);
+      return { drawableElements, pathCommands: commands, complexityScore: drawableElements * 2 + commands };
+    };
+    const sourceScore = score(sourceSvg);
+    const microScore = score(microSvg);
+    return {
+      name: icon.name,
+      source: icon.source,
+      path: icon.path,
+      sourceComplexityScore: sourceScore.complexityScore,
+      microComplexityScore: microScore.complexityScore,
+      complexityReduction: Number((1 - microScore.complexityScore / sourceScore.complexityScore).toFixed(3)),
+      changes: icon.changes
+    };
+  });
+
+  for (const size of microSizes) {
+    const columns = 4;
+    const cellWidth = 180;
+    const cellHeight = 132;
+    const headerHeight = 24;
+    const rows = Math.ceil(microIcons.length / columns);
+    const width = columns * cellWidth;
+    const height = headerHeight + rows * cellHeight;
+    const cells = microIcons.map((icon, index) => {
+      const sourceSvg = fs.readFileSync(path.join(root, icon.source.slice(1)), "utf8");
+      const microSvg = fs.readFileSync(path.join(root, icon.path.slice(1)), "utf8");
+      const sourceBody = sourceSvg.replace(/^<svg[^>]*>/, "").replace(/<\\/svg>\\s*$/, "");
+      const microBody = microSvg.replace(/^<svg[^>]*>/, "").replace(/<\\/svg>\\s*$/, "");
+      const x = (index % columns) * cellWidth;
+      const y = headerHeight + Math.floor(index / columns) * cellHeight;
+      const iconX = x + (cellWidth - size) / 2;
+      const lineY = y + 20;
+      const microY = y + 64;
+      const guide = size * rules.optical.primaryLiveAreaRatio;
+      const guideX = iconX + (size - guide) / 2;
+      const guideLineY = lineY + (size - guide) / 2;
+      const guideMicroY = microY + (size - guide) / 2;
+      return [
+        "<g data-icon=\"", escapeXml(icon.name), "\"><rect x=\"", x, "\" y=\"", y, "\" width=\"", cellWidth, "\" height=\"", cellHeight, "\" fill=\"#fff\"/>",
+        "<text x=\"", x + 10, "\" y=\"", y + 13, "\" font-family=\"system-ui,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#111\">", escapeXml(icon.name), "</text>",
+        "<text x=\"", x + 10, "\" y=\"", y + 34, "\" font-family=\"system-ui,sans-serif\" font-size=\"8\" fill=\"#666\">Line ", size, "px</text>",
+        "<rect x=\"", guideX.toFixed(3), "\" y=\"", guideLineY.toFixed(3), "\" width=\"", guide.toFixed(3), "\" height=\"", guide.toFixed(3), "\" fill=\"none\" stroke=\"#d8d8d8\" stroke-width=\"0.5\" stroke-dasharray=\"2 2\"/>",
+        "<svg x=\"", iconX, "\" y=\"", lineY, "\" width=\"", size, "\" height=\"", size, "\" viewBox=\"0 0 24 24\">", sourceBody, "</svg>",
+        "<text x=\"", x + 10, "\" y=\"", y + 54, "\" font-family=\"system-ui,sans-serif\" font-size=\"8\" fill=\"#666\">Micro ", size, "px</text>",
+        "<rect x=\"", guideX.toFixed(3), "\" y=\"", guideMicroY.toFixed(3), "\" width=\"", guide.toFixed(3), "\" height=\"", guide.toFixed(3), "\" fill=\"none\" stroke=\"#d8d8d8\" stroke-width=\"0.5\" stroke-dasharray=\"2 2\"/>",
+        "<svg x=\"", iconX, "\" y=\"", microY, "\" width=\"", size, "\" height=\"", size, "\" viewBox=\"0 0 24 24\">", microBody, "</svg>",
+        "</g>"
+      ].join("");
+    }).join("");
+    const snapshot = [
+      "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"", width, "\" height=\"", height, "\" viewBox=\"0 0 ", width, " ", height, "\" role=\"img\" aria-label=\"JTT Icons Micro 0.1 comparison at ", size, "px\">",
+      "<rect width=\"100%\" height=\"100%\" fill=\"#f4f4f4\"/><text x=\"16\" y=\"16\" font-family=\"system-ui,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#111\">JTT Icons · Micro 0.1 · Line vs Micro · ", size, "px</text>",
+      cells, "</svg>\\n"
+    ].join("");
+    fs.writeFileSync(path.join(outputDir, "micro-0-1-" + size + ".svg"), snapshot);
+  }
+
+  fs.writeFileSync(path.join(root, "metadata/micro-audit.json"), JSON.stringify({
+    version: 1,
+    generatedAt: "deterministic",
+    family: "micro",
+    reviewSizes: microSizes,
+    summary: {
+      icons: microAudit.length,
+      averageComplexityReduction: Number((microAudit.reduce((sum, icon) => sum + icon.complexityReduction, 0) / microAudit.length).toFixed(3))
+    },
+    icons: microAudit
+  }, null, 2) + "\n");
+}
+
 console.log("Generated optical grids for " + icons.length + " icons at " + sizes.join(", ") + "px.");
