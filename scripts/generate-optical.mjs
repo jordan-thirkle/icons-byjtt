@@ -73,8 +73,8 @@ if (fs.existsSync(microManifestPath)) {
     const sourceSvg = fs.readFileSync(path.join(root, icon.source.slice(1)), "utf8");
     const microSvg = fs.readFileSync(path.join(root, icon.path.slice(1)), "utf8");
     const score = svg => {
-      const drawableElements = count(svg, /<(?:path|circle|rect|line|polyline|polygon|ellipse)\\b/g);
-      const paths = [...svg.matchAll(/<path\\b[^>]*\\bd="([^"]+)"/g)].map(match => match[1]);
+      const drawableElements = count(svg, /<(?:path|circle|rect|line|polyline|polygon|ellipse)\b/g);
+      const paths = [...svg.matchAll(/<path\b[^>]*\bd="([^"]+)"/g)].map(match => match[1]);
       const commands = paths.reduce((total, data) => total + pathCommands(data), 0);
       return { drawableElements, pathCommands: commands, complexityScore: drawableElements * 2 + commands };
     };
@@ -102,8 +102,8 @@ if (fs.existsSync(microManifestPath)) {
     const cells = microIcons.map((icon, index) => {
       const sourceSvg = fs.readFileSync(path.join(root, icon.source.slice(1)), "utf8");
       const microSvg = fs.readFileSync(path.join(root, icon.path.slice(1)), "utf8");
-      const sourceBody = sourceSvg.replace(/^<svg[^>]*>/, "").replace(/<\\/svg>\\s*$/, "");
-      const microBody = microSvg.replace(/^<svg[^>]*>/, "").replace(/<\\/svg>\\s*$/, "");
+      const sourceBody = sourceSvg.replace(/^<svg[^>]*>/, "").replace(/<\/svg>\\s*$/, "");
+      const microBody = microSvg.replace(/^<svg[^>]*>/, "").replace(/<\/svg>\\s*$/, "");
       const x = (index % columns) * cellWidth;
       const y = headerHeight + Math.floor(index / columns) * cellHeight;
       const iconX = x + (cellWidth - size) / 2;
@@ -128,7 +128,7 @@ if (fs.existsSync(microManifestPath)) {
     const snapshot = [
       "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"", width, "\" height=\"", height, "\" viewBox=\"0 0 ", width, " ", height, "\" role=\"img\" aria-label=\"JTT Icons Micro 0.1 comparison at ", size, "px\">",
       "<rect width=\"100%\" height=\"100%\" fill=\"#f4f4f4\"/><text x=\"16\" y=\"16\" font-family=\"system-ui,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#111\">JTT Icons · Micro 0.1 · Line vs Micro · ", size, "px</text>",
-      cells, "</svg>\\n"
+      cells, "</svg>\n"
     ].join("");
     fs.writeFileSync(path.join(outputDir, "micro-0-1-" + size + ".svg"), snapshot);
   }
