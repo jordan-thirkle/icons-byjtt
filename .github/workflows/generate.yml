@@ -22,7 +22,7 @@ jobs:
       - run: npm run check
       - name: Commit generated surfaces
         run: |
-          if git diff --quiet; then
+          if [ -z "$(git status --porcelain)" ]; then
             echo "Generated surfaces are already current."
             exit 0
           fi
