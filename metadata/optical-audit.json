@@ -1,0 +1,747 @@
+{
+  "version": 1,
+  "generatedAt": "deterministic",
+  "rules": {
+    "version": 1,
+    "master": {
+      "viewBox": 24,
+      "liveArea": 18,
+      "liveAreaOffset": 3,
+      "strokeWidth": 2
+    },
+    "reviewSizes": [
+      12,
+      16,
+      20,
+      24
+    ],
+    "optical": {
+      "primaryLiveAreaRatio": 0.75,
+      "principle": "optical alignment takes precedence over mathematical centering",
+      "volume": "icons should occupy comparable perceived visual weight, not identical geometric bounds",
+      "negativeSpace": "critical counters and gaps must remain legible at the target size"
+    },
+    "micro": {
+      "sourceFamily": "line",
+      "sourceMaster": "24px canonical geometry",
+      "derivedOnly": true,
+      "reviewScoreThreshold": 12,
+      "rules": [
+        "Preserve the canonical semantic silhouette.",
+        "Remove secondary detail before changing the primary contour.",
+        "Merge geometry only when the merge improves recognition at the target size.",
+        "Preserve directional terminals and interaction cues.",
+        "Protect critical counters and negative-space gaps from collapsing.",
+        "Do not independently redraw a Micro icon without a canonical 24px source.",
+        "A Micro variant may simplify geometry but must retain the canonical icon name and semantic metadata."
+      ]
+    }
+  },
+  "summary": {
+    "icons": 100,
+    "microReviewCount": 0,
+    "maxComplexityScore": 8
+  },
+  "icons": [
+    {
+      "name": "apple",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "archive",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "arrow-down",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "arrow-down-left",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "arrow-down-right",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "arrow-left",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "arrow-right",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "arrow-up",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "arrow-up-left",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "arrow-up-right",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "attachment",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "bag",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "bell",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "bookmark",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "braces",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "bug",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "calendar",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "camera",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "cart",
+      "drawableElements": 3,
+      "pathCommands": 0,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "check",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "chevron-down",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "chevron-left",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "chevron-right",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "chevron-up",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "clipboard",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "clock",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "code",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "copy",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "credit-card",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "database",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "delete",
+      "drawableElements": 4,
+      "pathCommands": 0,
+      "complexityScore": 8,
+      "microReview": false
+    },
+    {
+      "name": "discord",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "document",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "download",
+      "drawableElements": 3,
+      "pathCommands": 0,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "edit",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "error",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "eye",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "file",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "file-minus",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "file-plus",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "filter",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "folder",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "folder-open",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "folder-plus",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "git-branch",
+      "drawableElements": 4,
+      "pathCommands": 0,
+      "complexityScore": 8,
+      "microReview": false
+    },
+    {
+      "name": "git-commit",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "git-merge",
+      "drawableElements": 4,
+      "pathCommands": 0,
+      "complexityScore": 8,
+      "microReview": false
+    },
+    {
+      "name": "github",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "heart",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "help",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "home",
+      "drawableElements": 3,
+      "pathCommands": 0,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "image",
+      "drawableElements": 3,
+      "pathCommands": 0,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "info",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "link",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "loading",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "location",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "lock",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "mail",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "map",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "menu",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "message",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "mic",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "minus",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "music",
+      "drawableElements": 3,
+      "pathCommands": 0,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "pause",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "play",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "play-circle",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "plus",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "receipt",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "redo",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "refresh",
+      "drawableElements": 4,
+      "pathCommands": 0,
+      "complexityScore": 8,
+      "microReview": false
+    },
+    {
+      "name": "rocket",
+      "drawableElements": 3,
+      "pathCommands": 0,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "save",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "search",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "send",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "server",
+      "drawableElements": 3,
+      "pathCommands": 0,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "settings",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "share",
+      "drawableElements": 4,
+      "pathCommands": 0,
+      "complexityScore": 8,
+      "microReview": false
+    },
+    {
+      "name": "sort",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "star",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "stop",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "success",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "sun",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "tag",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "terminal",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "undo",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "unlock",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "upload",
+      "drawableElements": 3,
+      "pathCommands": 0,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "user",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "user-circle",
+      "drawableElements": 3,
+      "pathCommands": 0,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "user-minus",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "user-plus",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "users",
+      "drawableElements": 4,
+      "pathCommands": 0,
+      "complexityScore": 8,
+      "microReview": false
+    },
+    {
+      "name": "video",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "volume",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "volume-off",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "warning",
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "x",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "x-twitter",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "youtube",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    }
+  ]
+}
