@@ -9,7 +9,7 @@ const metadata = JSON.parse(fs.readFileSync(path.join(root, "metadata/icons.json
 const names = metadata.icons.map(icon => icon.name).sort();
 
 const filesIn = directory => fs.readdirSync(directory).filter(name => name.endsWith(".js")).sort();
-const dirsIn = directory => fs.readdirSync(directory, { withFileTypes: true }).filter(entry => entry.isDirectory()).map(entry => entry.name).sort();
+const dirsIn = directory => fs.readdirSync(directory, { withFileTypes: true }).filter(entry => entry.isDirectory() && fs.existsSync(path.join(directory, entry.name, "index.html"))).map(entry => entry.name).sort();
 
 test("generated surfaces materialize every canonical Core 100 icon", () => {
   assert.equal(names.length, 100);
