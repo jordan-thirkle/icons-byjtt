@@ -67,8 +67,8 @@ test("generated surfaces materialize every canonical icon", () => {
   for (const icon of metadata.icons) assert.ok(sitemap.includes(`/icons/${icon.name}/`));
 
   const homepage = fs.readFileSync(path.join(root, "index.html"), "utf8");
-  assert.match(homepage, /assets\\/site\\.css/);
-  assert.match(homepage, /assets\\/search\\.js/);
+  assert.ok(homepage.includes("assets/site.css"));
+  assert.ok(homepage.includes("assets/search.js"));
   const searchScript = fs.readFileSync(path.join(root, "assets", "search.js"), "utf8");
   assert.match(searchScript, /ONTOLOGY_INTENTS/);
   assert.match(searchScript, /SEARCH_FIELD_WEIGHTS/);
