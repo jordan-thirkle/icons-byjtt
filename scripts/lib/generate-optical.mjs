@@ -15,7 +15,7 @@ fs.mkdirSync(outputDir, { recursive: true });
 
 const escapeXml = value => String(value).replace(/[&<>]/g, character => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[character]));
 const metadataByName = new Map(metadata.icons.map(icon => [icon.name, icon]));
-const icons = core100.icons.map(icon => metadataByName.get(icon.name)).filter(Boolean);
+const icons = core100.icons.map(icon => metadataByName.get(icon.name)).filter(Boolean);\nif (icons.length !== 100) throw new Error(`Core 100 optical generation expected 100 implemented canonical icons, found ${icons.length}.`);
 const count = (value, expression) => [...value.matchAll(expression)].length;
 const pathCommands = data => count(data, /[AaCcHhLlMmQqSsTtVvZz]/g);
 
