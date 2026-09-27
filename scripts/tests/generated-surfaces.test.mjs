@@ -31,8 +31,10 @@ test("generated surfaces materialize every canonical Core 100 icon", () => {
   const vueSource = fs.readFileSync(path.join(root, "packages/vue/index.js"), "utf8");
   for (const icon of metadata.icons) assert.match(vueSource, new RegExp(`Icon${icon.name.split("-").map(part => part[0].toUpperCase() + part.slice(1)).join("")}\\b`));
 
-  const pageIcons = dirsIn(path.join(root, "icons"));
+  const pageIcons = dirsIn(path.join(root, "icons")).filter(name => names.includes(name));
   sameNames(pageIcons);
+  const paginationRoot = path.join(root, "icons", "page");
+  if (fs.existsSync(paginationRoot)) assert.ok(dirsIn(paginationRoot).length >= 1);
 
   const catalogue = JSON.parse(fs.readFileSync(path.join(root, "icons.json"), "utf8"));
   const apiCatalogue = JSON.parse(fs.readFileSync(path.join(root, "api/icons.json"), "utf8"));
@@ -56,10 +58,12 @@ test("generated surfaces materialize every canonical Core 100 icon", () => {
   for (const icon of metadata.icons) assert.ok(sitemap.includes(`/icons/${icon.name}/`));
 
   const homepage = fs.readFileSync(path.join(root, "index.html"), "utf8");
-  assert.match(homepage, /SEMANTIC_INTENTS/);
+  assert.match(homepage, /ONTOLOGY_INTENTS/);
   assert.match(homepage, /SEARCH_FIELD_WEIGHTS/);
   assert.match(homepage, /clear-search/);
   assert.match(homepage, /related/);
+  assert.match(homepage, /queryTerms/);
+  assert.match(homepage, /ensureAll/);
   assert.match(homepage, /Escape/);
 
   const aiReference = fs.readFileSync(path.join(root, "llms-full.txt"), "utf8");
