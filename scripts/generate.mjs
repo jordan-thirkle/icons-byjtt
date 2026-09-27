@@ -102,7 +102,6 @@ for (const category of categories) {
 for (const [slug, config] of Object.entries(USE_CASES)) {
   const icons = config.names.map(name => byName.get(name)).filter(Boolean);
   write(`use-cases/${slug}/index.html`, useCasePage(slug, config, icons));
-}/index.html`, useCasePage(slug, config, icons));
 }
 
 console.log(`Generated ${metadata.icons.length} icons, ${categories.length} category pages, package modules and public surfaces.`);
