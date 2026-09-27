@@ -103,11 +103,11 @@ export function iconPage(icon, svg, relatedIcons = []) {
 <div class="eyebrow">${escapeHtml(icon.category)} · ${escapeHtml(icon.family)} family</div>
 <h1>${escapeHtml(icon.title)}</h1>
 <p class="lede">${escapeHtml(description)}</p>
-<div class="actions"><a class="button" href="${icon.path}" download>Download SVG</a><button class="button" id="copy-svg">Copy SVG</button><a class="button" href="#usage">Use in code</a></div>
-<div class="facts"><div class="fact"><span class="label">Canonical name</span><code>${escapeHtml(icon.name)}</code></div><div class="fact"><span class="label">Category</span>${escapeHtml(icon.category)}</div><div class="fact"><span class="label">Family</span>${escapeHtml(icon.family)}</div><div class="fact"><span class="label">Accessibility</span>${escapeHtml(icon.accessibility.default)}</div></div>
+<div class="actions"><a class="button primary" href="${icon.path}" download>Download SVG</a><button class="button" id="copy-svg">Copy SVG</button><a class="button" href="#usage">Use in code</a></div>
+<div class="facts"><div class="fact"><span class="label">Canonical name</span><code>${escapeHtml(icon.name)}</code></div><div class="fact"><span class="label">Direct SVG URL</span><code>${BASE}${icon.path}</code></div><div class="fact"><span class="label">Category</span>${escapeHtml(icon.category)}</div><div class="fact"><span class="label">Family</span>${escapeHtml(icon.family)}</div><div class="fact"><span class="label">Accessibility</span>${escapeHtml(icon.accessibility.default)}</div></div>
 <div class="tags">${tags}</div>
 </section></div>
-<section class="section" id="usage"><h2>Use ${escapeHtml(icon.title)} in your project</h2>
+<section class="section" id="usage"><h2>Use ${escapeHtml(icon.title)} in your project</h2><p class="lede">The simplest integration is the canonical SVG URL below. For bundlers, use the generated package documented in <a href="/docs/">the docs</a>.</p>
 <div class="code"><button class="button copy-code" data-copy="html">Copy</button><pre><code>&lt;img src="${BASE}${icon.path}" alt="${escapeHtml(icon.title)}"&gt;</code></pre></div>
 
 </section>
