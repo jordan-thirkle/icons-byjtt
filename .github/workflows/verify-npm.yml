@@ -19,6 +19,7 @@ jobs:
       - run: mkdir -p dist
       - run: npm pack ./packages/core --pack-destination ./dist
       - run: npm pack ./packages/react --pack-destination ./dist
+      - run: npm pack ./packages/vue --pack-destination ./dist
       - run: |
           cd dist
           for archive in *.tgz; do
