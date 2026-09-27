@@ -5,6 +5,162 @@
   "prefix": "jtt",
   "baseUrl": "https://icons.byjtt.com",
   "family": "line",
+  "ontologyVersion": "2.0.0",
+  "ontology": {
+    "intents": {
+      "dismiss": [
+        "close",
+        "cancel",
+        "dismiss",
+        "exit",
+        "remove"
+      ],
+      "account": [
+        "account",
+        "profile",
+        "user",
+        "person",
+        "people",
+        "identity"
+      ],
+      "create": [
+        "add",
+        "create",
+        "new",
+        "plus"
+      ],
+      "remove": [
+        "delete",
+        "remove",
+        "trash",
+        "minus",
+        "dismiss"
+      ],
+      "navigation": [
+        "back",
+        "forward",
+        "next",
+        "previous",
+        "navigate",
+        "menu",
+        "home"
+      ],
+      "search": [
+        "search",
+        "find",
+        "lookup",
+        "query",
+        "magnify"
+      ],
+      "transfer": [
+        "upload",
+        "import",
+        "attach",
+        "download",
+        "export",
+        "send"
+      ],
+      "edit": [
+        "edit",
+        "modify",
+        "save",
+        "copy",
+        "duplicate"
+      ],
+      "communication": [
+        "message",
+        "chat",
+        "mail",
+        "email",
+        "notification",
+        "bell",
+        "send",
+        "share"
+      ],
+      "developer": [
+        "developer",
+        "code",
+        "programming",
+        "terminal",
+        "repository",
+        "git",
+        "database",
+        "server",
+        "deploy",
+        "bug"
+      ],
+      "media": [
+        "image",
+        "photo",
+        "camera",
+        "video",
+        "play",
+        "pause",
+        "stop",
+        "music",
+        "audio",
+        "volume"
+      ],
+      "commerce": [
+        "cart",
+        "bag",
+        "shopping",
+        "payment",
+        "credit-card",
+        "receipt",
+        "checkout"
+      ],
+      "files": [
+        "file",
+        "document",
+        "folder",
+        "archive",
+        "attachment",
+        "clipboard"
+      ],
+      "status": [
+        "success",
+        "check",
+        "error",
+        "warning",
+        "loading",
+        "info",
+        "help"
+      ],
+      "visibility": [
+        "eye",
+        "view",
+        "lock",
+        "unlock"
+      ],
+      "settings": [
+        "settings",
+        "configure",
+        "configuration",
+        "preferences",
+        "options"
+      ],
+      "reaction": [
+        "heart",
+        "star",
+        "like",
+        "bookmark",
+        "favorite"
+      ],
+      "time": [
+        "calendar",
+        "date",
+        "clock",
+        "time"
+      ],
+      "location": [
+        "location",
+        "pin",
+        "map",
+        "maps"
+      ]
+    }
+  },
   "icons": [
     {
       "name": "apple",
@@ -26,7 +182,28 @@
         "default": "brand"
       },
       "path": "/icons/brands/apple.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "apple",
+          "ios",
+          "brand",
+          "social",
+          "communication",
+          "community"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "archive",
@@ -50,7 +227,38 @@
         "default": "meaningful"
       },
       "path": "/icons/files/archive.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "files"
+        ],
+        "actions": [
+          "archive"
+        ],
+        "states": [],
+        "objects": [
+          "archive"
+        ],
+        "queryTerms": [
+          "archive",
+          "storage",
+          "files",
+          "editor",
+          "documents",
+          "edit",
+          "editing",
+          "content"
+        ],
+        "relations": {
+          "related": [
+            "folder"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "arrow-down",
@@ -75,7 +283,33 @@
         "default": "interactive"
       },
       "path": "/icons/navigation/arrow-down.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "arrow-down",
+          "arrow down",
+          "arrow",
+          "down",
+          "navigation",
+          "interface",
+          "wayfinding"
+        ],
+        "relations": {
+          "related": [
+            "arrow-up"
+          ],
+          "alternative": [],
+          "opposite": [
+            "arrow-up"
+          ],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "arrow-down-left",
@@ -102,7 +336,33 @@
         "default": "interactive"
       },
       "path": "/icons/navigation/arrow-down-left.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "arrow-down-left",
+          "arrow down left",
+          "arrow",
+          "down",
+          "left",
+          "southwest",
+          "navigation",
+          "interface",
+          "wayfinding"
+        ],
+        "relations": {
+          "related": [
+            "arrow-up-left"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "arrow-down-right",
@@ -129,7 +389,33 @@
         "default": "interactive"
       },
       "path": "/icons/navigation/arrow-down-right.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "arrow-down-right",
+          "arrow down right",
+          "arrow",
+          "down",
+          "right",
+          "southeast",
+          "navigation",
+          "interface",
+          "wayfinding"
+        ],
+        "relations": {
+          "related": [
+            "arrow-up-left"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "arrow-left",
@@ -155,7 +441,36 @@
         "default": "interactive"
       },
       "path": "/icons/navigation/arrow-left.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "navigation"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "arrow-left",
+          "arrow left",
+          "arrow",
+          "left",
+          "back",
+          "navigation",
+          "interface",
+          "wayfinding"
+        ],
+        "relations": {
+          "related": [
+            "arrow-right"
+          ],
+          "alternative": [],
+          "opposite": [
+            "arrow-right"
+          ],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "arrow-right",
@@ -181,7 +496,36 @@
         "default": "interactive"
       },
       "path": "/icons/navigation/arrow-right.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "navigation"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "arrow-right",
+          "arrow right",
+          "arrow",
+          "right",
+          "forward",
+          "navigation",
+          "interface",
+          "wayfinding"
+        ],
+        "relations": {
+          "related": [
+            "arrow-left"
+          ],
+          "alternative": [],
+          "opposite": [
+            "arrow-left"
+          ],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "arrow-up",
@@ -206,7 +550,33 @@
         "default": "interactive"
       },
       "path": "/icons/navigation/arrow-up.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "arrow-up",
+          "arrow up",
+          "arrow",
+          "up",
+          "navigation",
+          "interface",
+          "wayfinding"
+        ],
+        "relations": {
+          "related": [
+            "arrow-down"
+          ],
+          "alternative": [],
+          "opposite": [
+            "arrow-down"
+          ],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "arrow-up-left",
@@ -233,7 +603,33 @@
         "default": "interactive"
       },
       "path": "/icons/navigation/arrow-up-left.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "arrow-up-left",
+          "arrow up left",
+          "arrow",
+          "up",
+          "left",
+          "northwest",
+          "navigation",
+          "interface",
+          "wayfinding"
+        ],
+        "relations": {
+          "related": [
+            "arrow-down-right"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "arrow-up-right",
@@ -261,7 +657,37 @@
         "default": "interactive"
       },
       "path": "/icons/navigation/arrow-up-right.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "arrow-up-right",
+          "arrow up right",
+          "arrow",
+          "direction",
+          "external",
+          "diagonal",
+          "up",
+          "right",
+          "external-link",
+          "navigation",
+          "links",
+          "toolbar",
+          "wayfinding",
+          "interface",
+          "actions"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "attachment",
@@ -285,7 +711,35 @@
         "default": "meaningful"
       },
       "path": "/icons/files/attachment.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "files"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "attachment",
+          "paperclip",
+          "files",
+          "editor",
+          "storage",
+          "documents",
+          "edit",
+          "editing",
+          "content"
+        ],
+        "relations": {
+          "related": [
+            "file"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "bag",
@@ -309,7 +763,33 @@
         "default": "meaningful"
       },
       "path": "/icons/commerce/bag.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "commerce"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "bag"
+        ],
+        "queryTerms": [
+          "bag",
+          "shopping-bag",
+          "commerce",
+          "checkout",
+          "payment"
+        ],
+        "relations": {
+          "related": [
+            "cart"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "bell",
@@ -333,7 +813,32 @@
         "default": "interactive"
       },
       "path": "/icons/communication/bell.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "communication"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "bell"
+        ],
+        "queryTerms": [
+          "bell",
+          "notification",
+          "communication",
+          "content"
+        ],
+        "relations": {
+          "related": [
+            "message"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "bookmark",
@@ -357,7 +862,35 @@
         "default": "interactive"
       },
       "path": "/icons/communication/bookmark.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "reaction"
+        ],
+        "actions": [],
+        "states": [
+          "saved"
+        ],
+        "objects": [
+          "bookmark"
+        ],
+        "queryTerms": [
+          "bookmark",
+          "saved",
+          "communication",
+          "content",
+          "reaction"
+        ],
+        "relations": {
+          "related": [
+            "save"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "braces",
@@ -381,7 +914,32 @@
         "default": "meaningful"
       },
       "path": "/icons/developer/braces.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "braces",
+          "code-braces",
+          "developer",
+          "tooling",
+          "engineering",
+          "software"
+        ],
+        "relations": {
+          "related": [
+            "code"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "bug",
@@ -405,7 +963,34 @@
         "default": "meaningful"
       },
       "path": "/icons/developer/bug.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "bug"
+        ],
+        "queryTerms": [
+          "bug",
+          "issue",
+          "developer",
+          "tooling",
+          "engineering",
+          "software"
+        ],
+        "relations": {
+          "related": [
+            "code"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "calendar",
@@ -429,7 +1014,35 @@
         "default": "meaningful"
       },
       "path": "/icons/objects/calendar.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "time"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "calendar"
+        ],
+        "queryTerms": [
+          "calendar",
+          "date",
+          "utility",
+          "interface",
+          "time"
+        ],
+        "relations": {
+          "related": [
+            "clock"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [
+            "clock"
+          ],
+          "state": []
+        }
+      }
     },
     {
       "name": "camera",
@@ -453,7 +1066,35 @@
         "default": "meaningful"
       },
       "path": "/icons/media/camera.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "media"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "camera"
+        ],
+        "queryTerms": [
+          "camera",
+          "photo-camera",
+          "media",
+          "content",
+          "playback"
+        ],
+        "relations": {
+          "related": [
+            "image"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [
+            "image"
+          ],
+          "state": []
+        }
+      }
     },
     {
       "name": "cart",
@@ -477,7 +1118,33 @@
         "default": "meaningful"
       },
       "path": "/icons/commerce/cart.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "commerce"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "cart"
+        ],
+        "queryTerms": [
+          "cart",
+          "shopping-cart",
+          "commerce",
+          "checkout",
+          "payment"
+        ],
+        "relations": {
+          "related": [
+            "bag"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "check",
@@ -504,7 +1171,36 @@
         "default": "status"
       },
       "path": "/icons/actions/check.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "status"
+        ],
+        "actions": [],
+        "states": [
+          "success"
+        ],
+        "objects": [],
+        "queryTerms": [
+          "check",
+          "confirm",
+          "done",
+          "success",
+          "tick",
+          "forms",
+          "status",
+          "toolbar",
+          "actions",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "chevron-down",
@@ -527,7 +1223,33 @@
         "default": "interactive"
       },
       "path": "/icons/navigation/chevron-down.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "chevron-down",
+          "chevron down",
+          "chevron",
+          "down",
+          "navigation",
+          "interface",
+          "wayfinding"
+        ],
+        "relations": {
+          "related": [
+            "chevron-up"
+          ],
+          "alternative": [],
+          "opposite": [
+            "chevron-up"
+          ],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "chevron-left",
@@ -550,7 +1272,33 @@
         "default": "interactive"
       },
       "path": "/icons/navigation/chevron-left.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "chevron-left",
+          "chevron left",
+          "chevron",
+          "left",
+          "navigation",
+          "interface",
+          "wayfinding"
+        ],
+        "relations": {
+          "related": [
+            "chevron-right"
+          ],
+          "alternative": [],
+          "opposite": [
+            "chevron-right"
+          ],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "chevron-right",
@@ -573,7 +1321,33 @@
         "default": "interactive"
       },
       "path": "/icons/navigation/chevron-right.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "chevron-right",
+          "chevron right",
+          "chevron",
+          "right",
+          "navigation",
+          "interface",
+          "wayfinding"
+        ],
+        "relations": {
+          "related": [
+            "chevron-left"
+          ],
+          "alternative": [],
+          "opposite": [
+            "chevron-left"
+          ],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "chevron-up",
@@ -596,7 +1370,33 @@
         "default": "interactive"
       },
       "path": "/icons/navigation/chevron-up.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "chevron-up",
+          "chevron up",
+          "chevron",
+          "up",
+          "navigation",
+          "interface",
+          "wayfinding"
+        ],
+        "relations": {
+          "related": [
+            "chevron-down"
+          ],
+          "alternative": [],
+          "opposite": [
+            "chevron-down"
+          ],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "clipboard",
@@ -620,7 +1420,35 @@
         "default": "meaningful"
       },
       "path": "/icons/files/clipboard.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "files"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "clipboard",
+          "copy-board",
+          "files",
+          "editor",
+          "storage",
+          "documents",
+          "edit",
+          "editing",
+          "content"
+        ],
+        "relations": {
+          "related": [
+            "copy"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "clock",
@@ -644,7 +1472,32 @@
         "default": "meaningful"
       },
       "path": "/icons/objects/clock.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "time"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "clock",
+          "time",
+          "utility",
+          "interface"
+        ],
+        "relations": {
+          "related": [
+            "calendar"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [
+            "calendar"
+          ],
+          "state": []
+        }
+      }
     },
     {
       "name": "code",
@@ -672,7 +1525,40 @@
         "default": "meaningful"
       },
       "path": "/icons/developer/code.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "code"
+        ],
+        "queryTerms": [
+          "code",
+          "developer",
+          "programming",
+          "source",
+          "source-code",
+          "editor",
+          "documentation",
+          "engineering",
+          "software",
+          "edit",
+          "editing",
+          "content"
+        ],
+        "relations": {
+          "related": [
+            "github"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "copy",
@@ -696,7 +1582,37 @@
         "default": "interactive"
       },
       "path": "/icons/actions/copy.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "edit"
+        ],
+        "actions": [
+          "copy"
+        ],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "copy",
+          "duplicate",
+          "toolbar",
+          "editor",
+          "edit",
+          "actions",
+          "interface",
+          "editing",
+          "content"
+        ],
+        "relations": {
+          "related": [
+            "share"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "credit-card",
@@ -722,7 +1638,35 @@
         "default": "meaningful"
       },
       "path": "/icons/commerce/credit-card.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "commerce"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "credit-card",
+          "credit card",
+          "credit",
+          "card",
+          "payment",
+          "commerce",
+          "checkout"
+        ],
+        "relations": {
+          "related": [
+            "receipt"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [
+            "receipt"
+          ],
+          "state": []
+        }
+      }
     },
     {
       "name": "database",
@@ -746,7 +1690,36 @@
         "default": "meaningful"
       },
       "path": "/icons/developer/database.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "database"
+        ],
+        "queryTerms": [
+          "database",
+          "db",
+          "developer",
+          "tooling",
+          "engineering",
+          "software"
+        ],
+        "relations": {
+          "related": [
+            "server"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [
+            "server"
+          ],
+          "state": []
+        }
+      }
     },
     {
       "name": "delete",
@@ -768,7 +1741,38 @@
         "default": "interactive"
       },
       "path": "/icons/actions/delete.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "dismiss",
+          "remove"
+        ],
+        "actions": [
+          "delete",
+          "remove"
+        ],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "delete",
+          "remove",
+          "toolbar",
+          "editor",
+          "dismiss",
+          "actions",
+          "interface",
+          "edit",
+          "editing",
+          "content"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "discord",
@@ -788,7 +1792,30 @@
         "default": "brand"
       },
       "path": "/icons/brands/discord.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "communication"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "discord",
+          "chat",
+          "brand",
+          "social",
+          "communication",
+          "community"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "document",
@@ -812,7 +1839,37 @@
         "default": "meaningful"
       },
       "path": "/icons/files/document.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "files"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "document"
+        ],
+        "queryTerms": [
+          "document",
+          "text-file",
+          "files",
+          "editor",
+          "storage",
+          "documents",
+          "edit",
+          "editing",
+          "content"
+        ],
+        "relations": {
+          "related": [
+            "file"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "download",
@@ -836,7 +1893,43 @@
         "default": "interactive"
       },
       "path": "/icons/actions/download.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "transfer"
+        ],
+        "actions": [
+          "download",
+          "export"
+        ],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "download",
+          "export",
+          "toolbar",
+          "editor",
+          "transfer",
+          "actions",
+          "interface",
+          "edit",
+          "editing",
+          "content"
+        ],
+        "relations": {
+          "related": [
+            "upload"
+          ],
+          "alternative": [],
+          "opposite": [
+            "upload"
+          ],
+          "paired": [
+            "upload"
+          ],
+          "state": []
+        }
+      }
     },
     {
       "name": "edit",
@@ -860,7 +1953,36 @@
         "default": "interactive"
       },
       "path": "/icons/actions/edit.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "edit"
+        ],
+        "actions": [
+          "edit"
+        ],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "edit",
+          "modify",
+          "toolbar",
+          "editor",
+          "actions",
+          "interface",
+          "editing",
+          "content"
+        ],
+        "relations": {
+          "related": [
+            "save"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "error",
@@ -884,7 +2006,35 @@
         "default": "status"
       },
       "path": "/icons/system/error.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "status"
+        ],
+        "actions": [],
+        "states": [
+          "error",
+          "failure"
+        ],
+        "objects": [],
+        "queryTerms": [
+          "error",
+          "failure",
+          "system",
+          "status"
+        ],
+        "relations": {
+          "related": [
+            "warning"
+          ],
+          "alternative": [],
+          "opposite": [
+            "success"
+          ],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "eye",
@@ -908,7 +2058,33 @@
         "default": "meaningful"
       },
       "path": "/icons/objects/eye.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "visibility"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "eye"
+        ],
+        "queryTerms": [
+          "eye",
+          "view",
+          "utility",
+          "interface",
+          "visibility"
+        ],
+        "relations": {
+          "related": [
+            "lock"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "file",
@@ -932,7 +2108,39 @@
         "default": "meaningful"
       },
       "path": "/icons/files/file.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "files"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "file"
+        ],
+        "queryTerms": [
+          "file",
+          "document-file",
+          "files",
+          "editor",
+          "storage",
+          "documents",
+          "edit",
+          "editing",
+          "content"
+        ],
+        "relations": {
+          "related": [
+            "folder"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [
+            "folder"
+          ],
+          "state": []
+        }
+      }
     },
     {
       "name": "file-minus",
@@ -958,7 +2166,42 @@
         "default": "meaningful"
       },
       "path": "/icons/files/file-minus.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "remove",
+          "files"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "file"
+        ],
+        "queryTerms": [
+          "file-minus",
+          "file minus",
+          "file",
+          "minus",
+          "remove-file",
+          "files",
+          "editor",
+          "remove",
+          "storage",
+          "documents",
+          "edit",
+          "editing",
+          "content"
+        ],
+        "relations": {
+          "related": [
+            "file"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "file-plus",
@@ -984,7 +2227,42 @@
         "default": "meaningful"
       },
       "path": "/icons/files/file-plus.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "create",
+          "files"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "file"
+        ],
+        "queryTerms": [
+          "file-plus",
+          "file plus",
+          "file",
+          "plus",
+          "new-file",
+          "files",
+          "editor",
+          "create",
+          "storage",
+          "documents",
+          "edit",
+          "editing",
+          "content"
+        ],
+        "relations": {
+          "related": [
+            "file"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "filter",
@@ -1008,7 +2286,28 @@
         "default": "meaningful"
       },
       "path": "/icons/objects/filter.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "filter",
+          "refine",
+          "utility",
+          "interface"
+        ],
+        "relations": {
+          "related": [
+            "sort"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "folder",
@@ -1032,7 +2331,39 @@
         "default": "meaningful"
       },
       "path": "/icons/files/folder.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "files"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "folder"
+        ],
+        "queryTerms": [
+          "folder",
+          "directory",
+          "files",
+          "editor",
+          "storage",
+          "documents",
+          "edit",
+          "editing",
+          "content"
+        ],
+        "relations": {
+          "related": [
+            "file"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [
+            "file"
+          ],
+          "state": []
+        }
+      }
     },
     {
       "name": "folder-open",
@@ -1058,7 +2389,42 @@
         "default": "meaningful"
       },
       "path": "/icons/files/folder-open.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "files"
+        ],
+        "actions": [],
+        "states": [
+          "open"
+        ],
+        "objects": [
+          "folder"
+        ],
+        "queryTerms": [
+          "folder-open",
+          "folder open",
+          "folder",
+          "open",
+          "open-folder",
+          "files",
+          "editor",
+          "storage",
+          "documents",
+          "edit",
+          "editing",
+          "content"
+        ],
+        "relations": {
+          "related": [
+            "folder"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "folder-plus",
@@ -1084,7 +2450,42 @@
         "default": "meaningful"
       },
       "path": "/icons/files/folder-plus.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "create",
+          "files"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "folder"
+        ],
+        "queryTerms": [
+          "folder-plus",
+          "folder plus",
+          "folder",
+          "plus",
+          "new-folder",
+          "files",
+          "editor",
+          "create",
+          "storage",
+          "documents",
+          "edit",
+          "editing",
+          "content"
+        ],
+        "relations": {
+          "related": [
+            "folder"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "git-branch",
@@ -1109,7 +2510,37 @@
         "default": "meaningful"
       },
       "path": "/icons/developer/git-branch.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "git-branch",
+          "git branch",
+          "git",
+          "branch",
+          "developer",
+          "tooling",
+          "engineering",
+          "software"
+        ],
+        "relations": {
+          "related": [
+            "git-merge"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [
+            "git-commit",
+            "git-merge"
+          ],
+          "state": []
+        }
+      }
     },
     {
       "name": "git-commit",
@@ -1134,7 +2565,36 @@
         "default": "meaningful"
       },
       "path": "/icons/developer/git-commit.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "git-commit",
+          "git commit",
+          "git",
+          "commit",
+          "developer",
+          "tooling",
+          "engineering",
+          "software"
+        ],
+        "relations": {
+          "related": [
+            "git-branch"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [
+            "git-branch"
+          ],
+          "state": []
+        }
+      }
     },
     {
       "name": "git-merge",
@@ -1159,7 +2619,38 @@
         "default": "meaningful"
       },
       "path": "/icons/developer/git-merge.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer"
+        ],
+        "actions": [
+          "merge"
+        ],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "git-merge",
+          "git merge",
+          "git",
+          "merge",
+          "developer",
+          "tooling",
+          "engineering",
+          "software"
+        ],
+        "relations": {
+          "related": [
+            "git-branch"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [
+            "git-branch"
+          ],
+          "state": []
+        }
+      }
     },
     {
       "name": "github",
@@ -1184,7 +2675,37 @@
         "default": "brand"
       },
       "path": "/icons/brands/github.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "code",
+          "github"
+        ],
+        "queryTerms": [
+          "github",
+          "git",
+          "developer",
+          "code",
+          "source-control",
+          "brand",
+          "engineering",
+          "software"
+        ],
+        "relations": {
+          "related": [
+            "code"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "heart",
@@ -1214,7 +2735,39 @@
         "default": "interactive"
       },
       "path": "/icons/communication/heart.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "reaction"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "heart"
+        ],
+        "queryTerms": [
+          "heart",
+          "like",
+          "favourite",
+          "favorite",
+          "reaction",
+          "social",
+          "content",
+          "communication",
+          "community"
+        ],
+        "relations": {
+          "related": [
+            "star"
+          ],
+          "alternative": [],
+          "opposite": [
+            "star"
+          ],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "help",
@@ -1238,7 +2791,30 @@
         "default": "status"
       },
       "path": "/icons/system/help.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "status"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "help",
+          "question",
+          "system",
+          "status"
+        ],
+        "relations": {
+          "related": [
+            "info"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "home",
@@ -1262,7 +2838,31 @@
         "default": "interactive"
       },
       "path": "/icons/navigation/home.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "navigation"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "home",
+          "house",
+          "navigation",
+          "interface",
+          "wayfinding"
+        ],
+        "relations": {
+          "related": [
+            "menu"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "image",
@@ -1286,7 +2886,35 @@
         "default": "meaningful"
       },
       "path": "/icons/media/image.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "media"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "image"
+        ],
+        "queryTerms": [
+          "image",
+          "photo",
+          "media",
+          "content",
+          "playback"
+        ],
+        "relations": {
+          "related": [
+            "camera"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [
+            "camera"
+          ],
+          "state": []
+        }
+      }
     },
     {
       "name": "info",
@@ -1310,7 +2938,30 @@
         "default": "status"
       },
       "path": "/icons/system/info.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "status"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "info",
+          "information",
+          "system",
+          "status"
+        ],
+        "relations": {
+          "related": [
+            "help"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "link",
@@ -1334,7 +2985,30 @@
         "default": "interactive"
       },
       "path": "/icons/communication/link.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [
+          "link"
+        ],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "link",
+          "url",
+          "communication",
+          "content"
+        ],
+        "relations": {
+          "related": [
+            "share"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "loading",
@@ -1358,7 +3032,32 @@
         "default": "status"
       },
       "path": "/icons/system/loading.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "status"
+        ],
+        "actions": [],
+        "states": [
+          "loading"
+        ],
+        "objects": [],
+        "queryTerms": [
+          "loading",
+          "progress",
+          "system",
+          "status"
+        ],
+        "relations": {
+          "related": [
+            "refresh"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "location",
@@ -1382,7 +3081,32 @@
         "default": "meaningful"
       },
       "path": "/icons/objects/location.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "location"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "location"
+        ],
+        "queryTerms": [
+          "location",
+          "pin",
+          "utility",
+          "interface"
+        ],
+        "relations": {
+          "related": [
+            "map"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "lock",
@@ -1406,7 +3130,35 @@
         "default": "meaningful"
       },
       "path": "/icons/objects/lock.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "visibility"
+        ],
+        "actions": [],
+        "states": [
+          "private"
+        ],
+        "objects": [],
+        "queryTerms": [
+          "lock",
+          "private",
+          "utility",
+          "interface",
+          "visibility"
+        ],
+        "relations": {
+          "related": [
+            "unlock"
+          ],
+          "alternative": [],
+          "opposite": [
+            "unlock"
+          ],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "mail",
@@ -1430,7 +3182,34 @@
         "default": "interactive"
       },
       "path": "/icons/communication/mail.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "communication"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "mail"
+        ],
+        "queryTerms": [
+          "mail",
+          "email",
+          "communication",
+          "content"
+        ],
+        "relations": {
+          "related": [
+            "message"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [
+            "message"
+          ],
+          "state": []
+        }
+      }
     },
     {
       "name": "map",
@@ -1454,7 +3233,33 @@
         "default": "meaningful"
       },
       "path": "/icons/objects/map.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "location"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "map"
+        ],
+        "queryTerms": [
+          "map",
+          "maps",
+          "utility",
+          "interface",
+          "location"
+        ],
+        "relations": {
+          "related": [
+            "location"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "menu",
@@ -1481,7 +3286,35 @@
         "default": "interactive"
       },
       "path": "/icons/navigation/menu.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "navigation"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "menu",
+          "navigation",
+          "hamburger",
+          "navigation-menu",
+          "mobile",
+          "toolbar",
+          "wayfinding",
+          "interface",
+          "actions"
+        ],
+        "relations": {
+          "related": [
+            "x"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "message",
@@ -1505,7 +3338,34 @@
         "default": "interactive"
       },
       "path": "/icons/communication/message.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "communication"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "message"
+        ],
+        "queryTerms": [
+          "message",
+          "chat",
+          "communication",
+          "content"
+        ],
+        "relations": {
+          "related": [
+            "mail"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [
+            "mail"
+          ],
+          "state": []
+        }
+      }
     },
     {
       "name": "mic",
@@ -1529,7 +3389,29 @@
         "default": "meaningful"
       },
       "path": "/icons/media/mic.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "mic",
+          "microphone",
+          "media",
+          "content",
+          "playback"
+        ],
+        "relations": {
+          "related": [
+            "volume"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "minus",
@@ -1556,7 +3438,44 @@
         "default": "interactive"
       },
       "path": "/icons/actions/minus.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "dismiss",
+          "remove"
+        ],
+        "actions": [
+          "remove"
+        ],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "minus",
+          "subtract",
+          "remove",
+          "less",
+          "toolbar",
+          "forms",
+          "editor",
+          "dismiss",
+          "actions",
+          "interface",
+          "edit",
+          "editing",
+          "content"
+        ],
+        "relations": {
+          "related": [
+            "plus"
+          ],
+          "alternative": [],
+          "opposite": [
+            "plus"
+          ],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "music",
@@ -1580,7 +3499,33 @@
         "default": "meaningful"
       },
       "path": "/icons/media/music.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "media"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "music"
+        ],
+        "queryTerms": [
+          "music",
+          "audio",
+          "media",
+          "content",
+          "playback"
+        ],
+        "relations": {
+          "related": [
+            "volume"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "pause",
@@ -1604,7 +3549,37 @@
         "default": "meaningful"
       },
       "path": "/icons/media/pause.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "media"
+        ],
+        "actions": [
+          "pause"
+        ],
+        "states": [
+          "paused"
+        ],
+        "objects": [],
+        "queryTerms": [
+          "pause",
+          "paused",
+          "media",
+          "content",
+          "playback"
+        ],
+        "relations": {
+          "related": [
+            "play"
+          ],
+          "alternative": [],
+          "opposite": [
+            "play"
+          ],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "play",
@@ -1628,7 +3603,40 @@
         "default": "interactive"
       },
       "path": "/icons/actions/play.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "media"
+        ],
+        "actions": [
+          "play"
+        ],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "play",
+          "start",
+          "toolbar",
+          "editor",
+          "media",
+          "actions",
+          "interface",
+          "edit",
+          "editing",
+          "content"
+        ],
+        "relations": {
+          "related": [
+            "pause"
+          ],
+          "alternative": [],
+          "opposite": [
+            "pause"
+          ],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "play-circle",
@@ -1654,7 +3662,36 @@
         "default": "meaningful"
       },
       "path": "/icons/media/play-circle.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "media"
+        ],
+        "actions": [
+          "play"
+        ],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "play-circle",
+          "play circle",
+          "play",
+          "circle",
+          "video-play",
+          "media",
+          "content",
+          "playback"
+        ],
+        "relations": {
+          "related": [
+            "play"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "plus",
@@ -1682,7 +3719,43 @@
         "default": "interactive"
       },
       "path": "/icons/actions/plus.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "create"
+        ],
+        "actions": [
+          "add",
+          "create"
+        ],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "plus",
+          "add",
+          "create",
+          "new",
+          "toolbar",
+          "forms",
+          "editor",
+          "actions",
+          "interface",
+          "edit",
+          "editing",
+          "content"
+        ],
+        "relations": {
+          "related": [
+            "minus"
+          ],
+          "alternative": [],
+          "opposite": [
+            "minus"
+          ],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "receipt",
@@ -1706,7 +3779,35 @@
         "default": "meaningful"
       },
       "path": "/icons/commerce/receipt.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "commerce"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "receipt"
+        ],
+        "queryTerms": [
+          "receipt",
+          "invoice",
+          "commerce",
+          "checkout",
+          "payment"
+        ],
+        "relations": {
+          "related": [
+            "credit-card"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [
+            "credit-card"
+          ],
+          "state": []
+        }
+      }
     },
     {
       "name": "redo",
@@ -1728,7 +3829,40 @@
         "default": "interactive"
       },
       "path": "/icons/actions/redo.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "navigation"
+        ],
+        "actions": [
+          "redo"
+        ],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "redo",
+          "forward",
+          "toolbar",
+          "editor",
+          "navigation",
+          "actions",
+          "interface",
+          "edit",
+          "editing",
+          "content"
+        ],
+        "relations": {
+          "related": [
+            "undo"
+          ],
+          "alternative": [],
+          "opposite": [
+            "undo"
+          ],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "refresh",
@@ -1752,7 +3886,35 @@
         "default": "interactive"
       },
       "path": "/icons/actions/refresh.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [
+          "refresh"
+        ],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "refresh",
+          "reload",
+          "toolbar",
+          "editor",
+          "actions",
+          "interface",
+          "edit",
+          "editing",
+          "content"
+        ],
+        "relations": {
+          "related": [
+            "undo"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "rocket",
@@ -1776,7 +3938,32 @@
         "default": "meaningful"
       },
       "path": "/icons/developer/rocket.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "rocket",
+          "launch",
+          "developer",
+          "tooling",
+          "engineering",
+          "software"
+        ],
+        "relations": {
+          "related": [
+            "play"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "save",
@@ -1800,7 +3987,37 @@
         "default": "interactive"
       },
       "path": "/icons/actions/save.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "edit"
+        ],
+        "actions": [
+          "save"
+        ],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "save",
+          "store",
+          "toolbar",
+          "editor",
+          "edit",
+          "actions",
+          "interface",
+          "editing",
+          "content"
+        ],
+        "relations": {
+          "related": [
+            "download"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "search",
@@ -1828,7 +4045,38 @@
         "default": "interactive"
       },
       "path": "/icons/navigation/search.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "search"
+        ],
+        "actions": [
+          "search"
+        ],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "search",
+          "find",
+          "lookup",
+          "magnify",
+          "navigation",
+          "toolbar",
+          "command",
+          "wayfinding",
+          "interface",
+          "actions"
+        ],
+        "relations": {
+          "related": [
+            "menu"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "send",
@@ -1852,7 +4100,34 @@
         "default": "interactive"
       },
       "path": "/icons/communication/send.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "transfer",
+          "communication"
+        ],
+        "actions": [
+          "send"
+        ],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "send",
+          "submit",
+          "communication",
+          "content",
+          "transfer"
+        ],
+        "relations": {
+          "related": [
+            "share"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "server",
@@ -1876,7 +4151,36 @@
         "default": "meaningful"
       },
       "path": "/icons/developer/server.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "server"
+        ],
+        "queryTerms": [
+          "server",
+          "backend",
+          "developer",
+          "tooling",
+          "engineering",
+          "software"
+        ],
+        "relations": {
+          "related": [
+            "database"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [
+            "database"
+          ],
+          "state": []
+        }
+      }
     },
     {
       "name": "settings",
@@ -1905,7 +4209,36 @@
         "default": "interactive"
       },
       "path": "/icons/system/settings.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "settings"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "settings"
+        ],
+        "queryTerms": [
+          "settings",
+          "gear",
+          "configuration",
+          "preferences",
+          "toolbar",
+          "system",
+          "actions",
+          "interface"
+        ],
+        "relations": {
+          "related": [
+            "menu"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "share",
@@ -1927,7 +4260,41 @@
         "default": "interactive"
       },
       "path": "/icons/actions/share.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "transfer",
+          "communication"
+        ],
+        "actions": [
+          "send",
+          "share"
+        ],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "share",
+          "send",
+          "toolbar",
+          "editor",
+          "transfer",
+          "communication",
+          "actions",
+          "interface",
+          "edit",
+          "editing",
+          "content"
+        ],
+        "relations": {
+          "related": [
+            "link"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "sort",
@@ -1951,7 +4318,30 @@
         "default": "meaningful"
       },
       "path": "/icons/objects/sort.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [
+          "sort"
+        ],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "sort",
+          "order",
+          "utility",
+          "interface"
+        ],
+        "relations": {
+          "related": [
+            "filter"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "star",
@@ -1978,7 +4368,36 @@
         "default": "interactive"
       },
       "path": "/icons/communication/star.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "reaction"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "star"
+        ],
+        "queryTerms": [
+          "star",
+          "favorite",
+          "favourite",
+          "rating",
+          "reaction",
+          "content"
+        ],
+        "relations": {
+          "related": [
+            "heart"
+          ],
+          "alternative": [],
+          "opposite": [
+            "heart"
+          ],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "stop",
@@ -2002,7 +4421,33 @@
         "default": "meaningful"
       },
       "path": "/icons/media/stop.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "media"
+        ],
+        "actions": [
+          "stop"
+        ],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "stop",
+          "halt",
+          "media",
+          "content",
+          "playback"
+        ],
+        "relations": {
+          "related": [
+            "play"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "success",
@@ -2026,7 +4471,34 @@
         "default": "status"
       },
       "path": "/icons/system/success.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "status"
+        ],
+        "actions": [],
+        "states": [
+          "success"
+        ],
+        "objects": [],
+        "queryTerms": [
+          "success",
+          "passed",
+          "system",
+          "status"
+        ],
+        "relations": {
+          "related": [
+            "check"
+          ],
+          "alternative": [],
+          "opposite": [
+            "error"
+          ],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "sun",
@@ -2050,7 +4522,28 @@
         "default": "status"
       },
       "path": "/icons/system/sun.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "sun",
+          "light",
+          "system",
+          "status"
+        ],
+        "relations": {
+          "related": [
+            "settings"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "tag",
@@ -2074,7 +4567,33 @@
         "default": "meaningful"
       },
       "path": "/icons/commerce/tag.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "commerce"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "tag"
+        ],
+        "queryTerms": [
+          "tag",
+          "label",
+          "commerce",
+          "checkout",
+          "payment"
+        ],
+        "relations": {
+          "related": [
+            "bag"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "terminal",
@@ -2098,7 +4617,34 @@
         "default": "meaningful"
       },
       "path": "/icons/developer/terminal.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "terminal"
+        ],
+        "queryTerms": [
+          "terminal",
+          "console",
+          "developer",
+          "tooling",
+          "engineering",
+          "software"
+        ],
+        "relations": {
+          "related": [
+            "code"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "undo",
@@ -2122,7 +4668,37 @@
         "default": "interactive"
       },
       "path": "/icons/actions/undo.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [
+          "undo"
+        ],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "undo",
+          "revert",
+          "toolbar",
+          "editor",
+          "actions",
+          "interface",
+          "edit",
+          "editing",
+          "content"
+        ],
+        "relations": {
+          "related": [
+            "redo"
+          ],
+          "alternative": [],
+          "opposite": [
+            "redo"
+          ],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "unlock",
@@ -2146,7 +4722,37 @@
         "default": "meaningful"
       },
       "path": "/icons/objects/unlock.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "visibility"
+        ],
+        "actions": [
+          "unlock"
+        ],
+        "states": [
+          "public"
+        ],
+        "objects": [],
+        "queryTerms": [
+          "unlock",
+          "public",
+          "utility",
+          "interface",
+          "visibility"
+        ],
+        "relations": {
+          "related": [
+            "lock"
+          ],
+          "alternative": [],
+          "opposite": [
+            "lock"
+          ],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "upload",
@@ -2170,7 +4776,43 @@
         "default": "interactive"
       },
       "path": "/icons/actions/upload.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "transfer"
+        ],
+        "actions": [
+          "import",
+          "upload"
+        ],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "upload",
+          "import",
+          "toolbar",
+          "editor",
+          "transfer",
+          "actions",
+          "interface",
+          "edit",
+          "editing",
+          "content"
+        ],
+        "relations": {
+          "related": [
+            "download"
+          ],
+          "alternative": [],
+          "opposite": [
+            "download"
+          ],
+          "paired": [
+            "download"
+          ],
+          "state": []
+        }
+      }
     },
     {
       "name": "user",
@@ -2194,7 +4836,39 @@
         "default": "meaningful"
       },
       "path": "/icons/people/user.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "account"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "account",
+          "people",
+          "user"
+        ],
+        "queryTerms": [
+          "user",
+          "account",
+          "accounts",
+          "social",
+          "people",
+          "communication",
+          "community"
+        ],
+        "relations": {
+          "related": [
+            "users"
+          ],
+          "alternative": [],
+          "opposite": [
+            "users"
+          ],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "user-circle",
@@ -2220,7 +4894,40 @@
         "default": "meaningful"
       },
       "path": "/icons/people/user-circle.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "account"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "people",
+          "user"
+        ],
+        "queryTerms": [
+          "user-circle",
+          "user circle",
+          "user",
+          "circle",
+          "profile",
+          "accounts",
+          "social",
+          "account",
+          "people",
+          "communication",
+          "community"
+        ],
+        "relations": {
+          "related": [
+            "user"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "user-minus",
@@ -2246,7 +4953,42 @@
         "default": "meaningful"
       },
       "path": "/icons/people/user-minus.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "account",
+          "remove"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "people",
+          "user"
+        ],
+        "queryTerms": [
+          "user-minus",
+          "user minus",
+          "user",
+          "minus",
+          "remove-user",
+          "accounts",
+          "social",
+          "account",
+          "remove",
+          "people",
+          "communication",
+          "community"
+        ],
+        "relations": {
+          "related": [
+            "user"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "user-plus",
@@ -2272,7 +5014,42 @@
         "default": "meaningful"
       },
       "path": "/icons/people/user-plus.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "account",
+          "create"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "people",
+          "user"
+        ],
+        "queryTerms": [
+          "user-plus",
+          "user plus",
+          "user",
+          "plus",
+          "add-user",
+          "accounts",
+          "social",
+          "account",
+          "create",
+          "people",
+          "communication",
+          "community"
+        ],
+        "relations": {
+          "related": [
+            "user"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "users",
@@ -2296,7 +5073,37 @@
         "default": "meaningful"
       },
       "path": "/icons/people/users.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "account"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "people"
+        ],
+        "queryTerms": [
+          "users",
+          "people",
+          "accounts",
+          "social",
+          "account",
+          "communication",
+          "community"
+        ],
+        "relations": {
+          "related": [
+            "user"
+          ],
+          "alternative": [],
+          "opposite": [
+            "user"
+          ],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "video",
@@ -2320,7 +5127,33 @@
         "default": "meaningful"
       },
       "path": "/icons/media/video.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "media"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "video"
+        ],
+        "queryTerms": [
+          "video",
+          "film",
+          "media",
+          "content",
+          "playback"
+        ],
+        "relations": {
+          "related": [
+            "play-circle"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "volume",
@@ -2344,7 +5177,35 @@
         "default": "meaningful"
       },
       "path": "/icons/media/volume.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "media"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "volume"
+        ],
+        "queryTerms": [
+          "volume",
+          "sound",
+          "media",
+          "content",
+          "playback"
+        ],
+        "relations": {
+          "related": [
+            "volume-off"
+          ],
+          "alternative": [],
+          "opposite": [
+            "volume-off"
+          ],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "volume-off",
@@ -2370,7 +5231,38 @@
         "default": "meaningful"
       },
       "path": "/icons/media/volume-off.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "media"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "volume"
+        ],
+        "queryTerms": [
+          "volume-off",
+          "volume off",
+          "volume",
+          "off",
+          "mute",
+          "media",
+          "content",
+          "playback"
+        ],
+        "relations": {
+          "related": [
+            "volume"
+          ],
+          "alternative": [],
+          "opposite": [
+            "volume"
+          ],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "warning",
@@ -2394,7 +5286,34 @@
         "default": "status"
       },
       "path": "/icons/system/warning.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "status"
+        ],
+        "actions": [],
+        "states": [
+          "warning"
+        ],
+        "objects": [],
+        "queryTerms": [
+          "warning",
+          "caution",
+          "system",
+          "status"
+        ],
+        "relations": {
+          "related": [
+            "error"
+          ],
+          "alternative": [],
+          "opposite": [
+            "success"
+          ],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "x",
@@ -2424,7 +5343,42 @@
         "default": "interactive"
       },
       "path": "/icons/actions/x.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "dismiss",
+          "remove"
+        ],
+        "actions": [
+          "remove"
+        ],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "x",
+          "close",
+          "dismiss",
+          "remove",
+          "cancel",
+          "dialogs",
+          "forms",
+          "toolbar",
+          "actions",
+          "interface"
+        ],
+        "relations": {
+          "related": [
+            "check",
+            "plus"
+          ],
+          "alternative": [],
+          "opposite": [
+            "check"
+          ],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "x-twitter",
@@ -2447,7 +5401,30 @@
         "default": "brand"
       },
       "path": "/icons/brands/x-twitter.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "x-twitter",
+          "x twitter",
+          "x",
+          "twitter",
+          "brand",
+          "social",
+          "communication",
+          "community"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     },
     {
       "name": "youtube",
@@ -2467,7 +5444,33 @@
         "default": "brand"
       },
       "path": "/icons/brands/youtube.svg",
-      "family": "line"
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "media"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "video"
+        ],
+        "queryTerms": [
+          "youtube",
+          "video",
+          "brand",
+          "social",
+          "media",
+          "communication",
+          "community"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
     }
   ]
 }

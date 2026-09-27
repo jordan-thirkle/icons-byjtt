@@ -1,14 +1,36 @@
 # JTT Icons — Full AI Reference
 
-This document explains how agents should discover and consume JTT Icons. Canonical semantic data remains in `/metadata/icons.json`.
+This document explains how agents should discover and consume JTT Icons. Semantic ontology version: `2.0.0`.
 
 ## Selection contract
 
-1. Match the requested concept to `name` and `title`.
-2. Expand with `tags` and `aliases`.
-3. Use `contexts` to distinguish similar concepts.
-4. Use `related` for nearby or paired concepts.
-5. Prefer the canonical `name` in generated code.
+1. Resolve the request against canonical name, title, aliases, tags and contexts.
+2. Use semantic intents, actions, objects and states to understand meaning.
+3. Use relationships to find opposites, paired concepts, alternatives and nearby concepts.
+4. Prefer the canonical name when generating code.
+5. Never invent an icon identifier.
+
+## Semantic intent vocabulary
+
+- `dismiss`: close, cancel, dismiss, exit, remove
+- `account`: account, profile, user, person, people, identity
+- `create`: add, create, new, plus
+- `remove`: delete, remove, trash, minus, dismiss
+- `navigation`: back, forward, next, previous, navigate, menu, home
+- `search`: search, find, lookup, query, magnify
+- `transfer`: upload, import, attach, download, export, send
+- `edit`: edit, modify, save, copy, duplicate
+- `communication`: message, chat, mail, email, notification, bell, send, share
+- `developer`: developer, code, programming, terminal, repository, git, database, server, deploy, bug
+- `media`: image, photo, camera, video, play, pause, stop, music, audio, volume
+- `commerce`: cart, bag, shopping, payment, credit-card, receipt, checkout
+- `files`: file, document, folder, archive, attachment, clipboard
+- `status`: success, check, error, warning, loading, info, help
+- `visibility`: eye, view, lock, unlock
+- `settings`: settings, configure, configuration, preferences, options
+- `reaction`: heart, star, like, bookmark, favorite
+- `time`: calendar, date, clock, time
+- `location`: location, pin, map, maps
 
 ## Canonical rendering
 
@@ -22,113 +44,1114 @@ This document explains how agents should discover and consume JTT Icons. Canonic
 
 ## Semantic selection examples
 
-- “close”, “dismiss”, “cancel” → look for close/cancel/remove concepts, then verify the canonical metadata.
-- “account”, “profile”, “user” → inspect people/account concepts and use context to disambiguate.
-- “developer”, “code”, “repository”, “deploy” → inspect the developer category and related engineering contexts.
-- “upload”, “import”, “attach” → inspect action/file concepts and related metadata.
+- “close”, “dismiss”, “cancel” → resolve the `dismiss` intent and inspect relationships.
+- “account”, “profile”, “user” → resolve the `account` intent and use people/context metadata.
+- “developer”, “code”, “repository”, “deploy” → resolve the `developer` intent and developer contexts.
+- “upload”, “import”, “attach” → resolve the `transfer` intent and file/action contexts.
+- “what goes with a database?” → inspect `paired` and `related` relationships.
 
 ## Current catalogue
 
-- `apple` — Apple · brands · brand · apple, ios · SVG: `/icons/brands/apple.svg`
-- `archive` — Archive · files · meaningful · archive, storage · SVG: `/icons/files/archive.svg`
-- `arrow-down` — Arrow Down · navigation · interactive · arrow-down, arrow, down · SVG: `/icons/navigation/arrow-down.svg`
-- `arrow-down-left` — Arrow Down Left · navigation · interactive · arrow-down-left, arrow, down, left, southwest · SVG: `/icons/navigation/arrow-down-left.svg`
-- `arrow-down-right` — Arrow Down Right · navigation · interactive · arrow-down-right, arrow, down, right, southeast · SVG: `/icons/navigation/arrow-down-right.svg`
-- `arrow-left` — Arrow Left · navigation · interactive · arrow-left, arrow, left, back · SVG: `/icons/navigation/arrow-left.svg`
-- `arrow-right` — Arrow Right · navigation · interactive · arrow-right, arrow, right, forward · SVG: `/icons/navigation/arrow-right.svg`
-- `arrow-up` — Arrow Up · navigation · interactive · arrow-up, arrow, up · SVG: `/icons/navigation/arrow-up.svg`
-- `arrow-up-left` — Arrow Up Left · navigation · interactive · arrow-up-left, arrow, up, left, northwest · SVG: `/icons/navigation/arrow-up-left.svg`
-- `arrow-up-right` — Arrow Up Right · navigation · interactive · arrow-up-right, arrow, direction, external, diagonal, up, right · SVG: `/icons/navigation/arrow-up-right.svg`
-- `attachment` — Attachment · files · meaningful · attachment, paperclip · SVG: `/icons/files/attachment.svg`
-- `bag` — Bag · commerce · meaningful · bag, shopping-bag · SVG: `/icons/commerce/bag.svg`
-- `bell` — Bell · communication · interactive · bell, notification · SVG: `/icons/communication/bell.svg`
-- `bookmark` — Bookmark · communication · interactive · bookmark, saved · SVG: `/icons/communication/bookmark.svg`
-- `braces` — Braces · developer · meaningful · braces, code-braces · SVG: `/icons/developer/braces.svg`
-- `bug` — Bug · developer · meaningful · bug, issue · SVG: `/icons/developer/bug.svg`
-- `calendar` — Calendar · objects · meaningful · calendar, date · SVG: `/icons/objects/calendar.svg`
-- `camera` — Camera · media · meaningful · camera, photo-camera · SVG: `/icons/media/camera.svg`
-- `cart` — Cart · commerce · meaningful · cart, shopping-cart · SVG: `/icons/commerce/cart.svg`
-- `check` — Check · actions · status · check, confirm, done, success, tick · SVG: `/icons/actions/check.svg`
-- `chevron-down` — Chevron Down · navigation · interactive · chevron-down, chevron, down · SVG: `/icons/navigation/chevron-down.svg`
-- `chevron-left` — Chevron Left · navigation · interactive · chevron-left, chevron, left · SVG: `/icons/navigation/chevron-left.svg`
-- `chevron-right` — Chevron Right · navigation · interactive · chevron-right, chevron, right · SVG: `/icons/navigation/chevron-right.svg`
-- `chevron-up` — Chevron Up · navigation · interactive · chevron-up, chevron, up · SVG: `/icons/navigation/chevron-up.svg`
-- `clipboard` — Clipboard · files · meaningful · clipboard, copy-board · SVG: `/icons/files/clipboard.svg`
-- `clock` — Clock · objects · meaningful · clock, time · SVG: `/icons/objects/clock.svg`
-- `code` — Code · developer · meaningful · code, developer, programming, source · SVG: `/icons/developer/code.svg`
-- `copy` — Copy · actions · interactive · copy, duplicate · SVG: `/icons/actions/copy.svg`
-- `credit-card` — Credit Card · commerce · meaningful · credit-card, credit, card, payment · SVG: `/icons/commerce/credit-card.svg`
-- `database` — Database · developer · meaningful · database, db · SVG: `/icons/developer/database.svg`
-- `delete` — Delete · actions · interactive · delete, remove · SVG: `/icons/actions/delete.svg`
-- `discord` — Discord · brands · brand · discord, chat · SVG: `/icons/brands/discord.svg`
-- `document` — Document · files · meaningful · document, text-file · SVG: `/icons/files/document.svg`
-- `download` — Download · actions · interactive · download, export · SVG: `/icons/actions/download.svg`
-- `edit` — Edit · actions · interactive · edit, modify · SVG: `/icons/actions/edit.svg`
-- `error` — Error · system · status · error, failure · SVG: `/icons/system/error.svg`
-- `eye` — Eye · objects · meaningful · eye, view · SVG: `/icons/objects/eye.svg`
-- `file` — File · files · meaningful · file, document-file · SVG: `/icons/files/file.svg`
-- `file-minus` — File Minus · files · meaningful · file-minus, file, minus, remove-file · SVG: `/icons/files/file-minus.svg`
-- `file-plus` — File Plus · files · meaningful · file-plus, file, plus, new-file · SVG: `/icons/files/file-plus.svg`
-- `filter` — Filter · objects · meaningful · filter, refine · SVG: `/icons/objects/filter.svg`
-- `folder` — Folder · files · meaningful · folder, directory · SVG: `/icons/files/folder.svg`
-- `folder-open` — Folder Open · files · meaningful · folder-open, folder, open, open-folder · SVG: `/icons/files/folder-open.svg`
-- `folder-plus` — Folder Plus · files · meaningful · folder-plus, folder, plus, new-folder · SVG: `/icons/files/folder-plus.svg`
-- `git-branch` — Git Branch · developer · meaningful · git-branch, git, branch · SVG: `/icons/developer/git-branch.svg`
-- `git-commit` — Git Commit · developer · meaningful · git-commit, git, commit · SVG: `/icons/developer/git-commit.svg`
-- `git-merge` — Git Merge · developer · meaningful · git-merge, git, merge · SVG: `/icons/developer/git-merge.svg`
-- `github` — GitHub · brands · brand · github, git, developer, code · SVG: `/icons/brands/github.svg`
-- `heart` — Heart · communication · interactive · heart, like, favourite, favorite, reaction · SVG: `/icons/communication/heart.svg`
-- `help` — Help · system · status · help, question · SVG: `/icons/system/help.svg`
-- `home` — Home · navigation · interactive · home, house · SVG: `/icons/navigation/home.svg`
-- `image` — Image · media · meaningful · image, photo · SVG: `/icons/media/image.svg`
-- `info` — Info · system · status · info, information · SVG: `/icons/system/info.svg`
-- `link` — Link · communication · interactive · link, url · SVG: `/icons/communication/link.svg`
-- `loading` — Loading · system · status · loading, progress · SVG: `/icons/system/loading.svg`
-- `location` — Location · objects · meaningful · location, pin · SVG: `/icons/objects/location.svg`
-- `lock` — Lock · objects · meaningful · lock, private · SVG: `/icons/objects/lock.svg`
-- `mail` — Mail · communication · interactive · mail, email · SVG: `/icons/communication/mail.svg`
-- `map` — Map · objects · meaningful · map, maps · SVG: `/icons/objects/map.svg`
-- `menu` — Menu · navigation · interactive · menu, navigation, hamburger · SVG: `/icons/navigation/menu.svg`
-- `message` — Message · communication · interactive · message, chat · SVG: `/icons/communication/message.svg`
-- `mic` — Mic · media · meaningful · mic, microphone · SVG: `/icons/media/mic.svg`
-- `minus` — Minus · actions · interactive · minus, subtract, remove, less · SVG: `/icons/actions/minus.svg`
-- `music` — Music · media · meaningful · music, audio · SVG: `/icons/media/music.svg`
-- `pause` — Pause · media · meaningful · pause, paused · SVG: `/icons/media/pause.svg`
-- `play` — Play · actions · interactive · play, start · SVG: `/icons/actions/play.svg`
-- `play-circle` — Play Circle · media · meaningful · play-circle, play, circle, video-play · SVG: `/icons/media/play-circle.svg`
-- `plus` — Plus · actions · interactive · plus, add, create, new · SVG: `/icons/actions/plus.svg`
-- `receipt` — Receipt · commerce · meaningful · receipt, invoice · SVG: `/icons/commerce/receipt.svg`
-- `redo` — Redo · actions · interactive · redo, forward · SVG: `/icons/actions/redo.svg`
-- `refresh` — Refresh · actions · interactive · refresh, reload · SVG: `/icons/actions/refresh.svg`
-- `rocket` — Rocket · developer · meaningful · rocket, launch · SVG: `/icons/developer/rocket.svg`
-- `save` — Save · actions · interactive · save, store · SVG: `/icons/actions/save.svg`
-- `search` — Search · navigation · interactive · search, find, lookup, magnify · SVG: `/icons/navigation/search.svg`
-- `send` — Send · communication · interactive · send, submit · SVG: `/icons/communication/send.svg`
-- `server` — Server · developer · meaningful · server, backend · SVG: `/icons/developer/server.svg`
-- `settings` — Settings · system · interactive · settings, gear, configuration, preferences · SVG: `/icons/system/settings.svg`
-- `share` — Share · actions · interactive · share, send · SVG: `/icons/actions/share.svg`
-- `sort` — Sort · objects · meaningful · sort, order · SVG: `/icons/objects/sort.svg`
-- `star` — Star · communication · interactive · star, favorite, favourite, rating · SVG: `/icons/communication/star.svg`
-- `stop` — Stop · media · meaningful · stop, halt · SVG: `/icons/media/stop.svg`
-- `success` — Success · system · status · success, passed · SVG: `/icons/system/success.svg`
-- `sun` — Sun · system · status · sun, light · SVG: `/icons/system/sun.svg`
-- `tag` — Tag · commerce · meaningful · tag, label · SVG: `/icons/commerce/tag.svg`
-- `terminal` — Terminal · developer · meaningful · terminal, console · SVG: `/icons/developer/terminal.svg`
-- `undo` — Undo · actions · interactive · undo, revert · SVG: `/icons/actions/undo.svg`
-- `unlock` — Unlock · objects · meaningful · unlock, public · SVG: `/icons/objects/unlock.svg`
-- `upload` — Upload · actions · interactive · upload, import · SVG: `/icons/actions/upload.svg`
-- `user` — User · people · meaningful · user, account · SVG: `/icons/people/user.svg`
-- `user-circle` — User Circle · people · meaningful · user-circle, user, circle, profile · SVG: `/icons/people/user-circle.svg`
-- `user-minus` — User Minus · people · meaningful · user-minus, user, minus, remove-user · SVG: `/icons/people/user-minus.svg`
-- `user-plus` — User Plus · people · meaningful · user-plus, user, plus, add-user · SVG: `/icons/people/user-plus.svg`
-- `users` — Users · people · meaningful · users, people · SVG: `/icons/people/users.svg`
-- `video` — Video · media · meaningful · video, film · SVG: `/icons/media/video.svg`
-- `volume` — Volume · media · meaningful · volume, sound · SVG: `/icons/media/volume.svg`
-- `volume-off` — Volume Off · media · meaningful · volume-off, volume, off, mute · SVG: `/icons/media/volume-off.svg`
-- `warning` — Warning · system · status · warning, caution · SVG: `/icons/system/warning.svg`
-- `x` — X · actions · interactive · x, close, dismiss, remove, cancel · SVG: `/icons/actions/x.svg`
-- `x-twitter` — X Twitter · brands · brand · x-twitter, x, twitter · SVG: `/icons/brands/x-twitter.svg`
-- `youtube` — Youtube · brands · brand · youtube, video · SVG: `/icons/brands/youtube.svg`
+- `apple` — Apple · brands · brand
+  - tags: apple, ios
+  - aliases: ios
+  - contexts: brand, social
+  - intents: none
+  - actions: none
+  - objects: none
+  - related: none
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/brands/apple.svg`
+- `archive` — Archive · files · meaningful
+  - tags: archive, storage
+  - aliases: storage
+  - contexts: files, editor
+  - intents: files
+  - actions: archive
+  - objects: archive
+  - related: folder
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/files/archive.svg`
+- `arrow-down` — Arrow Down · navigation · interactive
+  - tags: arrow-down, arrow, down
+  - aliases: down
+  - contexts: navigation, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - related: arrow-up
+  - opposite: arrow-up
+  - paired: none
+  - SVG: `/icons/navigation/arrow-down.svg`
+- `arrow-down-left` — Arrow Down Left · navigation · interactive
+  - tags: arrow-down-left, arrow, down, left, southwest
+  - aliases: southwest
+  - contexts: navigation, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - related: arrow-up-left
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/navigation/arrow-down-left.svg`
+- `arrow-down-right` — Arrow Down Right · navigation · interactive
+  - tags: arrow-down-right, arrow, down, right, southeast
+  - aliases: southeast
+  - contexts: navigation, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - related: arrow-up-left
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/navigation/arrow-down-right.svg`
+- `arrow-left` — Arrow Left · navigation · interactive
+  - tags: arrow-left, arrow, left, back
+  - aliases: back
+  - contexts: navigation, interface
+  - intents: navigation
+  - actions: none
+  - objects: none
+  - related: arrow-right
+  - opposite: arrow-right
+  - paired: none
+  - SVG: `/icons/navigation/arrow-left.svg`
+- `arrow-right` — Arrow Right · navigation · interactive
+  - tags: arrow-right, arrow, right, forward
+  - aliases: forward
+  - contexts: navigation, interface
+  - intents: navigation
+  - actions: none
+  - objects: none
+  - related: arrow-left
+  - opposite: arrow-left
+  - paired: none
+  - SVG: `/icons/navigation/arrow-right.svg`
+- `arrow-up` — Arrow Up · navigation · interactive
+  - tags: arrow-up, arrow, up
+  - aliases: up
+  - contexts: navigation, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - related: arrow-down
+  - opposite: arrow-down
+  - paired: none
+  - SVG: `/icons/navigation/arrow-up.svg`
+- `arrow-up-left` — Arrow Up Left · navigation · interactive
+  - tags: arrow-up-left, arrow, up, left, northwest
+  - aliases: northwest
+  - contexts: navigation, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - related: arrow-down-right
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/navigation/arrow-up-left.svg`
+- `arrow-up-right` — Arrow Up Right · navigation · interactive
+  - tags: arrow-up-right, arrow, direction, external, diagonal, up, right
+  - aliases: external-link
+  - contexts: navigation, links, toolbar
+  - intents: none
+  - actions: none
+  - objects: none
+  - related: none
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/navigation/arrow-up-right.svg`
+- `attachment` — Attachment · files · meaningful
+  - tags: attachment, paperclip
+  - aliases: paperclip
+  - contexts: files, editor
+  - intents: files
+  - actions: none
+  - objects: none
+  - related: file
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/files/attachment.svg`
+- `bag` — Bag · commerce · meaningful
+  - tags: bag, shopping-bag
+  - aliases: shopping-bag
+  - contexts: commerce, checkout
+  - intents: commerce
+  - actions: none
+  - objects: bag
+  - related: cart
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/commerce/bag.svg`
+- `bell` — Bell · communication · interactive
+  - tags: bell, notification
+  - aliases: notification
+  - contexts: communication, content
+  - intents: communication
+  - actions: none
+  - objects: bell
+  - related: message
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/communication/bell.svg`
+- `bookmark` — Bookmark · communication · interactive
+  - tags: bookmark, saved
+  - aliases: saved
+  - contexts: communication, content
+  - intents: reaction
+  - actions: none
+  - objects: bookmark
+  - related: save
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/communication/bookmark.svg`
+- `braces` — Braces · developer · meaningful
+  - tags: braces, code-braces
+  - aliases: code-braces
+  - contexts: developer, tooling
+  - intents: developer
+  - actions: none
+  - objects: none
+  - related: code
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/developer/braces.svg`
+- `bug` — Bug · developer · meaningful
+  - tags: bug, issue
+  - aliases: issue
+  - contexts: developer, tooling
+  - intents: developer
+  - actions: none
+  - objects: bug
+  - related: code
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/developer/bug.svg`
+- `calendar` — Calendar · objects · meaningful
+  - tags: calendar, date
+  - aliases: date
+  - contexts: utility, interface
+  - intents: time
+  - actions: none
+  - objects: calendar
+  - related: clock
+  - opposite: none
+  - paired: clock
+  - SVG: `/icons/objects/calendar.svg`
+- `camera` — Camera · media · meaningful
+  - tags: camera, photo-camera
+  - aliases: photo-camera
+  - contexts: media, content
+  - intents: media
+  - actions: none
+  - objects: camera
+  - related: image
+  - opposite: none
+  - paired: image
+  - SVG: `/icons/media/camera.svg`
+- `cart` — Cart · commerce · meaningful
+  - tags: cart, shopping-cart
+  - aliases: shopping-cart
+  - contexts: commerce, checkout
+  - intents: commerce
+  - actions: none
+  - objects: cart
+  - related: bag
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/commerce/cart.svg`
+- `check` — Check · actions · status
+  - tags: check, confirm, done, success, tick
+  - aliases: tick, confirm
+  - contexts: forms, status, toolbar
+  - intents: status
+  - actions: none
+  - objects: none
+  - related: none
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/actions/check.svg`
+- `chevron-down` — Chevron Down · navigation · interactive
+  - tags: chevron-down, chevron, down
+  - aliases: none
+  - contexts: navigation, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - related: chevron-up
+  - opposite: chevron-up
+  - paired: none
+  - SVG: `/icons/navigation/chevron-down.svg`
+- `chevron-left` — Chevron Left · navigation · interactive
+  - tags: chevron-left, chevron, left
+  - aliases: none
+  - contexts: navigation, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - related: chevron-right
+  - opposite: chevron-right
+  - paired: none
+  - SVG: `/icons/navigation/chevron-left.svg`
+- `chevron-right` — Chevron Right · navigation · interactive
+  - tags: chevron-right, chevron, right
+  - aliases: none
+  - contexts: navigation, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - related: chevron-left
+  - opposite: chevron-left
+  - paired: none
+  - SVG: `/icons/navigation/chevron-right.svg`
+- `chevron-up` — Chevron Up · navigation · interactive
+  - tags: chevron-up, chevron, up
+  - aliases: none
+  - contexts: navigation, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - related: chevron-down
+  - opposite: chevron-down
+  - paired: none
+  - SVG: `/icons/navigation/chevron-up.svg`
+- `clipboard` — Clipboard · files · meaningful
+  - tags: clipboard, copy-board
+  - aliases: copy-board
+  - contexts: files, editor
+  - intents: files
+  - actions: none
+  - objects: none
+  - related: copy
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/files/clipboard.svg`
+- `clock` — Clock · objects · meaningful
+  - tags: clock, time
+  - aliases: time
+  - contexts: utility, interface
+  - intents: time
+  - actions: none
+  - objects: none
+  - related: calendar
+  - opposite: none
+  - paired: calendar
+  - SVG: `/icons/objects/clock.svg`
+- `code` — Code · developer · meaningful
+  - tags: code, developer, programming, source
+  - aliases: programming, source-code
+  - contexts: developer, editor, documentation
+  - intents: developer
+  - actions: none
+  - objects: code
+  - related: github
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/developer/code.svg`
+- `copy` — Copy · actions · interactive
+  - tags: copy, duplicate
+  - aliases: duplicate
+  - contexts: toolbar, editor
+  - intents: edit
+  - actions: copy
+  - objects: none
+  - related: share
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/actions/copy.svg`
+- `credit-card` — Credit Card · commerce · meaningful
+  - tags: credit-card, credit, card, payment
+  - aliases: payment
+  - contexts: commerce, checkout
+  - intents: commerce
+  - actions: none
+  - objects: none
+  - related: receipt
+  - opposite: none
+  - paired: receipt
+  - SVG: `/icons/commerce/credit-card.svg`
+- `database` — Database · developer · meaningful
+  - tags: database, db
+  - aliases: db
+  - contexts: developer, tooling
+  - intents: developer
+  - actions: none
+  - objects: database
+  - related: server
+  - opposite: none
+  - paired: server
+  - SVG: `/icons/developer/database.svg`
+- `delete` — Delete · actions · interactive
+  - tags: delete, remove
+  - aliases: remove
+  - contexts: toolbar, editor
+  - intents: dismiss, remove
+  - actions: delete, remove
+  - objects: none
+  - related: none
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/actions/delete.svg`
+- `discord` — Discord · brands · brand
+  - tags: discord, chat
+  - aliases: none
+  - contexts: brand, social
+  - intents: communication
+  - actions: none
+  - objects: none
+  - related: none
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/brands/discord.svg`
+- `document` — Document · files · meaningful
+  - tags: document, text-file
+  - aliases: text-file
+  - contexts: files, editor
+  - intents: files
+  - actions: none
+  - objects: document
+  - related: file
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/files/document.svg`
+- `download` — Download · actions · interactive
+  - tags: download, export
+  - aliases: export
+  - contexts: toolbar, editor
+  - intents: transfer
+  - actions: download, export
+  - objects: none
+  - related: upload
+  - opposite: upload
+  - paired: upload
+  - SVG: `/icons/actions/download.svg`
+- `edit` — Edit · actions · interactive
+  - tags: edit, modify
+  - aliases: modify
+  - contexts: toolbar, editor
+  - intents: edit
+  - actions: edit
+  - objects: none
+  - related: save
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/actions/edit.svg`
+- `error` — Error · system · status
+  - tags: error, failure
+  - aliases: failure
+  - contexts: system, status
+  - intents: status
+  - actions: none
+  - objects: none
+  - related: warning
+  - opposite: success
+  - paired: none
+  - SVG: `/icons/system/error.svg`
+- `eye` — Eye · objects · meaningful
+  - tags: eye, view
+  - aliases: view
+  - contexts: utility, interface
+  - intents: visibility
+  - actions: none
+  - objects: eye
+  - related: lock
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/objects/eye.svg`
+- `file` — File · files · meaningful
+  - tags: file, document-file
+  - aliases: document-file
+  - contexts: files, editor
+  - intents: files
+  - actions: none
+  - objects: file
+  - related: folder
+  - opposite: none
+  - paired: folder
+  - SVG: `/icons/files/file.svg`
+- `file-minus` — File Minus · files · meaningful
+  - tags: file-minus, file, minus, remove-file
+  - aliases: remove-file
+  - contexts: files, editor
+  - intents: remove, files
+  - actions: none
+  - objects: file
+  - related: file
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/files/file-minus.svg`
+- `file-plus` — File Plus · files · meaningful
+  - tags: file-plus, file, plus, new-file
+  - aliases: new-file
+  - contexts: files, editor
+  - intents: create, files
+  - actions: none
+  - objects: file
+  - related: file
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/files/file-plus.svg`
+- `filter` — Filter · objects · meaningful
+  - tags: filter, refine
+  - aliases: refine
+  - contexts: utility, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - related: sort
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/objects/filter.svg`
+- `folder` — Folder · files · meaningful
+  - tags: folder, directory
+  - aliases: directory
+  - contexts: files, editor
+  - intents: files
+  - actions: none
+  - objects: folder
+  - related: file
+  - opposite: none
+  - paired: file
+  - SVG: `/icons/files/folder.svg`
+- `folder-open` — Folder Open · files · meaningful
+  - tags: folder-open, folder, open, open-folder
+  - aliases: open-folder
+  - contexts: files, editor
+  - intents: files
+  - actions: none
+  - objects: folder
+  - related: folder
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/files/folder-open.svg`
+- `folder-plus` — Folder Plus · files · meaningful
+  - tags: folder-plus, folder, plus, new-folder
+  - aliases: new-folder
+  - contexts: files, editor
+  - intents: create, files
+  - actions: none
+  - objects: folder
+  - related: folder
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/files/folder-plus.svg`
+- `git-branch` — Git Branch · developer · meaningful
+  - tags: git-branch, git, branch
+  - aliases: branch
+  - contexts: developer, tooling
+  - intents: developer
+  - actions: none
+  - objects: none
+  - related: git-merge
+  - opposite: none
+  - paired: git-commit, git-merge
+  - SVG: `/icons/developer/git-branch.svg`
+- `git-commit` — Git Commit · developer · meaningful
+  - tags: git-commit, git, commit
+  - aliases: commit
+  - contexts: developer, tooling
+  - intents: developer
+  - actions: none
+  - objects: none
+  - related: git-branch
+  - opposite: none
+  - paired: git-branch
+  - SVG: `/icons/developer/git-commit.svg`
+- `git-merge` — Git Merge · developer · meaningful
+  - tags: git-merge, git, merge
+  - aliases: merge
+  - contexts: developer, tooling
+  - intents: developer
+  - actions: merge
+  - objects: none
+  - related: git-branch
+  - opposite: none
+  - paired: git-branch
+  - SVG: `/icons/developer/git-merge.svg`
+- `github` — GitHub · brands · brand
+  - tags: github, git, developer, code
+  - aliases: none
+  - contexts: developer, source-control, brand
+  - intents: developer
+  - actions: none
+  - objects: code, github
+  - related: code
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/brands/github.svg`
+- `heart` — Heart · communication · interactive
+  - tags: heart, like, favourite, favorite, reaction
+  - aliases: like, favourite, favorite
+  - contexts: reaction, social, content
+  - intents: reaction
+  - actions: none
+  - objects: heart
+  - related: star
+  - opposite: star
+  - paired: none
+  - SVG: `/icons/communication/heart.svg`
+- `help` — Help · system · status
+  - tags: help, question
+  - aliases: question
+  - contexts: system, status
+  - intents: status
+  - actions: none
+  - objects: none
+  - related: info
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/system/help.svg`
+- `home` — Home · navigation · interactive
+  - tags: home, house
+  - aliases: house
+  - contexts: navigation, interface
+  - intents: navigation
+  - actions: none
+  - objects: none
+  - related: menu
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/navigation/home.svg`
+- `image` — Image · media · meaningful
+  - tags: image, photo
+  - aliases: photo
+  - contexts: media, content
+  - intents: media
+  - actions: none
+  - objects: image
+  - related: camera
+  - opposite: none
+  - paired: camera
+  - SVG: `/icons/media/image.svg`
+- `info` — Info · system · status
+  - tags: info, information
+  - aliases: information
+  - contexts: system, status
+  - intents: status
+  - actions: none
+  - objects: none
+  - related: help
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/system/info.svg`
+- `link` — Link · communication · interactive
+  - tags: link, url
+  - aliases: url
+  - contexts: communication, content
+  - intents: none
+  - actions: link
+  - objects: none
+  - related: share
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/communication/link.svg`
+- `loading` — Loading · system · status
+  - tags: loading, progress
+  - aliases: progress
+  - contexts: system, status
+  - intents: status
+  - actions: none
+  - objects: none
+  - related: refresh
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/system/loading.svg`
+- `location` — Location · objects · meaningful
+  - tags: location, pin
+  - aliases: pin
+  - contexts: utility, interface
+  - intents: location
+  - actions: none
+  - objects: location
+  - related: map
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/objects/location.svg`
+- `lock` — Lock · objects · meaningful
+  - tags: lock, private
+  - aliases: private
+  - contexts: utility, interface
+  - intents: visibility
+  - actions: none
+  - objects: none
+  - related: unlock
+  - opposite: unlock
+  - paired: none
+  - SVG: `/icons/objects/lock.svg`
+- `mail` — Mail · communication · interactive
+  - tags: mail, email
+  - aliases: email
+  - contexts: communication, content
+  - intents: communication
+  - actions: none
+  - objects: mail
+  - related: message
+  - opposite: none
+  - paired: message
+  - SVG: `/icons/communication/mail.svg`
+- `map` — Map · objects · meaningful
+  - tags: map, maps
+  - aliases: maps
+  - contexts: utility, interface
+  - intents: location
+  - actions: none
+  - objects: map
+  - related: location
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/objects/map.svg`
+- `menu` — Menu · navigation · interactive
+  - tags: menu, navigation, hamburger
+  - aliases: hamburger, navigation-menu
+  - contexts: navigation, mobile, toolbar
+  - intents: navigation
+  - actions: none
+  - objects: none
+  - related: x
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/navigation/menu.svg`
+- `message` — Message · communication · interactive
+  - tags: message, chat
+  - aliases: chat
+  - contexts: communication, content
+  - intents: communication
+  - actions: none
+  - objects: message
+  - related: mail
+  - opposite: none
+  - paired: mail
+  - SVG: `/icons/communication/message.svg`
+- `mic` — Mic · media · meaningful
+  - tags: mic, microphone
+  - aliases: microphone
+  - contexts: media, content
+  - intents: none
+  - actions: none
+  - objects: none
+  - related: volume
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/media/mic.svg`
+- `minus` — Minus · actions · interactive
+  - tags: minus, subtract, remove, less
+  - aliases: subtract
+  - contexts: toolbar, forms, editor
+  - intents: dismiss, remove
+  - actions: remove
+  - objects: none
+  - related: plus
+  - opposite: plus
+  - paired: none
+  - SVG: `/icons/actions/minus.svg`
+- `music` — Music · media · meaningful
+  - tags: music, audio
+  - aliases: audio
+  - contexts: media, content
+  - intents: media
+  - actions: none
+  - objects: music
+  - related: volume
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/media/music.svg`
+- `pause` — Pause · media · meaningful
+  - tags: pause, paused
+  - aliases: paused
+  - contexts: media, content
+  - intents: media
+  - actions: pause
+  - objects: none
+  - related: play
+  - opposite: play
+  - paired: none
+  - SVG: `/icons/media/pause.svg`
+- `play` — Play · actions · interactive
+  - tags: play, start
+  - aliases: start
+  - contexts: toolbar, editor
+  - intents: media
+  - actions: play
+  - objects: none
+  - related: pause
+  - opposite: pause
+  - paired: none
+  - SVG: `/icons/actions/play.svg`
+- `play-circle` — Play Circle · media · meaningful
+  - tags: play-circle, play, circle, video-play
+  - aliases: video-play
+  - contexts: media, content
+  - intents: media
+  - actions: play
+  - objects: none
+  - related: play
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/media/play-circle.svg`
+- `plus` — Plus · actions · interactive
+  - tags: plus, add, create, new
+  - aliases: add, create
+  - contexts: toolbar, forms, editor
+  - intents: create
+  - actions: add, create
+  - objects: none
+  - related: minus
+  - opposite: minus
+  - paired: none
+  - SVG: `/icons/actions/plus.svg`
+- `receipt` — Receipt · commerce · meaningful
+  - tags: receipt, invoice
+  - aliases: invoice
+  - contexts: commerce, checkout
+  - intents: commerce
+  - actions: none
+  - objects: receipt
+  - related: credit-card
+  - opposite: none
+  - paired: credit-card
+  - SVG: `/icons/commerce/receipt.svg`
+- `redo` — Redo · actions · interactive
+  - tags: redo, forward
+  - aliases: none
+  - contexts: toolbar, editor
+  - intents: navigation
+  - actions: redo
+  - objects: none
+  - related: undo
+  - opposite: undo
+  - paired: none
+  - SVG: `/icons/actions/redo.svg`
+- `refresh` — Refresh · actions · interactive
+  - tags: refresh, reload
+  - aliases: reload
+  - contexts: toolbar, editor
+  - intents: none
+  - actions: refresh
+  - objects: none
+  - related: undo
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/actions/refresh.svg`
+- `rocket` — Rocket · developer · meaningful
+  - tags: rocket, launch
+  - aliases: launch
+  - contexts: developer, tooling
+  - intents: developer
+  - actions: none
+  - objects: none
+  - related: play
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/developer/rocket.svg`
+- `save` — Save · actions · interactive
+  - tags: save, store
+  - aliases: store
+  - contexts: toolbar, editor
+  - intents: edit
+  - actions: save
+  - objects: none
+  - related: download
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/actions/save.svg`
+- `search` — Search · navigation · interactive
+  - tags: search, find, lookup, magnify
+  - aliases: find, lookup
+  - contexts: navigation, toolbar, command
+  - intents: search
+  - actions: search
+  - objects: none
+  - related: menu
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/navigation/search.svg`
+- `send` — Send · communication · interactive
+  - tags: send, submit
+  - aliases: submit
+  - contexts: communication, content
+  - intents: transfer, communication
+  - actions: send
+  - objects: none
+  - related: share
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/communication/send.svg`
+- `server` — Server · developer · meaningful
+  - tags: server, backend
+  - aliases: backend
+  - contexts: developer, tooling
+  - intents: developer
+  - actions: none
+  - objects: server
+  - related: database
+  - opposite: none
+  - paired: database
+  - SVG: `/icons/developer/server.svg`
+- `settings` — Settings · system · interactive
+  - tags: settings, gear, configuration, preferences
+  - aliases: gear, configuration, preferences
+  - contexts: settings, toolbar, system
+  - intents: settings
+  - actions: none
+  - objects: settings
+  - related: menu
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/system/settings.svg`
+- `share` — Share · actions · interactive
+  - tags: share, send
+  - aliases: none
+  - contexts: toolbar, editor
+  - intents: transfer, communication
+  - actions: send, share
+  - objects: none
+  - related: link
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/actions/share.svg`
+- `sort` — Sort · objects · meaningful
+  - tags: sort, order
+  - aliases: order
+  - contexts: utility, interface
+  - intents: none
+  - actions: sort
+  - objects: none
+  - related: filter
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/objects/sort.svg`
+- `star` — Star · communication · interactive
+  - tags: star, favorite, favourite, rating
+  - aliases: rating
+  - contexts: rating, reaction, content
+  - intents: reaction
+  - actions: none
+  - objects: star
+  - related: heart
+  - opposite: heart
+  - paired: none
+  - SVG: `/icons/communication/star.svg`
+- `stop` — Stop · media · meaningful
+  - tags: stop, halt
+  - aliases: halt
+  - contexts: media, content
+  - intents: media
+  - actions: stop
+  - objects: none
+  - related: play
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/media/stop.svg`
+- `success` — Success · system · status
+  - tags: success, passed
+  - aliases: passed
+  - contexts: system, status
+  - intents: status
+  - actions: none
+  - objects: none
+  - related: check
+  - opposite: error
+  - paired: none
+  - SVG: `/icons/system/success.svg`
+- `sun` — Sun · system · status
+  - tags: sun, light
+  - aliases: light
+  - contexts: system, status
+  - intents: none
+  - actions: none
+  - objects: none
+  - related: settings
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/system/sun.svg`
+- `tag` — Tag · commerce · meaningful
+  - tags: tag, label
+  - aliases: label
+  - contexts: commerce, checkout
+  - intents: commerce
+  - actions: none
+  - objects: tag
+  - related: bag
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/commerce/tag.svg`
+- `terminal` — Terminal · developer · meaningful
+  - tags: terminal, console
+  - aliases: console
+  - contexts: developer, tooling
+  - intents: developer
+  - actions: none
+  - objects: terminal
+  - related: code
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/developer/terminal.svg`
+- `undo` — Undo · actions · interactive
+  - tags: undo, revert
+  - aliases: revert
+  - contexts: toolbar, editor
+  - intents: none
+  - actions: undo
+  - objects: none
+  - related: redo
+  - opposite: redo
+  - paired: none
+  - SVG: `/icons/actions/undo.svg`
+- `unlock` — Unlock · objects · meaningful
+  - tags: unlock, public
+  - aliases: public
+  - contexts: utility, interface
+  - intents: visibility
+  - actions: unlock
+  - objects: none
+  - related: lock
+  - opposite: lock
+  - paired: none
+  - SVG: `/icons/objects/unlock.svg`
+- `upload` — Upload · actions · interactive
+  - tags: upload, import
+  - aliases: import
+  - contexts: toolbar, editor
+  - intents: transfer
+  - actions: import, upload
+  - objects: none
+  - related: download
+  - opposite: download
+  - paired: download
+  - SVG: `/icons/actions/upload.svg`
+- `user` — User · people · meaningful
+  - tags: user, account
+  - aliases: account
+  - contexts: accounts, social
+  - intents: account
+  - actions: none
+  - objects: account, people, user
+  - related: users
+  - opposite: users
+  - paired: none
+  - SVG: `/icons/people/user.svg`
+- `user-circle` — User Circle · people · meaningful
+  - tags: user-circle, user, circle, profile
+  - aliases: profile
+  - contexts: accounts, social
+  - intents: account
+  - actions: none
+  - objects: people, user
+  - related: user
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/people/user-circle.svg`
+- `user-minus` — User Minus · people · meaningful
+  - tags: user-minus, user, minus, remove-user
+  - aliases: remove-user
+  - contexts: accounts, social
+  - intents: account, remove
+  - actions: none
+  - objects: people, user
+  - related: user
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/people/user-minus.svg`
+- `user-plus` — User Plus · people · meaningful
+  - tags: user-plus, user, plus, add-user
+  - aliases: add-user
+  - contexts: accounts, social
+  - intents: account, create
+  - actions: none
+  - objects: people, user
+  - related: user
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/people/user-plus.svg`
+- `users` — Users · people · meaningful
+  - tags: users, people
+  - aliases: people
+  - contexts: accounts, social
+  - intents: account
+  - actions: none
+  - objects: people
+  - related: user
+  - opposite: user
+  - paired: none
+  - SVG: `/icons/people/users.svg`
+- `video` — Video · media · meaningful
+  - tags: video, film
+  - aliases: film
+  - contexts: media, content
+  - intents: media
+  - actions: none
+  - objects: video
+  - related: play-circle
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/media/video.svg`
+- `volume` — Volume · media · meaningful
+  - tags: volume, sound
+  - aliases: sound
+  - contexts: media, content
+  - intents: media
+  - actions: none
+  - objects: volume
+  - related: volume-off
+  - opposite: volume-off
+  - paired: none
+  - SVG: `/icons/media/volume.svg`
+- `volume-off` — Volume Off · media · meaningful
+  - tags: volume-off, volume, off, mute
+  - aliases: mute
+  - contexts: media, content
+  - intents: media
+  - actions: none
+  - objects: volume
+  - related: volume
+  - opposite: volume
+  - paired: none
+  - SVG: `/icons/media/volume-off.svg`
+- `warning` — Warning · system · status
+  - tags: warning, caution
+  - aliases: caution
+  - contexts: system, status
+  - intents: status
+  - actions: none
+  - objects: none
+  - related: error
+  - opposite: success
+  - paired: none
+  - SVG: `/icons/system/warning.svg`
+- `x` — X · actions · interactive
+  - tags: x, close, dismiss, remove, cancel
+  - aliases: close, dismiss
+  - contexts: dialogs, forms, toolbar
+  - intents: dismiss, remove
+  - actions: remove
+  - objects: none
+  - related: check, plus
+  - opposite: check
+  - paired: none
+  - SVG: `/icons/actions/x.svg`
+- `x-twitter` — X Twitter · brands · brand
+  - tags: x-twitter, x, twitter
+  - aliases: twitter
+  - contexts: brand, social
+  - intents: none
+  - actions: none
+  - objects: none
+  - related: none
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/brands/x-twitter.svg`
+- `youtube` — Youtube · brands · brand
+  - tags: youtube, video
+  - aliases: none
+  - contexts: brand, social
+  - intents: media
+  - actions: none
+  - objects: video
+  - related: none
+  - opposite: none
+  - paired: none
+  - SVG: `/icons/brands/youtube.svg`
 
 ## Consumption
 
