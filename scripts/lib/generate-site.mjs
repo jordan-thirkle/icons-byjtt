@@ -47,6 +47,8 @@ export const USE_CASES = {
   }
 };
 
+const CATALOGUE_PAGE_SIZE = 120;
+
 const CATEGORY_COPY = {
   actions: "Interface actions for creating, editing, confirming, removing, sharing and moving through work.",
   navigation: "Navigation and wayfinding icons for menus, links, controls, search and interface movement.",
@@ -87,6 +89,13 @@ const SEARCH_FIELD_WEIGHTS = {
   semantic: 18,
   text: 5
 };
+
+function paginationNav(page, totalPages) {
+  if (totalPages <= 1) return "";
+  const previous = page > 1 ? (page === 2 ? "/" : "/icons/page/" + (page - 1) + "/") : null;
+  const next = page < totalPages ? "/icons/page/" + (page + 1) + "/" : null;
+  return `<nav class="pagination" aria-label="Icon catalogue pages">${previous ? `<a href="${previous}" rel="prev">← Previous</a>` : "<span></span>"}<span>Page ${page} of ${totalPages}</span>${next ? `<a href="${next}" rel="next">Next →</a>` : "<span></span>"}</nav>`;
+}
 
 const escapeHtml = value => String(value).replace(/[&<>"']/g, c => ({
   "&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"
@@ -132,14 +141,15 @@ ${body}
 
 export function homepage(catalogue) {
   const categories = [...new Set(catalogue.icons.map(i => i.category))].sort();
-  const cards = catalogue.icons.map(icon => card(icon)).join("");
+  const pageIcons = catalogue.icons.slice(0, CATALOGUE_PAGE_SIZE);
+  const cards = pageIcons.map(icon => card(icon)).join("");
   const description = "JTT Icons is an open-source SVG icon library for modern interfaces, developers and AI-assisted development.";
   const categoryCounts = Object.fromEntries(categories.map(category => [category, catalogue.icons.filter(icon => icon.category === category).length]));
   const body = `<main>
 <section class="hero"><div class="kicker">Open source · SVG · semantic · machine-readable</div><h1>Find the icon.<br>Ship the interface.</h1><p>A focused, open-source icon library with canonical names, semantic search, copy-ready SVGs and predictable paths.</p><div class="hero-actions"><a class="button primary" href="#library">Browse ${catalogue.icons.length} icons</a><a class="button" href="/docs/">Read the docs</a></div></section>
 <section class="searchbar" aria-label="Icon search"><div class="search-row"><div class="searchbox"><input id="q" type="search" autocomplete="off" placeholder="Search by meaning, not just name…" aria-label="Search icons"><span class="shortcut">/</span></div><button class="clear-search" id="clear-search" type="button" aria-label="Clear search">Clear</button></div><div class="search-hint">Try <button class="suggestion" data-query="close">close</button>, <button class="suggestion" data-query="upload">upload</button>, <button class="suggestion" data-query="account">account</button>, or <button class="suggestion" data-query="developer">developer</button>.</div><div class="chips"><a class="chip active" href="/" data-category="all">All <span>${catalogue.icons.length}</span></a>${categories.map(c=>`<a class="chip" href="/categories/${encodeURIComponent(c)}/">${escapeHtml(c)} <span>${categoryCounts[c]}</span></a>`).join("")}</div></section>
 <section id="library" class="library-toolbar"><div class="count" id="count">${catalogue.icons.length} icons</div><div class="sort-control"><label for="sort">Sort</label><select id="sort" aria-label="Sort icons"><option value="relevance">Relevance</option><option value="name">Name</option><option value="category">Category</option></select></div></section>
-<section class="grid" id="grid">${cards}</section><p class="empty" id="empty">No icons match that search. Try a broader concept, alias or category.</p>
+<section class="grid" id="grid">${cards}</section>${paginationNav(1, Math.ceil(catalogue.icons.length / CATALOGUE_PAGE_SIZE))}<p class="empty" id="empty">No icons match that search. Try a broader concept, alias or category.</p>
 <section class="discover"><div><div class="kicker">Built for shipping</div><h2>Not just a pretty grid.</h2><p>Every icon has a stable name, semantic metadata, a raw SVG path and a generated package representation. Pick one and get straight to implementation.</p></div><div class="discover-links"><a href="/use-cases/developer-tools/">Developer tool icons →</a><a href="/use-cases/navigation-icons/">Navigation icons →</a><a href="/use-cases/interface-actions/">Interface action icons →</a><a href="/use-cases/communication-ui/">Communication icons →</a><a href="/llms.txt">AI reference →</a></div></section>
 </main>
 <script>
@@ -267,6 +277,16 @@ export function useCasePage(slug, config, icons) {
 </main>`;
   const structured = {"@context":"https://schema.org","@type":"CollectionPage",name:`JTT Icons — ${config.title}`,description:config.description,url:`${BASE}/use-cases/${slug}/`};
   return shell({title:`${config.title} — JTT Icons`,description:config.description,canonical:`${BASE}/use-cases/${slug}/`,body:body.replace("</main>",`</main><script type="application/ld+json">${jsonLd(structured)}</script>`)});
+}
+
+export function cataloguePage(catalogue, page) {
+  const totalPages = Math.max(1, Math.ceil(catalogue.icons.length / CATALOGUE_PAGE_SIZE));
+  const safePage = Math.min(Math.max(1, page), totalPages);
+  const start = (safePage - 1) * CATALOGUE_PAGE_SIZE;
+  const icons = catalogue.icons.slice(start, start + CATALOGUE_PAGE_SIZE);
+  const body = `<main><section class="collection-head"><div class="kicker">JTT Icons library</div><h1>Open Source SVG Icons</h1><p>Browse the JTT Icons catalogue by stable canonical name and semantic category.</p><div class="collection-meta">${catalogue.icons.length} icons · page ${safePage} of ${totalPages}</div></section><section class="grid">${icons.map(icon => card(icon)).join("")}</section>${paginationNav(safePage,totalPages)}</main>`;
+  const structured = {"@context":"https://schema.org","@type":"CollectionPage",name:`JTT Icons — Page ${safePage}`,description:"Browse the JTT Icons open-source SVG catalogue.",url:safePage===1?`${BASE}/`:`${BASE}/icons/page/${safePage}/`};
+  return shell({title:safePage===1?"JTT Icons — Open Source SVG Icon Library":`JTT Icons — Icon Library Page ${safePage}`,description:"Browse the JTT Icons open-source SVG catalogue.",canonical:structured.url,body:body.replace("</main>",`</main><script type="application/ld+json">${jsonLd(structured)}</script>`)});
 }
 
 export function categoryPage(category, icons) {
