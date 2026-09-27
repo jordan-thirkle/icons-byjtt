@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { generateCatalogue } from "./lib/generate-catalogue.mjs";
 import { generatePackage } from "./lib/generate-package.mjs";
-import { homepage, iconPage, categoryPage, docsPage, sitemap, favicon } from "./lib/generate-site.mjs";
+import { homepage, iconPage, categoryPage, useCasePage, docsPage, sitemap, favicon } from "./lib/generate-site.mjs";
 import { generateAiReference } from "./lib/generate-ai-reference.mjs";
 
 const root = process.cwd();
@@ -95,6 +95,17 @@ const categories = [...new Set(catalogue.icons.map(icon => icon.category))].sort
 for (const category of categories) {
   const icons = catalogue.icons.filter(icon => icon.category === category);
   write(`categories/${category}/index.html`, categoryPage(category, icons));
+}
+
+const useCases = {
+  "navigation-icons": { title: "Navigation Icons", description: "Open-source navigation icons for menus, breadcrumbs, tabs, search, links and moving through digital products.", lead: "Use familiar directional and wayfinding concepts without inventing your own icon vocabulary.", names: ["arrow-left","arrow-right","arrow-up","arrow-down","chevron-left","chevron-right","chevron-up","chevron-down","menu","home","search","location","map"], notes: ["Use directional icons when the action itself is spatial or sequential.","Pair icon-only navigation controls with an accessible name.","Keep the same directional meaning consistent across the product."] },
+  "interface-actions": { title: "Interface Action Icons", description: "Open-source action icons for creating, editing, confirming, deleting, downloading, uploading and managing interface state.", lead: "Common actions should be instantly recognisable and consistent across your product.", names: ["plus","edit","check","delete","copy","download","upload","save","refresh","undo","redo","share","filter","sort"], notes: ["Prefer a familiar action glyph over a decorative metaphor.","Use destructive icons with explicit surrounding labels or confirmation UI.","Keep icon-only controls large enough to operate comfortably."] },
+  "developer-tools": { title: "Developer Tool Icons", description: "Open-source icons for developer tools, repositories, terminals, code, infrastructure, bugs and deployment interfaces.", lead: "Build developer-facing interfaces from a vocabulary that maps cleanly to engineering concepts.", names: ["code","braces","terminal","git-branch","git-commit","git-merge","github","server","database","bug","rocket","settings"], notes: ["Use repository and version-control icons for concrete engineering concepts.","Use status and utility icons alongside text when the meaning could be ambiguous.","Prefer semantic names so design tokens and AI tooling can discover the same concept."] },
+  "communication-ui": { title: "Communication Icons", description: "Open-source icons for messaging, notifications, mail, sharing, reactions and communication workflows.", lead: "Make communication states legible without turning every notification into visual noise.", names: ["message","mail","bell","send","share","heart","bookmark","info","help"], notes: ["Use notification icons for state, not as a substitute for the notification message.","Use familiar communication metaphors consistently.","Provide accessible names for meaningful icon-only controls."] }
+};
+for (const [slug, config] of Object.entries(useCases)) {
+  const icons = config.names.map(name => byName.get(name)).filter(Boolean);
+  write(`use-cases/${slug}/index.html`, useCasePage(slug, config, icons));
 }
 
 console.log(`Generated ${metadata.icons.length} icons, ${categories.length} category pages, package modules and public surfaces.`);
