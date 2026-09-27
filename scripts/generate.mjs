@@ -8,7 +8,8 @@ import { generateVuePackage } from "./lib/generate-vue.mjs";
 
 const root = process.cwd();
 const metadata = JSON.parse(fs.readFileSync(path.join(root, "metadata/icons.json"), "utf8"));
-const catalogue = generateCatalogue(metadata);
+const ontology = JSON.parse(fs.readFileSync(path.join(root, "metadata/ontology.json"), "utf8"));
+const catalogue = generateCatalogue(metadata, ontology);
 const svgByName = Object.fromEntries(
   metadata.icons.map(icon => [icon.name, fs.readFileSync(path.join(root, icon.path.slice(1)), "utf8")])
 );
@@ -26,7 +27,7 @@ write("favicon.svg", favicon());
 write("icons.json", JSON.stringify(catalogue, null, 2) + "\n");
 write("api/icons.json", JSON.stringify(catalogue, null, 2) + "\n");
 write("sitemap.xml", sitemap(catalogue));
-write("llms-full.txt", generateAiReference(metadata));
+write("llms-full.txt", generateAiReference({ ...metadata, icons: catalogue.icons }, ontology));
 
 for (const [file, content] of Object.entries(files)) write(file, content);
 for (const [file, content] of Object.entries(generateVuePackage(metadata, svgByName))) write(file, content);
