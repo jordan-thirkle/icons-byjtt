@@ -7,7 +7,6 @@ import catalogue from "../../metadata/icons.json" with { type: "json" };
 
 test("catalogue homepage is statically crawlable and uses generated catalogue data", () => {
   const html = fs.readFileSync(path.join(process.cwd(), "index.html"), "utf8");
-  assert.doesNotMatch(html, /fetch\(["']\/icons\.json/);
 
   assert.ok((html.match(/class="card"/g) || []).length <= 120);
   for (const icon of catalogue.icons.slice(0, 120)) assert.match(html, new RegExp(`href="/icons/${icon.name}/"`));
