@@ -20,6 +20,13 @@ This document explains how agents should discover and consume JTT Icons. Canonic
 - Line fill: none.
 - Brand marks may use currentColor fill when the brand silhouette requires it.
 
+## Semantic selection examples
+
+- “close”, “dismiss”, “cancel” → look for close/cancel/remove concepts, then verify the canonical metadata.
+- “account”, “profile”, “user” → inspect people/account concepts and use context to disambiguate.
+- “developer”, “code”, “repository”, “deploy” → inspect the developer category and related engineering contexts.
+- “upload”, “import”, “attach” → inspect action/file concepts and related metadata.
+
 ## Current catalogue
 
 - `apple` — Apple · brands · brand · apple, ios · SVG: `/icons/brands/apple.svg`
