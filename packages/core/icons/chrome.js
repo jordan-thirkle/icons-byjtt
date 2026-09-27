@@ -2,4 +2,4 @@ export const name = "chrome";
 export const title = "Chrome";
 export const category = "brands";
 export const svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M12 3 20 8v8l-8 5-8-5V8z\"/></svg>";
-export const metadata = {"name":"chrome","title":"Chrome","category":"brands","tags":["chrome","chrome"],"aliases":[],"contexts":["brands","interface"],"related":[],"accessibility":{"default":"brand"},"path":"/icons/brands/chrome.svg","family":"line"};
+export const metadata = {"name":"chrome","title":"Chrome","category":"brands","tags":["chrome"],"aliases":[],"contexts":["brands","interface"],"related":[],"accessibility":{"default":"brand"},"path":"/icons/brands/chrome.svg","family":"line","semantics":{"intents":[],"actions":[],"states":[],"objects":[],"queryTerms":["chrome","brands","interface"],"relations":{"related":[],"alternative":[],"opposite":[],"paired":[],"state":[]}}};

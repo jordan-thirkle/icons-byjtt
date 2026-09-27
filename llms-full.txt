@@ -54,7 +54,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
 ## Current catalogue
 
 - `activity` — Activity · objects · meaningful
-  - tags: activity, activity
+  - tags: activity
   - aliases: none
   - contexts: objects, interface
   - intents: none
@@ -67,8 +67,8 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/objects/activity.svg`
-- `ai-agent` — Ai Agent · developer · meaningful
-  - tags: ai-agent, ai, agent, ai, agent, llm
+- `ai-agent` — AI Agent · developer · meaningful
+  - tags: ai-agent, ai, agent, llm
   - aliases: none
   - contexts: developer, tooling
   - intents: developer, ai
@@ -81,8 +81,8 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/developer/ai-agent.svg`
-- `ai-chat` — Ai Chat · developer · meaningful
-  - tags: ai-chat, ai, chat, ai, agent, llm
+- `ai-chat` — AI Chat · developer · meaningful
+  - tags: ai-chat, ai, chat, agent, llm
   - aliases: none
   - contexts: developer, tooling
   - intents: communication, developer, ai
@@ -95,8 +95,8 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/developer/ai-chat.svg`
-- `ai-code` — Ai Code · developer · meaningful
-  - tags: ai-code, ai, code, ai, agent, llm
+- `ai-code` — AI Code · developer · meaningful
+  - tags: ai-code, ai, code, agent, llm
   - aliases: none
   - contexts: developer, tooling
   - intents: developer, ai
@@ -109,8 +109,8 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/developer/ai-code.svg`
-- `ai-generate` — Ai Generate · developer · meaningful
-  - tags: ai-generate, ai, generate, ai, agent, llm
+- `ai-generate` — AI Generate · developer · meaningful
+  - tags: ai-generate, ai, generate, agent, llm
   - aliases: none
   - contexts: developer, tooling
   - intents: developer, ai
@@ -123,8 +123,8 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/developer/ai-generate.svg`
-- `ai-model` — Ai Model · developer · meaningful
-  - tags: ai-model, ai, model, ai, agent, llm
+- `ai-model` — AI Model · developer · meaningful
+  - tags: ai-model, ai, model, agent, llm
   - aliases: none
   - contexts: developer, tooling
   - intents: developer, ai
@@ -137,8 +137,8 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/developer/ai-model.svg`
-- `ai-prompt` — Ai Prompt · developer · meaningful
-  - tags: ai-prompt, ai, prompt, ai, agent, llm
+- `ai-prompt` — AI Prompt · developer · meaningful
+  - tags: ai-prompt, ai, prompt, agent, llm
   - aliases: none
   - contexts: developer, tooling
   - intents: developer, ai
@@ -151,8 +151,8 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/developer/ai-prompt.svg`
-- `ai-search` — Ai Search · developer · meaningful
-  - tags: ai-search, ai, search, ai, agent, llm
+- `ai-search` — AI Search · developer · meaningful
+  - tags: ai-search, ai, search, agent, llm
   - aliases: none
   - contexts: developer, tooling
   - intents: search, developer, ai
@@ -166,7 +166,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/developer/ai-search.svg`
 - `android` — Android · brands · brand
-  - tags: android, android
+  - tags: android
   - aliases: none
   - contexts: brands, interface
   - intents: none
@@ -180,7 +180,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/brands/android.svg`
 - `api` — Api · developer · meaningful
-  - tags: api, api
+  - tags: api
   - aliases: none
   - contexts: developer, tooling
   - intents: developer
@@ -460,7 +460,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/commerce/bag.svg`
 - `ban` — Ban · actions · interactive
-  - tags: ban, ban
+  - tags: ban
   - aliases: none
   - contexts: actions, interface
   - intents: none
@@ -474,7 +474,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/actions/ban.svg`
 - `barcode` — Barcode · commerce · meaningful
-  - tags: barcode, barcode
+  - tags: barcode
   - aliases: none
   - contexts: commerce, interface
   - intents: none
@@ -502,7 +502,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/communication/bell.svg`
 - `bolt` — Bolt · actions · interactive
-  - tags: bolt, bolt
+  - tags: bolt
   - aliases: none
   - contexts: actions, interface
   - intents: none
@@ -530,7 +530,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/objects/bolt-circle.svg`
 - `book` — Book · files · meaningful
-  - tags: book, book
+  - tags: book
   - aliases: none
   - contexts: files, interface
   - intents: none
@@ -572,7 +572,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/communication/bookmark.svg`
 - `box` — Box · files · meaningful
-  - tags: box, box
+  - tags: box
   - aliases: none
   - contexts: files, interface
   - intents: none
@@ -614,7 +614,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/developer/bug.svg`
 - `building` — Building · objects · meaningful
-  - tags: building, building
+  - tags: building
   - aliases: none
   - contexts: objects, interface
   - intents: none
@@ -656,7 +656,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: image
   - SVG: `/icons/media/camera.svg`
 - `car` — Car · objects · meaningful
-  - tags: car, car
+  - tags: car
   - aliases: none
   - contexts: objects, interface
   - intents: none
@@ -684,7 +684,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/commerce/cart.svg`
 - `cash` — Cash · commerce · meaningful
-  - tags: cash, cash
+  - tags: cash
   - aliases: none
   - contexts: commerce, interface
   - intents: none
@@ -698,7 +698,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/commerce/cash.svg`
 - `chat` — Chat · communication · interactive
-  - tags: chat, chat
+  - tags: chat
   - aliases: none
   - contexts: communication, interface
   - intents: communication, ai
@@ -796,7 +796,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/navigation/chevron-up.svg`
 - `chrome` — Chrome · brands · brand
-  - tags: chrome, chrome
+  - tags: chrome
   - aliases: none
   - contexts: brands, interface
   - intents: none
@@ -894,7 +894,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/actions/close-circle.svg`
 - `cloud` — Cloud · objects · meaningful
-  - tags: cloud, cloud
+  - tags: cloud
   - aliases: none
   - contexts: objects, interface
   - intents: none
@@ -964,7 +964,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/developer/code.svg`
 - `coins` — Coins · commerce · meaningful
-  - tags: coins, coins
+  - tags: coins
   - aliases: none
   - contexts: commerce, interface
   - intents: none
@@ -978,7 +978,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/commerce/coins.svg`
 - `comment` — Comment · communication · interactive
-  - tags: comment, comment
+  - tags: comment
   - aliases: none
   - contexts: communication, interface
   - intents: none
@@ -992,7 +992,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/communication/comment.svg`
 - `comments` — Comments · communication · interactive
-  - tags: comments, comments
+  - tags: comments
   - aliases: none
   - contexts: communication, interface
   - intents: none
@@ -1006,7 +1006,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/communication/comments.svg`
 - `contact` — Contact · people · meaningful
-  - tags: contact, contact
+  - tags: contact
   - aliases: none
   - contexts: people, interface
   - intents: account
@@ -1020,7 +1020,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/people/contact.svg`
 - `contacts` — Contacts · people · meaningful
-  - tags: contacts, contacts
+  - tags: contacts
   - aliases: none
   - contexts: people, interface
   - intents: account
@@ -1034,7 +1034,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/people/contacts.svg`
 - `container` — Container · developer · meaningful
-  - tags: container, container
+  - tags: container
   - aliases: none
   - contexts: developer, tooling
   - intents: developer
@@ -1188,7 +1188,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/actions/delete.svg`
 - `dependency` — Dependency · developer · meaningful
-  - tags: dependency, dependency
+  - tags: dependency
   - aliases: none
   - contexts: developer, tooling
   - intents: developer
@@ -1216,7 +1216,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/brands/discord.svg`
 - `discount` — Discount · commerce · meaningful
-  - tags: discount, discount
+  - tags: discount
   - aliases: none
   - contexts: commerce, interface
   - intents: none
@@ -1230,7 +1230,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/commerce/discount.svg`
 - `docker` — Docker · developer · meaningful
-  - tags: docker, docker
+  - tags: docker
   - aliases: none
   - contexts: developer, tooling
   - intents: developer
@@ -1314,7 +1314,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/actions/edit.svg`
 - `email` — Email · communication · interactive
-  - tags: email, email
+  - tags: email
   - aliases: none
   - contexts: communication, interface
   - intents: communication
@@ -1342,7 +1342,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/system/error.svg`
 - `expand` — Expand · actions · interactive
-  - tags: expand, expand
+  - tags: expand
   - aliases: none
   - contexts: actions, interface
   - intents: none
@@ -1356,7 +1356,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/actions/expand.svg`
 - `external` — External · navigation · interactive
-  - tags: external, external
+  - tags: external
   - aliases: none
   - contexts: navigation, interface
   - intents: none
@@ -1412,7 +1412,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/actions/eye-off.svg`
 - `figma` — Figma · brands · brand
-  - tags: figma, figma
+  - tags: figma
   - aliases: none
   - contexts: brands, interface
   - intents: none
@@ -1538,7 +1538,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/files/file-video.svg`
 - `files` — Files · files · meaningful
-  - tags: files, files
+  - tags: files
   - aliases: none
   - contexts: files, interface
   - intents: none
@@ -1552,7 +1552,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/files/files.svg`
 - `film` — Film · media · meaningful
-  - tags: film, film
+  - tags: film
   - aliases: none
   - contexts: media, interface
   - intents: none
@@ -1678,7 +1678,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/files/folder-search.svg`
 - `forbidden` — Forbidden · system · meaningful
-  - tags: forbidden, forbidden
+  - tags: forbidden
   - aliases: none
   - contexts: system, interface
   - intents: none
@@ -1692,7 +1692,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/system/forbidden.svg`
 - `gift` — Gift · commerce · meaningful
-  - tags: gift, gift
+  - tags: gift
   - aliases: none
   - contexts: commerce, interface
   - intents: none
@@ -1790,7 +1790,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/brands/github.svg`
 - `gitlab` — Gitlab · brands · brand
-  - tags: gitlab, gitlab
+  - tags: gitlab
   - aliases: none
   - contexts: brands, interface
   - intents: none
@@ -1804,7 +1804,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/brands/gitlab.svg`
 - `globe` — Globe · objects · meaningful
-  - tags: globe, globe
+  - tags: globe
   - aliases: none
   - contexts: objects, interface
   - intents: none
@@ -1846,7 +1846,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/system/globe-warning.svg`
 - `grid` — Grid · navigation · interactive
-  - tags: grid, grid
+  - tags: grid
   - aliases: none
   - contexts: navigation, interface
   - intents: none
@@ -1874,7 +1874,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/files/hard-drive.svg`
 - `headphones` — Headphones · media · meaningful
-  - tags: headphones, headphones
+  - tags: headphones
   - aliases: none
   - contexts: media, interface
   - intents: none
@@ -1972,7 +1972,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/media/image-off.svg`
 - `inbox` — Inbox · communication · interactive
-  - tags: inbox, inbox
+  - tags: inbox
   - aliases: none
   - contexts: communication, interface
   - intents: none
@@ -2014,7 +2014,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/system/info.svg`
 - `invoice` — Invoice · commerce · meaningful
-  - tags: invoice, invoice
+  - tags: invoice
   - aliases: none
   - contexts: commerce, interface
   - intents: none
@@ -2028,7 +2028,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/commerce/invoice.svg`
 - `key` — Key · objects · meaningful
-  - tags: key, key
+  - tags: key
   - aliases: none
   - contexts: objects, interface
   - intents: none
@@ -2056,7 +2056,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/developer/key-code.svg`
 - `keyboard` — Keyboard · objects · meaningful
-  - tags: keyboard, keyboard
+  - tags: keyboard
   - aliases: none
   - contexts: objects, interface
   - intents: none
@@ -2070,7 +2070,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/objects/keyboard.svg`
 - `layers` — Layers · objects · meaningful
-  - tags: layers, layers
+  - tags: layers
   - aliases: none
   - contexts: objects, interface
   - intents: none
@@ -2084,7 +2084,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/objects/layers.svg`
 - `lightbulb` — Lightbulb · objects · meaningful
-  - tags: lightbulb, lightbulb
+  - tags: lightbulb
   - aliases: none
   - contexts: objects, interface
   - intents: none
@@ -2126,7 +2126,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/objects/link-2.svg`
 - `linkedin` — Linkedin · brands · brand
-  - tags: linkedin, linkedin
+  - tags: linkedin
   - aliases: none
   - contexts: brands, interface
   - intents: none
@@ -2140,7 +2140,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/brands/linkedin.svg`
 - `list` — List · navigation · interactive
-  - tags: list, list
+  - tags: list
   - aliases: none
   - contexts: navigation, interface
   - intents: none
@@ -2224,7 +2224,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/navigation/log-out.svg`
 - `logs` — Logs · developer · meaningful
-  - tags: logs, logs
+  - tags: logs
   - aliases: none
   - contexts: developer, tooling
   - intents: developer
@@ -2252,7 +2252,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: message
   - SVG: `/icons/communication/mail.svg`
 - `maintenance` — Maintenance · system · meaningful
-  - tags: maintenance, maintenance
+  - tags: maintenance
   - aliases: none
   - contexts: system, interface
   - intents: none
@@ -2294,7 +2294,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/objects/map-pin.svg`
 - `maximize` — Maximize · actions · interactive
-  - tags: maximize, maximize
+  - tags: maximize
   - aliases: none
   - contexts: actions, interface
   - intents: none
@@ -2308,7 +2308,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/actions/maximize.svg`
 - `mention` — Mention · communication · interactive
-  - tags: mention, mention
+  - tags: mention
   - aliases: none
   - contexts: communication, interface
   - intents: none
@@ -2364,7 +2364,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/media/mic.svg`
 - `minimize` — Minimize · actions · interactive
-  - tags: minimize, minimize
+  - tags: minimize
   - aliases: none
   - contexts: actions, interface
   - intents: none
@@ -2392,7 +2392,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/actions/minus.svg`
 - `mobile` — Mobile · objects · meaningful
-  - tags: mobile, mobile
+  - tags: mobile
   - aliases: none
   - contexts: objects, interface
   - intents: none
@@ -2406,7 +2406,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/objects/mobile.svg`
 - `money` — Money · commerce · meaningful
-  - tags: money, money
+  - tags: money
   - aliases: none
   - contexts: commerce, interface
   - intents: none
@@ -2420,7 +2420,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/commerce/money.svg`
 - `monitor` — Monitor · objects · meaningful
-  - tags: monitor, monitor
+  - tags: monitor
   - aliases: none
   - contexts: objects, interface
   - intents: none
@@ -2476,7 +2476,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/actions/more-vertical.svg`
 - `mouse` — Mouse · objects · meaningful
-  - tags: mouse, mouse
+  - tags: mouse
   - aliases: none
   - contexts: objects, interface
   - intents: none
@@ -2490,7 +2490,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/objects/mouse.svg`
 - `move` — Move · actions · interactive
-  - tags: move, move
+  - tags: move
   - aliases: none
   - contexts: actions, interface
   - intents: none
@@ -2532,7 +2532,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/media/music-note.svg`
 - `npm` — Npm · brands · brand
-  - tags: npm, npm
+  - tags: npm
   - aliases: none
   - contexts: brands, interface
   - intents: none
@@ -2546,7 +2546,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/brands/npm.svg`
 - `offline` — Offline · system · meaningful
-  - tags: offline, offline
+  - tags: offline
   - aliases: none
   - contexts: system, interface
   - intents: none
@@ -2560,7 +2560,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/system/offline.svg`
 - `online` — Online · system · meaningful
-  - tags: online, online
+  - tags: online
   - aliases: none
   - contexts: system, interface
   - intents: none
@@ -2574,7 +2574,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/system/online.svg`
 - `openai` — Openai · brands · brand
-  - tags: openai, openai
+  - tags: openai
   - aliases: none
   - contexts: brands, interface
   - intents: none
@@ -2588,7 +2588,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/brands/openai.svg`
 - `package` — Package · objects · meaningful
-  - tags: package, package
+  - tags: package
   - aliases: none
   - contexts: objects, interface
   - intents: none
@@ -2630,7 +2630,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/developer/package-code.svg`
 - `palette` — Palette · objects · meaningful
-  - tags: palette, palette
+  - tags: palette
   - aliases: none
   - contexts: objects, interface
   - intents: none
@@ -2672,7 +2672,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/navigation/panel-right.svg`
 - `paperclip` — Paperclip · files · meaningful
-  - tags: paperclip, paperclip
+  - tags: paperclip
   - aliases: none
   - contexts: files, interface
   - intents: none
@@ -2728,7 +2728,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/people/person-standing.svg`
 - `phone` — Phone · communication · interactive
-  - tags: phone, phone
+  - tags: phone
   - aliases: none
   - contexts: communication, interface
   - intents: none
@@ -2742,7 +2742,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/communication/phone.svg`
 - `pin` — Pin · actions · interactive
-  - tags: pin, pin
+  - tags: pin
   - aliases: none
   - contexts: actions, interface
   - intents: location
@@ -2756,7 +2756,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/actions/pin.svg`
 - `pipeline` — Pipeline · developer · meaningful
-  - tags: pipeline, pipeline
+  - tags: pipeline
   - aliases: none
   - contexts: developer, tooling
   - intents: developer
@@ -2826,7 +2826,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/actions/plus.svg`
 - `podcast` — Podcast · media · meaningful
-  - tags: podcast, podcast
+  - tags: podcast
   - aliases: none
   - contexts: media, interface
   - intents: none
@@ -2840,7 +2840,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/media/podcast.svg`
 - `power` — Power · actions · interactive
-  - tags: power, power
+  - tags: power
   - aliases: none
   - contexts: actions, interface
   - intents: none
@@ -2854,7 +2854,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/actions/power.svg`
 - `profile` — Profile · people · meaningful
-  - tags: profile, profile
+  - tags: profile
   - aliases: none
   - contexts: people, interface
   - intents: account
@@ -2896,7 +2896,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/objects/qr-code.svg`
 - `radio` — Radio · media · meaningful
-  - tags: radio, radio
+  - tags: radio
   - aliases: none
   - contexts: media, interface
   - intents: none
@@ -2910,7 +2910,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/media/radio.svg`
 - `react` — React · brands · brand
-  - tags: react, react
+  - tags: react
   - aliases: none
   - contexts: brands, interface
   - intents: none
@@ -2994,7 +2994,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/system/refresh-alert.svg`
 - `repeat` — Repeat · media · meaningful
-  - tags: repeat, repeat
+  - tags: repeat
   - aliases: none
   - contexts: media, interface
   - intents: none
@@ -3008,7 +3008,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/media/repeat.svg`
 - `reply` — Reply · communication · interactive
-  - tags: reply, reply
+  - tags: reply
   - aliases: none
   - contexts: communication, interface
   - intents: none
@@ -3064,7 +3064,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/actions/rotate-cw.svg`
 - `rss` — Rss · communication · interactive
-  - tags: rss, rss
+  - tags: rss
   - aliases: none
   - contexts: communication, interface
   - intents: none
@@ -3106,7 +3106,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/files/save-cloud.svg`
 - `scan` — Scan · objects · meaningful
-  - tags: scan, scan
+  - tags: scan
   - aliases: none
   - contexts: objects, interface
   - intents: none
@@ -3120,7 +3120,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/objects/scan.svg`
 - `schema` — Schema · developer · meaningful
-  - tags: schema, schema
+  - tags: schema
   - aliases: none
   - contexts: developer, tooling
   - intents: developer
@@ -3274,7 +3274,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/communication/share-2.svg`
 - `shield` — Shield · objects · meaningful
-  - tags: shield, shield
+  - tags: shield
   - aliases: none
   - contexts: objects, interface
   - intents: none
@@ -3316,7 +3316,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/developer/shield-check.svg`
 - `shuffle` — Shuffle · media · meaningful
-  - tags: shuffle, shuffle
+  - tags: shuffle
   - aliases: none
   - contexts: media, interface
   - intents: none
@@ -3330,7 +3330,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/media/shuffle.svg`
 - `sidebar` — Sidebar · navigation · interactive
-  - tags: sidebar, sidebar
+  - tags: sidebar
   - aliases: none
   - contexts: navigation, interface
   - intents: none
@@ -3400,7 +3400,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/media/skip-previous.svg`
 - `sliders` — Sliders · actions · interactive
-  - tags: sliders, sliders
+  - tags: sliders
   - aliases: none
   - contexts: actions, interface
   - intents: none
@@ -3414,7 +3414,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/actions/sliders.svg`
 - `smile` — Smile · communication · interactive
-  - tags: smile, smile
+  - tags: smile
   - aliases: none
   - contexts: communication, interface
   - intents: none
@@ -3456,7 +3456,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/developer/sparkle-code.svg`
 - `sparkles` — Sparkles · objects · meaningful
-  - tags: sparkles, sparkles
+  - tags: sparkles
   - aliases: none
   - contexts: objects, interface
   - intents: none
@@ -3512,7 +3512,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/actions/stop-circle.svg`
 - `store` — Store · commerce · meaningful
-  - tags: store, store
+  - tags: store
   - aliases: none
   - contexts: commerce, interface
   - intents: none
@@ -3554,7 +3554,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/system/sun.svg`
 - `svelte` — Svelte · brands · brand
-  - tags: svelte, svelte
+  - tags: svelte
   - aliases: none
   - contexts: brands, interface
   - intents: none
@@ -3596,7 +3596,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/commerce/tag.svg`
 - `target` — Target · actions · interactive
-  - tags: target, target
+  - tags: target
   - aliases: none
   - contexts: actions, interface
   - intents: none
@@ -3610,7 +3610,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/actions/target.svg`
 - `team` — Team · people · meaningful
-  - tags: team, team
+  - tags: team
   - aliases: none
   - contexts: people, interface
   - intents: account
@@ -3708,7 +3708,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/communication/thumbs-up.svg`
 - `timeout` — Timeout · system · meaningful
-  - tags: timeout, timeout
+  - tags: timeout
   - aliases: none
   - contexts: system, interface
   - intents: none
@@ -3722,7 +3722,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/system/timeout.svg`
 - `trash` — Trash · actions · interactive
-  - tags: trash, trash
+  - tags: trash
   - aliases: none
   - contexts: actions, interface
   - intents: remove
@@ -3736,7 +3736,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/actions/trash.svg`
 - `typescript` — Typescript · brands · brand
-  - tags: typescript, typescript
+  - tags: typescript
   - aliases: none
   - contexts: brands, interface
   - intents: none
@@ -3932,7 +3932,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/people/users-round.svg`
 - `vercel` — Vercel · brands · brand
-  - tags: vercel, vercel
+  - tags: vercel
   - aliases: none
   - contexts: brands, interface
   - intents: none
@@ -3946,7 +3946,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/brands/vercel.svg`
 - `verified` — Verified · system · meaningful
-  - tags: verified, verified
+  - tags: verified
   - aliases: none
   - contexts: system, interface
   - intents: none
@@ -3988,7 +3988,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/media/video-off.svg`
 - `voicemail` — Voicemail · communication · interactive
-  - tags: voicemail, voicemail
+  - tags: voicemail
   - aliases: none
   - contexts: communication, interface
   - intents: none
@@ -4044,7 +4044,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/media/volume-x.svg`
 - `vue` — Vue · brands · brand
-  - tags: vue, vue
+  - tags: vue
   - aliases: none
   - contexts: brands, interface
   - intents: none
@@ -4058,7 +4058,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/brands/vue.svg`
 - `wallet` — Wallet · commerce · meaningful
-  - tags: wallet, wallet
+  - tags: wallet
   - aliases: none
   - contexts: commerce, interface
   - intents: none
@@ -4100,7 +4100,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/system/warning.svg`
 - `webhook` — Webhook · developer · meaningful
-  - tags: webhook, webhook
+  - tags: webhook
   - aliases: none
   - contexts: developer, tooling
   - intents: developer
@@ -4114,7 +4114,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/developer/webhook.svg`
 - `wifi` — Wifi · objects · meaningful
-  - tags: wifi, wifi
+  - tags: wifi
   - aliases: none
   - contexts: objects, interface
   - intents: none
@@ -4142,7 +4142,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/objects/wifi-off.svg`
 - `workflow` — Workflow · developer · meaningful
-  - tags: workflow, workflow
+  - tags: workflow
   - aliases: none
   - contexts: developer, tooling
   - intents: developer
@@ -4212,7 +4212,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - paired: none
   - SVG: `/icons/brands/youtube.svg`
 - `zip` — Zip · files · meaningful
-  - tags: zip, zip
+  - tags: zip
   - aliases: none
   - contexts: files, interface
   - intents: none

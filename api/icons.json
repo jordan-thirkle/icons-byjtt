@@ -179,7 +179,6 @@
       "title": "Activity",
       "category": "objects",
       "tags": [
-        "activity",
         "activity"
       ],
       "aliases": [],
@@ -214,12 +213,10 @@
     },
     {
       "name": "ai-agent",
-      "title": "Ai Agent",
+      "title": "AI Agent",
       "category": "developer",
       "tags": [
         "ai-agent",
-        "ai",
-        "agent",
         "ai",
         "agent",
         "llm"
@@ -274,13 +271,12 @@
     },
     {
       "name": "ai-chat",
-      "title": "Ai Chat",
+      "title": "AI Chat",
       "category": "developer",
       "tags": [
         "ai-chat",
         "ai",
         "chat",
-        "ai",
         "agent",
         "llm"
       ],
@@ -335,13 +331,12 @@
     },
     {
       "name": "ai-code",
-      "title": "Ai Code",
+      "title": "AI Code",
       "category": "developer",
       "tags": [
         "ai-code",
         "ai",
         "code",
-        "ai",
         "agent",
         "llm"
       ],
@@ -395,13 +390,12 @@
     },
     {
       "name": "ai-generate",
-      "title": "Ai Generate",
+      "title": "AI Generate",
       "category": "developer",
       "tags": [
         "ai-generate",
         "ai",
         "generate",
-        "ai",
         "agent",
         "llm"
       ],
@@ -456,13 +450,12 @@
     },
     {
       "name": "ai-model",
-      "title": "Ai Model",
+      "title": "AI Model",
       "category": "developer",
       "tags": [
         "ai-model",
         "ai",
         "model",
-        "ai",
         "agent",
         "llm"
       ],
@@ -518,13 +511,12 @@
     },
     {
       "name": "ai-prompt",
-      "title": "Ai Prompt",
+      "title": "AI Prompt",
       "category": "developer",
       "tags": [
         "ai-prompt",
         "ai",
         "prompt",
-        "ai",
         "agent",
         "llm"
       ],
@@ -580,13 +572,12 @@
     },
     {
       "name": "ai-search",
-      "title": "Ai Search",
+      "title": "AI Search",
       "category": "developer",
       "tags": [
         "ai-search",
         "ai",
         "search",
-        "ai",
         "agent",
         "llm"
       ],
@@ -645,7 +636,6 @@
       "title": "Android",
       "category": "brands",
       "tags": [
-        "android",
         "android"
       ],
       "aliases": [],
@@ -683,7 +673,6 @@
       "title": "Api",
       "category": "developer",
       "tags": [
-        "api",
         "api"
       ],
       "aliases": [],
@@ -1666,7 +1655,6 @@
       "title": "Ban",
       "category": "actions",
       "tags": [
-        "ban",
         "ban"
       ],
       "aliases": [],
@@ -1704,7 +1692,6 @@
       "title": "Barcode",
       "category": "commerce",
       "tags": [
-        "barcode",
         "barcode"
       ],
       "aliases": [],
@@ -1791,7 +1778,6 @@
       "title": "Bolt",
       "category": "actions",
       "tags": [
-        "bolt",
         "bolt"
       ],
       "aliases": [],
@@ -1871,7 +1857,6 @@
       "title": "Book",
       "category": "files",
       "tags": [
-        "book",
         "book"
       ],
       "aliases": [],
@@ -2009,7 +1994,6 @@
       "title": "Box",
       "category": "files",
       "tags": [
-        "box",
         "box"
       ],
       "aliases": [],
@@ -2149,7 +2133,6 @@
       "title": "Building",
       "category": "objects",
       "tags": [
-        "building",
         "building"
       ],
       "aliases": [],
@@ -2291,7 +2274,6 @@
       "title": "Car",
       "category": "objects",
       "tags": [
-        "car",
         "car"
       ],
       "aliases": [],
@@ -2379,7 +2361,6 @@
       "title": "Cash",
       "category": "commerce",
       "tags": [
-        "cash",
         "cash"
       ],
       "aliases": [],
@@ -2417,7 +2398,6 @@
       "title": "Chat",
       "category": "communication",
       "tags": [
-        "chat",
         "chat"
       ],
       "aliases": [],
@@ -2756,7 +2736,6 @@
       "title": "Chrome",
       "category": "brands",
       "tags": [
-        "chrome",
         "chrome"
       ],
       "aliases": [],
@@ -3072,7 +3051,6 @@
       "title": "Cloud",
       "category": "objects",
       "tags": [
-        "cloud",
         "cloud"
       ],
       "aliases": [],
@@ -3307,7 +3285,6 @@
       "title": "Coins",
       "category": "commerce",
       "tags": [
-        "coins",
         "coins"
       ],
       "aliases": [],
@@ -3345,7 +3322,6 @@
       "title": "Comment",
       "category": "communication",
       "tags": [
-        "comment",
         "comment"
       ],
       "aliases": [],
@@ -3383,7 +3359,6 @@
       "title": "Comments",
       "category": "communication",
       "tags": [
-        "comments",
         "comments"
       ],
       "aliases": [],
@@ -3421,7 +3396,6 @@
       "title": "Contact",
       "category": "people",
       "tags": [
-        "contact",
         "contact"
       ],
       "aliases": [],
@@ -3464,7 +3438,6 @@
       "title": "Contacts",
       "category": "people",
       "tags": [
-        "contacts",
         "contacts"
       ],
       "aliases": [],
@@ -3507,7 +3480,6 @@
       "title": "Container",
       "category": "developer",
       "tags": [
-        "container",
         "container"
       ],
       "aliases": [],
@@ -4041,7 +4013,6 @@
       "title": "Dependency",
       "category": "developer",
       "tags": [
-        "dependency",
         "dependency"
       ],
       "aliases": [],
@@ -4128,7 +4099,6 @@
       "title": "Discount",
       "category": "commerce",
       "tags": [
-        "discount",
         "discount"
       ],
       "aliases": [],
@@ -4166,7 +4136,6 @@
       "title": "Docker",
       "category": "developer",
       "tags": [
-        "docker",
         "docker"
       ],
       "aliases": [],
@@ -4473,7 +4442,6 @@
       "title": "Email",
       "category": "communication",
       "tags": [
-        "email",
         "email"
       ],
       "aliases": [],
@@ -4565,7 +4533,6 @@
       "title": "Expand",
       "category": "actions",
       "tags": [
-        "expand",
         "expand"
       ],
       "aliases": [],
@@ -4603,7 +4570,6 @@
       "title": "External",
       "category": "navigation",
       "tags": [
-        "external",
         "external"
       ],
       "aliases": [],
@@ -4783,7 +4749,6 @@
       "title": "Figma",
       "category": "brands",
       "tags": [
-        "figma",
         "figma"
       ],
       "aliases": [],
@@ -5252,7 +5217,6 @@
       "title": "Files",
       "category": "files",
       "tags": [
-        "files",
         "files"
       ],
       "aliases": [],
@@ -5291,7 +5255,6 @@
       "title": "Film",
       "category": "media",
       "tags": [
-        "film",
         "film"
       ],
       "aliases": [],
@@ -5749,7 +5712,6 @@
       "title": "Forbidden",
       "category": "system",
       "tags": [
-        "forbidden",
         "forbidden"
       ],
       "aliases": [],
@@ -5787,7 +5749,6 @@
       "title": "Gift",
       "category": "commerce",
       "tags": [
-        "gift",
         "gift"
       ],
       "aliases": [],
@@ -6147,7 +6108,6 @@
       "title": "Gitlab",
       "category": "brands",
       "tags": [
-        "gitlab",
         "gitlab"
       ],
       "aliases": [],
@@ -6185,7 +6145,6 @@
       "title": "Globe",
       "category": "objects",
       "tags": [
-        "globe",
         "globe"
       ],
       "aliases": [],
@@ -6320,7 +6279,6 @@
       "title": "Grid",
       "category": "navigation",
       "tags": [
-        "grid",
         "grid"
       ],
       "aliases": [],
@@ -6403,7 +6361,6 @@
       "title": "Headphones",
       "category": "media",
       "tags": [
-        "headphones",
         "headphones"
       ],
       "aliases": [],
@@ -6747,7 +6704,6 @@
       "title": "Inbox",
       "category": "communication",
       "tags": [
-        "inbox",
         "inbox"
       ],
       "aliases": [],
@@ -6880,7 +6836,6 @@
       "title": "Invoice",
       "category": "commerce",
       "tags": [
-        "invoice",
         "invoice"
       ],
       "aliases": [],
@@ -6918,7 +6873,6 @@
       "title": "Key",
       "category": "objects",
       "tags": [
-        "key",
         "key"
       ],
       "aliases": [],
@@ -7006,7 +6960,6 @@
       "title": "Keyboard",
       "category": "objects",
       "tags": [
-        "keyboard",
         "keyboard"
       ],
       "aliases": [],
@@ -7044,7 +6997,6 @@
       "title": "Layers",
       "category": "objects",
       "tags": [
-        "layers",
         "layers"
       ],
       "aliases": [],
@@ -7082,7 +7034,6 @@
       "title": "Lightbulb",
       "category": "objects",
       "tags": [
-        "lightbulb",
         "lightbulb"
       ],
       "aliases": [],
@@ -7211,7 +7162,6 @@
       "title": "Linkedin",
       "category": "brands",
       "tags": [
-        "linkedin",
         "linkedin"
       ],
       "aliases": [],
@@ -7249,7 +7199,6 @@
       "title": "List",
       "category": "navigation",
       "tags": [
-        "list",
         "list"
       ],
       "aliases": [],
@@ -7522,7 +7471,6 @@
       "title": "Logs",
       "category": "developer",
       "tags": [
-        "logs",
         "logs"
       ],
       "aliases": [],
@@ -7613,7 +7561,6 @@
       "title": "Maintenance",
       "category": "system",
       "tags": [
-        "maintenance",
         "maintenance"
       ],
       "aliases": [],
@@ -7748,7 +7695,6 @@
       "title": "Maximize",
       "category": "actions",
       "tags": [
-        "maximize",
         "maximize"
       ],
       "aliases": [],
@@ -7786,7 +7732,6 @@
       "title": "Mention",
       "category": "communication",
       "tags": [
-        "mention",
         "mention"
       ],
       "aliases": [],
@@ -7976,7 +7921,6 @@
       "title": "Minimize",
       "category": "actions",
       "tags": [
-        "minimize",
         "minimize"
       ],
       "aliases": [],
@@ -8078,7 +8022,6 @@
       "title": "Mobile",
       "category": "objects",
       "tags": [
-        "mobile",
         "mobile"
       ],
       "aliases": [],
@@ -8116,7 +8059,6 @@
       "title": "Money",
       "category": "commerce",
       "tags": [
-        "money",
         "money"
       ],
       "aliases": [],
@@ -8154,7 +8096,6 @@
       "title": "Monitor",
       "category": "objects",
       "tags": [
-        "monitor",
         "monitor"
       ],
       "aliases": [],
@@ -8326,7 +8267,6 @@
       "title": "Mouse",
       "category": "objects",
       "tags": [
-        "mouse",
         "mouse"
       ],
       "aliases": [],
@@ -8364,7 +8304,6 @@
       "title": "Move",
       "category": "actions",
       "tags": [
-        "move",
         "move"
       ],
       "aliases": [],
@@ -8500,7 +8439,6 @@
       "title": "Npm",
       "category": "brands",
       "tags": [
-        "npm",
         "npm"
       ],
       "aliases": [],
@@ -8538,7 +8476,6 @@
       "title": "Offline",
       "category": "system",
       "tags": [
-        "offline",
         "offline"
       ],
       "aliases": [],
@@ -8576,7 +8513,6 @@
       "title": "Online",
       "category": "system",
       "tags": [
-        "online",
         "online"
       ],
       "aliases": [],
@@ -8614,7 +8550,6 @@
       "title": "Openai",
       "category": "brands",
       "tags": [
-        "openai",
         "openai"
       ],
       "aliases": [],
@@ -8652,7 +8587,6 @@
       "title": "Package",
       "category": "objects",
       "tags": [
-        "package",
         "package"
       ],
       "aliases": [],
@@ -8785,7 +8719,6 @@
       "title": "Palette",
       "category": "objects",
       "tags": [
-        "palette",
         "palette"
       ],
       "aliases": [],
@@ -8909,7 +8842,6 @@
       "title": "Paperclip",
       "category": "files",
       "tags": [
-        "paperclip",
         "paperclip"
       ],
       "aliases": [],
@@ -9097,7 +9029,6 @@
       "title": "Phone",
       "category": "communication",
       "tags": [
-        "phone",
         "phone"
       ],
       "aliases": [],
@@ -9135,7 +9066,6 @@
       "title": "Pin",
       "category": "actions",
       "tags": [
-        "pin",
         "pin"
       ],
       "aliases": [],
@@ -9176,7 +9106,6 @@
       "title": "Pipeline",
       "category": "developer",
       "tags": [
-        "pipeline",
         "pipeline"
       ],
       "aliases": [],
@@ -9442,7 +9371,6 @@
       "title": "Podcast",
       "category": "media",
       "tags": [
-        "podcast",
         "podcast"
       ],
       "aliases": [],
@@ -9482,7 +9410,6 @@
       "title": "Power",
       "category": "actions",
       "tags": [
-        "power",
         "power"
       ],
       "aliases": [],
@@ -9520,7 +9447,6 @@
       "title": "Profile",
       "category": "people",
       "tags": [
-        "profile",
         "profile"
       ],
       "aliases": [],
@@ -9658,7 +9584,6 @@
       "title": "Radio",
       "category": "media",
       "tags": [
-        "radio",
         "radio"
       ],
       "aliases": [],
@@ -9698,7 +9623,6 @@
       "title": "React",
       "category": "brands",
       "tags": [
-        "react",
         "react"
       ],
       "aliases": [],
@@ -9983,7 +9907,6 @@
       "title": "Repeat",
       "category": "media",
       "tags": [
-        "repeat",
         "repeat"
       ],
       "aliases": [],
@@ -10023,7 +9946,6 @@
       "title": "Reply",
       "category": "communication",
       "tags": [
-        "reply",
         "reply"
       ],
       "aliases": [],
@@ -10194,7 +10116,6 @@
       "title": "Rss",
       "category": "communication",
       "tags": [
-        "rss",
         "rss"
       ],
       "aliases": [],
@@ -10333,7 +10254,6 @@
       "title": "Scan",
       "category": "objects",
       "tags": [
-        "scan",
         "scan"
       ],
       "aliases": [],
@@ -10371,7 +10291,6 @@
       "title": "Schema",
       "category": "developer",
       "tags": [
-        "schema",
         "schema"
       ],
       "aliases": [],
@@ -10939,7 +10858,6 @@
       "title": "Shield",
       "category": "objects",
       "tags": [
-        "shield",
         "shield"
       ],
       "aliases": [],
@@ -11067,7 +10985,6 @@
       "title": "Shuffle",
       "category": "media",
       "tags": [
-        "shuffle",
         "shuffle"
       ],
       "aliases": [],
@@ -11107,7 +11024,6 @@
       "title": "Sidebar",
       "category": "navigation",
       "tags": [
-        "sidebar",
         "sidebar"
       ],
       "aliases": [],
@@ -11330,7 +11246,6 @@
       "title": "Sliders",
       "category": "actions",
       "tags": [
-        "sliders",
         "sliders"
       ],
       "aliases": [],
@@ -11368,7 +11283,6 @@
       "title": "Smile",
       "category": "communication",
       "tags": [
-        "smile",
         "smile"
       ],
       "aliases": [],
@@ -11503,7 +11417,6 @@
       "title": "Sparkles",
       "category": "objects",
       "tags": [
-        "sparkles",
         "sparkles"
       ],
       "aliases": [],
@@ -11694,7 +11607,6 @@
       "title": "Store",
       "category": "commerce",
       "tags": [
-        "store",
         "store"
       ],
       "aliases": [],
@@ -11828,7 +11740,6 @@
       "title": "Svelte",
       "category": "brands",
       "tags": [
-        "svelte",
         "svelte"
       ],
       "aliases": [],
@@ -11957,7 +11868,6 @@
       "title": "Target",
       "category": "actions",
       "tags": [
-        "target",
         "target"
       ],
       "aliases": [],
@@ -11995,7 +11905,6 @@
       "title": "Team",
       "category": "people",
       "tags": [
-        "team",
         "team"
       ],
       "aliases": [],
@@ -12317,7 +12226,6 @@
       "title": "Timeout",
       "category": "system",
       "tags": [
-        "timeout",
         "timeout"
       ],
       "aliases": [],
@@ -12355,7 +12263,6 @@
       "title": "Trash",
       "category": "actions",
       "tags": [
-        "trash",
         "trash"
       ],
       "aliases": [],
@@ -12396,7 +12303,6 @@
       "title": "Typescript",
       "category": "brands",
       "tags": [
-        "typescript",
         "typescript"
       ],
       "aliases": [],
@@ -13139,7 +13045,6 @@
       "title": "Vercel",
       "category": "brands",
       "tags": [
-        "vercel",
         "vercel"
       ],
       "aliases": [],
@@ -13177,7 +13082,6 @@
       "title": "Verified",
       "category": "system",
       "tags": [
-        "verified",
         "verified"
       ],
       "aliases": [],
@@ -13311,7 +13215,6 @@
       "title": "Voicemail",
       "category": "communication",
       "tags": [
-        "voicemail",
         "voicemail"
       ],
       "aliases": [],
@@ -13506,7 +13409,6 @@
       "title": "Vue",
       "category": "brands",
       "tags": [
-        "vue",
         "vue"
       ],
       "aliases": [],
@@ -13544,7 +13446,6 @@
       "title": "Wallet",
       "category": "commerce",
       "tags": [
-        "wallet",
         "wallet"
       ],
       "aliases": [],
@@ -13675,7 +13576,6 @@
       "title": "Webhook",
       "category": "developer",
       "tags": [
-        "webhook",
         "webhook"
       ],
       "aliases": [],
@@ -13717,7 +13617,6 @@
       "title": "Wifi",
       "category": "objects",
       "tags": [
-        "wifi",
         "wifi"
       ],
       "aliases": [],
@@ -13797,7 +13696,6 @@
       "title": "Workflow",
       "category": "developer",
       "tags": [
-        "workflow",
         "workflow"
       ],
       "aliases": [],
@@ -14038,7 +13936,6 @@
       "title": "Zip",
       "category": "files",
       "tags": [
-        "zip",
         "zip"
       ],
       "aliases": [],
