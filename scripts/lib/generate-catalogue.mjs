@@ -42,6 +42,21 @@ export function deriveSemantics(icon, ontology = {}) {
   const states = (ontology.stateTerms || []).filter(term => has([term]));
   const objects = (ontology.objectTerms || []).filter(term => has([term]));
   const contextExpansion = [...new Set((icon.contexts || []).flatMap(context => ontology.contextAliases?.[context] || []))];
+  const opposites = {
+    "plus":"minus","minus":"plus","upload":"download","download":"upload",
+    "arrow-left":"arrow-right","arrow-right":"arrow-left","arrow-up":"arrow-down","arrow-down":"arrow-up",
+    "chevron-left":"chevron-right","chevron-right":"chevron-left","chevron-up":"chevron-down","chevron-down":"chevron-up",
+    "lock":"unlock","unlock":"lock","play":"pause","pause":"play","undo":"redo","redo":"undo",
+    "volume":"volume-off","volume-off":"volume","heart":"star","star":"heart","user":"users","users":"user",
+    "error":"success","success":"error","warning":"success","x":"check"
+  };
+  const paired = {
+    "credit-card":["receipt"],"receipt":["credit-card"],"calendar":["clock"],"clock":["calendar"],
+    "camera":["image"],"image":["camera"],"database":["server"],"server":["database"],
+    "mail":["message"],"message":["mail"],"file":["folder"],"folder":["file"],
+    "download":["upload"],"upload":["download"],"git-branch":["git-commit","git-merge"],
+    "git-commit":["git-branch"],"git-merge":["git-branch"]
+  };
   return {
     intents,
     actions,
@@ -54,7 +69,10 @@ export function deriveSemantics(icon, ontology = {}) {
     ].map(normalize).filter(Boolean))],
     relations: {
       related: [...new Set(icon.related || [])],
-      alternative: [], opposite: [], paired: [], state: []
+      alternative: [],
+      opposite: opposites[icon.name] ? [opposites[icon.name]] : [],
+      paired: paired[icon.name] || [],
+      state: []
     }
   };
 }
