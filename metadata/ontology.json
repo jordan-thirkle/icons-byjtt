@@ -1,0 +1,280 @@
+{
+  "version": "2.0.0",
+  "relationTypes": {
+    "related": "Nearby concept useful for discovery.",
+    "alternative": "Another icon representing the same intent.",
+    "opposite": "Semantic inverse.",
+    "paired": "Concept commonly used alongside this icon.",
+    "state": "State variant of the same concept."
+  },
+  "intentGroups": {
+    "dismiss": [
+      "close",
+      "cancel",
+      "dismiss",
+      "exit",
+      "remove"
+    ],
+    "account": [
+      "account",
+      "profile",
+      "user",
+      "person",
+      "people",
+      "identity"
+    ],
+    "create": [
+      "add",
+      "create",
+      "new",
+      "plus"
+    ],
+    "remove": [
+      "delete",
+      "remove",
+      "trash",
+      "minus",
+      "dismiss"
+    ],
+    "navigation": [
+      "back",
+      "forward",
+      "next",
+      "previous",
+      "navigate",
+      "menu",
+      "home"
+    ],
+    "search": [
+      "search",
+      "find",
+      "lookup",
+      "query",
+      "magnify"
+    ],
+    "transfer": [
+      "upload",
+      "import",
+      "attach",
+      "download",
+      "export",
+      "send"
+    ],
+    "edit": [
+      "edit",
+      "modify",
+      "save",
+      "copy",
+      "duplicate"
+    ],
+    "communication": [
+      "message",
+      "chat",
+      "mail",
+      "email",
+      "notification",
+      "bell",
+      "send",
+      "share"
+    ],
+    "developer": [
+      "developer",
+      "code",
+      "programming",
+      "terminal",
+      "repository",
+      "git",
+      "database",
+      "server",
+      "deploy",
+      "bug"
+    ],
+    "media": [
+      "image",
+      "photo",
+      "camera",
+      "video",
+      "play",
+      "pause",
+      "stop",
+      "music",
+      "audio",
+      "volume"
+    ],
+    "commerce": [
+      "cart",
+      "bag",
+      "shopping",
+      "payment",
+      "credit-card",
+      "receipt",
+      "checkout"
+    ],
+    "files": [
+      "file",
+      "document",
+      "folder",
+      "archive",
+      "attachment",
+      "clipboard"
+    ],
+    "status": [
+      "success",
+      "check",
+      "error",
+      "warning",
+      "loading",
+      "info",
+      "help"
+    ],
+    "visibility": [
+      "eye",
+      "view",
+      "lock",
+      "unlock"
+    ],
+    "settings": [
+      "settings",
+      "configure",
+      "configuration",
+      "preferences",
+      "options"
+    ],
+    "reaction": [
+      "heart",
+      "star",
+      "like",
+      "bookmark",
+      "favorite"
+    ],
+    "time": [
+      "calendar",
+      "date",
+      "clock",
+      "time"
+    ],
+    "location": [
+      "location",
+      "pin",
+      "map",
+      "maps"
+    ]
+  },
+  "actionTerms": [
+    "add",
+    "archive",
+    "attach",
+    "copy",
+    "create",
+    "delete",
+    "download",
+    "edit",
+    "export",
+    "import",
+    "link",
+    "merge",
+    "pause",
+    "play",
+    "refresh",
+    "remove",
+    "save",
+    "search",
+    "send",
+    "share",
+    "sort",
+    "stop",
+    "undo",
+    "redo",
+    "unlock",
+    "upload"
+  ],
+  "stateTerms": [
+    "active",
+    "error",
+    "failure",
+    "loading",
+    "paused",
+    "private",
+    "public",
+    "success",
+    "warning",
+    "saved",
+    "selected",
+    "open",
+    "closed"
+  ],
+  "objectTerms": [
+    "account",
+    "archive",
+    "bag",
+    "bell",
+    "bookmark",
+    "bug",
+    "calendar",
+    "camera",
+    "cart",
+    "code",
+    "database",
+    "document",
+    "eye",
+    "file",
+    "folder",
+    "github",
+    "heart",
+    "image",
+    "location",
+    "mail",
+    "map",
+    "message",
+    "music",
+    "people",
+    "receipt",
+    "server",
+    "settings",
+    "star",
+    "tag",
+    "terminal",
+    "user",
+    "video",
+    "volume"
+  ],
+  "contextAliases": {
+    "toolbar": [
+      "actions",
+      "interface"
+    ],
+    "editor": [
+      "edit",
+      "editing",
+      "content"
+    ],
+    "checkout": [
+      "commerce",
+      "payment"
+    ],
+    "developer": [
+      "engineering",
+      "software"
+    ],
+    "tooling": [
+      "developer",
+      "engineering"
+    ],
+    "social": [
+      "communication",
+      "community"
+    ],
+    "files": [
+      "storage",
+      "documents"
+    ],
+    "media": [
+      "content",
+      "playback"
+    ],
+    "navigation": [
+      "wayfinding",
+      "interface"
+    ]
+  }
+}
