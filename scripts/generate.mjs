@@ -48,24 +48,34 @@ write("packages/react/package.json", JSON.stringify({
 write("packages/react/README.md", [
   "# @byjtt/icons-react",
   "",
-  "React components for JTT Icons.",
+  "React components for JTT Icons. Version 0.1.0.",
   "",
   "## Install",
   "",
+  "```bash",
   "npm install @byjtt/icons-react react",
+  "```",
   "",
   "## Use",
   "",
+  "```jsx",
   'import { IconSearch } from "@byjtt/icons-react";',
   "",
   "export function SearchButton() {",
   '  return <IconSearch aria-label="Search" />;',
   "}",
+  "```",
   "",
   "Components accept standard SVG props plus size and an optional title. Without a title they render as decorative icons; use an accessible label when the icon conveys meaning.",
   "",
-  "Browse the full library at https://icons.byjtt.com"
-].join("\n") + "\n");write("packages/react/index.js", [
+  "## Links",
+  "",
+  "- Library: https://icons.byjtt.com",
+  "- Documentation: https://icons.byjtt.com/docs/",
+  "- Repository: https://github.com/jordan-thirkle/icons-byjtt",
+  "- License: MIT"
+].join("\n") + "\n");
+write("packages/react/index.js", [
   'import React from "react";',
   ...catalogue.icons.map(icon => `export function ${reactComponentName(icon.name)}({ title, size = 24, ...props }) { return React.createElement("svg", { ...props, width: size, height: size, viewBox: "0 0 24 24", role: title ? "img" : "presentation", "aria-hidden": title ? undefined : "true", "aria-label": title, dangerouslySetInnerHTML: { __html: ${JSON.stringify(svgByName[icon.name].replace(/<svg[^>]*>/, "").replace(/<\/svg>\s*$/, ""))} } }); }`),
 ].join("\n") + "\n");
