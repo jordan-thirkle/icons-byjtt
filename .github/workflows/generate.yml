@@ -4,6 +4,7 @@ name: Generate JTT Icons
 on:
   push:
     branches: ["main"]
+  pull_request:
   workflow_dispatch:
 
 permissions:
@@ -22,6 +23,7 @@ jobs:
       - run: npm test
       - run: npm run check
       - name: Commit generated surfaces
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
           if [ -z "$(git status --porcelain)" ]; then
             echo "Generated surfaces are already current."
@@ -29,6 +31,6 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html docs/index.html favicon.svg categories icons.json api/icons.json sitemap.xml llms-full.txt metadata/optical-audit.json visual-snapshots packages/core packages/react packages/vue icons use-cases
+          git add index.html docs/index.html ai/index.html favicon.svg assets categories icons.json api/icons.json sitemap.xml llms.txt llms-full.txt metadata/optical-audit.json visual-snapshots packages/core packages/react packages/vue packages/svelte packages/web icons use-cases
           git commit -m "build: regenerate public and package surfaces [skip ci]"
           git push
