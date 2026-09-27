@@ -30,7 +30,7 @@ export const metadata = ${JSON.stringify(icon)};
   files["packages/core/README.md"] = [
     "# @byjtt/icons",
     "",
-    "Open-source, semantic SVG icons from JTT Icons. Version ${metadata.version}.",
+    `Open-source, semantic SVG icons from JTT Icons. Version ${metadata.version}.`,
     "",
     "## Install",
     "",
