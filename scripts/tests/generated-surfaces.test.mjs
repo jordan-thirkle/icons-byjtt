@@ -24,6 +24,8 @@ test("generated surfaces materialize every canonical Core 100 icon", () => {
   assert.ok(fs.existsSync(path.join(root, "packages/react/README.md")));
   assert.ok(fs.existsSync(path.join(root, "packages/vue/package.json")));
   assert.ok(fs.existsSync(path.join(root, "packages/vue/index.js")));
+  assert.ok(fs.existsSync(path.join(root, "packages/svelte/package.json")));
+  assert.ok(fs.existsSync(path.join(root, "packages/web/package.json")));
   assert.ok(fs.existsSync(path.join(root, "packages/vue/index.d.ts")));
   assert.ok(fs.existsSync(path.join(root, "packages/vue/README.md")));
   const reactSource = fs.readFileSync(path.join(root, "packages/react/index.js"), "utf8");
@@ -52,6 +54,10 @@ test("generated surfaces materialize every canonical Core 100 icon", () => {
   }
 
   for (const slug of ["navigation-icons","interface-actions","developer-tools","communication-ui"]) assert.ok(fs.existsSync(path.join(root, "use-cases", slug, "index.html")));
+  assert.ok(fs.existsSync(path.join(root, "ai", "index.html")));
+  assert.ok(fs.existsSync(path.join(root, "assets", "site.css")));
+  assert.ok(fs.existsSync(path.join(root, "assets", "search.js")));
+  assert.ok(fs.existsSync(path.join(root, "api", "mcp.js")));
 
   const sitemap = fs.readFileSync(path.join(root, "sitemap.xml"), "utf8");
   for (const slug of ["navigation-icons","interface-actions","developer-tools","communication-ui"]) assert.ok(sitemap.includes(`/use-cases/${slug}/`));
