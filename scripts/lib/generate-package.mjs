@@ -27,6 +27,28 @@ export const metadata = ${JSON.stringify(icon)};
 `;
   }
 
+  files["packages/core/README.md"] = `# @byjtt/icons
+
+Open-source, semantic SVG icons from JTT Icons.
+
+## Install
+
+\`\`\`bash
+npm install @byjtt/icons
+\`\`\`
+
+## Use
+
+\`\`\`js
+import { Search } from "@byjtt/icons";
+console.log(Search.svg);
+\`\`\`
+
+Every exported icon includes \`name\`, \`title\`, \`category\`, \`svg\` and canonical \`metadata\`.
+
+Browse the full library at https://icons.byjtt.com
+`;
+
   files["packages/core/index.js"] =
     icons.map(icon => `import * as ${jsIdentifier(icon.name)} from "./icons/${icon.name}.js";`).join("\n") +
     `\n\nexport { ${icons.map(icon => jsIdentifier(icon.name)).join(", ")} };
