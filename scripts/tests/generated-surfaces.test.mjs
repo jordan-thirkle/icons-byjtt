@@ -49,7 +49,7 @@ test("generated surfaces materialize every canonical icon", () => {
   const declaration = fs.readFileSync(path.join(root, "packages/core/index.d.ts"), "utf8");
   for (const icon of metadata.icons) {
     const identifier = icon.name.replace(/-([a-z0-9])/g, (_, c) => c.toUpperCase());
-    const safeIdentifier = new Set(["delete"]).has(identifier) ? `icon${identifier[0].toUpperCase()}${identifier.slice(1)}` : identifier;
+    const safeIdentifier = new Set(["delete","package"]).has(identifier) ? `icon${identifier[0].toUpperCase()}${identifier.slice(1)}` : identifier;
     assert.ok(rootPackage.includes(`from "./icons/${icon.name}.js";`));
     assert.match(rootPackage, new RegExp(`\\b${safeIdentifier}\\b`));
     assert.ok(declaration.includes(`const ${safeIdentifier}: JttIconModule`));
