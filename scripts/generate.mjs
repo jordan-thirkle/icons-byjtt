@@ -28,6 +28,27 @@ write("llms-full.txt", generateAiReference(metadata));
 
 for (const [file, content] of Object.entries(files)) write(file, content);
 
+write("packages/react/package.json", JSON.stringify({
+  name: "@byjtt/icons-react",
+  version: "0.1.0",
+  description: "React components for JTT Icons.",
+  license: "MIT",
+  type: "module",
+  sideEffects: false,
+  peerDependencies: { react: ">=18" },
+  exports: { ".": { types: "./index.d.ts", import: "./index.js" } },
+  files: ["index.js", "index.d.ts", "icons"]
+}, null, 2) + "\n");
+write("packages/react/index.js", [
+  'import React from "react";',
+  ...catalogue.icons.map(icon => `export function ${icon.name.replace(/-([a-z])/g, (_, c) => c.toUpperCase()).replace(/^(delete)$/, "IconDelete")}({ title, size = 24, ...props }) { return React.createElement("svg", { ...props, width: size, height: size, viewBox: "0 0 24 24", role: title ? "img" : "presentation", "aria-hidden": title ? undefined : "true", "aria-label": title, dangerouslySetInnerHTML: { __html: ${JSON.stringify(svgByName[icon.name].replace(/<svg[^>]*>/, "").replace(/<\\/svg>\\s*$/, ""))} } }); }`),
+].join("\n") + "\n");
+write("packages/react/index.d.ts", [
+  'import type { SVGProps } from "react";',
+  'export type JttReactIconProps = SVGProps<SVGSVGElement> & { title?: string; size?: number | string };',
+  ...catalogue.icons.map(icon => `export declare function ${icon.name.replace(/-([a-z])/g, (_, c) => c.toUpperCase()).replace(/^(delete)$/, "IconDelete")}(props: JttReactIconProps): JSX.Element;`),
+].join("\n") + "\n");
+
 const byName = new Map(catalogue.icons.map(icon => [icon.name, icon]));
 for (const icon of catalogue.icons) {
   const relatedIcons = icon.related.map(name => byName.get(name)).filter(Boolean);
