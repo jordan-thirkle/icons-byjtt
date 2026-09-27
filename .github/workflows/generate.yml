@@ -3,7 +3,7 @@ name: Generate JTT Icons
 
 on:
   push:
-    branches: ["main", "product/semantic-discovery-v1"]
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
