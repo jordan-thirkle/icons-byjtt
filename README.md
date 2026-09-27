@@ -12,8 +12,8 @@ JTT Icons is an SVG-first, machine-friendly icon system. The repository is the s
 - One semantic identity across visual families.
 - Consistent geometry, optical balance, and stable naming.
 - Real-size usability, especially 12–16px.
-- AI-readable metadata for names, aliases, contexts and relationships.
-- Static-first public catalogue.
+- AI-readable metadata for names, aliases, contexts, ontology semantics and relationships.
+- Static-first public catalogue with crawlable pagination for growth beyond the first catalogue page.
 - MIT licensed.
 
 ## Canonical structure
@@ -22,7 +22,8 @@ JTT Icons is an SVG-first, machine-friendly icon system. The repository is the s
 - `/metadata/icons.json` — canonical semantic catalogue.
 - `/metadata/categories.json` — allowed categories.
 - `/metadata/aliases.json` — canonical alias map.
-- `/metadata/relationships.json` — semantic relationships.
+- `/metadata/relationships.json` — canonical related-icon relationships.
+- `/metadata/ontology.json` — semantic ontology v2: intents, actions, objects, states and relationship semantics.
 - `/packages/core` — generated framework-agnostic package.
 - `/scripts` — validation and generation.
 - `/docs` — system and contribution rules.
@@ -34,7 +35,7 @@ JTT Icons is an SVG-first, machine-friendly icon system. The repository is the s
 - `/icons.json` — generated public catalogue.
 - `/api/icons.json` — generated stable catalogue endpoint.
 
-Agents should resolve natural-language requests against canonical metadata and use the stable `name` when generating code.
+Agents should resolve natural-language requests against canonical metadata and ontology semantics, then use the stable `name` when generating code. The public catalogue uses sequential crawlable pages as it grows, while browser search progressively loads the full generated catalogue when needed.
 
 ## Development
 
