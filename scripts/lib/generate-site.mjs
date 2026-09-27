@@ -226,6 +226,25 @@ function implementationWorkspace(icon, svg) {
     script
   ].join("");
 }
+export function aiPage() {
+  const description = "JTT Icons for AI coding agents: semantic search, MCP, Agent Skills, raw SVG, packages and deterministic icon selection.";
+  const body = `<main class="page">
+<section class="collection-head"><div class="kicker">AI-native icon infrastructure</div><h1>Give your agent the right icon.</h1><p>JTT Icons exposes one canonical icon vocabulary across humans, code, agents and design workflows. Search by meaning, retrieve exact SVGs, and keep icon choices deterministic.</p></section>
+<section class="section"><h2>Agent interfaces</h2><div class="discover-links">
+<a href="/api/mcp/">MCP endpoint →</a>
+<a href="/skills/jtt-icons/SKILL.md">Portable Agent Skill →</a>
+<a href="/llms.txt">llms.txt →</a>
+<a href="/llms-full.txt">Full AI reference →</a>
+<a href="/api/icons.json">JSON catalogue →</a>
+<a href="/docs/ai-agents/">Agent documentation →</a>
+</div></section>
+<section class="section"><h2>What an agent can do</h2><ul><li>Search by natural-language intent, aliases, context and semantic relationships.</li><li>Retrieve canonical metadata and raw SVG without guessing identifiers.</li><li>Recommend a small, coherent shortlist for a UI requirement.</li><li>Preserve accessibility and the JTT line-family rendering contract.</li><li>Choose raw SVG, React, Vue, Svelte, Web Component or CDN output for the user's stack.</li></ul></section>
+<section class="section"><h2>Designed for the AI age</h2><p>AI assistants increasingly choose implementation details on behalf of developers. JTT therefore treats naming, semantics, provenance, accessibility and deterministic retrieval as first-class parts of the icon system.</p></section>
+</main>`;
+  const structured = {"@context":"https://schema.org","@type":"WebPage",name:"JTT Icons for AI agents",description,url:`${BASE}/ai/`};
+  return shell({title:"JTT Icons for AI Agents",description,canonical:BASE+"/ai/",body:body.replace("</main>",`</main><script type="application/ld+json">${jsonLd(structured)}</script>`)});
+}
+
 export function docsPage() {
   const description = "JTT Icons documentation: install, use, search, accessibility, licensing and AI discovery.";
   const body = `<main class="page">
@@ -279,7 +298,7 @@ export function categoryPage(category, icons) {
 export function sitemap(catalogue) {
   const categories = [...new Set(catalogue.icons.map(i=>i.category))].sort();
   const pages = Array.from({ length: Math.max(1, Math.ceil(catalogue.icons.length / CATALOGUE_PAGE_SIZE)) - 1 }, (_, index) => `${BASE}/icons/page/${index + 2}/`);
-  const urls = [`${BASE}/`,`${BASE}/docs/`,...pages,...categories.map(c=>`${BASE}/categories/${c}/`),...Object.keys(USE_CASES).map(slug=>`${BASE}/use-cases/${slug}/`),...catalogue.icons.map(i=>`${BASE}/icons/${i.name}/`)];
+  const urls = [`${BASE}/`,`${BASE}/docs/`,`${BASE}/ai/`,...pages,...categories.map(c=>`${BASE}/categories/${c}/`),...Object.keys(USE_CASES).map(slug=>`${BASE}/use-cases/${slug}/`),...catalogue.icons.map(i=>`${BASE}/icons/${i.name}/`)];
   return `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls.map(url=>`<url><loc>${url}</loc></url>`).join("")}</urlset>\n`;
 }
 
