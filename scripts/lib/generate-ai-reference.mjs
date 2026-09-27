@@ -11,8 +11,11 @@ export function generateAiReference(metadata, ontology = {}) {
       `  - intents: ${(semantic.intents || []).join(", ") || "none"}`,
       `  - actions: ${(semantic.actions || []).join(", ") || "none"}`,
       `  - objects: ${(semantic.objects || []).join(", ") || "none"}`,
+      `  - states: ${(semantic.states || []).join(", ") || "none"}`,
       `  - related: ${(relations.related || []).join(", ") || "none"}`,
+      `  - alternative: ${(relations.alternative || []).join(", ") || "none"}`,
       `  - opposite: ${(relations.opposite || []).join(", ") || "none"}`,
+      `  - state: ${(relations.state || []).join(", ") || "none"}`,
       `  - paired: ${(relations.paired || []).join(", ") || "none"}`,
       `  - SVG: \`${icon.path}\``,
     ].join("\n");
@@ -61,6 +64,9 @@ ${rows}
 - Raw SVG: resolve the \`path\` field against https://icons.byjtt.com.
 - JavaScript package: \`@byjtt/icons\`.
 - Public catalogue: https://icons.byjtt.com/icons.json
+- Remote MCP: https://icons.byjtt.com/api/mcp
+- Agent Skill: https://icons.byjtt.com/skills/jtt-icons/SKILL.md
+- Integrations: https://icons.byjtt.com/docs/integrations/
 - Stable API catalogue: https://icons.byjtt.com/api/icons.json
 
 Never invent a JTT icon name. If no canonical concept exists, say so or choose the closest documented related concept.

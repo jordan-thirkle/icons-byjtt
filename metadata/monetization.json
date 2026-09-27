@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0",
+  "provider": "carbon",
+  "enabled": false,
+  "zoneKey": "",
+  "placement": "homepage-and-icon-pages",
+  "notes": [
+    "Enable only after Carbon approves the site and supplies the zone key.",
+    "Use one clearly labelled native placement; do not stack ad networks.",
+    "Keep the ad outside the primary icon interaction path."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@byjtt/icons-svelte",
+  "version": "0.1.0",
+  "description": "Svelte component for JTT Icons.",
+  "license": "MIT",
+  "type": "module",
+  "publishConfig": { "access": "public" },
+  "repository": { "type": "git", "url": "https://github.com/jordan-thirkle/icons-byjtt.git", "directory": "packages/svelte" },
+  "homepage": "https://icons.byjtt.com",
+  "bugs": { "url": "https://github.com/jordan-thirkle/icons-byjtt/issues" },
+  "keywords": ["icons", "svg", "svelte", "ui", "open-source", "ai"],
+  "peerDependencies": { "svelte": ">=4" },
+  "dependencies": { "@byjtt/icons": "0.1.0" },
+  "exports": { ".": { "types": "./index.d.ts", "import": "./index.js" } },
+  "files": ["index.js", "index.d.ts", "README.md"]
+}
