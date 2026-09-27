@@ -183,7 +183,7 @@ export function iconPage(icon, svg, relatedIcons = []) {
 <div class="facts"><div class="fact"><span class="label">Canonical name</span><code>${escapeHtml(icon.name)}</code></div><div class="fact"><span class="label">Direct SVG URL</span><code>${BASE}${icon.path}</code></div><div class="fact"><span class="label">Category</span>${escapeHtml(icon.category)}</div><div class="fact"><span class="label">Family</span>${escapeHtml(icon.family)}</div><div class="fact"><span class="label">Accessibility</span>${escapeHtml(icon.accessibility.default)}</div></div>
 <div class="tags">${tags}</div>
 </section></div>
-<section class="section" id="playground"><div class="eyebrow">Implementation workspace</div><h2>Make it yours. Ship it.</h2><p class="lede">Tune size, colour, stroke and accessibility, then copy the implementation you need.</p><div class="playground"><div class="playground-preview" id="playground-preview">${svg}</div><div class="playground-controls"><div class="control"><label>Size <output id="pg-size-output">24px</output></label><input id="pg-size" type="range" min="12" max="160" value="24"></div><div class="control"><label>Colour</label><input id="pg-colour" type="color" value="#f5f6f8"></div><div class="control"><label>Stroke</label><input id="pg-stroke" type="range" min="1" max="3" step=".25" value="2" ${/stroke-width=/.test(svg)?"":"disabled"}></div><div class="control"><label>Background</label><select id="pg-bg"><option value="dark">Dark</option><option value="light">Light</option><option value="checker">Checker</option></select></div><div class="control"><label>Accessibility</label><select id="pg-a11y"><option value="meaningful">Meaningful</option><option value="decorative">Decorative</option></select></div></div></div><div class="playground-code"><div class="code-tabs"><button class="code-tab active" data-format="svg">SVG</button><button class="code-tab" data-format="html">HTML</button><button class="code-tab" data-format="react">React</button><button class="code-tab" data-format="vue">Vue</button></div><div class="code"><button class="button copy-code" id="pg-copy">Copy</button><pre><code id="pg-code"></code></pre></div><div class="playground-actions"><a class="button" id="pg-download" download>Download configured SVG</a></div><p class="playground-status" id="pg-status" role="status" aria-live="polite"></p></div></section>
+${implementationWorkspace(icon, svg)}
 <section class="section" id="usage"><h2>Use ${escapeHtml(icon.title)} in your project</h2><p class="lede">The simplest integration is the canonical SVG URL below. For bundlers, use the generated package documented in <a href="/docs/">the docs</a>.</p>
 <div class="code"><button class="button copy-code" data-copy="html">Copy</button><pre><code>&lt;img src="${BASE}${icon.path}" alt="${escapeHtml(icon.title)}"&gt;</code></pre></div>
 
@@ -208,10 +208,23 @@ document.querySelectorAll("[data-copy]").forEach(b=>b.addEventListener("click",(
 function implementationWorkspace(icon, svg) {
   const hasStroke = /stroke-width=/.test(svg);
   const reactName = "Icon" + icon.name.split("-").map(part => part[0].toUpperCase() + part.slice(1)).join("");
-  const svgJson = JSON.stringify(svg);
-  const titleJson = JSON.stringify(icon.title);
-  const pathJson = JSON.stringify(icon.path);
-  const reactJson = JSON.stringify(reactName);
+  const script = [
+    "<script>",
+    "const PG_SOURCE=" + JSON.stringify(svg) + ";",
+    "const PG_TITLE=" + JSON.stringify(icon.title) + ";",
+    "const PG_PATH=" + JSON.stringify(icon.path) + ";",
+    "const PG_REACT=" + JSON.stringify(reactName) + ";",
+    "const PG_STROKE=" + JSON.stringify(hasStroke) + ";",
+    "const pg={size:24,colour:'#f5f6f8',stroke:2,bg:'dark',a11y:'meaningful',format:'svg'};",
+    "const q=s=>document.querySelector(s);",
+    "function pgSvg(){let s=PG_SOURCE.replace(/<svg\\b/i,'<svg width=\\"'+pg.size+'\\" height=\\"'+pg.size+'\\"');return PG_STROKE?s.replace(/stroke-width=\\"[^\\"]+\\"/,'stroke-width=\\"'+pg.stroke+'\\"'):s}",
+    "function pgCode(){const svg=pgSvg(),alt=pg.a11y==='meaningful'?PG_TITLE:'';return {svg:svg,html:'<img src=\\"'+location.origin+PG_PATH+'\\" width=\\"'+pg.size+'\\" height=\\"'+pg.size+'\\" alt=\\"'+alt+'\\">',react:'import { '+PG_REACT+' } from \\\"@byjtt/icons-react\\\";\\n\\n<'+PG_REACT+' size={'+pg.size+'} '+(pg.a11y==='meaningful'?'aria-label=\\"'+PG_TITLE+'\\"':'aria-hidden=\\"true\\"')+' style={{color: \\\"'+pg.colour+'\\"}}'+(PG_STROKE?' strokeWidth={'+pg.stroke+'}':'')+' />',vue:'<script setup>\\nimport { '+PG_REACT+' } from \\\"@byjtt/icons-vue\\\";\\n<\\/script>\\n\\n<template>\\n  <'+PG_REACT+' :size=\\"'+pg.size+'\\" '+(pg.a11y==='meaningful'?'aria-label=\\"'+PG_TITLE+'\\"':'aria-hidden=\\"true\\"')+' color=\\"'+pg.colour+'\\"'+(PG_STROKE?' :stroke-width=\\"'+pg.stroke+'\\"':'')+' />\\n</template>'}}",
+    "function pgRender(){const p=q('#playground-preview');p.style.setProperty('--pg-size',pg.size+'px');p.style.setProperty('--pg-colour',pg.colour);p.style.setProperty('--pg-stroke',pg.stroke);p.style.background=pg.bg==='light'?'#f5f6f8':pg.bg==='checker'?'repeating-conic-gradient(#171a20 0 25%,#0d0f13 0 50%) 0/20px 20px':'#0d0f13';q('#pg-size-output').textContent=pg.size+'px';q('#pg-code').textContent=pgCode()[pg.format];q('#pg-download').href='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(pgSvg())}",
+    "q('#pg-size').oninput=e=>{pg.size=+e.target.value;pgRender()};q('#pg-colour').oninput=e=>{pg.colour=e.target.value;pgRender()};q('#pg-stroke').oninput=e=>{pg.stroke=+e.target.value;pgRender()};q('#pg-bg').onchange=e=>{pg.bg=e.target.value;pgRender()};q('#pg-a11y').onchange=e=>{pg.a11y=e.target.value;pgRender()};",
+    "document.querySelectorAll('.code-tab').forEach(b=>b.onclick=()=>{pg.format=b.dataset.format;document.querySelectorAll('.code-tab').forEach(x=>x.classList.toggle('active',x===b));pgRender()});",
+    "q('#pg-copy').onclick=async()=>{try{await navigator.clipboard.writeText(pgCode()[pg.format]);q('#pg-status').textContent='Copied.';setTimeout(()=>q('#pg-status').textContent='',1200)}catch{q('#pg-status').textContent='Copy failed.'}};pgRender();",
+    "</script>"
+  ].join("");
   return [
     '<section class="section" id="playground">',
     '<div class="eyebrow">Implementation workspace</div>',
@@ -223,23 +236,13 @@ function implementationWorkspace(icon, svg) {
     '<div class="control"><label>Stroke <output id="pg-stroke-output">', hasStroke ? '2' : 'Fixed', '</output></label><input id="pg-stroke" type="range" min="1" max="3" step=".25" value="2" ', hasStroke ? '' : 'disabled', '></div>',
     '<div class="control"><label>Background</label><select id="pg-bg"><option value="dark">Dark</option><option value="light">Light</option><option value="checker">Checker</option></select></div>',
     '<div class="control"><label>Accessibility</label><select id="pg-a11y"><option value="meaningful">Meaningful</option><option value="decorative">Decorative</option></select></div></div></div>',
-    '<div class="playground-code"><div class="code-tabs"><button class="code-tab active" data-format="svg">SVG</button><button class="code-tab" data-format="html">HTML</button><button class="code-tab" data-format="react">React</button><button class="code-taba" data-format="vue">Vue</button></div>',
+    '<div class="playground-code"><div class="code-tabs"><button class="code-tab active" data-format="svg">SVG</button><button class="code-tab" data-format="html">HTML</button><button class="code-tab" data-format="react">React</button><button class="code-tab" data-format="vue">Vue</button></div>',
     '<div class="code"><button class="button copy-code" id="pg-copy">Copy</button><pre><code id="pg-code"></code></pre></div>',
     '<div class="playground-actions"><a class="button" id="pg-download" download>Download configured SVG</a></div><p class="playground-status" id="pg-status" role="status" aria-live="polite"></p></div>',
     '</section>',
-    '<script>',
-    'const PG-SOQRCE=', svgJson, ',PG-TITLE=', titleJson, ',PG-PATH=', pathJson, ',PG-REACT=', reactJson, ',PG-STROKE=', JSON.stringify(hasStroke), ';const pg={size:24,colour:"#f5f6f8",stroke:2,bg:"dark",a11y:"meaningful",format:"svg"};',
-    'const q=s=>document.querySelector(s);',
-    'function pgSvg(){let s=PG_SOURCE.replace(/<svg\\b/i,\'<svg width="\'+pg.size+\'" height="\'+pg.size+\'"\');return PG_STROKE?s.replace(/stroke-width="[^"]+"/,\'stroke-width="\'+pg.stroke+\'"\'):s}',
-    'function pgCode(){const svg=pgSvg(),alt=pg.a11y==="meaningful"?PG_TITLE:"";return {svg,html:\'<img src="\'+location.origin+PG_PATH+\'" width="\'+pg.size+\'" height="\'+pg.size+\'" alt="\'+alt+\'">\',react:\'import { \'+PG_REACT+\' } from "@byjtt/icons-react";\\\\n\\\\n<\'+PG_REACT+\' size={\'+pg.size+\'} \'+(pg.a11y==="meaningful"?\'aria-label="\'+PG_TITLE+\'"\':\'aria-hidden="true"\')+\' style={{color: "\'+pg.colour+\'"}}\'+(PG_STROKE?\' strokeWidth={\'+pg.stroke+\'}\':\'\')+\' />\',vue:\'<script setup>\\\\nimport { \'+PG_REACT+\' } from "@byjtt/icons-vue";\\\\n<\\\\/script>\\\\n\\\\n<template>\\\\n  <\'+PG_REACT+\' :size="\'+pg.size+\'" \'+(pg.a11y==="meaningful"?\'aria-label="\'+PG_TITLE+\'"\':\'aria-hidden="true"\')+\' color="\'+pg.colour+\'"\'+(PG_STROKE?\' :stroke-width="\'+pg.stroke+\'"\':\'\')+\' />\\\\n</template>\'}}',
-    'function pgRender(){q("#playground-preview").style.cssText="--pg-size:"+pg.size+"px;--pg-colour:"+pg.colour+";--pg-stroke:"+pg.stroke+";q("#pg-size-output").textContent=pg.size+"px";q("#pg-stroke-output").textContent=PG_STROKE?pg.stroke:"Fixed";q("#pg-code").textContent=pgCode()[pg.format];q("#pg-download").href="data:image/svg+xml;charset=utf-8,"+encodeURIComponent(pgSvg())}',
-    'q("#pg-size").oninput=e=>{pg.size=+e.target.value;pgRender()};q("#pg-colour").oninput=e=>{pg.colour=e.target.value;pgRender()};q("#pg-stroke").oninput=e=>{pg.stroke=+e.target.value;pgRender()};q("#pg-bg").onchange=e=>{pg.bg=e.target.value;pgRender()};q("#pg-a11y").onchange=e=>{pg.a11y=e.target.value;pgRender()};',
-    'document.querySelectorAll(".code-tab").forEach(b=>b.onclick=()=>{pg.format=b.dataset.format;document.querySelectorAll(".code-tab").forEach(x=>x.classList.toggle("active",x===b));pgRender()});',
-    'q("#pg-copy").onclick=async()=>{try{await navigator.clipboard.writeText(pgCode()[pg.format]);q("#pg-status").textContent="Copied.";setTimeout(()=>q("#pg-status").textContent="",1200)}catch{q("#pg-status").textContent="Copy failed."}};pgRender():',
-    '</script>'
-  ].jsoin("");
+    script
+  ].join("");
 }
-
 export function docsPage() {
   const description = "JTT Icons documentation: install, use, search, accessibility, licensing and AI discovery.";
   const body = `<main class="page">
