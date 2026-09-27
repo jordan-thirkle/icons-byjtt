@@ -3,7 +3,6 @@ import path from "node:path";
 
 const root = process.cwd();
 const metadata = JSON.parse(fs.readFileSync(path.join(root, "metadata/icons.json"), "utf8"));
-const core100 = JSON.parse(fs.readFileSync(path.join(root, "metadata/core-100.json"), "utf8"));
 const rules = JSON.parse(fs.readFileSync(path.join(root, "metadata/optical-rules.json"), "utf8"));
 const sizes = rules.reviewSizes;
 const columns = 10;
@@ -14,8 +13,8 @@ const outputDir = path.join(root, "visual-snapshots");
 fs.mkdirSync(outputDir, { recursive: true });
 
 const escapeXml = value => String(value).replace(/[&<>]/g, character => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[character]));
-const metadataByName = new Map(metadata.icons.map(icon => [icon.name, icon]));
-const icons = core100.icons.map(icon => metadataByName.get(icon.name)).filter(Boolean);\nif (icons.length !== 100) throw new Error(`Core 100 optical generation expected 100 implemented canonical icons, found ${icons.length}.`);
+const icons = [...metadata.icons].sort((a, b) => a.name.localeCompare(b.name));
+if (icons.length !== 300) throw new Error(`Catalogue optical generation expected 300 canonical icons, found ${icons.length}.`);
 const count = (value, expression) => [...value.matchAll(expression)].length;
 const pathCommands = data => count(data, /[AaCcHhLlMmQqSsTtVvZz]/g);
 
