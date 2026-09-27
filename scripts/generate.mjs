@@ -56,7 +56,7 @@ write("packages/react/package.json", JSON.stringify({
 write("packages/react/README.md", [
   "# @byjtt/icons-react",
   "",
-  "React components for JTT Icons. Version ${metadata.version}.",
+  `React components for JTT Icons. Version ${metadata.version}.`,
   "",
   "## Install",
   "",
