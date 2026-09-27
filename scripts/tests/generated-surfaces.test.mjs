@@ -18,6 +18,12 @@ test("generated surfaces materialize every canonical Core 100 icon", () => {
   const packageIcons = filesIn(path.join(root, "packages/core/icons")).map(name => name.replace(/\.js$/, ""));
   sameNames(packageIcons);
 
+  assert.ok(fs.existsSync(path.join(root, "packages/react/package.json")));
+  assert.ok(fs.existsSync(path.join(root, "packages/react/index.js")));
+  assert.ok(fs.existsSync(path.join(root, "packages/react/index.d.ts")));
+  const reactSource = fs.readFileSync(path.join(root, "packages/react/index.js"), "utf8");
+  for (const icon of metadata.icons) assert.match(reactSource, new RegExp(`function ${icon.name.replace(/-([a-z])/g, (_, c) => c.toUpperCase()).replace(/^delete$/, "IconDelete")}\\b`));
+
   const pageIcons = dirsIn(path.join(root, "icons"));
   sameNames(pageIcons);
 
