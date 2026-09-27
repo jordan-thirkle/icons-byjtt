@@ -1,4 +1,5 @@
 import test from "node:test";
+import { execFileSync } from "node:child_process";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
@@ -57,6 +58,7 @@ test("generated surfaces materialize every canonical Core 100 icon", () => {
   assert.ok(fs.existsSync(path.join(root, "ai", "index.html")));
   assert.ok(fs.existsSync(path.join(root, "assets", "site.css")));
   assert.ok(fs.existsSync(path.join(root, "assets", "search.js")));
+  execFileSync(process.execPath, ["--check", path.join(root, "assets", "search.js")]);
   assert.ok(fs.existsSync(path.join(root, "api", "mcp.js")));
 
   const sitemap = fs.readFileSync(path.join(root, "sitemap.xml"), "utf8");
