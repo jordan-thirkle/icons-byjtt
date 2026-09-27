@@ -152,7 +152,7 @@ export function categoryPage(category, icons) {
 
 export function sitemap(catalogue) {
   const categories = [...new Set(catalogue.icons.map(i=>i.category))].sort();
-  const urls = [`${BASE}/`,...categories.map(c=>`${BASE}/categories/${c}/`),...catalogue.icons.map(i=>`${BASE}/icons/${i.name}/`)];
+  const urls = [`${BASE}/`,`\${BASE}/docs/`,...categories.map(c=>`${BASE}/categories/${c}/`),...catalogue.icons.map(i=>`${BASE}/icons/${i.name}/`)];
   return `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls.map(url=>`<url><loc>${url}</loc></url>`).join("")}</urlset>\n`;
 }
 
