@@ -1,8 +1,6 @@
 name: Validate JTT Icons
 
 on:
-  push:
-    branches: ["feat/ontology-search-scalability"]
   pull_request:
   workflow_dispatch:
 
