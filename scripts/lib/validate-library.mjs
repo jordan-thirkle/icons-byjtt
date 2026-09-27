@@ -12,7 +12,7 @@ export function validateLibrary(rootDir) {
   const relationships = read("metadata/relationships.json");
   const ontology = read("metadata/ontology.json");
   errors.push(...validateMetadata(catalogue, categories, aliases, relationships).errors);
-  if (!ontology.version || !/^2\\.\\d+\\.\\d+$/.test(ontology.version)) errors.push("ontology: invalid semantic ontology version");
+  if (!ontology.version || !/^2\.\d+\.\d+$/.test(ontology.version)) errors.push("ontology: invalid semantic ontology version");
   if (!ontology.intentGroups || Object.keys(ontology.intentGroups).length < 10) errors.push("ontology: insufficient intent groups");
   for (const [intent, terms] of Object.entries(ontology.intentGroups || {})) if (!Array.isArray(terms) || !terms.length) errors.push("ontology: empty intent group " + intent);
   const referenced = new Set();
