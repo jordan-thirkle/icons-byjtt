@@ -11,6 +11,11 @@
     "test": "node --test scripts/tests/*.test.mjs",
     "generate": "node scripts/generate.mjs",
     "pack:core": "npm pack ./packages/core --pack-destination ./dist",
-    "publish:core": "npm publish ./packages/core --access public"
+    "publish:core": "npm publish ./packages/core --access public",
+    "test:mcp": "node --test scripts/tests/mcp.test.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.0.0",
+    "zod": "^4.0.0"
   }
 }
