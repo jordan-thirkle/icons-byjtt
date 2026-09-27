@@ -1,4 +1,5 @@
 name: Generate JTT Icons
+# Public product surfaces are generated from canonical metadata.
 
 on:
   push:
