@@ -5,6 +5,23 @@
   "license": "MIT",
   "type": "module",
   "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jordan-thirkle/icons-byjtt.git",
+    "directory": "packages/react"
+  },
+  "homepage": "https://icons.byjtt.com",
+  "bugs": {
+    "url": "https://github.com/jordan-thirkle/icons-byjtt/issues"
+  },
+  "keywords": [
+    "icons",
+    "svg",
+    "react",
+    "ui",
+    "open-source",
+    "ai"
+  ],
   "peerDependencies": {
     "react": ">=18"
   },
@@ -17,6 +34,6 @@
   "files": [
     "index.js",
     "index.d.ts",
-    "icons"
+    "README.md"
   ]
 }
