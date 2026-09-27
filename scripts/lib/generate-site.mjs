@@ -1,5 +1,52 @@
 const BASE = "https://icons.byjtt.com";
 
+const USE_CASES = {
+  "navigation-icons": {
+    title: "Navigation Icons",
+    description: "Open-source navigation icons for menus, breadcrumbs, tabs, search, links and moving through digital products.",
+    lead: "Use familiar directional and wayfinding concepts without inventing your own icon vocabulary.",
+    names: ["arrow-left","arrow-right","arrow-up","arrow-down","chevron-left","chevron-right","chevron-up","chevron-down","menu","home","search","location","map"],
+    notes: [
+      "Use directional icons when the action itself is spatial or sequential.",
+      "Pair icon-only navigation controls with an accessible name.",
+      "Keep the same directional meaning consistent across the product."
+    ]
+  },
+  "interface-actions": {
+    title: "Interface Action Icons",
+    description: "Open-source action icons for creating, editing, confirming, deleting, downloading, uploading and managing interface state.",
+    lead: "Common actions should be instantly recognisable and consistent across your product.",
+    names: ["plus","edit","check","delete","copy","download","upload","save","refresh","undo","redo","share","filter","sort"],
+    notes: [
+      "Prefer a familiar action glyph over a decorative metaphor.",
+      "Use destructive icons with explicit surrounding labels or confirmation UI.",
+      "Keep icon-only controls large enough to operate comfortably."
+    ]
+  },
+  "developer-tools": {
+    title: "Developer Tool Icons",
+    description: "Open-source icons for developer tools, repositories, terminals, code, infrastructure, bugs and deployment interfaces.",
+    lead: "Build developer-facing interfaces from a vocabulary that maps cleanly to engineering concepts.",
+    names: ["code","braces","terminal","git-branch","git-commit","git-merge","github","server","database","bug","rocket","settings"],
+    notes: [
+      "Use repository and version-control icons for concrete engineering concepts.",
+      "Use status and utility icons alongside text when the meaning could be ambiguous.",
+      "Prefer semantic names so design tokens and AI tooling can discover the same concept."
+    ]
+  },
+  "communication-ui": {
+    title: "Communication Icons",
+    description: "Open-source icons for messaging, notifications, mail, sharing, reactions and communication workflows.",
+    lead: "Make communication states legible without turning every notification into visual noise.",
+    names: ["message","mail","bell","send","share","heart","bookmark","info","help"],
+    notes: [
+      "Use notification icons for state, not as a substitute for the notification message.",
+      "Use familiar communication metaphors consistently.",
+      "Provide accessible names for meaningful icon-only controls."
+    ]
+  }
+};
+
 const CATEGORY_COPY = {
   actions: "Interface actions for creating, editing, confirming, removing, sharing and moving through work.",
   navigation: "Navigation and wayfinding icons for menus, links, controls, search and interface movement.",
@@ -141,6 +188,23 @@ export function docsPage() {
   return shell({title:"JTT Icons Documentation",description,canonical:BASE+"/docs/",body});
 }
 
+export function useCasePage(slug, config, icons) {
+  const cards = icons.map(icon => card(icon)).join("");
+  const notes = config.notes.map(note => `<li>${escapeHtml(note)}</li>`).join("");
+  const faq = [
+    [`Which icons belong in ${config.title.toLowerCase()}?`, config.description],
+    [`How should these icons be used?`, "Treat the icon as a semantic visual aid, preserve an accessible name for meaningful controls, and keep the surrounding interaction explicit."]
+  ].map(([q,a]) => `<div class="section"><h3>${escapeHtml(q)}</h3><p>${escapeHtml(a)}</p></div>`).join("");
+  const body = `<main><section class="collection-head"><div class="kicker">JTT Icons use case</div><h1>${escapeHtml(config.title)}</h1><p>${escapeHtml(config.lead)}</p><div class="collection-meta">${icons.length} curated concepts · open source</div></section>
+<section class="section"><h2>Why this collection exists</h2><p>${escapeHtml(config.description)}</p></section>
+<section class="section"><h2>Practical guidance</h2><ul>${notes}</ul></section>
+<section class="section"><h2>Explore the icon vocabulary</h2><section class="grid">${cards}</section></section>
+<section class="section"><h2>Common questions</h2>${faq}</section>
+</main>`;
+  const structured = {"@context":"https://schema.org","@type":"CollectionPage",name:`JTT Icons — ${config.title}`,description:config.description,url:`${BASE}/use-cases/${slug}/`};
+  return shell({title:`${config.title} — JTT Icons`,description:config.description,canonical:`${BASE}/use-cases/${slug}/`,body:body.replace("</main>",`</main><script type="application/ld+json">${jsonLd(structured)}</script>`)});
+}
+
 export function categoryPage(category, icons) {
   const title = category.charAt(0).toUpperCase()+category.slice(1);
   const description = CATEGORY_COPY[category] || `Open-source JTT Icons for ${category} interfaces.`;
@@ -152,7 +216,7 @@ export function categoryPage(category, icons) {
 
 export function sitemap(catalogue) {
   const categories = [...new Set(catalogue.icons.map(i=>i.category))].sort();
-  const urls = [`${BASE}/`,`${BASE}/docs/`,...categories.map(c=>`${BASE}/categories/${c}/`),...catalogue.icons.map(i=>`${BASE}/icons/${i.name}/`)];
+  const urls = [`${BASE}/`,`${BASE}/docs/`,...categories.map(c=>`${BASE}/categories/${c}/`),...Object.keys(USE_CASES).map(slug=>`${BASE}/use-cases/${slug}/`),...catalogue.icons.map(i=>`${BASE}/icons/${i.name}/`)];
   return `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls.map(url=>`<url><loc>${url}</loc></url>`).join("")}</urlset>\n`;
 }
 
