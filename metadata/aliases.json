@@ -26,12 +26,8 @@
   "arrow-up-left": [
     "northwest"
   ],
-  "arrow-up-right": [
-    "external-link"
-  ],
-  "attachment": [
-    "paperclip"
-  ],
+  "arrow-up-right": [],
+  "attachment": [],
   "bag": [
     "shopping-bag"
   ],
@@ -156,15 +152,11 @@
   "loading": [
     "progress"
   ],
-  "location": [
-    "pin"
-  ],
+  "location": [],
   "lock": [
     "private"
   ],
-  "mail": [
-    "email"
-  ],
+  "mail": [],
   "map": [
     "maps"
   ],
@@ -172,9 +164,7 @@
     "hamburger",
     "navigation-menu"
   ],
-  "message": [
-    "chat"
-  ],
+  "message": [],
   "mic": [
     "microphone"
   ],
@@ -197,9 +187,7 @@
     "add",
     "create"
   ],
-  "receipt": [
-    "invoice"
-  ],
+  "receipt": [],
   "redo": [],
   "refresh": [
     "reload"
@@ -207,9 +195,7 @@
   "rocket": [
     "launch"
   ],
-  "save": [
-    "store"
-  ],
+  "save": [],
   "search": [
     "find",
     "lookup"
@@ -259,9 +245,7 @@
   "user": [
     "account"
   ],
-  "user-circle": [
-    "profile"
-  ],
+  "user-circle": [],
   "user-minus": [
     "remove-user"
   ],
@@ -271,9 +255,7 @@
   "users": [
     "people"
   ],
-  "video": [
-    "film"
-  ],
+  "video": [],
   "volume": [
     "sound"
   ],
