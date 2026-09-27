@@ -1,0 +1,42 @@
+{
+  "name": "@byjtt/icons-vue",
+  "version": "0.1.0",
+  "description": "Vue 3 components for JTT Icons.",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jordan-thirkle/icons-byjtt.git",
+    "directory": "packages/vue"
+  },
+  "homepage": "https://icons.byjtt.com",
+  "bugs": {
+    "url": "https://github.com/jordan-thirkle/icons-byjtt/issues"
+  },
+  "keywords": [
+    "icons",
+    "svg",
+    "vue",
+    "ui",
+    "open-source",
+    "ai"
+  ],
+  "peerDependencies": {
+    "vue": ">=3.3"
+  },
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js"
+    }
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "README.md"
+  ]
+}

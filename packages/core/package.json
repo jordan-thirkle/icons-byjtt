@@ -12,5 +12,31 @@
     },
     "./icons/*": "./icons/*.js"
   },
-  "files": ["index.js","index.d.ts","icons"]
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "icons"
+  ],
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jordan-thirkle/icons-byjtt.git",
+    "directory": "packages/core"
+  },
+  "homepage": "https://icons.byjtt.com",
+  "bugs": {
+    "url": "https://github.com/jordan-thirkle/icons-byjtt/issues"
+  },
+  "keywords": [
+    "icons",
+    "svg",
+    "open-source",
+    "ui",
+    "ai",
+    "developer",
+    "web"
+  ]
 }

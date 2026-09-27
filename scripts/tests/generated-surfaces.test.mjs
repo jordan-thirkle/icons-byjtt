@@ -18,6 +18,19 @@ test("generated surfaces materialize every canonical Core 100 icon", () => {
   const packageIcons = filesIn(path.join(root, "packages/core/icons")).map(name => name.replace(/\.js$/, ""));
   sameNames(packageIcons);
 
+  assert.ok(fs.existsSync(path.join(root, "packages/react/package.json")));
+  assert.ok(fs.existsSync(path.join(root, "packages/react/index.js")));
+  assert.ok(fs.existsSync(path.join(root, "packages/react/index.d.ts")));
+  assert.ok(fs.existsSync(path.join(root, "packages/react/README.md")));
+  assert.ok(fs.existsSync(path.join(root, "packages/vue/package.json")));
+  assert.ok(fs.existsSync(path.join(root, "packages/vue/index.js")));
+  assert.ok(fs.existsSync(path.join(root, "packages/vue/index.d.ts")));
+  assert.ok(fs.existsSync(path.join(root, "packages/vue/README.md")));
+  const reactSource = fs.readFileSync(path.join(root, "packages/react/index.js"), "utf8");
+  for (const icon of metadata.icons) assert.match(reactSource, new RegExp(`function Icon${icon.name.split("-").map(part => part[0].toUpperCase() + part.slice(1)).join("")}\\b`));
+  const vueSource = fs.readFileSync(path.join(root, "packages/vue/index.js"), "utf8");
+  for (const icon of metadata.icons) assert.match(vueSource, new RegExp(`Icon${icon.name.split("-").map(part => part[0].toUpperCase() + part.slice(1)).join("")}\\b`));
+
   const pageIcons = dirsIn(path.join(root, "icons"));
   sameNames(pageIcons);
 
@@ -36,7 +49,10 @@ test("generated surfaces materialize every canonical Core 100 icon", () => {
     assert.ok(declaration.includes(`const ${safeIdentifier}: JttIconModule`));
   }
 
+  for (const slug of ["navigation-icons","interface-actions","developer-tools","communication-ui"]) assert.ok(fs.existsSync(path.join(root, "use-cases", slug, "index.html")));
+
   const sitemap = fs.readFileSync(path.join(root, "sitemap.xml"), "utf8");
+  for (const slug of ["navigation-icons","interface-actions","developer-tools","communication-ui"]) assert.ok(sitemap.includes(`/use-cases/${slug}/`));
   for (const icon of metadata.icons) assert.ok(sitemap.includes(`/icons/${icon.name}/`));
 
   const aiReference = fs.readFileSync(path.join(root, "llms-full.txt"), "utf8");

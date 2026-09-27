@@ -1,0 +1,33 @@
+name: Verify npm packages
+
+on:
+  push:
+    branches: ["main", "product/public-library-v2"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: mkdir -p dist
+      - run: npm pack ./packages/core --pack-destination ./dist
+      - run: npm pack ./packages/react --pack-destination ./dist
+      - run: npm pack ./packages/vue --pack-destination ./dist
+      - run: |
+          cd dist
+          for archive in *.tgz; do
+            echo "=== $archive ==="
+            tar -tzf "$archive"
+          done
+      - uses: actions/upload-artifact@v4
+        with:
+          name: jtt-icons-npm-packages
+          path: dist/*.tgz
+          if-no-files-found: error
