@@ -142,7 +142,7 @@ export function homepage(catalogue) {
 <section class="discover"><div><div class="kicker">Built for shipping</div><h2>Not just a pretty grid.</h2><p>Every icon has a stable name, semantic metadata, a raw SVG path and a generated package representation. Pick one and get straight to implementation.</p></div><div class="discover-links"><a href="/use-cases/developer-tools/">Developer tool icons →</a><a href="/use-cases/navigation-icons/">Navigation icons →</a><a href="/use-cases/interface-actions/">Interface action icons →</a><a href="/use-cases/communication-ui/">Communication icons →</a><a href="/llms.txt">AI reference →</a></div></section>
 </main>
 <script>
-const input=document.querySelector("#q"),grid=document.querySelector("#grid"),count=document.querySelector("#count"),empty=document.querySelector("#empty"),sort=document.querySelector("#sort"),cards=[...grid.querySelectorAll(".card")];
+const SEMANTIC_INTENTS=${JSON.stringify(SEMANTIC_INTENTS)};\nconst SEARCH_FIELD_WEIGHTS=${JSON.stringify(SEARCH_FIELD_WEIGHTS)};\nconst input=document.querySelector("#q"),grid=document.querySelector("#grid"),count=document.querySelector("#count"),empty=document.querySelector("#empty"),sort=document.querySelector("#sort"),cards=[...grid.querySelectorAll(".card")];
 const normalize=s=>s.toLowerCase().normalize("NFKD").replace(/[^a-z0-9\\s-]/g," ");
 const tokens=s=>normalize(s).split(/\\s+/).filter(Boolean);
 const semanticTokens=query=>[...new Set(tokens(query).flatMap(q=>[q,...(SEMANTIC_INTENTS[q]||[])]))];
