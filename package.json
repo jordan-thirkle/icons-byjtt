@@ -15,7 +15,7 @@
     "test:mcp": "node --test scripts/tests/mcp.test.mjs"
   },
   "dependencies": {
-    "@modelcontextprotocol/server": "^2.0.0",
+    "@modelcontextprotocol/server": "^2.1.0",
     "zod": "^4.0.0"
   }
 }
