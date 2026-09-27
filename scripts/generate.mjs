@@ -2,13 +2,14 @@ import fs from "node:fs";
 import path from "node:path";
 import { generateCatalogue } from "./lib/generate-catalogue.mjs";
 import { generatePackage } from "./lib/generate-package.mjs";
-import { homepage, iconPage, categoryPage, useCasePage, docsPage, sitemap, favicon, USE_CASES } from "./lib/generate-site.mjs";
+import { homepage, cataloguePage, iconPage, categoryPage, useCasePage, docsPage, sitemap, favicon, USE_CASES } from "./lib/generate-site.mjs";
 import { generateAiReference } from "./lib/generate-ai-reference.mjs";
 import { generateVuePackage } from "./lib/generate-vue.mjs";
 
 const root = process.cwd();
 const metadata = JSON.parse(fs.readFileSync(path.join(root, "metadata/icons.json"), "utf8"));
-const catalogue = generateCatalogue(metadata);
+const ontology = JSON.parse(fs.readFileSync(path.join(root, "metadata/ontology.json"), "utf8"));
+const catalogue = generateCatalogue(metadata, ontology);
 const svgByName = Object.fromEntries(
   metadata.icons.map(icon => [icon.name, fs.readFileSync(path.join(root, icon.path.slice(1)), "utf8")])
 );
@@ -21,12 +22,14 @@ const write = (file, content) => {
 };
 
 write("index.html", homepage(catalogue));
+const totalCataloguePages = Math.max(1, Math.ceil(catalogue.icons.length / 120));
+for (let page = 2; page <= totalCataloguePages; page++) write(`icons/page/${page}/index.html`, cataloguePage(catalogue, page));
 write("docs/index.html", docsPage());
 write("favicon.svg", favicon());
 write("icons.json", JSON.stringify(catalogue, null, 2) + "\n");
 write("api/icons.json", JSON.stringify(catalogue, null, 2) + "\n");
 write("sitemap.xml", sitemap(catalogue));
-write("llms-full.txt", generateAiReference(metadata));
+write("llms-full.txt", generateAiReference({ ...metadata, icons: catalogue.icons }, ontology));
 
 for (const [file, content] of Object.entries(files)) write(file, content);
 for (const [file, content] of Object.entries(generateVuePackage(metadata, svgByName))) write(file, content);

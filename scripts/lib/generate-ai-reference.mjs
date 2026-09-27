@@ -1,17 +1,38 @@
-export function generateAiReference(metadata) {
+export function generateAiReference(metadata, ontology = {}) {
   const icons = [...metadata.icons].sort((a,b) => a.name.localeCompare(b.name));
-  const rows = icons.map(icon => `- \`${icon.name}\` — ${icon.title} · ${icon.category} · ${icon.accessibility.default} · ${icon.tags.join(", ")} · SVG: \`${icon.path}\``).join("\n");
+  const rows = icons.map(icon => {
+    const semantic = icon.semantics || {};
+    const relations = semantic.relations || {};
+    return [
+      `- \`${icon.name}\` — ${icon.title} · ${icon.category} · ${icon.accessibility.default}`,
+      `  - tags: ${icon.tags.join(", ") || "none"}`,
+      `  - aliases: ${icon.aliases.join(", ") || "none"}`,
+      `  - contexts: ${icon.contexts.join(", ") || "none"}`,
+      `  - intents: ${(semantic.intents || []).join(", ") || "none"}`,
+      `  - actions: ${(semantic.actions || []).join(", ") || "none"}`,
+      `  - objects: ${(semantic.objects || []).join(", ") || "none"}`,
+      `  - related: ${(relations.related || []).join(", ") || "none"}`,
+      `  - opposite: ${(relations.opposite || []).join(", ") || "none"}`,
+      `  - paired: ${(relations.paired || []).join(", ") || "none"}`,
+      `  - SVG: \`${icon.path}\``,
+    ].join("\n");
+  }).join("\n");
+  const intents = Object.entries(ontology.intentGroups || {}).map(([name, terms]) => `- \`${name}\`: ${terms.join(", ")}`).join("\n");
   return `# JTT Icons — Full AI Reference
 
-This document explains how agents should discover and consume JTT Icons. Canonical semantic data remains in \`/metadata/icons.json\`.
+This document explains how agents should discover and consume JTT Icons. Semantic ontology version: \`${ontology.version || "unknown"}\`.
 
 ## Selection contract
 
-1. Match the requested concept to \`name\` and \`title\`.
-2. Expand with \`tags\` and \`aliases\`.
-3. Use \`contexts\` to distinguish similar concepts.
-4. Use \`related\` for nearby or paired concepts.
-5. Prefer the canonical \`name\` in generated code.
+1. Resolve the request against canonical name, title, aliases, tags and contexts.
+2. Use semantic intents, actions, objects and states to understand meaning.
+3. Use relationships to find opposites, paired concepts, alternatives and nearby concepts.
+4. Prefer the canonical name when generating code.
+5. Never invent an icon identifier.
+
+## Semantic intent vocabulary
+
+${intents}
 
 ## Canonical rendering
 
@@ -25,10 +46,11 @@ This document explains how agents should discover and consume JTT Icons. Canonic
 
 ## Semantic selection examples
 
-- “close”, “dismiss”, “cancel” → look for close/cancel/remove concepts, then verify the canonical metadata.
-- “account”, “profile”, “user” → inspect people/account concepts and use context to disambiguate.
-- “developer”, “code”, “repository”, “deploy” → inspect the developer category and related engineering contexts.
-- “upload”, “import”, “attach” → inspect action/file concepts and related metadata.
+- “close”, “dismiss”, “cancel” → resolve the \`dismiss\` intent and inspect relationships.
+- “account”, “profile”, “user” → resolve the \`account\` intent and use people/context metadata.
+- “developer”, “code”, “repository”, “deploy” → resolve the \`developer\` intent and developer contexts.
+- “upload”, “import”, “attach” → resolve the \`transfer\` intent and file/action contexts.
+- “what goes with a database?” → inspect \`paired\` and \`related\` relationships.
 
 ## Current catalogue
 
