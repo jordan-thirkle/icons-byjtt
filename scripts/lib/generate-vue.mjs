@@ -11,7 +11,7 @@ export function generateVuePackage(metadata, svgByName) {
 
   files["packages/vue/package.json"] = JSON.stringify({
     name: "@byjtt/icons-vue",
-    version: "0.1.0",
+    version: metadata.version,
     description: "Vue 3 components for JTT Icons.",
     license: "MIT",
     type: "module",
@@ -40,7 +40,7 @@ export function generateVuePackage(metadata, svgByName) {
   files["packages/vue/README.md"] = [
     "# @byjtt/icons-vue",
     "",
-    "Vue 3 components for JTT Icons. Version 0.1.0.",
+    `Vue 3 components for JTT Icons. Version ${metadata.version}.`,
     "",
     "## Install",
     "",
