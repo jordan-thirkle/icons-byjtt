@@ -42,7 +42,7 @@ footer{border-top:1px solid var(--line);padding:26px 0 50px;color:var(--muted);f
 </section></div>
 <section class="section" id="usage"><h2>Use Youtube in your project</h2>
 <div class="code"><button class="button copy-code" data-copy="html">Copy</button><pre><code>&lt;img src="https://icons.byjtt.com/icons/brands/youtube.svg" alt="Youtube"&gt;</code></pre></div>
-<div class="code" style="margin-top:10px"><button class="button copy-code" data-copy="import">Copy</button><pre><code>import { Youtube } from &quot;@byjtt/icons&quot;;</code></pre></div>
+
 </section>
 <section class="section"><h2>Icon metadata</h2><div class="code"><pre><code>{
   &quot;name&quot;: &quot;youtube&quot;,
@@ -67,15 +67,14 @@ footer{border-top:1px solid var(--line);padding:26px 0 50px;color:var(--muted);f
 
 <section class="section"><h2>Raw SVG</h2><div class="code"><button class="button copy-code" id="copy-svg-2">Copy</button><pre><code>&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;currentColor&quot;&gt;&lt;path d=&quot;M21 8.2a3 3 0 0 0-2.1-2.1C17 5.5 12 5.5 12 5.5s-5 0-6.9.6A3 3 0 0 0 3 8.2 31 31 0 0 0 2.5 12 31 31 0 0 0 3 15.8a3 3 0 0 0 2.1 2.1c1.9.6 6.9.6 6.9.6s5 0 6.9-.6a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-3.8 31 31 0 0 0-.5-3.8ZM10 15.5v-7l6 3.5-6 3.5Z&quot;/&gt;&lt;/svg&gt;
 </code></pre></div></section>
-</main><script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"JTT Icons — Youtube","applicationCategory":"DeveloperApplication","description":"A free open-source youtube SVG icon for brand, social. Part of the JTT Icons line family.","url":"https://icons.byjtt.com/icons/youtube/","isAccessibleForFree":true,"license":"https://opensource.org/licenses/MIT"}</script>
+</main><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Youtube Icon — JTT Icons","description":"A free open-source youtube SVG icon for brand, social. Part of the JTT Icons line family.","url":"https://icons.byjtt.com/icons/youtube/","about":{"@type":"ImageObject","name":"Youtube","contentUrl":"https://icons.byjtt.com/icons/brands/youtube.svg","license":"https://opensource.org/licenses/MIT"}}</script>
 <script>
 const svg="<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M21 8.2a3 3 0 0 0-2.1-2.1C17 5.5 12 5.5 12 5.5s-5 0-6.9.6A3 3 0 0 0 3 8.2 31 31 0 0 0 2.5 12 31 31 0 0 0 3 15.8a3 3 0 0 0 2.1 2.1c1.9.6 6.9.6 6.9.6s5 0 6.9-.6a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-3.8 31 31 0 0 0-.5-3.8ZM10 15.5v-7l6 3.5-6 3.5Z\"/></svg>\n";
 const htmlSnippet="<img src=\"https://icons.byjtt.com/icons/brands/youtube.svg\" alt=\"Youtube\">";
-const importSnippet="import { Youtube } from \"@byjtt/icons\";";
 const copy=async(text,button)=>{try{await navigator.clipboard.writeText(text);const old=button.textContent;button.textContent="Copied";setTimeout(()=>button.textContent=old,1200)}catch{}};
 document.querySelector("#copy-svg")?.addEventListener("click",e=>copy(svg,e.currentTarget));
 document.querySelector("#copy-svg-2")?.addEventListener("click",e=>copy(svg,e.currentTarget));
-document.querySelectorAll("[data-copy]").forEach(b=>b.addEventListener("click",()=>copy(b.dataset.copy==="html"?htmlSnippet:importSnippet,b)));
+document.querySelectorAll("[data-copy]").forEach(b=>b.addEventListener("click",()=>copy(htmlSnippet,b)));
 </script>
 <footer><div>JTT Icons · open-source SVG icons engineered for modern interfaces and AI-assisted development.</div><div class="footer-links"><a href="/">Library</a><a href="/api/icons.json">Catalogue API</a><a href="/llms.txt">AI reference</a><a href="https://github.com/jordan-thirkle/icons-byjtt">Source</a></div></footer>
 </div></body></html>

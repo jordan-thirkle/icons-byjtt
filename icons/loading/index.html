@@ -42,7 +42,7 @@ footer{border-top:1px solid var(--line);padding:26px 0 50px;color:var(--muted);f
 </section></div>
 <section class="section" id="usage"><h2>Use Loading in your project</h2>
 <div class="code"><button class="button copy-code" data-copy="html">Copy</button><pre><code>&lt;img src="https://icons.byjtt.com/icons/system/loading.svg" alt="Loading"&gt;</code></pre></div>
-<div class="code" style="margin-top:10px"><button class="button copy-code" data-copy="import">Copy</button><pre><code>import { Loading } from &quot;@byjtt/icons&quot;;</code></pre></div>
+
 </section>
 <section class="section"><h2>Icon metadata</h2><div class="code"><pre><code>{
   &quot;name&quot;: &quot;loading&quot;,
@@ -71,15 +71,14 @@ footer{border-top:1px solid var(--line);padding:26px 0 50px;color:var(--muted);f
 <section class="section"><h2>Related icons</h2><div class="related"><a href="/icons/refresh/"><strong>Refresh</strong><div class="meta">actions</div></a></div></section>
 <section class="section"><h2>Raw SVG</h2><div class="code"><button class="button copy-code" id="copy-svg-2">Copy</button><pre><code>&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path d=&quot;M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1&quot;/&gt;&lt;/svg&gt;
 </code></pre></div></section>
-</main><script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"JTT Icons — Loading","applicationCategory":"DeveloperApplication","description":"A free open-source loading SVG icon for system, status. Part of the JTT Icons line family.","url":"https://icons.byjtt.com/icons/loading/","isAccessibleForFree":true,"license":"https://opensource.org/licenses/MIT"}</script>
+</main><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Loading Icon — JTT Icons","description":"A free open-source loading SVG icon for system, status. Part of the JTT Icons line family.","url":"https://icons.byjtt.com/icons/loading/","about":{"@type":"ImageObject","name":"Loading","contentUrl":"https://icons.byjtt.com/icons/system/loading.svg","license":"https://opensource.org/licenses/MIT"}}</script>
 <script>
 const svg="<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1\"/></svg>\n";
 const htmlSnippet="<img src=\"https://icons.byjtt.com/icons/system/loading.svg\" alt=\"Loading\">";
-const importSnippet="import { Loading } from \"@byjtt/icons\";";
 const copy=async(text,button)=>{try{await navigator.clipboard.writeText(text);const old=button.textContent;button.textContent="Copied";setTimeout(()=>button.textContent=old,1200)}catch{}};
 document.querySelector("#copy-svg")?.addEventListener("click",e=>copy(svg,e.currentTarget));
 document.querySelector("#copy-svg-2")?.addEventListener("click",e=>copy(svg,e.currentTarget));
-document.querySelectorAll("[data-copy]").forEach(b=>b.addEventListener("click",()=>copy(b.dataset.copy==="html"?htmlSnippet:importSnippet,b)));
+document.querySelectorAll("[data-copy]").forEach(b=>b.addEventListener("click",()=>copy(htmlSnippet,b)));
 </script>
 <footer><div>JTT Icons · open-source SVG icons engineered for modern interfaces and AI-assisted development.</div><div class="footer-links"><a href="/">Library</a><a href="/api/icons.json">Catalogue API</a><a href="/llms.txt">AI reference</a><a href="https://github.com/jordan-thirkle/icons-byjtt">Source</a></div></footer>
 </div></body></html>
