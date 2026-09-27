@@ -127,6 +127,20 @@ document.querySelectorAll("[data-copy]").forEach(b=>b.addEventListener("click",(
   return shell({title:`${icon.title} Icon — Free SVG — JTT Icons`,description,canonical:`${BASE}/icons/${icon.name}/`,body:body.replace("</main>",`</main><script type="application/ld+json">${jsonLd(structured)}</script>`)});
 }
 
+export function docsPage() {
+  const description = "JTT Icons documentation: install, use, search, accessibility, licensing and AI discovery.";
+  const body = `<main class="page">
+<div class="collection-head"><div class="kicker">JTT Icons documentation</div><h1>Ship with JTT Icons.</h1><p>Everything you need to find an icon, copy it into an interface, or consume the generated package.</p></div>
+<section class="section"><h2>1. Find</h2><p>Use the library search by name, alias, meaning, context or category. Search is enhanced in the browser while the catalogue remains statically crawlable.</p></section>
+<section class="section"><h2>2. Use the SVG</h2><div class="code"><pre><code>&lt;img src="https://icons.byjtt.com/icons/search.svg" alt="Search"&gt;</code></pre></div></section>
+<section class="section"><h2>3. Install the package</h2><div class="code"><pre><code>npm install @byjtt/icons</code></pre></div><p>The package is generated from the canonical catalogue and exposes individual icon modules plus the full icon map.</p></section>
+<section class="section"><h2>4. Accessibility</h2><p>Each icon carries an accessibility classification in canonical metadata. Decorative icons should be hidden from assistive technology; meaningful icons should receive an appropriate accessible name; interactive controls should use the surrounding control label rather than relying on the glyph alone.</p></section>
+<section class="section"><h2>5. AI discovery</h2><p>Agents can use <a href="/llms.txt">llms.txt</a>, <a href="/llms-full.txt">llms-full.txt</a> and <a href="/api/icons.json">the stable catalogue</a>. Match requests against canonical names, aliases, tags and contexts rather than inventing identifiers.</p></section>
+<section class="section"><h2>6. License</h2><p>JTT Icons is MIT licensed. Brand marks remain subject to the relevant trademark rights and policies.</p></section>
+</main>`;
+  return shell({title:"JTT Icons Documentation",description,canonical:BASE+"/docs/",body});
+}
+
 export function categoryPage(category, icons) {
   const title = category.charAt(0).toUpperCase()+category.slice(1);
   const description = CATEGORY_COPY[category] || `Open-source JTT Icons for ${category} interfaces.`;
