@@ -103,6 +103,10 @@ const escapeHtml = value => String(value).replace(/[&<>"']/g, c => ({
 
 const jsonLd = value => JSON.stringify(value).replace(/</g, "\\u003c");
 
+function breadcrumbJsonLd(items) {
+  return {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":items.map((item,index)=>({"@type":"ListItem",position:index+1,name:item.name,...(item.url?{item:item.url}:{})}))};
+}
+
 function shell({ title, description, canonical, body, type = "website" }) {
   return `<!doctype html>
 <html lang="en">
@@ -154,7 +158,8 @@ export function homepage(catalogue) {
 </main>
 <script>
 const ONTOLOGY_INTENTS=${JSON.stringify(catalogue.ontology?.intents || {})};\nconst SEARCH_FIELD_WEIGHTS={"exact":120,"prefix":65,"title":40,"tag":34,"alias":32,"related":22,"context":22,"category":20,"semantic":18,"text":5,"alternative":28,"opposite":14,"paired":20,"intent":32,"phrase":46};\nconst input=document.querySelector("#q"),grid=document.querySelector("#grid"),count=document.querySelector("#count"),empty=document.querySelector("#empty"),sort=document.querySelector("#sort"),cards=[...grid.querySelectorAll(".card")];\nconst normalize=s=>String(s||"").toLowerCase().normalize("NFKD").replace(/[^a-z0-9\\s-]/g," ").replace(/\\s+/g," ").trim();\nconst tokens=s=>normalize(s).split(" ").filter(Boolean);\nconst searchIndex=cards.map((card,index)=>({card,index,fields:JSON.parse(card.dataset.fields)}));\nconst intentByTerm=Object.fromEntries(Object.entries(ONTOLOGY_INTENTS).flatMap(([intent,terms])=>terms.map(term=>[normalize(term),intent])));\nconst semanticTokens=query=>[...new Set(tokens(query).flatMap(q=>[q,...(ONTOLOGY_INTENTS[q]||[]),...(intentByTerm[q]?[...ONTOLOGY_INTENTS[intentByTerm[q]]]:[])]))];\nfunction score(entry,term){if(!term)return 0;const fields=entry.fields,query=normalize(term),queryTokens=tokens(query),expanded=semanticTokens(query);let total=0;if(query&&fields.queryTerms?.includes(query))total+=SEARCH_FIELD_WEIGHTS.phrase;for(const q of queryTokens){if(fields.name===q)total+=SEARCH_FIELD_WEIGHTS.exact;else if(fields.name.startsWith(q))total+=SEARCH_FIELD_WEIGHTS.prefix;if(fields.title.includes(q))total+=SEARCH_FIELD_WEIGHTS.title;if(fields.tags.includes(q))total+=SEARCH_FIELD_WEIGHTS.tag;if(fields.aliases.includes(q))total+=SEARCH_FIELD_WEIGHTS.alias;if(fields.contexts.includes(q))total+=SEARCH_FIELD_WEIGHTS.context;if(fields.category===q)total+=SEARCH_FIELD_WEIGHTS.category;if(fields.intents?.includes(q))total+=SEARCH_FIELD_WEIGHTS.intent;if(fields.actions?.includes(q))total+=SEARCH_FIELD_WEIGHTS.intent;if(fields.objects?.includes(q))total+=SEARCH_FIELD_WEIGHTS.intent;if(fields.states?.includes(q))total+=SEARCH_FIELD_WEIGHTS.intent;if(fields.related.includes(q))total+=SEARCH_FIELD_WEIGHTS.related;if(fields.alternative.includes(q))total+=SEARCH_FIELD_WEIGHTS.alternative;if(fields.opposite.includes(q))total+=SEARCH_FIELD_WEIGHTS.opposite;if(fields.paired.includes(q))total+=SEARCH_FIELD_WEIGHTS.paired;if(fields.text.includes(q))total+=SEARCH_FIELD_WEIGHTS.text;}for(const q of expanded){if(!queryTokens.includes(q)){if(fields.queryTerms?.includes(q))total+=SEARCH_FIELD_WEIGHTS.semantic;if(fields.intents?.includes(q))total+=SEARCH_FIELD_WEIGHTS.intent;if(fields.tags.includes(q)||fields.aliases.includes(q)||fields.contexts.includes(q))total+=SEARCH_FIELD_WEIGHTS.semantic;}}return total;}\nfunction render(){const term=input.value.trim(),ranked=searchIndex.map(entry=>({...entry,score:score(entry,term)}));const mode=sort.value;ranked.sort((a,b)=>mode==="name"?a.card.dataset.name.localeCompare(b.card.dataset.name):mode==="category"?a.card.dataset.category.localeCompare(b.card.dataset.category)||a.card.dataset.name.localeCompare(b.card.dataset.name):b.score-a.score||a.index-b.index);grid.replaceChildren(...ranked.map(x=>x.card));let visible=0;for(const item of ranked){const hit=!term||item.score>0;item.card.hidden=!hit;if(hit)visible++;}count.textContent=visible+" icon"+(visible===1?"":"s");empty.style.display=visible?"none":"block";const url=new URL(location.href);if(term)url.searchParams.set("q",term);else url.searchParams.delete("q");history.replaceState(null,"",url);}\nconst initial=new URLSearchParams(location.search).get("q");if(initial)input.value=initial;input.addEventListener("input",render);sort.addEventListener("change",render);document.querySelectorAll(".suggestion").forEach(b=>b.addEventListener("click",()=>{input.value=b.dataset.query;render();input.focus()}));document.querySelector("#clear-search")?.addEventListener("click",()=>{input.value="";render();input.focus()});document.addEventListener("keydown",e=>{if(e.key==="/"&&document.activeElement!==input){e.preventDefault();input.focus()}if(e.key==="Escape"&&document.activeElement===input){input.value="";render()}});render();</script>`;
-  return shell({title:"JTT Icons — Open Source SVG Icon Library",description,canonical:BASE+"/",body});
+  const structured = {"@context":"https://schema.org","@graph":[{"@type":"WebSite",name:"JTT Icons",url:BASE},{"@type":"CollectionPage",name:"JTT Icons — Open Source SVG Icon Library",description,url:BASE}]};
+  return shell({title:"JTT Icons — Open Source SVG Icon Library",description,canonical:BASE+"/",body:body.replace("</main>",`</main><script type="application/ld+json">${jsonLd(structured)}</script>`)});
 }
 
 function card(icon) {
@@ -205,7 +210,7 @@ document.querySelector("#copy-svg")?.addEventListener("click",e=>copy(svg,e.curr
 document.querySelector("#copy-svg-2")?.addEventListener("click",e=>copy(svg,e.currentTarget));
 document.querySelectorAll("[data-copy]").forEach(b=>b.addEventListener("click",()=>copy(htmlSnippet,b)));
 </script>`;
-  const structured = {"@context":"https://schema.org","@type":"WebPage",name:`${icon.title} Icon — JTT Icons`,description,url:`${BASE}/icons/${icon.name}/`,about:{"@type":"ImageObject",name:icon.title,contentUrl:`${BASE}${icon.path}`,license:"https://opensource.org/licenses/MIT"}};
+  const structured = {"@context":"https://schema.org","@graph":[{"@type":"WebPage",name:`${icon.title} Icon — JTT Icons`,description,url:`${BASE}/icons/${icon.name}/`,about:{"@type":"ImageObject",name:icon.title,contentUrl:`${BASE}${icon.path}`,license:"https://opensource.org/licenses/MIT"}},breadcrumbJsonLd([{name:"Icons",url:BASE+"/"},{name:icon.category,url:`${BASE}/categories/${encodeURIComponent(icon.category)}/`},{name:icon.title}])]};
   return shell({title:`${icon.title} Icon — Free SVG — JTT Icons`,description,canonical:`${BASE}/icons/${icon.name}/`,body:body.replace("</main>",`</main><script type="application/ld+json">${jsonLd(structured)}</script>`)});
 }
 
@@ -275,7 +280,7 @@ export function useCasePage(slug, config, icons) {
 <section class="section"><h2>Explore the icon vocabulary</h2><section class="grid">${cards}</section></section>
 <section class="section"><h2>Common questions</h2>${faq}</section>
 </main>`;
-  const structured = {"@context":"https://schema.org","@type":"CollectionPage",name:`JTT Icons — ${config.title}`,description:config.description,url:`${BASE}/use-cases/${slug}/`};
+  const structured = {"@context":"https://schema.org","@graph":[{"@type":"CollectionPage",name:`JTT Icons — ${config.title}`,description:config.description,url:`${BASE}/use-cases/${slug}/`},breadcrumbJsonLd([{name:"Icons",url:BASE+"/"},{name:config.title}])]};
   return shell({title:`${config.title} — JTT Icons`,description:config.description,canonical:`${BASE}/use-cases/${slug}/`,body:body.replace("</main>",`</main><script type="application/ld+json">${jsonLd(structured)}</script>`)});
 }
 
@@ -294,7 +299,7 @@ export function categoryPage(category, icons) {
   const description = CATEGORY_COPY[category] || `Open-source JTT Icons for ${category} interfaces.`;
   const cards = icons.map(icon => card(icon)).join("");
   const body = `<main><section class="collection-head"><div class="kicker">JTT Icons collection</div><h1>Free ${escapeHtml(title)} Icons</h1><p>${escapeHtml(description)}</p><div class="collection-meta">${icons.length} icons · ${escapeHtml(category)} · open source</div></section><section class="grid">${cards}</section></main>`;
-  const structured = {"@context":"https://schema.org","@type":"CollectionPage",name:`JTT Icons — ${title}`,description,url:`${BASE}/categories/${category}/`};
+  const structured = {"@context":"https://schema.org","@graph":[{"@type":"CollectionPage",name:`JTT Icons — ${title}`,description,url:`${BASE}/categories/${category}/`},breadcrumbJsonLd([{name:"Icons",url:BASE+"/"},{name:title}])]};
   return shell({title:`Free ${title} Icons — JTT Icons`,description,canonical:`${BASE}/categories/${category}/`,body:body.replace("</main>",`</main><script type="application/ld+json">${jsonLd(structured)}</script>`)});
 }
 
