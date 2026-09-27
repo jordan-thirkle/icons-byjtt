@@ -3,7 +3,7 @@ name: Generate JTT Icons
 
 on:
   push:
-    branches: ["main"]
+    branches: ["main", "product/public-library-v2"]
   workflow_dispatch:
 
 permissions:
@@ -29,6 +29,6 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html docs/index.html favicon.svg categories icons.json api/icons.json sitemap.xml llms-full.txt metadata/optical-audit.json visual-snapshots packages/core packages/react icons
+          git add index.html docs/index.html favicon.svg categories icons.json api/icons.json sitemap.xml llms-full.txt metadata/optical-audit.json visual-snapshots packages/core packages/react packages/vue icons use-cases
           git commit -m "build: regenerate public and package surfaces [skip ci]"
           git push
