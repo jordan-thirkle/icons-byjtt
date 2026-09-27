@@ -1,16 +1,42 @@
 {
   "name": "@byjtt/icons-web",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Web Component for JTT Icons.",
   "license": "MIT",
   "type": "module",
   "sideEffects": true,
-  "publishConfig": { "access": "public" },
-  "repository": { "type": "git", "url": "https://github.com/jordan-thirkle/icons-byjtt.git", "directory": "packages/web" },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jordan-thirkle/icons-byjtt.git",
+    "directory": "packages/web"
+  },
   "homepage": "https://icons.byjtt.com",
-  "bugs": { "url": "https://github.com/jordan-thirkle/icons-byjtt/issues" },
-  "keywords": ["icons", "svg", "web-component", "custom-element", "open-source", "ai"],
-  "dependencies": { "@byjtt/icons": "0.1.0" },
-  "exports": { ".": { "types": "./index.d.ts", "import": "./index.js" } },
-  "files": ["index.js", "index.d.ts", "README.md"]
+  "bugs": {
+    "url": "https://github.com/jordan-thirkle/icons-byjtt/issues"
+  },
+  "keywords": [
+    "icons",
+    "svg",
+    "web-component",
+    "custom-element",
+    "open-source",
+    "ai"
+  ],
+  "dependencies": {
+    "@byjtt/icons": "0.1.0"
+  },
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js"
+    }
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "README.md"
+  ]
 }
