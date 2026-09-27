@@ -7,9 +7,10 @@ import catalogue from "../../metadata/icons.json" with { type: "json" };
 
 test("catalogue homepage is statically crawlable and uses generated catalogue data", () => {
   const html = fs.readFileSync(path.join(process.cwd(), "index.html"), "utf8");
+  const pageIcons = [...catalogue.icons].sort((a, b) => a.name.localeCompare(b.name)).slice(0, 120);
 
   assert.ok((html.match(/class="card"/g) || []).length <= 120);
-  for (const icon of catalogue.icons.slice(0, 120)) assert.match(html, new RegExp(`href="/icons/${icon.name}/"`));
+  for (const icon of pageIcons) assert.match(html, new RegExp(`href="/icons/${icon.name}/"`));
 });
 
 test("category pages are generated for every canonical category", () => {
