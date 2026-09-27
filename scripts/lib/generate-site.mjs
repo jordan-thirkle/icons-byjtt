@@ -300,7 +300,8 @@ export function categoryPage(category, icons) {
 
 export function sitemap(catalogue) {
   const categories = [...new Set(catalogue.icons.map(i=>i.category))].sort();
-  const urls = [`${BASE}/`,`${BASE}/docs/`,...categories.map(c=>`${BASE}/categories/${c}/`),...Object.keys(USE_CASES).map(slug=>`${BASE}/use-cases/${slug}/`),...catalogue.icons.map(i=>`${BASE}/icons/${i.name}/`)];
+  const pages = Array.from({ length: Math.max(1, Math.ceil(catalogue.icons.length / CATALOGUE_PAGE_SIZE)) - 1 }, (_, index) => `${BASE}/icons/page/${index + 2}/`);
+  const urls = [`${BASE}/`,`${BASE}/docs/`,...pages,...categories.map(c=>`${BASE}/categories/${c}/`),...Object.keys(USE_CASES).map(slug=>`${BASE}/use-cases/${slug}/`),...catalogue.icons.map(i=>`${BASE}/icons/${i.name}/`)];
   return `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls.map(url=>`<url><loc>${url}</loc></url>`).join("")}</urlset>\n`;
 }
 
