@@ -1,6 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { generateCatalogue } from "../lib/generate-catalogue.mjs";
+import { deriveSemantics } from "../lib/generate-catalogue.mjs";
 import { generatePackage } from "../lib/generate-package.mjs";
 import { generateAiReference } from "../lib/generate-ai-reference.mjs";
 import { iconPage } from "../lib/generate-site.mjs";
@@ -14,3 +15,5 @@ test("AI reference generation includes canonical semantic paths",()=>{const text
 test("package generation is deterministic and preserves SVG content",()=>{const a=generatePackage(metadata,{a:"<svg>a</svg>",z:"<svg>z</svg>"});const b=generatePackage(metadata,{a:"<svg>a</svg>",z:"<svg>z</svg>"});assert.deepEqual(a,b);assert.match(a["packages/core/icons/a.js"],/svg = "<svg>a<\/svg>"/);});
 
 test("icon pages expose the implementation playground contract",()=>{const page=iconPage(metadata.icons[0],"<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M0 0\"/></svg>");assert.match(page,/id="playground"/);assert.match(page,/data-format="react"/);assert.match(page,/data-format="vue"/);assert.match(page,/icons-react/);assert.match(page,/id="pg-download"/);assert.equal(page.includes("src=''"),false);});
+
+test("ontology derives intent, action, object and relationships",()=>{const icon={name:"upload",title:"Upload",category:"actions",tags:["upload","import"],aliases:["import"],contexts:["toolbar"],related:["download"],accessibility:{default:"interactive"},path:"/icons/actions/upload.svg",family:"line"};const ontology={version:"2.0.0",intentGroups:{transfer:["upload","import"]},actionTerms:["upload","import"],objectTerms:["file"],stateTerms:[]};const semantic=deriveSemantics(icon,ontology);assert.deepEqual(semantic.intents,["transfer"]);assert.deepEqual(semantic.actions,["upload","import"]);assert.deepEqual(semantic.relations.related,["download"]);assert.ok(semantic.relations.opposite.includes("download"));});
