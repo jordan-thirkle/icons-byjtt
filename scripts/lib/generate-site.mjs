@@ -88,7 +88,9 @@ export function iconPage(icon, svg, relatedIcons = []) {
   const tags = icon.tags.map(tag => `<span class="tag">${escapeHtml(tag)}</span>`).join("");
   const related = relatedIcons.map(item => `<a href="/icons/${encodeURIComponent(item.name)}/"><strong>${escapeHtml(item.title)}</strong><div class="meta">${escapeHtml(item.category)}</div></a>`).join("");
   const svgText = escapeHtml(svg);
-  const reactName = icon.name.split("-").map(part=>part.charAt(0).toUpperCase()+part.slice(1)).join("");
+  const importName = icon.name.split("-").map(part=>part.charAt(0).toUpperCase()+part.slice(1)).join("");
+  const htmlSnippet = `<img src="${BASE}${icon.path}" alt="${icon.title}">`;
+  const importSnippet = `import { ${importName} } from "@byjtt/icons";`;
   const body = `<main class="page">
 <div class="crumbs"><a href="/">Icons</a> / <a href="/categories/${encodeURIComponent(icon.category)}/">${escapeHtml(icon.category)}</a> / ${escapeHtml(icon.title)}</div>
 <div class="detail">
@@ -103,7 +105,7 @@ export function iconPage(icon, svg, relatedIcons = []) {
 </section></div>
 <section class="section" id="usage"><h2>Use ${escapeHtml(icon.title)} in your project</h2>
 <div class="code"><button class="button copy-code" data-copy="html">Copy</button><pre><code>&lt;img src="${BASE}${icon.path}" alt="${escapeHtml(icon.title)}"&gt;</code></pre></div>
-<div class="code" style="margin-top:10px"><button class="button copy-code" data-copy="import">Copy</button><pre><code>import { ${reactName} } from "@byjtt/icons/react";</code></pre></div>
+<div class="code" style="margin-top:10px"><button class="button copy-code" data-copy="import">Copy</button><pre><code>${escapeHtml(importSnippet)}</code></pre></div>
 </section>
 <section class="section"><h2>Icon metadata</h2><div class="code"><pre><code>${escapeHtml(JSON.stringify(icon,null,2))}</code></pre></div></section>
 ${related ? `<section class="section"><h2>Related icons</h2><div class="related">${related}</div></section>` : ""}
@@ -111,10 +113,12 @@ ${related ? `<section class="section"><h2>Related icons</h2><div class="related"
 </main>
 <script>
 const svg=${JSON.stringify(svg)};
+const htmlSnippet=${JSON.stringify(htmlSnippet)};
+const importSnippet=${JSON.stringify(importSnippet)};
 const copy=async(text,button)=>{try{await navigator.clipboard.writeText(text);const old=button.textContent;button.textContent="Copied";setTimeout(()=>button.textContent=old,1200)}catch{}};
 document.querySelector("#copy-svg")?.addEventListener("click",e=>copy(svg,e.currentTarget));
 document.querySelector("#copy-svg-2")?.addEventListener("click",e=>copy(svg,e.currentTarget));
-document.querySelectorAll("[data-copy]").forEach(b=>b.addEventListener("click",()=>copy(b.dataset.copy==="html"?`<img src="${BASE}${icon.path}" alt="${icon.title}">`:`import { ${reactName} } from "@byjtt/icons/react";`,b)));
+document.querySelectorAll("[data-copy]").forEach(b=>b.addEventListener("click",()=>copy(b.dataset.copy==="html"?htmlSnippet:importSnippet,b)));
 </script>`;
   const structured = {"@context":"https://schema.org","@type":"SoftwareApplication",name:`JTT Icons — ${icon.title}`,applicationCategory:"DeveloperApplication",description,url:`${BASE}/icons/${icon.name}/`,isAccessibleForFree:true,license:"https://opensource.org/licenses/MIT"};
   return shell({title:`${icon.title} Icon — Free SVG — JTT Icons`,description,canonical:`${BASE}/icons/${icon.name}/`,body:body.replace("</main>",`</main><script type="application/ld+json">${jsonLd(structured)}</script>`)});
