@@ -1,6 +1,3 @@
-import fs from "node:fs";
-import path from "node:path";
-
 const componentName = name => `Icon${name.split("-").map(part => part[0].toUpperCase() + part.slice(1)).join("")}`;
 
 export function generateVuePackage(metadata, svgByName) {
