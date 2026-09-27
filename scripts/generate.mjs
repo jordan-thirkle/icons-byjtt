@@ -39,7 +39,7 @@ for (const [file, content] of Object.entries(generateVuePackage(metadata, svgByN
 
 write("packages/react/package.json", JSON.stringify({
   name: "@byjtt/icons-react",
-  version: "0.1.0",
+  version: metadata.version,
   description: "React components for JTT Icons.",
   license: "MIT",
   type: "module",
@@ -56,7 +56,7 @@ write("packages/react/package.json", JSON.stringify({
 write("packages/react/README.md", [
   "# @byjtt/icons-react",
   "",
-  "React components for JTT Icons. Version 0.1.0.",
+  "React components for JTT Icons. Version ${metadata.version}.",
   "",
   "## Install",
   "",
