@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { generateCatalogue } from "./lib/generate-catalogue.mjs";
 import { generatePackage } from "./lib/generate-package.mjs";
-import { homepage, iconPage, categoryPage, useCasePage, docsPage, sitemap, favicon, USE_CASES } from "./lib/generate-site.mjs";
+import { homepage, cataloguePage, iconPage, categoryPage, useCasePage, docsPage, sitemap, favicon, USE_CASES } from "./lib/generate-site.mjs";
 import { generateAiReference } from "./lib/generate-ai-reference.mjs";
 import { generateVuePackage } from "./lib/generate-vue.mjs";
 
@@ -22,6 +22,8 @@ const write = (file, content) => {
 };
 
 write("index.html", homepage(catalogue));
+const totalCataloguePages = Math.max(1, Math.ceil(catalogue.icons.length / 120));
+for (let page = 2; page <= totalCataloguePages; page++) write(`icons/page/${page}/index.html`, cataloguePage(catalogue, page));
 write("docs/index.html", docsPage());
 write("favicon.svg", favicon());
 write("icons.json", JSON.stringify(catalogue, null, 2) + "\n");
