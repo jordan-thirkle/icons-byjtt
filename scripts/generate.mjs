@@ -22,7 +22,7 @@ const write = (file, content) => {
 };
 
 write("assets/site.css", SITE_CSS + "\n");
-write("assets/search.js", SEARCH_JS + "\n");
+write("assets/search.js", SEARCH_JS.replaceAll("\\\\n", "\n") + "\n");
 write("index.html", homepage(catalogue));
 const totalCataloguePages = Math.max(1, Math.ceil(catalogue.icons.length / 120));
 for (let page = 2; page <= totalCataloguePages; page++) write(`icons/page/${page}/index.html`, cataloguePage(catalogue, page));
