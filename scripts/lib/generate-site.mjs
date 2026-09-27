@@ -95,7 +95,7 @@ function shell({ title, description, canonical, body, type = "website" }) {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="${escapeHtml(description)}">
-<meta name="theme-color" content="#08090b">
+<meta name="theme-color" content="#070809">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="canonical" href="${canonical}">
 <meta property="og:type" content="${type}">
@@ -228,83 +228,39 @@ function implementationWorkspace(icon, svg) {
   ].join("");
 }
 export function aiPage() {
-  const description = "JTT Icons for AI coding agents: semantic search, MCP, Agent Skills, raw SVG, packages and deterministic icon selection.";
+  const description = "JTT Icons is an open-source SVG icon library built for people and AI tools: semantic icon search, canonical names, MCP, Agent Skills, packages and raw SVG.";
   const body = `<main class="page">
-<section class="collection-head"><div class="kicker">AI-native icon infrastructure</div><h1>Give your agent the right icon.</h1><p>JTT Icons exposes one canonical icon vocabulary across humans, code, agents and design workflows. Search by meaning, retrieve exact SVGs, and keep icon choices deterministic.</p></section>
-<section class="section"><h2>Agent interfaces</h2><div class="discover-links">
-<a href="/api/mcp/">MCP endpoint →</a>
-<a href="/skills/jtt-icons/SKILL.md">Portable Agent Skill →</a>
-<a href="/llms.txt">llms.txt →</a>
-<a href="/llms-full.txt">Full AI reference →</a>
-<a href="/api/icons.json">JSON catalogue →</a>
-<a href="/docs/ai-agents/">Agent documentation →</a>
+<section class="collection-head"><div class="kicker">AI-ready icon infrastructure</div><h1>Give people and AI the same icon vocabulary.</h1><p>JTT Icons keeps icon names, meaning, relationships and SVG paths consistent across the library, code, design tools and AI agents.</p></section>
+<section class="ai-panel"><div><div class="mini-label">For developers</div><h2>Search by what you mean.</h2><p class="section-lead">Ask for “an icon for uploading a file” instead of remembering an identifier. Search understands names, aliases, contexts and semantic relationships, then resolves to a canonical icon.</p><div class="badge-row"><span class="badge">Natural-language search</span><span class="badge">Canonical names</span><span class="badge">Raw SVG</span><span class="badge">React · Vue · Svelte · Web</span></div></div><div class="accent"><div class="mini-label">For AI tools</div><h2>Resolve, don't guess.</h2><p class="section-lead">Use the public catalogue, Agent Skill or MCP interface to discover an icon and return its canonical name, metadata or SVG. The same source powers the human-facing library.</p><div class="badge-row"><span class="badge">MCP</span><span class="badge">Agent Skill</span><span class="badge">llms.txt</span><span class="badge">JSON catalogue</span></div></div></section>
+<section class="section"><h2>Start with the simplest interface</h2><div class="discover-links">
+<a href="/api/mcp/">MCP interface → Search and retrieve JTT Icons from compatible AI tools</a>
+<a href="/skills/jtt-icons/SKILL.md">Agent Skill → Give an agent portable JTT Icons instructions</a>
+<a href="/llms.txt">llms.txt → Concise machine-readable entry point</a>
+<a href="/llms-full.txt">Full AI reference → Canonical catalogue and implementation details</a>
+<a href="/api/icons.json">JSON catalogue → Stable machine-readable source</a>
+<a href="/docs/ai-agents/">Agent documentation → Integration guidance</a>
 </div></section>
-<section class="section"><h2>What an agent can do</h2><ul><li>Search by natural-language intent, aliases, context and semantic relationships.</li><li>Retrieve canonical metadata and raw SVG without guessing identifiers.</li><li>Recommend a small, coherent shortlist for a UI requirement.</li><li>Preserve accessibility and the JTT line-family rendering contract.</li><li>Choose raw SVG, React, Vue, Svelte, Web Component or CDN output for the user's stack.</li></ul></section>
-<section class="section"><h2>Designed for the AI age</h2><p>AI assistants increasingly choose implementation details on behalf of developers. JTT therefore treats naming, semantics, provenance, accessibility and deterministic retrieval as first-class parts of the icon system.</p></section>
+<section class="section"><h2>What stays canonical</h2><p class="section-lead">Every consumer resolves the same icon identity: canonical name, SVG path, metadata, aliases, contexts, ontology and relationships. AI can help choose the icon; JTT still gives the exact asset to ship.</p></section>
 </main>`;
-  const structured = {"@context":"https://schema.org","@type":"WebPage",name:"JTT Icons for AI agents",description,url:`${BASE}/ai/`};
-  return shell({title:"JTT Icons for AI Agents",description,canonical:BASE+"/ai/",body:body.replace("</main>",`</main><script type="application/ld+json">${jsonLd(structured)}</script>`)});
+  const structured = {"@context":"https://schema.org","@type":"WebPage",name:"JTT Icons for AI Agents and Developers",description,url:`${BASE}/ai/`};
+  return shell({title:"JTT Icons for AI Agents — Semantic SVG Icons",description,canonical:BASE+"/ai/",body:body.replace("</main>",`</main><script type="application/ld+json">${jsonLd(structured)}</script>`)});
 }
 
 export function docsPage() {
-  const description = "JTT Icons documentation: install, use, search, accessibility, licensing and AI discovery.";
+  const description = "JTT Icons documentation for finding, downloading, installing and using open-source SVG icons in web projects, design tools and AI-assisted development.";
   const body = `<main class="page">
-<div class="collection-head"><div class="kicker">JTT Icons documentation</div><h1>Ship with JTT Icons.</h1><p>Everything you need to find an icon, copy it into an interface, or consume the generated package.</p></div>
-<section class="section"><h2>1. Find</h2><p>Use the library search by name, alias, meaning, context or category. Search is enhanced in the browser while the catalogue remains statically crawlable.</p></section>
-<section class="section"><h2>2. Use the SVG</h2><div class="code"><pre><code>&lt;img src="https://icons.byjtt.com/icons/search.svg" alt="Search"&gt;</code></pre></div></section>
-<section class="section"><h2>3. Install the package</h2><div class="code"><pre><code>npm install @byjtt/icons</code></pre></div><p>The package is generated from the canonical catalogue and exposes individual icon modules plus the full icon map.</p></section>
-<section class="section"><h2>4. Accessibility</h2><p>Each icon carries an accessibility classification in canonical metadata. Decorative icons should be hidden from assistive technology; meaningful icons should receive an appropriate accessible name; interactive controls should use the surrounding control label rather than relying on the glyph alone.</p></section>
-<section class="section"><h2>5. AI discovery</h2><p>Agents can use <a href="/llms.txt">llms.txt</a>, <a href="/llms-full.txt">llms-full.txt</a> and <a href="/api/icons.json">the stable catalogue</a>. Match requests against canonical names, aliases, tags and contexts rather than inventing identifiers.</p></section>
-<section class="section"><h2>6. License</h2><p>JTT Icons is MIT licensed. Brand marks remain subject to the relevant trademark rights and policies.</p></section>
+<div class="collection-head"><div class="kicker">Documentation</div><h1>Use an icon in minutes.</h1><p>JTT Icons is deliberately simple. You can download one SVG, copy it into a project, install a package, or let your AI tool find the right icon.</p></div>
+<section class="install-grid"><div class="install-card"><div class="mini-label">1 · Fastest</div><h2>Download SVG</h2><p>Open any icon, copy its SVG or download the file. No build tool and no account required.</p><code>&lt;img src="/icons/navigation/search.svg"&gt;</code></div><div class="install-card"><div class="mini-label">2 · Developers</div><h2>Install a package</h2><p>Use the generated package that matches your stack while keeping the same canonical icon names.</p><code>npm install @byjtt/icons-react</code></div><div class="install-card"><div class="mini-label">3 · AI</div><h2>Search by meaning</h2><p>Use natural-language search, the JSON catalogue, Agent Skill or MCP instead of guessing icon names.</p><code>search → resolve → ship</code></div></section>
+<section class="section"><h2>Find an icon</h2><p>Search by name, alias, category, context or meaning. Try phrases such as “upload”, “close”, “developer”, “account” or “notification”. JTT keeps the canonical name visible so you can use the same icon again.</p></section>
+<section class="section"><h2>Use the SVG</h2><p>Every icon has a stable public SVG path. For meaningful images, provide an appropriate accessible name. For decorative icons, hide them from assistive technology. For icon-only controls, label the control itself rather than relying on the glyph.</p><div class="code"><pre><code>&lt;img src="https://icons.byjtt.com/icons/navigation/search.svg" alt="Search"&gt;</code></pre></div></section>
+<section class="section"><h2>Install for your stack</h2><p>The generated packages are built from the same canonical catalogue.</p><div class="code"><pre><code>npm install @byjtt/icons
+npm install @byjtt/icons-react
+npm install @byjtt/icons-vue
+npm install @byjtt/icons-svelte</code></pre></div><p>Web Components are available through <a href="/docs/">the Web package documentation</a>.</p></section>
+<section class="section"><h2>Build with AI</h2><p>AI-assisted development works better when identifiers are predictable. Give an agent the JTT catalogue or use the MCP interface so it can search by intent, resolve a canonical name and retrieve the exact SVG or framework implementation.</p><div class="actions"><a class="button primary" href="/ai/">Explore AI tooling</a><a class="button" href="/llms.txt">Read llms.txt</a></div></section>
+<section class="section"><h2>License and trademarks</h2><p>JTT Icons is MIT licensed. Third-party brand marks are included as reference assets where applicable and remain subject to their respective trademark rights and policies.</p></section>
 </main>`;
-  return shell({title:"JTT Icons Documentation",description,canonical:BASE+"/docs/",body});
+  return shell({title:"JTT Icons Documentation — Use Open-Source SVG Icons",description,canonical:BASE+"/docs/",body});
 }
 
-export function useCasePage(slug, config, icons) {
-  const cards = icons.map(icon => card(icon)).join("");
-  const notes = config.notes.map(note => `<li>${escapeHtml(note)}</li>`).join("");
-  const faq = [
-    [`Which icons belong in ${config.title.toLowerCase()}?`, config.description],
-    [`How should these icons be used?`, "Treat the icon as a semantic visual aid, preserve an accessible name for meaningful controls, and keep the surrounding interaction explicit."]
-  ].map(([q,a]) => `<div class="section"><h3>${escapeHtml(q)}</h3><p>${escapeHtml(a)}</p></div>`).join("");
-  const body = `<main><section class="collection-head"><div class="kicker">JTT Icons use case</div><h1>${escapeHtml(config.title)}</h1><p>${escapeHtml(config.lead)}</p><div class="collection-meta">${icons.length} curated concepts · open source</div></section>
-<section class="section"><h2>Why this collection exists</h2><p>${escapeHtml(config.description)}</p></section>
-<section class="section"><h2>Practical guidance</h2><ul>${notes}</ul></section>
-<section class="section"><h2>Explore the icon vocabulary</h2><section class="grid">${cards}</section></section>
-<section class="section"><h2>Common questions</h2>${faq}</section>
-</main>`;
-  const structured = {"@context":"https://schema.org","@graph":[{"@type":"CollectionPage",name:`JTT Icons — ${config.title}`,description:config.description,url:`${BASE}/use-cases/${slug}/`},breadcrumbJsonLd([{name:"Icons",url:BASE+"/"},{name:config.title}])]};
-  return shell({title:`${config.title} — JTT Icons`,description:config.description,canonical:`${BASE}/use-cases/${slug}/`,body:body.replace("</main>",`</main><script type="application/ld+json">${jsonLd(structured)}</script>`)});
-}
 
-export function cataloguePage(catalogue, page) {
-  const totalPages = Math.max(1, Math.ceil(catalogue.icons.length / CATALOGUE_PAGE_SIZE));
-  const safePage = Math.min(Math.max(1, page), totalPages);
-  const start = (safePage - 1) * CATALOGUE_PAGE_SIZE;
-  const icons = catalogue.icons.slice(start, start + CATALOGUE_PAGE_SIZE);
-  const body = `<main><section class="collection-head"><div class="kicker">JTT Icons library</div><h1>Open Source SVG Icons</h1><p>Browse the JTT Icons catalogue by stable canonical name and semantic category.</p><div class="collection-meta">${catalogue.icons.length} icons · page ${safePage} of ${totalPages}</div></section><section class="grid">${icons.map(icon => card(icon)).join("")}</section>${paginationNav(safePage,totalPages)}</main>`;
-  const structured = {"@context":"https://schema.org","@type":"CollectionPage",name:`JTT Icons — Page ${safePage}`,description:"Browse the JTT Icons open-source SVG catalogue.",url:safePage===1?`${BASE}/`:`${BASE}/icons/page/${safePage}/`};
-  return shell({title:safePage===1?"JTT Icons — Open Source SVG Icon Library":`JTT Icons — Icon Library Page ${safePage}`,description:"Browse the JTT Icons open-source SVG catalogue.",canonical:structured.url,body:body.replace("</main>",`</main><script type="application/ld+json">${jsonLd(structured)}</script>`)});
-}
-
-export function categoryPage(category, icons) {
-  const title = category.charAt(0).toUpperCase()+category.slice(1);
-  const description = CATEGORY_COPY[category] || `Open-source JTT Icons for ${category} interfaces.`;
-  const cards = icons.map(icon => card(icon)).join("");
-  const body = `<main><section class="collection-head"><div class="kicker">JTT Icons collection</div><h1>Free ${escapeHtml(title)} Icons</h1><p>${escapeHtml(description)}</p><div class="collection-meta">${icons.length} icons · ${escapeHtml(category)} · open source</div></section><section class="grid">${cards}</section></main>`;
-  const structured = {"@context":"https://schema.org","@graph":[{"@type":"CollectionPage",name:`JTT Icons — ${title}`,description,url:`${BASE}/categories/${category}/`},breadcrumbJsonLd([{name:"Icons",url:BASE+"/"},{name:title}])]};
-  return shell({title:`Free ${title} Icons — JTT Icons`,description,canonical:`${BASE}/categories/${category}/`,body:body.replace("</main>",`</main><script type="application/ld+json">${jsonLd(structured)}</script>`)});
-}
-
-export function sitemap(catalogue) {
-  const categories = [...new Set(catalogue.icons.map(i=>i.category))].sort();
-  const pages = Array.from({ length: Math.max(1, Math.ceil(catalogue.icons.length / CATALOGUE_PAGE_SIZE)) - 1 }, (_, index) => `${BASE}/icons/page/${index + 2}/`);
-  const urls = [`${BASE}/`,`${BASE}/docs/`,`${BASE}/ai/`,...pages,...categories.map(c=>`${BASE}/categories/${c}/`),...Object.keys(USE_CASES).map(slug=>`${BASE}/use-cases/${slug}/`),...catalogue.icons.map(i=>`${BASE}/icons/${i.name}/`)];
-  return `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls.map(url=>`<url><loc>${url}</loc></url>`).join("")}</urlset>\n`;
-}
-
-export function favicon() {
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#08090b"/><path d="M15 16h10v32H15zm24 0h10L38 32l11 16H39L28 32z" fill="#f5f6f8"/></svg>\n`;
-}
-
-export { escapeHtml };
