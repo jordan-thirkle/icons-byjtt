@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { generateCatalogue } from "./lib/generate-catalogue.mjs";
 import { generatePackage } from "./lib/generate-package.mjs";
-import { homepage, iconPage, categoryPage, sitemap, favicon } from "./lib/generate-site.mjs";
+import { homepage, iconPage, categoryPage, docsPage, sitemap, favicon } from "./lib/generate-site.mjs";
 import { generateAiReference } from "./lib/generate-ai-reference.mjs";
 
 const root = process.cwd();
@@ -19,6 +19,7 @@ const write = (file, content) => {
 };
 
 write("index.html", homepage(catalogue));
+write("docs/index.html", docsPage());
 write("favicon.svg", favicon());
 write("icons.json", JSON.stringify(catalogue, null, 2) + "\n");
 write("api/icons.json", JSON.stringify(catalogue, null, 2) + "\n");
