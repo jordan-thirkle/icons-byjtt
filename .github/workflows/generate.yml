@@ -3,7 +3,7 @@ name: Generate JTT Icons
 
 on:
   push:
-    branches: ["main", "feat/icon-implementation-playground"]
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
