@@ -78,6 +78,7 @@ export function generateCatalogue(metadata, ontology = {}) {
     baseUrl: metadata.baseUrl,
     family: metadata.family,
     ontologyVersion: ontology.version || null,
+    ontology: { intents: ontology.intentGroups || {} },
     icons
   };
 }
