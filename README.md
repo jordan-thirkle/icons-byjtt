@@ -35,7 +35,7 @@ JTT Icons is an SVG-first, machine-friendly icon system. The repository is the s
 - `/icons.json` — generated public catalogue.
 - `/api/icons.json` — generated stable catalogue endpoint.
 
-Agents should resolve natural-language requests against canonical metadata and ontology semantics, then use the stable `name` when generating code. The public catalogue uses sequential crawlable pages as it grows, while browser search progressively loads the full generated catalogue when needed.
+Agents should resolve natural-language requests against canonical metadata and ontology semantics, then use the stable `name` when generating code. The public catalogue uses sequential crawlable pages as it grows, while browser search progressively loads the full generated catalogue when needed. Search remains optional enhancement; the initial HTML always contains real icon links.
 
 ## Development
 
