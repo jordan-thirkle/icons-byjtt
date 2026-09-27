@@ -8,6 +8,9 @@
   "scripts": {
     "dev": "python3 -m http.server 4173",
     "check": "node scripts/validate.mjs",
-    "test": "node --test scripts/tests/*.test.mjs"
+    "test": "node --test scripts/tests/*.test.mjs",
+    "generate": "node scripts/generate.mjs",
+    "pack:core": "npm pack ./packages/core --pack-destination ./dist",
+    "publish:core": "npm publish ./packages/core --access public"
   }
 }
