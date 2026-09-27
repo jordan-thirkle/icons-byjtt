@@ -1,6 +1,142 @@
-export function iconPage(icon, svg) {
-  const tags=icon.tags.map(tag=>`<span>${escapeHtml(tag)}</span>`).join("");
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="JTT Icons ${escapeHtml(icon.title)} — ${escapeHtml(icon.tags.join(", "))}."><link rel="canonical" href="https://icons.byjtt.com/icons/${icon.name}/"><title>${escapeHtml(icon.title)} — JTT Icons</title><style>body{margin:0;background:#08090b;color:#f5f6f8;font:16px/1.5 system-ui,sans-serif}main{width:min(900px,calc(100% - 32px));margin:0 auto;padding:64px 0}.back{color:#9da4b0}.preview{display:grid;place-items:center;min-height:360px;border:1px solid #252830;border-radius:24px;margin:32px 0}.preview svg{width:160px;height:160px}.tags{display:flex;gap:8px;flex-wrap:wrap}.tags span{border:1px solid #252830;border-radius:999px;padding:6px 10px;color:#9da4b0}.links{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.links a{color:#f5f6f8;border:1px solid #252830;padding:10px 14px;border-radius:10px;text-decoration:none}</style></head><body><main><a class="back" href="/">← All icons</a><h1>${escapeHtml(icon.title)}</h1><p>${escapeHtml(icon.category)} · <code>${escapeHtml(icon.name)}</code></p><div class="preview" aria-hidden="true">${svg}</div><div class="tags">${tags}</div><div class="links"><a href="${icon.path}">Raw SVG</a><a href="/api/icons.json">Catalogue API</a><a href="/llms-full.txt">AI reference</a></div></main></body></html>`;
+const BASE = "https://icons.byjtt.com";
+
+const CATEGORY_COPY = {
+  actions: "Interface actions for creating, editing, confirming, removing, sharing and moving through work.",
+  navigation: "Navigation and wayfinding icons for menus, links, controls, search and interface movement.",
+  communication: "Icons for messages, notifications, saved content, reactions and social interactions.",
+  media: "Playback, audio, video, camera and media controls for modern interfaces.",
+  files: "Files, folders, attachments, documents and the everyday actions around them.",
+  objects: "Common interface objects and utilities such as calendars, clocks, maps, links and sorting.",
+  people: "Account, profile, team and people icons for identity and collaboration interfaces.",
+  commerce: "Shopping, payment, receipts, bags and commerce interface icons.",
+  developer: "Developer-focused icons for code, infrastructure, tooling, repositories and deployment.",
+  system: "System, status, feedback, settings, warnings and utility states.",
+  brands: "Brand and social marks. Third-party marks remain subject to their respective trademark policies."
+};
+
+const escapeHtml = value => String(value).replace(/[&<>"']/g, c => ({
+  "&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"
+}[c]));
+
+const jsonLd = value => JSON.stringify(value).replace(/</g, "\\u003c");
+
+function shell({ title, description, canonical, body, type = "website" }) {
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="${escapeHtml(description)}">
+<meta name="theme-color" content="#08090b">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="${canonical}">
+<meta property="og:type" content="${type}">
+<meta property="og:title" content="${escapeHtml(title)}">
+<meta property="og:description" content="${escapeHtml(description)}">
+<meta property="og:url" content="${canonical}">
+<meta property="og:site_name" content="JTT Icons">
+<meta name="twitter:card" content="summary">
+<title>${escapeHtml(title)}</title>
+<style>
+:root{color-scheme:dark;--bg:#08090b;--panel:#101216;--panel2:#0d0f13;--line:#252830;--line2:#363b45;--text:#f5f6f8;--muted:#8d94a1;--soft:#c7cbd3}
+*{box-sizing:border-box}html{background:var(--bg);scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:inherit}.wrap{width:min(1320px,calc(100% - 32px));margin:auto}.site-header{height:68px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;letter-spacing:-.04em;text-decoration:none}.nav{display:flex;gap:18px;color:var(--muted)}.nav a{text-decoration:none}.nav a:hover{color:var(--text)}
+.kicker{text-transform:uppercase;letter-spacing:.14em;font-size:11px;color:var(--muted)}h1,h2,h3,p{margin-top:0}.hero{padding:76px 0 42px}.hero h1{font-size:clamp(48px,7vw,88px);line-height:.9;letter-spacing:-.075em;max-width:900px;margin:14px 0 22px}.hero p{max-width:680px;color:var(--soft);font-size:18px}.searchbar{position:sticky;top:0;z-index:5;padding:12px 0;background:rgba(8,9,11,.88);backdrop-filter:blur(18px);border-bottom:1px solid rgba(37,40,48,.7)}.search-row{display:flex;gap:10px}.searchbox{flex:1;position:relative}.searchbox input{width:100%;height:54px;padding:0 52px 0 18px;border:1px solid var(--line2);border-radius:14px;background:var(--panel);color:var(--text);font:inherit;font-size:16px;outline:none}.searchbox input:focus{border-color:#777f8c;box-shadow:0 0 0 3px rgba(255,255,255,.06)}.shortcut{position:absolute;right:12px;top:15px;border:1px solid var(--line);border-radius:7px;padding:2px 6px;color:var(--muted);font-size:11px}.chips{display:flex;gap:7px;overflow:auto;padding:10px 0 2px;scrollbar-width:none}.chips::-webkit-scrollbar{display:none}.chip{border:1px solid var(--line);border-radius:999px;background:transparent;color:var(--muted);padding:7px 11px;white-space:nowrap;text-decoration:none;font-size:13px}.chip:hover,.chip.active{color:var(--text);border-color:#686f7c;background:var(--panel2)}.count{color:var(--muted);padding:20px 0 10px}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:70px}.card{background:var(--bg);min-height:176px;padding:16px;text-decoration:none;display:flex;flex-direction:column;justify-content:space-between}.card:hover{background:var(--panel2)}.card-icon{height:112px;display:grid;place-items:center}.card-icon img{width:52px;height:52px}.name{font-weight:650}.meta{font-size:12px;color:var(--muted);margin-top:2px}.empty{display:none;padding:50px 0;color:var(--muted)}
+.page{padding:54px 0 80px}.crumbs{color:var(--muted);font-size:13px;margin-bottom:30px}.crumbs a{text-decoration:none}.detail{display:grid;grid-template-columns:minmax(320px,1fr) minmax(320px,460px);gap:48px;align-items:start}.preview{min-height:480px;border:1px solid var(--line);border-radius:24px;background:radial-gradient(circle at 50% 45%,#15181e 0,#0c0e12 46%,#090a0c 100%);display:grid;place-items:center}.preview svg{width:min(280px,55%);height:auto}.eyebrow{color:var(--muted);text-transform:uppercase;letter-spacing:.12em;font-size:11px}.detail h1{font-size:clamp(44px,6vw,72px);line-height:.92;letter-spacing:-.07em;margin:10px 0 14px}.lede{font-size:18px;color:var(--soft);max-width:620px}.actions{display:flex;gap:8px;flex-wrap:wrap;margin:26px 0}.button{border:1px solid var(--line2);border-radius:10px;background:var(--panel);padding:10px 13px;text-decoration:none;cursor:pointer;color:var(--text);font:inherit}.button:hover{background:#161920}.facts{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:28px 0}.fact{padding:13px 0;border-bottom:1px solid var(--line)}.fact:nth-child(odd){margin-right:18px}.fact:nth-last-child(-n+2){border-bottom:0}.label{display:block;color:var(--muted);font-size:12px;margin-bottom:3px}.tags{display:flex;gap:7px;flex-wrap:wrap}.tag{border:1px solid var(--line);border-radius:999px;padding:5px 9px;color:var(--soft);font-size:12px}.section{margin-top:52px}.section h2{font-size:24px;letter-spacing:-.03em}.code{position:relative;border:1px solid var(--line);border-radius:14px;background:#050608;overflow:auto}.code pre{margin:0;padding:18px;font:13px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace;color:#dfe3ea}.copy-code{position:absolute;right:10px;top:10px}.related{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}.related a{background:var(--bg);padding:18px;text-decoration:none}.related a:hover{background:var(--panel2)}
+.collection-head{max-width:780px;padding:62px 0 36px}.collection-head h1{font-size:clamp(48px,7vw,82px);line-height:.92;letter-spacing:-.075em;margin:12px 0 18px}.collection-head p{font-size:18px;color:var(--soft)}.collection-meta{color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:26px 0 50px;color:var(--muted);font-size:13px}.footer-links{display:flex;gap:16px;flex-wrap:wrap}.footer-links a{color:inherit;text-decoration:none}.footer-links a:hover{color:var(--text)}
+@media(max-width:760px){.nav a:nth-child(n+2){display:none}.hero{padding-top:54px}.detail{grid-template-columns:1fr}.preview{min-height:340px}.facts{grid-template-columns:1fr}.fact,.fact:nth-child(odd),.fact:nth-last-child(-n+2){margin:0;border-bottom:1px solid var(--line)}.fact:last-child{border-bottom:0}.grid{grid-template-columns:repeat(2,1fr)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body><div class="wrap">
+<header class="site-header"><a class="brand" href="/">JTT / ICONS</a><nav class="nav"><a href="/">Library</a><a href="/categories/developer/">Categories</a><a href="/llms.txt">AI</a><a href="https://github.com/jordan-thirkle/icons-byjtt">GitHub</a></nav></header>
+${body}
+<footer><div>JTT Icons · open-source SVG icons engineered for modern interfaces and AI-assisted development.</div><div class="footer-links"><a href="/">Library</a><a href="/api/icons.json">Catalogue API</a><a href="/llms.txt">AI reference</a><a href="https://github.com/jordan-thirkle/icons-byjtt">Source</a></div></footer>
+</div></body></html>`;
 }
-export function escapeHtml(value){return String(value).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));}
-export function sitemap(catalogue){return `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://icons.byjtt.com/</loc></url><url><loc>https://icons.byjtt.com/llms.txt</loc></url><url><loc>https://icons.byjtt.com/llms-full.txt</loc></url>${catalogue.icons.map(i=>`<url><loc>https://icons.byjtt.com/icons/${i.name}/</loc></url>`).join("")}</urlset>\n`;}
+
+export function homepage(catalogue) {
+  const categories = [...new Set(catalogue.icons.map(i => i.category))].sort();
+  const cards = catalogue.icons.map(icon => card(icon)).join("");
+  const description = "JTT Icons is an open-source SVG icon system designed for modern interfaces, developers and AI-assisted development.";
+  const body = `<main>
+<section class="hero"><div class="kicker">Open source · SVG · semantic · machine-readable</div><h1>Icons for the interfaces we're building next.</h1><p>A deliberately engineered icon system: precise geometry, useful small-size behaviour, semantic metadata and a frictionless path from finding an icon to shipping it.</p></section>
+<section class="searchbar" aria-label="Icon search"><div class="search-row"><div class="searchbox"><input id="q" type="search" autocomplete="off" placeholder="Search icons, meanings, aliases…" aria-label="Search icons"><span class="shortcut">/</span></div></div><div class="chips"><a class="chip active" href="/" data-category="all">All</a>${categories.map(c=>`<a class="chip" href="/categories/${encodeURIComponent(c)}/" data-category="${escapeHtml(c)}">${escapeHtml(c)}</a>`).join("")}</div></section>
+<div class="count" id="count">${catalogue.icons.length} icons</div><section class="grid" id="grid">${cards}</section><p class="empty" id="empty">No icons match that search. Try a concept, alias or category.</p>
+</main>
+<script>
+const input=document.querySelector("#q"),grid=document.querySelector("#grid"),count=document.querySelector("#count"),empty=document.querySelector("#empty"),cards=[...grid.querySelectorAll(".card")];
+const normalize=s=>s.toLowerCase().normalize("NFKD");
+function filter(){const term=normalize(input.value.trim());let visible=0;for(const card of cards){const hit=!term||normalize(card.dataset.search).includes(term);card.hidden=!hit;if(hit)visible++;}count.textContent=visible+" icon"+(visible===1?"":"s");empty.style.display=visible?"none":"block";const url=new URL(location.href);if(term)url.searchParams.set("q",input.value.trim());else url.searchParams.delete("q");history.replaceState(null,"",url);}
+const initial=new URLSearchParams(location.search).get("q");if(initial){input.value=initial;filter()}input.addEventListener("input",filter);document.addEventListener("keydown",e=>{if(e.key==="/"&&document.activeElement!==input){e.preventDefault();input.focus()}});
+</script>`;
+  return shell({title:"JTT Icons — Open Source SVG Icons",description,canonical:BASE+"/",body});
+}
+
+function card(icon) {
+  const search = [icon.name,icon.title,icon.category,...icon.tags,...icon.aliases,...icon.contexts].join(" ");
+  return `<a class="card" href="/icons/${encodeURIComponent(icon.name)}/" data-search="${escapeHtml(search)}"><div class="card-icon"><img src="${icon.path}" alt="" width="52" height="52" loading="lazy"></div><div><div class="name">${escapeHtml(icon.title)}</div><div class="meta">${escapeHtml(icon.category)} · ${escapeHtml(icon.name)}</div></div></a>`;
+}
+
+function iconDescription(icon) {
+  const contexts = icon.contexts.length ? icon.contexts.join(", ") : "modern interfaces";
+  return `A free open-source ${icon.title.toLowerCase()} SVG icon for ${contexts}. Part of the JTT Icons ${icon.family} family.`;
+}
+
+export function iconPage(icon, svg, relatedIcons = []) {
+  const description = iconDescription(icon);
+  const tags = icon.tags.map(tag => `<span class="tag">${escapeHtml(tag)}</span>`).join("");
+  const related = relatedIcons.map(item => `<a href="/icons/${encodeURIComponent(item.name)}/"><strong>${escapeHtml(item.title)}</strong><div class="meta">${escapeHtml(item.category)}</div></a>`).join("");
+  const svgText = escapeHtml(svg);
+  const reactName = icon.name.split("-").map(part=>part.charAt(0).toUpperCase()+part.slice(1)).join("");
+  const body = `<main class="page">
+<div class="crumbs"><a href="/">Icons</a> / <a href="/categories/${encodeURIComponent(icon.category)}/">${escapeHtml(icon.category)}</a> / ${escapeHtml(icon.title)}</div>
+<div class="detail">
+<div class="preview" aria-label="${escapeHtml(icon.title)} icon preview">${svg}</div>
+<section>
+<div class="eyebrow">${escapeHtml(icon.category)} · ${escapeHtml(icon.family)} family</div>
+<h1>${escapeHtml(icon.title)}</h1>
+<p class="lede">${escapeHtml(description)}</p>
+<div class="actions"><a class="button" href="${icon.path}" download>Download SVG</a><button class="button" id="copy-svg">Copy SVG</button><a class="button" href="#usage">Use in code</a></div>
+<div class="facts"><div class="fact"><span class="label">Canonical name</span><code>${escapeHtml(icon.name)}</code></div><div class="fact"><span class="label">Category</span>${escapeHtml(icon.category)}</div><div class="fact"><span class="label">Family</span>${escapeHtml(icon.family)}</div><div class="fact"><span class="label">Accessibility</span>${escapeHtml(icon.accessibility.default)}</div></div>
+<div class="tags">${tags}</div>
+</section></div>
+<section class="section" id="usage"><h2>Use ${escapeHtml(icon.title)} in your project</h2>
+<div class="code"><button class="button copy-code" data-copy="html">Copy</button><pre><code>&lt;img src="${BASE}${icon.path}" alt="${escapeHtml(icon.title)}"&gt;</code></pre></div>
+<div class="code" style="margin-top:10px"><button class="button copy-code" data-copy="import">Copy</button><pre><code>import { ${reactName} } from "@byjtt/icons/react";</code></pre></div>
+</section>
+<section class="section"><h2>Icon metadata</h2><div class="code"><pre><code>${escapeHtml(JSON.stringify(icon,null,2))}</code></pre></div></section>
+${related ? `<section class="section"><h2>Related icons</h2><div class="related">${related}</div></section>` : ""}
+<section class="section"><h2>Raw SVG</h2><div class="code"><button class="button copy-code" id="copy-svg-2">Copy</button><pre><code>${svgText}</code></pre></div></section>
+</main>
+<script>
+const svg=${JSON.stringify(svg)};
+const copy=async(text,button)=>{try{await navigator.clipboard.writeText(text);const old=button.textContent;button.textContent="Copied";setTimeout(()=>button.textContent=old,1200)}catch{}};
+document.querySelector("#copy-svg")?.addEventListener("click",e=>copy(svg,e.currentTarget));
+document.querySelector("#copy-svg-2")?.addEventListener("click",e=>copy(svg,e.currentTarget));
+document.querySelectorAll("[data-copy]").forEach(b=>b.addEventListener("click",()=>copy(b.dataset.copy==="html"?`<img src="${BASE}${icon.path}" alt="${icon.title}">`:`import { ${reactName} } from "@byjtt/icons/react";`,b)));
+</script>`;
+  const structured = {"@context":"https://schema.org","@type":"SoftwareApplication",name:`JTT Icons — ${icon.title}`,applicationCategory:"DeveloperApplication",description,url:`${BASE}/icons/${icon.name}/`,isAccessibleForFree:true,license:"https://opensource.org/licenses/MIT"};
+  return shell({title:`${icon.title} Icon — Free SVG — JTT Icons`,description,canonical:`${BASE}/icons/${icon.name}/`,body:body.replace("</main>",`</main><script type="application/ld+json">${jsonLd(structured)}</script>`)});
+}
+
+export function categoryPage(category, icons) {
+  const title = category.charAt(0).toUpperCase()+category.slice(1);
+  const description = CATEGORY_COPY[category] || `Open-source JTT Icons for ${category} interfaces.`;
+  const cards = icons.map(icon => card(icon)).join("");
+  const body = `<main><section class="collection-head"><div class="kicker">JTT Icons collection</div><h1>Free ${escapeHtml(title)} Icons</h1><p>${escapeHtml(description)}</p><div class="collection-meta">${icons.length} icons · ${escapeHtml(category)} · open source</div></section><section class="grid">${cards}</section></main>`;
+  const structured = {"@context":"https://schema.org","@type":"CollectionPage",name:`JTT Icons — ${title}`,description,url:`${BASE}/categories/${category}/`};
+  return shell({title:`Free ${title} Icons — JTT Icons`,description,canonical:`${BASE}/categories/${category}/`,body:body.replace("</main>",`</main><script type="application/ld+json">${jsonLd(structured)}</script>`)});
+}
+
+export function sitemap(catalogue) {
+  const categories = [...new Set(catalogue.icons.map(i=>i.category))].sort();
+  const urls = [`${BASE}/`,...categories.map(c=>`${BASE}/categories/${c}/`),...catalogue.icons.map(i=>`${BASE}/icons/${i.name}/`)];
+  return `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls.map(url=>`<url><loc>${url}</loc></url>`).join("")}</urlset>\n`;
+}
+
+export function favicon() {
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#08090b"/><path d="M15 16h10v32H15zm24 0h10L38 32l11 16H39L28 32z" fill="#f5f6f8"/></svg>\n`;
+}
+
+export { escapeHtml };
