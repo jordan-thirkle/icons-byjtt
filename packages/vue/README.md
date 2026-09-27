@@ -1,6 +1,6 @@
 # @byjtt/icons-vue
 
-Vue 3 components for JTT Icons. Version 0.1.0.
+Vue 3 components for JTT Icons. Version 0.2.0.
 
 ## Install
 

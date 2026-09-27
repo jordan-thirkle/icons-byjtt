@@ -1,11 +1,11 @@
 {
   "name": "JTT Icons",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "license": "MIT",
   "prefix": "jtt",
   "baseUrl": "https://icons.byjtt.com",
   "family": "line",
-  "ontologyVersion": "2.0.0",
+  "ontologyVersion": "2.1.0",
   "ontology": {
     "intents": {
       "dismiss": [
@@ -158,10 +158,568 @@
         "pin",
         "map",
         "maps"
+      ],
+      "ai": [
+        "ai",
+        "agent",
+        "model",
+        "prompt",
+        "generate",
+        "generation",
+        "assistant",
+        "chat",
+        "search",
+        "code"
       ]
     }
   },
   "icons": [
+    {
+      "name": "activity",
+      "title": "Activity",
+      "category": "objects",
+      "tags": [
+        "activity",
+        "activity"
+      ],
+      "aliases": [],
+      "contexts": [
+        "objects",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/objects/activity.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "activity",
+          "objects",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "ai-agent",
+      "title": "Ai Agent",
+      "category": "developer",
+      "tags": [
+        "ai-agent",
+        "ai",
+        "agent",
+        "ai",
+        "agent",
+        "llm"
+      ],
+      "aliases": [],
+      "contexts": [
+        "developer",
+        "tooling"
+      ],
+      "related": [
+        "ai-model",
+        "ai-prompt"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/developer/ai-agent.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer",
+          "ai"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "agent",
+          "ai"
+        ],
+        "queryTerms": [
+          "ai-agent",
+          "ai agent",
+          "ai",
+          "agent",
+          "llm",
+          "developer",
+          "tooling",
+          "engineering",
+          "software"
+        ],
+        "relations": {
+          "related": [
+            "ai-model",
+            "ai-prompt"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "ai-chat",
+      "title": "Ai Chat",
+      "category": "developer",
+      "tags": [
+        "ai-chat",
+        "ai",
+        "chat",
+        "ai",
+        "agent",
+        "llm"
+      ],
+      "aliases": [],
+      "contexts": [
+        "developer",
+        "tooling"
+      ],
+      "related": [
+        "ai-agent"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/developer/ai-chat.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "communication",
+          "developer",
+          "ai"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "agent",
+          "ai"
+        ],
+        "queryTerms": [
+          "ai-chat",
+          "ai chat",
+          "ai",
+          "chat",
+          "agent",
+          "llm",
+          "developer",
+          "tooling",
+          "communication",
+          "engineering",
+          "software"
+        ],
+        "relations": {
+          "related": [
+            "ai-agent"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "ai-code",
+      "title": "Ai Code",
+      "category": "developer",
+      "tags": [
+        "ai-code",
+        "ai",
+        "code",
+        "ai",
+        "agent",
+        "llm"
+      ],
+      "aliases": [],
+      "contexts": [
+        "developer",
+        "tooling"
+      ],
+      "related": [
+        "ai-agent"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/developer/ai-code.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer",
+          "ai"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "code",
+          "agent",
+          "ai"
+        ],
+        "queryTerms": [
+          "ai-code",
+          "ai code",
+          "ai",
+          "code",
+          "agent",
+          "llm",
+          "developer",
+          "tooling",
+          "engineering",
+          "software"
+        ],
+        "relations": {
+          "related": [
+            "ai-agent"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "ai-generate",
+      "title": "Ai Generate",
+      "category": "developer",
+      "tags": [
+        "ai-generate",
+        "ai",
+        "generate",
+        "ai",
+        "agent",
+        "llm"
+      ],
+      "aliases": [],
+      "contexts": [
+        "developer",
+        "tooling"
+      ],
+      "related": [
+        "ai-model"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/developer/ai-generate.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer",
+          "ai"
+        ],
+        "actions": [
+          "generate"
+        ],
+        "states": [],
+        "objects": [
+          "agent",
+          "ai"
+        ],
+        "queryTerms": [
+          "ai-generate",
+          "ai generate",
+          "ai",
+          "generate",
+          "agent",
+          "llm",
+          "developer",
+          "tooling",
+          "engineering",
+          "software"
+        ],
+        "relations": {
+          "related": [
+            "ai-model"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "ai-model",
+      "title": "Ai Model",
+      "category": "developer",
+      "tags": [
+        "ai-model",
+        "ai",
+        "model",
+        "ai",
+        "agent",
+        "llm"
+      ],
+      "aliases": [],
+      "contexts": [
+        "developer",
+        "tooling"
+      ],
+      "related": [
+        "ai-agent",
+        "ai-generate"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/developer/ai-model.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer",
+          "ai"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "agent",
+          "model",
+          "ai"
+        ],
+        "queryTerms": [
+          "ai-model",
+          "ai model",
+          "ai",
+          "model",
+          "agent",
+          "llm",
+          "developer",
+          "tooling",
+          "engineering",
+          "software"
+        ],
+        "relations": {
+          "related": [
+            "ai-agent",
+            "ai-generate"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "ai-prompt",
+      "title": "Ai Prompt",
+      "category": "developer",
+      "tags": [
+        "ai-prompt",
+        "ai",
+        "prompt",
+        "ai",
+        "agent",
+        "llm"
+      ],
+      "aliases": [],
+      "contexts": [
+        "developer",
+        "tooling"
+      ],
+      "related": [
+        "ai-agent"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/developer/ai-prompt.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer",
+          "ai"
+        ],
+        "actions": [
+          "prompt"
+        ],
+        "states": [],
+        "objects": [
+          "agent",
+          "prompt",
+          "ai"
+        ],
+        "queryTerms": [
+          "ai-prompt",
+          "ai prompt",
+          "ai",
+          "prompt",
+          "agent",
+          "llm",
+          "developer",
+          "tooling",
+          "engineering",
+          "software"
+        ],
+        "relations": {
+          "related": [
+            "ai-agent"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "ai-search",
+      "title": "Ai Search",
+      "category": "developer",
+      "tags": [
+        "ai-search",
+        "ai",
+        "search",
+        "ai",
+        "agent",
+        "llm"
+      ],
+      "aliases": [],
+      "contexts": [
+        "developer",
+        "tooling"
+      ],
+      "related": [
+        "ai-agent"
+      ],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/developer/ai-search.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "search",
+          "developer",
+          "ai"
+        ],
+        "actions": [
+          "search"
+        ],
+        "states": [],
+        "objects": [
+          "agent",
+          "ai"
+        ],
+        "queryTerms": [
+          "ai-search",
+          "ai search",
+          "ai",
+          "search",
+          "agent",
+          "llm",
+          "developer",
+          "tooling",
+          "engineering",
+          "software"
+        ],
+        "relations": {
+          "related": [
+            "ai-agent"
+          ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "android",
+      "title": "Android",
+      "category": "brands",
+      "tags": [
+        "android",
+        "android"
+      ],
+      "aliases": [],
+      "contexts": [
+        "brands",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "brand"
+      },
+      "path": "/icons/brands/android.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "android",
+          "brands",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "api",
+      "title": "Api",
+      "category": "developer",
+      "tags": [
+        "api",
+        "api"
+      ],
+      "aliases": [],
+      "contexts": [
+        "developer",
+        "tooling"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/developer/api.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "api",
+          "developer",
+          "tooling",
+          "engineering",
+          "software"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
     {
       "name": "apple",
       "title": "Apple",
@@ -261,6 +819,55 @@
       }
     },
     {
+      "name": "archive-box",
+      "title": "Archive Box",
+      "category": "actions",
+      "tags": [
+        "archive-box",
+        "archive",
+        "box"
+      ],
+      "aliases": [],
+      "contexts": [
+        "actions",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/actions/archive-box.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "files"
+        ],
+        "actions": [
+          "archive"
+        ],
+        "states": [],
+        "objects": [
+          "archive"
+        ],
+        "queryTerms": [
+          "archive-box",
+          "archive box",
+          "archive",
+          "box",
+          "actions",
+          "interface",
+          "files"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
       "name": "arrow-down",
       "title": "Arrow Down",
       "category": "navigation",
@@ -306,6 +913,51 @@
           "opposite": [
             "arrow-up"
           ],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "arrow-down-circle",
+      "title": "Arrow Down Circle",
+      "category": "navigation",
+      "tags": [
+        "arrow-down-circle",
+        "arrow",
+        "down",
+        "circle"
+      ],
+      "aliases": [],
+      "contexts": [
+        "navigation",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/navigation/arrow-down-circle.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "arrow-down-circle",
+          "arrow down circle",
+          "arrow",
+          "down",
+          "circle",
+          "navigation",
+          "interface",
+          "wayfinding"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
           "paired": [],
           "state": []
         }
@@ -473,6 +1125,51 @@
       }
     },
     {
+      "name": "arrow-left-circle",
+      "title": "Arrow Left Circle",
+      "category": "navigation",
+      "tags": [
+        "arrow-left-circle",
+        "arrow",
+        "left",
+        "circle"
+      ],
+      "aliases": [],
+      "contexts": [
+        "navigation",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/navigation/arrow-left-circle.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "arrow-left-circle",
+          "arrow left circle",
+          "arrow",
+          "left",
+          "circle",
+          "navigation",
+          "interface",
+          "wayfinding"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
       "name": "arrow-right",
       "title": "Arrow Right",
       "category": "navigation",
@@ -528,6 +1225,51 @@
       }
     },
     {
+      "name": "arrow-right-circle",
+      "title": "Arrow Right Circle",
+      "category": "navigation",
+      "tags": [
+        "arrow-right-circle",
+        "arrow",
+        "right",
+        "circle"
+      ],
+      "aliases": [],
+      "contexts": [
+        "navigation",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/navigation/arrow-right-circle.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "arrow-right-circle",
+          "arrow right circle",
+          "arrow",
+          "right",
+          "circle",
+          "navigation",
+          "interface",
+          "wayfinding"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
       "name": "arrow-up",
       "title": "Arrow Up",
       "category": "navigation",
@@ -573,6 +1315,51 @@
           "opposite": [
             "arrow-down"
           ],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "arrow-up-circle",
+      "title": "Arrow Up Circle",
+      "category": "navigation",
+      "tags": [
+        "arrow-up-circle",
+        "arrow",
+        "up",
+        "circle"
+      ],
+      "aliases": [],
+      "contexts": [
+        "navigation",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/navigation/arrow-up-circle.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "arrow-up-circle",
+          "arrow up circle",
+          "arrow",
+          "up",
+          "circle",
+          "navigation",
+          "interface",
+          "wayfinding"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
           "paired": [],
           "state": []
         }
@@ -644,9 +1431,7 @@
         "up",
         "right"
       ],
-      "aliases": [
-        "external-link"
-      ],
+      "aliases": [],
       "contexts": [
         "navigation",
         "links",
@@ -672,13 +1457,54 @@
           "diagonal",
           "up",
           "right",
-          "external-link",
           "navigation",
           "links",
           "toolbar",
           "wayfinding",
           "interface",
           "actions"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "at-sign",
+      "title": "At Sign",
+      "category": "communication",
+      "tags": [
+        "at-sign",
+        "at",
+        "sign"
+      ],
+      "aliases": [],
+      "contexts": [
+        "communication",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/communication/at-sign.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "at-sign",
+          "at sign",
+          "at",
+          "sign",
+          "communication",
+          "interface"
         ],
         "relations": {
           "related": [],
@@ -697,9 +1523,7 @@
         "attachment",
         "paperclip"
       ],
-      "aliases": [
-        "paperclip"
-      ],
+      "aliases": [],
       "contexts": [
         "files",
         "editor"
@@ -734,6 +1558,52 @@
           "related": [
             "file"
           ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "audio-lines",
+      "title": "Audio Lines",
+      "category": "media",
+      "tags": [
+        "audio-lines",
+        "audio",
+        "lines"
+      ],
+      "aliases": [],
+      "contexts": [
+        "media",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/media/audio-lines.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "media"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "audio-lines",
+          "audio lines",
+          "audio",
+          "lines",
+          "media",
+          "interface",
+          "content",
+          "playback"
+        ],
+        "relations": {
+          "related": [],
           "alternative": [],
           "opposite": [],
           "paired": [],
@@ -792,6 +1662,82 @@
       }
     },
     {
+      "name": "ban",
+      "title": "Ban",
+      "category": "actions",
+      "tags": [
+        "ban",
+        "ban"
+      ],
+      "aliases": [],
+      "contexts": [
+        "actions",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/actions/ban.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "ban",
+          "actions",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "barcode",
+      "title": "Barcode",
+      "category": "commerce",
+      "tags": [
+        "barcode",
+        "barcode"
+      ],
+      "aliases": [],
+      "contexts": [
+        "commerce",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/commerce/barcode.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "barcode",
+          "commerce",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
       "name": "bell",
       "title": "Bell",
       "category": "communication",
@@ -833,6 +1779,172 @@
           "related": [
             "message"
           ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "bolt",
+      "title": "Bolt",
+      "category": "actions",
+      "tags": [
+        "bolt",
+        "bolt"
+      ],
+      "aliases": [],
+      "contexts": [
+        "actions",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/actions/bolt.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "bolt",
+          "actions",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "bolt-circle",
+      "title": "Bolt Circle",
+      "category": "objects",
+      "tags": [
+        "bolt-circle",
+        "bolt",
+        "circle"
+      ],
+      "aliases": [],
+      "contexts": [
+        "objects",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/objects/bolt-circle.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "bolt-circle",
+          "bolt circle",
+          "bolt",
+          "circle",
+          "objects",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "book",
+      "title": "Book",
+      "category": "files",
+      "tags": [
+        "book",
+        "book"
+      ],
+      "aliases": [],
+      "contexts": [
+        "files",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/files/book.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "book",
+          "files",
+          "interface",
+          "storage",
+          "documents"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "book-open",
+      "title": "Book Open",
+      "category": "files",
+      "tags": [
+        "book-open",
+        "book",
+        "open"
+      ],
+      "aliases": [],
+      "contexts": [
+        "files",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/files/book-open.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [
+          "open"
+        ],
+        "objects": [],
+        "queryTerms": [
+          "book-open",
+          "book open",
+          "book",
+          "open",
+          "files",
+          "interface",
+          "storage",
+          "documents"
+        ],
+        "relations": {
+          "related": [],
           "alternative": [],
           "opposite": [],
           "paired": [],
@@ -885,6 +1997,46 @@
           "related": [
             "save"
           ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "box",
+      "title": "Box",
+      "category": "files",
+      "tags": [
+        "box",
+        "box"
+      ],
+      "aliases": [],
+      "contexts": [
+        "files",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/files/box.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "box",
+          "files",
+          "interface",
+          "storage",
+          "documents"
+        ],
+        "relations": {
+          "related": [],
           "alternative": [],
           "opposite": [],
           "paired": [],
@@ -985,6 +2137,44 @@
           "related": [
             "code"
           ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "building",
+      "title": "Building",
+      "category": "objects",
+      "tags": [
+        "building",
+        "building"
+      ],
+      "aliases": [],
+      "contexts": [
+        "objects",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/objects/building.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "building",
+          "objects",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
           "alternative": [],
           "opposite": [],
           "paired": [],
@@ -1097,6 +2287,44 @@
       }
     },
     {
+      "name": "car",
+      "title": "Car",
+      "category": "objects",
+      "tags": [
+        "car",
+        "car"
+      ],
+      "aliases": [],
+      "contexts": [
+        "objects",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/objects/car.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "car",
+          "objects",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
       "name": "cart",
       "title": "Cart",
       "category": "commerce",
@@ -1139,6 +2367,86 @@
           "related": [
             "bag"
           ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "cash",
+      "title": "Cash",
+      "category": "commerce",
+      "tags": [
+        "cash",
+        "cash"
+      ],
+      "aliases": [],
+      "contexts": [
+        "commerce",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/commerce/cash.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "cash",
+          "commerce",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "chat",
+      "title": "Chat",
+      "category": "communication",
+      "tags": [
+        "chat",
+        "chat"
+      ],
+      "aliases": [],
+      "contexts": [
+        "communication",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/communication/chat.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "communication",
+          "ai"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "chat",
+          "communication",
+          "interface",
+          "ai"
+        ],
+        "relations": {
+          "related": [],
           "alternative": [],
           "opposite": [],
           "paired": [],
@@ -1192,6 +2500,51 @@
           "toolbar",
           "actions",
           "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "check-circle",
+      "title": "Check Circle",
+      "category": "actions",
+      "tags": [
+        "check-circle",
+        "check",
+        "circle"
+      ],
+      "aliases": [],
+      "contexts": [
+        "actions",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/actions/check-circle.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "status"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "check-circle",
+          "check circle",
+          "check",
+          "circle",
+          "actions",
+          "interface",
+          "status"
         ],
         "relations": {
           "related": [],
@@ -1399,6 +2752,176 @@
       }
     },
     {
+      "name": "chrome",
+      "title": "Chrome",
+      "category": "brands",
+      "tags": [
+        "chrome",
+        "chrome"
+      ],
+      "aliases": [],
+      "contexts": [
+        "brands",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "brand"
+      },
+      "path": "/icons/brands/chrome.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "chrome",
+          "brands",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "circle-help",
+      "title": "Circle Help",
+      "category": "system",
+      "tags": [
+        "circle-help",
+        "circle",
+        "help"
+      ],
+      "aliases": [],
+      "contexts": [
+        "system",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/system/circle-help.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "status"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "circle-help",
+          "circle help",
+          "circle",
+          "help",
+          "system",
+          "interface",
+          "status"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "circle-info",
+      "title": "Circle Info",
+      "category": "system",
+      "tags": [
+        "circle-info",
+        "circle",
+        "info"
+      ],
+      "aliases": [],
+      "contexts": [
+        "system",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/system/circle-info.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "status"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "circle-info",
+          "circle info",
+          "circle",
+          "info",
+          "system",
+          "interface",
+          "status"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "circle-x",
+      "title": "Circle X",
+      "category": "system",
+      "tags": [
+        "circle-x",
+        "circle",
+        "x"
+      ],
+      "aliases": [],
+      "contexts": [
+        "system",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/system/circle-x.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "circle-x",
+          "circle x",
+          "circle",
+          "x",
+          "system",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
       "name": "clipboard",
       "title": "Clipboard",
       "category": "files",
@@ -1500,6 +3023,223 @@
       }
     },
     {
+      "name": "close-circle",
+      "title": "Close Circle",
+      "category": "actions",
+      "tags": [
+        "close-circle",
+        "close",
+        "circle"
+      ],
+      "aliases": [],
+      "contexts": [
+        "actions",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/actions/close-circle.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "dismiss"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "close-circle",
+          "close circle",
+          "close",
+          "circle",
+          "actions",
+          "interface",
+          "dismiss"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "cloud",
+      "title": "Cloud",
+      "category": "objects",
+      "tags": [
+        "cloud",
+        "cloud"
+      ],
+      "aliases": [],
+      "contexts": [
+        "objects",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/objects/cloud.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "cloud",
+          "objects",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "cloud-code",
+      "title": "Cloud Code",
+      "category": "developer",
+      "tags": [
+        "cloud-code",
+        "cloud",
+        "code"
+      ],
+      "aliases": [],
+      "contexts": [
+        "developer",
+        "tooling"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/developer/cloud-code.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer",
+          "ai"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "code"
+        ],
+        "queryTerms": [
+          "cloud-code",
+          "cloud code",
+          "cloud",
+          "code",
+          "developer",
+          "tooling",
+          "ai",
+          "engineering",
+          "software"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "cloud-rain",
+      "title": "Cloud Rain",
+      "category": "objects",
+      "tags": [
+        "cloud-rain",
+        "cloud",
+        "rain"
+      ],
+      "aliases": [],
+      "contexts": [
+        "objects",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/objects/cloud-rain.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "cloud-rain",
+          "cloud rain",
+          "cloud",
+          "rain",
+          "objects",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "cloud-sun",
+      "title": "Cloud Sun",
+      "category": "objects",
+      "tags": [
+        "cloud-sun",
+        "cloud",
+        "sun"
+      ],
+      "aliases": [],
+      "contexts": [
+        "objects",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/objects/cloud-sun.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "cloud-sun",
+          "cloud sun",
+          "cloud",
+          "sun",
+          "objects",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
       "name": "code",
       "title": "Code",
       "category": "developer",
@@ -1528,7 +3268,8 @@
       "family": "line",
       "semantics": {
         "intents": [
-          "developer"
+          "developer",
+          "ai"
         ],
         "actions": [],
         "states": [],
@@ -1543,6 +3284,7 @@
           "source-code",
           "editor",
           "documentation",
+          "ai",
           "engineering",
           "software",
           "edit",
@@ -1553,6 +3295,248 @@
           "related": [
             "github"
           ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "coins",
+      "title": "Coins",
+      "category": "commerce",
+      "tags": [
+        "coins",
+        "coins"
+      ],
+      "aliases": [],
+      "contexts": [
+        "commerce",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/commerce/coins.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "coins",
+          "commerce",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "comment",
+      "title": "Comment",
+      "category": "communication",
+      "tags": [
+        "comment",
+        "comment"
+      ],
+      "aliases": [],
+      "contexts": [
+        "communication",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/communication/comment.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "comment",
+          "communication",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "comments",
+      "title": "Comments",
+      "category": "communication",
+      "tags": [
+        "comments",
+        "comments"
+      ],
+      "aliases": [],
+      "contexts": [
+        "communication",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/communication/comments.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "comments",
+          "communication",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "contact",
+      "title": "Contact",
+      "category": "people",
+      "tags": [
+        "contact",
+        "contact"
+      ],
+      "aliases": [],
+      "contexts": [
+        "people",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/people/contact.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "account"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "people"
+        ],
+        "queryTerms": [
+          "contact",
+          "people",
+          "interface",
+          "account"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "contacts",
+      "title": "Contacts",
+      "category": "people",
+      "tags": [
+        "contacts",
+        "contacts"
+      ],
+      "aliases": [],
+      "contexts": [
+        "people",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/people/contacts.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "account"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "people"
+        ],
+        "queryTerms": [
+          "contacts",
+          "people",
+          "interface",
+          "account"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "container",
+      "title": "Container",
+      "category": "developer",
+      "tags": [
+        "container",
+        "container"
+      ],
+      "aliases": [],
+      "contexts": [
+        "developer",
+        "tooling"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/developer/container.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "container",
+          "developer",
+          "tooling",
+          "engineering",
+          "software"
+        ],
+        "relations": {
+          "related": [],
           "alternative": [],
           "opposite": [],
           "paired": [],
@@ -1607,6 +3591,233 @@
           "related": [
             "share"
           ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "corner-down-left",
+      "title": "Corner Down Left",
+      "category": "navigation",
+      "tags": [
+        "corner-down-left",
+        "corner",
+        "down",
+        "left"
+      ],
+      "aliases": [],
+      "contexts": [
+        "navigation",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/navigation/corner-down-left.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "corner-down-left",
+          "corner down left",
+          "corner",
+          "down",
+          "left",
+          "navigation",
+          "interface",
+          "wayfinding"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "corner-down-right",
+      "title": "Corner Down Right",
+      "category": "navigation",
+      "tags": [
+        "corner-down-right",
+        "corner",
+        "down",
+        "right"
+      ],
+      "aliases": [],
+      "contexts": [
+        "navigation",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/navigation/corner-down-right.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "corner-down-right",
+          "corner down right",
+          "corner",
+          "down",
+          "right",
+          "navigation",
+          "interface",
+          "wayfinding"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "corner-left-down",
+      "title": "Corner Left Down",
+      "category": "navigation",
+      "tags": [
+        "corner-left-down",
+        "corner",
+        "left",
+        "down"
+      ],
+      "aliases": [],
+      "contexts": [
+        "navigation",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/navigation/corner-left-down.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "corner-left-down",
+          "corner left down",
+          "corner",
+          "left",
+          "down",
+          "navigation",
+          "interface",
+          "wayfinding"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "corner-right-down",
+      "title": "Corner Right Down",
+      "category": "navigation",
+      "tags": [
+        "corner-right-down",
+        "corner",
+        "right",
+        "down"
+      ],
+      "aliases": [],
+      "contexts": [
+        "navigation",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/navigation/corner-right-down.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "corner-right-down",
+          "corner right down",
+          "corner",
+          "right",
+          "down",
+          "navigation",
+          "interface",
+          "wayfinding"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "cpu-warning",
+      "title": "Cpu Warning",
+      "category": "system",
+      "tags": [
+        "cpu-warning",
+        "cpu",
+        "warning"
+      ],
+      "aliases": [],
+      "contexts": [
+        "system",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/system/cpu-warning.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "status"
+        ],
+        "actions": [],
+        "states": [
+          "warning"
+        ],
+        "objects": [],
+        "queryTerms": [
+          "cpu-warning",
+          "cpu warning",
+          "cpu",
+          "warning",
+          "system",
+          "interface",
+          "status"
+        ],
+        "relations": {
+          "related": [],
           "alternative": [],
           "opposite": [],
           "paired": [],
@@ -1722,6 +3933,57 @@
       }
     },
     {
+      "name": "database-error",
+      "title": "Database Error",
+      "category": "system",
+      "tags": [
+        "database-error",
+        "database",
+        "error"
+      ],
+      "aliases": [],
+      "contexts": [
+        "system",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/system/database-error.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer",
+          "status"
+        ],
+        "actions": [],
+        "states": [
+          "error"
+        ],
+        "objects": [
+          "database"
+        ],
+        "queryTerms": [
+          "database-error",
+          "database error",
+          "database",
+          "error",
+          "system",
+          "interface",
+          "developer",
+          "status"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
       "name": "delete",
       "title": "Delete",
       "category": "actions",
@@ -1775,6 +4037,48 @@
       }
     },
     {
+      "name": "dependency",
+      "title": "Dependency",
+      "category": "developer",
+      "tags": [
+        "dependency",
+        "dependency"
+      ],
+      "aliases": [],
+      "contexts": [
+        "developer",
+        "tooling"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/developer/dependency.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "dependency",
+          "developer",
+          "tooling",
+          "engineering",
+          "software"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
       "name": "discord",
       "title": "Discord",
       "category": "brands",
@@ -1795,7 +4099,8 @@
       "family": "line",
       "semantics": {
         "intents": [
-          "communication"
+          "communication",
+          "ai"
         ],
         "actions": [],
         "states": [],
@@ -1806,7 +4111,88 @@
           "brand",
           "social",
           "communication",
+          "ai",
           "community"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "discount",
+      "title": "Discount",
+      "category": "commerce",
+      "tags": [
+        "discount",
+        "discount"
+      ],
+      "aliases": [],
+      "contexts": [
+        "commerce",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/commerce/discount.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "discount",
+          "commerce",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "docker",
+      "title": "Docker",
+      "category": "developer",
+      "tags": [
+        "docker",
+        "docker"
+      ],
+      "aliases": [],
+      "contexts": [
+        "developer",
+        "tooling"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/developer/docker.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "docker",
+          "developer",
+          "tooling",
+          "engineering",
+          "software"
         ],
         "relations": {
           "related": [],
@@ -1932,6 +4318,104 @@
       }
     },
     {
+      "name": "download-cloud",
+      "title": "Download Cloud",
+      "category": "actions",
+      "tags": [
+        "download-cloud",
+        "download",
+        "cloud"
+      ],
+      "aliases": [],
+      "contexts": [
+        "actions",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/actions/download-cloud.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "transfer"
+        ],
+        "actions": [
+          "download"
+        ],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "download-cloud",
+          "download cloud",
+          "download",
+          "cloud",
+          "actions",
+          "interface",
+          "transfer"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "download-error",
+      "title": "Download Error",
+      "category": "system",
+      "tags": [
+        "download-error",
+        "download",
+        "error"
+      ],
+      "aliases": [],
+      "contexts": [
+        "system",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/system/download-error.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "transfer",
+          "status"
+        ],
+        "actions": [
+          "download"
+        ],
+        "states": [
+          "error"
+        ],
+        "objects": [],
+        "queryTerms": [
+          "download-error",
+          "download error",
+          "download",
+          "error",
+          "system",
+          "interface",
+          "transfer",
+          "status"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
       "name": "edit",
       "title": "Edit",
       "category": "actions",
@@ -1977,6 +4461,46 @@
           "related": [
             "save"
           ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "email",
+      "title": "Email",
+      "category": "communication",
+      "tags": [
+        "email",
+        "email"
+      ],
+      "aliases": [],
+      "contexts": [
+        "communication",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/communication/email.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "communication"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "email",
+          "communication",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
           "alternative": [],
           "opposite": [],
           "paired": [],
@@ -2037,6 +4561,127 @@
       }
     },
     {
+      "name": "expand",
+      "title": "Expand",
+      "category": "actions",
+      "tags": [
+        "expand",
+        "expand"
+      ],
+      "aliases": [],
+      "contexts": [
+        "actions",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/actions/expand.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "expand",
+          "actions",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "external",
+      "title": "External",
+      "category": "navigation",
+      "tags": [
+        "external",
+        "external"
+      ],
+      "aliases": [],
+      "contexts": [
+        "navigation",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/navigation/external.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "external",
+          "navigation",
+          "interface",
+          "wayfinding"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "external-link",
+      "title": "External Link",
+      "category": "actions",
+      "tags": [
+        "external-link",
+        "external",
+        "link"
+      ],
+      "aliases": [],
+      "contexts": [
+        "actions",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/actions/external-link.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [
+          "link"
+        ],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "external-link",
+          "external link",
+          "external",
+          "link",
+          "actions",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
       "name": "eye",
       "title": "Eye",
       "category": "objects",
@@ -2079,6 +4724,91 @@
           "related": [
             "lock"
           ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "eye-off",
+      "title": "Eye Off",
+      "category": "actions",
+      "tags": [
+        "eye-off",
+        "eye",
+        "off"
+      ],
+      "aliases": [],
+      "contexts": [
+        "actions",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/actions/eye-off.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "visibility"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "eye"
+        ],
+        "queryTerms": [
+          "eye-off",
+          "eye off",
+          "eye",
+          "off",
+          "actions",
+          "interface",
+          "visibility"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "figma",
+      "title": "Figma",
+      "category": "brands",
+      "tags": [
+        "figma",
+        "figma"
+      ],
+      "aliases": [],
+      "contexts": [
+        "brands",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "brand"
+      },
+      "path": "/icons/brands/figma.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "figma",
+          "brands",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
           "alternative": [],
           "opposite": [],
           "paired": [],
@@ -2138,6 +4868,160 @@
           "paired": [
             "folder"
           ],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "file-check",
+      "title": "File Check",
+      "category": "files",
+      "tags": [
+        "file-check",
+        "file",
+        "check"
+      ],
+      "aliases": [],
+      "contexts": [
+        "files",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/files/file-check.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "files",
+          "status"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "file"
+        ],
+        "queryTerms": [
+          "file-check",
+          "file check",
+          "file",
+          "check",
+          "files",
+          "interface",
+          "status",
+          "storage",
+          "documents"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "file-code",
+      "title": "File Code",
+      "category": "files",
+      "tags": [
+        "file-code",
+        "file",
+        "code"
+      ],
+      "aliases": [],
+      "contexts": [
+        "files",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/files/file-code.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer",
+          "files",
+          "ai"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "code",
+          "file"
+        ],
+        "queryTerms": [
+          "file-code",
+          "file code",
+          "file",
+          "code",
+          "files",
+          "interface",
+          "developer",
+          "ai",
+          "storage",
+          "documents"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "file-image",
+      "title": "File Image",
+      "category": "files",
+      "tags": [
+        "file-image",
+        "file",
+        "image"
+      ],
+      "aliases": [],
+      "contexts": [
+        "files",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/files/file-image.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "media",
+          "files"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "file",
+          "image"
+        ],
+        "queryTerms": [
+          "file-image",
+          "file image",
+          "file",
+          "image",
+          "files",
+          "interface",
+          "media",
+          "storage",
+          "documents"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
           "state": []
         }
       }
@@ -2265,6 +5149,184 @@
       }
     },
     {
+      "name": "file-text",
+      "title": "File Text",
+      "category": "files",
+      "tags": [
+        "file-text",
+        "file",
+        "text"
+      ],
+      "aliases": [],
+      "contexts": [
+        "files",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/files/file-text.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "files"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "file"
+        ],
+        "queryTerms": [
+          "file-text",
+          "file text",
+          "file",
+          "text",
+          "files",
+          "interface",
+          "storage",
+          "documents"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "file-video",
+      "title": "File Video",
+      "category": "files",
+      "tags": [
+        "file-video",
+        "file",
+        "video"
+      ],
+      "aliases": [],
+      "contexts": [
+        "files",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/files/file-video.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "media",
+          "files"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "file",
+          "video"
+        ],
+        "queryTerms": [
+          "file-video",
+          "file video",
+          "file",
+          "video",
+          "files",
+          "interface",
+          "media",
+          "storage",
+          "documents"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "files",
+      "title": "Files",
+      "category": "files",
+      "tags": [
+        "files",
+        "files"
+      ],
+      "aliases": [],
+      "contexts": [
+        "files",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/files/files.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "files",
+          "interface",
+          "storage",
+          "documents"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "film",
+      "title": "Film",
+      "category": "media",
+      "tags": [
+        "film",
+        "film"
+      ],
+      "aliases": [],
+      "contexts": [
+        "media",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/media/film.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "film",
+          "media",
+          "interface",
+          "content",
+          "playback"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
       "name": "filter",
       "title": "Filter",
       "category": "objects",
@@ -2302,6 +5364,48 @@
           "related": [
             "sort"
           ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "filter-off",
+      "title": "Filter Off",
+      "category": "actions",
+      "tags": [
+        "filter-off",
+        "filter",
+        "off"
+      ],
+      "aliases": [],
+      "contexts": [
+        "actions",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/actions/filter-off.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "filter-off",
+          "filter off",
+          "filter",
+          "off",
+          "actions",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
           "alternative": [],
           "opposite": [],
           "paired": [],
@@ -2361,6 +5465,106 @@
           "paired": [
             "file"
           ],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "folder-closed",
+      "title": "Folder Closed",
+      "category": "files",
+      "tags": [
+        "folder-closed",
+        "folder",
+        "closed"
+      ],
+      "aliases": [],
+      "contexts": [
+        "files",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/files/folder-closed.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "files"
+        ],
+        "actions": [],
+        "states": [
+          "closed"
+        ],
+        "objects": [
+          "folder"
+        ],
+        "queryTerms": [
+          "folder-closed",
+          "folder closed",
+          "folder",
+          "closed",
+          "files",
+          "interface",
+          "storage",
+          "documents"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "folder-minus",
+      "title": "Folder Minus",
+      "category": "files",
+      "tags": [
+        "folder-minus",
+        "folder",
+        "minus"
+      ],
+      "aliases": [],
+      "contexts": [
+        "files",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/files/folder-minus.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "remove",
+          "files"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "folder"
+        ],
+        "queryTerms": [
+          "folder-minus",
+          "folder minus",
+          "folder",
+          "minus",
+          "files",
+          "interface",
+          "remove",
+          "storage",
+          "documents"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
           "state": []
         }
       }
@@ -2480,6 +5684,135 @@
           "related": [
             "folder"
           ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "folder-search",
+      "title": "Folder Search",
+      "category": "files",
+      "tags": [
+        "folder-search",
+        "folder",
+        "search"
+      ],
+      "aliases": [],
+      "contexts": [
+        "files",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/files/folder-search.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "search",
+          "files",
+          "ai"
+        ],
+        "actions": [
+          "search"
+        ],
+        "states": [],
+        "objects": [
+          "folder"
+        ],
+        "queryTerms": [
+          "folder-search",
+          "folder search",
+          "folder",
+          "search",
+          "files",
+          "interface",
+          "ai",
+          "storage",
+          "documents"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "forbidden",
+      "title": "Forbidden",
+      "category": "system",
+      "tags": [
+        "forbidden",
+        "forbidden"
+      ],
+      "aliases": [],
+      "contexts": [
+        "system",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/system/forbidden.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "forbidden",
+          "system",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "gift",
+      "title": "Gift",
+      "category": "commerce",
+      "tags": [
+        "gift",
+        "gift"
+      ],
+      "aliases": [],
+      "contexts": [
+        "commerce",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/commerce/gift.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "gift",
+          "commerce",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
           "alternative": [],
           "opposite": [],
           "paired": [],
@@ -2653,6 +5986,106 @@
       }
     },
     {
+      "name": "git-pull-request",
+      "title": "Git Pull Request",
+      "category": "developer",
+      "tags": [
+        "git-pull-request",
+        "git",
+        "pull",
+        "request"
+      ],
+      "aliases": [],
+      "contexts": [
+        "developer",
+        "tooling"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/developer/git-pull-request.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "git-pull-request",
+          "git pull request",
+          "git",
+          "pull",
+          "request",
+          "developer",
+          "tooling",
+          "engineering",
+          "software"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "git-pull-request-closed",
+      "title": "Git Pull Request Closed",
+      "category": "developer",
+      "tags": [
+        "git-pull-request-closed",
+        "git",
+        "pull",
+        "request",
+        "closed"
+      ],
+      "aliases": [],
+      "contexts": [
+        "developer",
+        "tooling"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/developer/git-pull-request-closed.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer"
+        ],
+        "actions": [],
+        "states": [
+          "closed"
+        ],
+        "objects": [],
+        "queryTerms": [
+          "git-pull-request-closed",
+          "git pull request closed",
+          "git",
+          "pull",
+          "request",
+          "closed",
+          "developer",
+          "tooling",
+          "engineering",
+          "software"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
       "name": "github",
       "title": "GitHub",
       "category": "brands",
@@ -2678,7 +6111,8 @@
       "family": "line",
       "semantics": {
         "intents": [
-          "developer"
+          "developer",
+          "ai"
         ],
         "actions": [],
         "states": [],
@@ -2693,6 +6127,7 @@
           "code",
           "source-control",
           "brand",
+          "ai",
           "engineering",
           "software"
         ],
@@ -2700,6 +6135,302 @@
           "related": [
             "code"
           ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "gitlab",
+      "title": "Gitlab",
+      "category": "brands",
+      "tags": [
+        "gitlab",
+        "gitlab"
+      ],
+      "aliases": [],
+      "contexts": [
+        "brands",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "brand"
+      },
+      "path": "/icons/brands/gitlab.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "gitlab",
+          "brands",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "globe",
+      "title": "Globe",
+      "category": "objects",
+      "tags": [
+        "globe",
+        "globe"
+      ],
+      "aliases": [],
+      "contexts": [
+        "objects",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/objects/globe.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "globe",
+          "objects",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "globe-code",
+      "title": "Globe Code",
+      "category": "developer",
+      "tags": [
+        "globe-code",
+        "globe",
+        "code"
+      ],
+      "aliases": [],
+      "contexts": [
+        "developer",
+        "tooling"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/developer/globe-code.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer",
+          "ai"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "code"
+        ],
+        "queryTerms": [
+          "globe-code",
+          "globe code",
+          "globe",
+          "code",
+          "developer",
+          "tooling",
+          "ai",
+          "engineering",
+          "software"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "globe-warning",
+      "title": "Globe Warning",
+      "category": "system",
+      "tags": [
+        "globe-warning",
+        "globe",
+        "warning"
+      ],
+      "aliases": [],
+      "contexts": [
+        "system",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/system/globe-warning.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "status"
+        ],
+        "actions": [],
+        "states": [
+          "warning"
+        ],
+        "objects": [],
+        "queryTerms": [
+          "globe-warning",
+          "globe warning",
+          "globe",
+          "warning",
+          "system",
+          "interface",
+          "status"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "grid",
+      "title": "Grid",
+      "category": "navigation",
+      "tags": [
+        "grid",
+        "grid"
+      ],
+      "aliases": [],
+      "contexts": [
+        "navigation",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/navigation/grid.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "grid",
+          "navigation",
+          "interface",
+          "wayfinding"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "hard-drive",
+      "title": "Hard Drive",
+      "category": "files",
+      "tags": [
+        "hard-drive",
+        "hard",
+        "drive"
+      ],
+      "aliases": [],
+      "contexts": [
+        "files",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/files/hard-drive.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "hard-drive",
+          "hard drive",
+          "hard",
+          "drive",
+          "files",
+          "interface",
+          "storage",
+          "documents"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "headphones",
+      "title": "Headphones",
+      "category": "media",
+      "tags": [
+        "headphones",
+        "headphones"
+      ],
+      "aliases": [],
+      "contexts": [
+        "media",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/media/headphones.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "headphones",
+          "media",
+          "interface",
+          "content",
+          "playback"
+        ],
+        "relations": {
+          "related": [],
           "alternative": [],
           "opposite": [],
           "paired": [],
@@ -2865,6 +6596,53 @@
       }
     },
     {
+      "name": "id-card",
+      "title": "Id Card",
+      "category": "people",
+      "tags": [
+        "id-card",
+        "id",
+        "card"
+      ],
+      "aliases": [],
+      "contexts": [
+        "people",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/people/id-card.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "account"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "people"
+        ],
+        "queryTerms": [
+          "id-card",
+          "id card",
+          "id",
+          "card",
+          "people",
+          "interface",
+          "account"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
       "name": "image",
       "title": "Image",
       "category": "media",
@@ -2917,6 +6695,140 @@
       }
     },
     {
+      "name": "image-off",
+      "title": "Image Off",
+      "category": "media",
+      "tags": [
+        "image-off",
+        "image",
+        "off"
+      ],
+      "aliases": [],
+      "contexts": [
+        "media",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/media/image-off.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "media"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "image"
+        ],
+        "queryTerms": [
+          "image-off",
+          "image off",
+          "image",
+          "off",
+          "media",
+          "interface",
+          "content",
+          "playback"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "inbox",
+      "title": "Inbox",
+      "category": "communication",
+      "tags": [
+        "inbox",
+        "inbox"
+      ],
+      "aliases": [],
+      "contexts": [
+        "communication",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/communication/inbox.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "inbox",
+          "communication",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "inbox-file",
+      "title": "Inbox File",
+      "category": "files",
+      "tags": [
+        "inbox-file",
+        "inbox",
+        "file"
+      ],
+      "aliases": [],
+      "contexts": [
+        "files",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/files/inbox-file.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "files"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "file"
+        ],
+        "queryTerms": [
+          "inbox-file",
+          "inbox file",
+          "inbox",
+          "file",
+          "files",
+          "interface",
+          "storage",
+          "documents"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
       "name": "info",
       "title": "Info",
       "category": "system",
@@ -2964,6 +6876,246 @@
       }
     },
     {
+      "name": "invoice",
+      "title": "Invoice",
+      "category": "commerce",
+      "tags": [
+        "invoice",
+        "invoice"
+      ],
+      "aliases": [],
+      "contexts": [
+        "commerce",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/commerce/invoice.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "invoice",
+          "commerce",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "key",
+      "title": "Key",
+      "category": "objects",
+      "tags": [
+        "key",
+        "key"
+      ],
+      "aliases": [],
+      "contexts": [
+        "objects",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/objects/key.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "key",
+          "objects",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "key-code",
+      "title": "Key Code",
+      "category": "developer",
+      "tags": [
+        "key-code",
+        "key",
+        "code"
+      ],
+      "aliases": [],
+      "contexts": [
+        "developer",
+        "tooling"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/developer/key-code.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer",
+          "ai"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "code"
+        ],
+        "queryTerms": [
+          "key-code",
+          "key code",
+          "key",
+          "code",
+          "developer",
+          "tooling",
+          "ai",
+          "engineering",
+          "software"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "keyboard",
+      "title": "Keyboard",
+      "category": "objects",
+      "tags": [
+        "keyboard",
+        "keyboard"
+      ],
+      "aliases": [],
+      "contexts": [
+        "objects",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/objects/keyboard.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "keyboard",
+          "objects",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "layers",
+      "title": "Layers",
+      "category": "objects",
+      "tags": [
+        "layers",
+        "layers"
+      ],
+      "aliases": [],
+      "contexts": [
+        "objects",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/objects/layers.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "layers",
+          "objects",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "lightbulb",
+      "title": "Lightbulb",
+      "category": "objects",
+      "tags": [
+        "lightbulb",
+        "lightbulb"
+      ],
+      "aliases": [],
+      "contexts": [
+        "objects",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/objects/lightbulb.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "lightbulb",
+          "objects",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
       "name": "link",
       "title": "Link",
       "category": "communication",
@@ -3003,6 +7155,127 @@
           "related": [
             "share"
           ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "link-2",
+      "title": "Link 2",
+      "category": "objects",
+      "tags": [
+        "link-2",
+        "link",
+        "2"
+      ],
+      "aliases": [],
+      "contexts": [
+        "objects",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/objects/link-2.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [
+          "link"
+        ],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "link-2",
+          "link 2",
+          "link",
+          "2",
+          "objects",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "linkedin",
+      "title": "Linkedin",
+      "category": "brands",
+      "tags": [
+        "linkedin",
+        "linkedin"
+      ],
+      "aliases": [],
+      "contexts": [
+        "brands",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "brand"
+      },
+      "path": "/icons/brands/linkedin.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "linkedin",
+          "brands",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "list",
+      "title": "List",
+      "category": "navigation",
+      "tags": [
+        "list",
+        "list"
+      ],
+      "aliases": [],
+      "contexts": [
+        "navigation",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/navigation/list.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "list",
+          "navigation",
+          "interface",
+          "wayfinding"
+        ],
+        "relations": {
+          "related": [],
           "alternative": [],
           "opposite": [],
           "paired": [],
@@ -3067,9 +7340,7 @@
         "location",
         "pin"
       ],
-      "aliases": [
-        "pin"
-      ],
+      "aliases": [],
       "contexts": [
         "utility",
         "interface"
@@ -3161,6 +7432,134 @@
       }
     },
     {
+      "name": "log-in",
+      "title": "Log In",
+      "category": "navigation",
+      "tags": [
+        "log-in",
+        "log",
+        "in"
+      ],
+      "aliases": [],
+      "contexts": [
+        "navigation",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/navigation/log-in.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "log-in",
+          "log in",
+          "log",
+          "in",
+          "navigation",
+          "interface",
+          "wayfinding"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "log-out",
+      "title": "Log Out",
+      "category": "navigation",
+      "tags": [
+        "log-out",
+        "log",
+        "out"
+      ],
+      "aliases": [],
+      "contexts": [
+        "navigation",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/navigation/log-out.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "log-out",
+          "log out",
+          "log",
+          "out",
+          "navigation",
+          "interface",
+          "wayfinding"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "logs",
+      "title": "Logs",
+      "category": "developer",
+      "tags": [
+        "logs",
+        "logs"
+      ],
+      "aliases": [],
+      "contexts": [
+        "developer",
+        "tooling"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/developer/logs.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "logs",
+          "developer",
+          "tooling",
+          "engineering",
+          "software"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
       "name": "mail",
       "title": "Mail",
       "category": "communication",
@@ -3168,9 +7567,7 @@
         "mail",
         "email"
       ],
-      "aliases": [
-        "email"
-      ],
+      "aliases": [],
       "contexts": [
         "communication",
         "content"
@@ -3207,6 +7604,44 @@
           "paired": [
             "message"
           ],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "maintenance",
+      "title": "Maintenance",
+      "category": "system",
+      "tags": [
+        "maintenance",
+        "maintenance"
+      ],
+      "aliases": [],
+      "contexts": [
+        "system",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/system/maintenance.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "maintenance",
+          "system",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
           "state": []
         }
       }
@@ -3254,6 +7689,129 @@
           "related": [
             "location"
           ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "map-pin",
+      "title": "Map Pin",
+      "category": "objects",
+      "tags": [
+        "map-pin",
+        "map",
+        "pin"
+      ],
+      "aliases": [],
+      "contexts": [
+        "objects",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/objects/map-pin.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "location"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "map"
+        ],
+        "queryTerms": [
+          "map-pin",
+          "map pin",
+          "map",
+          "pin",
+          "objects",
+          "interface",
+          "location"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "maximize",
+      "title": "Maximize",
+      "category": "actions",
+      "tags": [
+        "maximize",
+        "maximize"
+      ],
+      "aliases": [],
+      "contexts": [
+        "actions",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/actions/maximize.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "maximize",
+          "actions",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "mention",
+      "title": "Mention",
+      "category": "communication",
+      "tags": [
+        "mention",
+        "mention"
+      ],
+      "aliases": [],
+      "contexts": [
+        "communication",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/communication/mention.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "mention",
+          "communication",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
           "alternative": [],
           "opposite": [],
           "paired": [],
@@ -3324,9 +7882,7 @@
         "message",
         "chat"
       ],
-      "aliases": [
-        "chat"
-      ],
+      "aliases": [],
       "contexts": [
         "communication",
         "content"
@@ -3341,7 +7897,8 @@
       "family": "line",
       "semantics": {
         "intents": [
-          "communication"
+          "communication",
+          "ai"
         ],
         "actions": [],
         "states": [],
@@ -3352,7 +7909,8 @@
           "message",
           "chat",
           "communication",
-          "content"
+          "content",
+          "ai"
         ],
         "relations": {
           "related": [
@@ -3406,6 +7964,44 @@
           "related": [
             "volume"
           ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "minimize",
+      "title": "Minimize",
+      "category": "actions",
+      "tags": [
+        "minimize",
+        "minimize"
+      ],
+      "aliases": [],
+      "contexts": [
+        "actions",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/actions/minimize.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "minimize",
+          "actions",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
           "alternative": [],
           "opposite": [],
           "paired": [],
@@ -3478,6 +8074,330 @@
       }
     },
     {
+      "name": "mobile",
+      "title": "Mobile",
+      "category": "objects",
+      "tags": [
+        "mobile",
+        "mobile"
+      ],
+      "aliases": [],
+      "contexts": [
+        "objects",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/objects/mobile.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "mobile",
+          "objects",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "money",
+      "title": "Money",
+      "category": "commerce",
+      "tags": [
+        "money",
+        "money"
+      ],
+      "aliases": [],
+      "contexts": [
+        "commerce",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/commerce/money.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "money",
+          "commerce",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "monitor",
+      "title": "Monitor",
+      "category": "objects",
+      "tags": [
+        "monitor",
+        "monitor"
+      ],
+      "aliases": [],
+      "contexts": [
+        "objects",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/objects/monitor.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "monitor",
+          "objects",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "monitor-code",
+      "title": "Monitor Code",
+      "category": "developer",
+      "tags": [
+        "monitor-code",
+        "monitor",
+        "code"
+      ],
+      "aliases": [],
+      "contexts": [
+        "developer",
+        "tooling"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/developer/monitor-code.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer",
+          "ai"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "code"
+        ],
+        "queryTerms": [
+          "monitor-code",
+          "monitor code",
+          "monitor",
+          "code",
+          "developer",
+          "tooling",
+          "ai",
+          "engineering",
+          "software"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "more-horizontal",
+      "title": "More Horizontal",
+      "category": "actions",
+      "tags": [
+        "more-horizontal",
+        "more",
+        "horizontal"
+      ],
+      "aliases": [],
+      "contexts": [
+        "actions",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/actions/more-horizontal.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "more-horizontal",
+          "more horizontal",
+          "more",
+          "horizontal",
+          "actions",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "more-vertical",
+      "title": "More Vertical",
+      "category": "actions",
+      "tags": [
+        "more-vertical",
+        "more",
+        "vertical"
+      ],
+      "aliases": [],
+      "contexts": [
+        "actions",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/actions/more-vertical.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "more-vertical",
+          "more vertical",
+          "more",
+          "vertical",
+          "actions",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "mouse",
+      "title": "Mouse",
+      "category": "objects",
+      "tags": [
+        "mouse",
+        "mouse"
+      ],
+      "aliases": [],
+      "contexts": [
+        "objects",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/objects/mouse.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "mouse",
+          "objects",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "move",
+      "title": "Move",
+      "category": "actions",
+      "tags": [
+        "move",
+        "move"
+      ],
+      "aliases": [],
+      "contexts": [
+        "actions",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/actions/move.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "move",
+          "actions",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
       "name": "music",
       "title": "Music",
       "category": "media",
@@ -3520,6 +8440,503 @@
           "related": [
             "volume"
           ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "music-note",
+      "title": "Music Note",
+      "category": "media",
+      "tags": [
+        "music-note",
+        "music",
+        "note"
+      ],
+      "aliases": [],
+      "contexts": [
+        "media",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/media/music-note.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "media"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "music"
+        ],
+        "queryTerms": [
+          "music-note",
+          "music note",
+          "music",
+          "note",
+          "media",
+          "interface",
+          "content",
+          "playback"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "npm",
+      "title": "Npm",
+      "category": "brands",
+      "tags": [
+        "npm",
+        "npm"
+      ],
+      "aliases": [],
+      "contexts": [
+        "brands",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "brand"
+      },
+      "path": "/icons/brands/npm.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "npm",
+          "brands",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "offline",
+      "title": "Offline",
+      "category": "system",
+      "tags": [
+        "offline",
+        "offline"
+      ],
+      "aliases": [],
+      "contexts": [
+        "system",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/system/offline.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "offline",
+          "system",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "online",
+      "title": "Online",
+      "category": "system",
+      "tags": [
+        "online",
+        "online"
+      ],
+      "aliases": [],
+      "contexts": [
+        "system",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/system/online.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "online",
+          "system",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "openai",
+      "title": "Openai",
+      "category": "brands",
+      "tags": [
+        "openai",
+        "openai"
+      ],
+      "aliases": [],
+      "contexts": [
+        "brands",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "brand"
+      },
+      "path": "/icons/brands/openai.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "openai",
+          "brands",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "package",
+      "title": "Package",
+      "category": "objects",
+      "tags": [
+        "package",
+        "package"
+      ],
+      "aliases": [],
+      "contexts": [
+        "objects",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/objects/package.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "package",
+          "objects",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "package-check",
+      "title": "Package Check",
+      "category": "commerce",
+      "tags": [
+        "package-check",
+        "package",
+        "check"
+      ],
+      "aliases": [],
+      "contexts": [
+        "commerce",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/commerce/package-check.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "status"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "package-check",
+          "package check",
+          "package",
+          "check",
+          "commerce",
+          "interface",
+          "status"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "package-code",
+      "title": "Package Code",
+      "category": "developer",
+      "tags": [
+        "package-code",
+        "package",
+        "code"
+      ],
+      "aliases": [],
+      "contexts": [
+        "developer",
+        "tooling"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/developer/package-code.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer",
+          "ai"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "code"
+        ],
+        "queryTerms": [
+          "package-code",
+          "package code",
+          "package",
+          "code",
+          "developer",
+          "tooling",
+          "ai",
+          "engineering",
+          "software"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "palette",
+      "title": "Palette",
+      "category": "objects",
+      "tags": [
+        "palette",
+        "palette"
+      ],
+      "aliases": [],
+      "contexts": [
+        "objects",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/objects/palette.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "palette",
+          "objects",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "panel-left",
+      "title": "Panel Left",
+      "category": "navigation",
+      "tags": [
+        "panel-left",
+        "panel",
+        "left"
+      ],
+      "aliases": [],
+      "contexts": [
+        "navigation",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/navigation/panel-left.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "panel-left",
+          "panel left",
+          "panel",
+          "left",
+          "navigation",
+          "interface",
+          "wayfinding"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "panel-right",
+      "title": "Panel Right",
+      "category": "navigation",
+      "tags": [
+        "panel-right",
+        "panel",
+        "right"
+      ],
+      "aliases": [],
+      "contexts": [
+        "navigation",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/navigation/panel-right.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "panel-right",
+          "panel right",
+          "panel",
+          "right",
+          "navigation",
+          "interface",
+          "wayfinding"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "paperclip",
+      "title": "Paperclip",
+      "category": "files",
+      "tags": [
+        "paperclip",
+        "paperclip"
+      ],
+      "aliases": [],
+      "contexts": [
+        "files",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/files/paperclip.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "paperclip",
+          "files",
+          "interface",
+          "storage",
+          "documents"
+        ],
+        "relations": {
+          "related": [],
           "alternative": [],
           "opposite": [],
           "paired": [],
@@ -3576,6 +8993,221 @@
           "opposite": [
             "play"
           ],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "pause-circle",
+      "title": "Pause Circle",
+      "category": "actions",
+      "tags": [
+        "pause-circle",
+        "pause",
+        "circle"
+      ],
+      "aliases": [],
+      "contexts": [
+        "actions",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/actions/pause-circle.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "media"
+        ],
+        "actions": [
+          "pause"
+        ],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "pause-circle",
+          "pause circle",
+          "pause",
+          "circle",
+          "actions",
+          "interface",
+          "media"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "person-standing",
+      "title": "Person Standing",
+      "category": "people",
+      "tags": [
+        "person-standing",
+        "person",
+        "standing"
+      ],
+      "aliases": [],
+      "contexts": [
+        "people",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/people/person-standing.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "account"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "people"
+        ],
+        "queryTerms": [
+          "person-standing",
+          "person standing",
+          "person",
+          "standing",
+          "people",
+          "interface",
+          "account"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "phone",
+      "title": "Phone",
+      "category": "communication",
+      "tags": [
+        "phone",
+        "phone"
+      ],
+      "aliases": [],
+      "contexts": [
+        "communication",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/communication/phone.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "phone",
+          "communication",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "pin",
+      "title": "Pin",
+      "category": "actions",
+      "tags": [
+        "pin",
+        "pin"
+      ],
+      "aliases": [],
+      "contexts": [
+        "actions",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/actions/pin.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "location"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "pin",
+          "actions",
+          "interface",
+          "location"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "pipeline",
+      "title": "Pipeline",
+      "category": "developer",
+      "tags": [
+        "pipeline",
+        "pipeline"
+      ],
+      "aliases": [],
+      "contexts": [
+        "developer",
+        "tooling"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/developer/pipeline.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "pipeline",
+          "developer",
+          "tooling",
+          "engineering",
+          "software"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
           "paired": [],
           "state": []
         }
@@ -3694,6 +9326,54 @@
       }
     },
     {
+      "name": "play-square",
+      "title": "Play Square",
+      "category": "media",
+      "tags": [
+        "play-square",
+        "play",
+        "square"
+      ],
+      "aliases": [],
+      "contexts": [
+        "media",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/media/play-square.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "media"
+        ],
+        "actions": [
+          "play"
+        ],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "play-square",
+          "play square",
+          "play",
+          "square",
+          "media",
+          "interface",
+          "content",
+          "playback"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
       "name": "plus",
       "title": "Plus",
       "category": "actions",
@@ -3758,6 +9438,300 @@
       }
     },
     {
+      "name": "podcast",
+      "title": "Podcast",
+      "category": "media",
+      "tags": [
+        "podcast",
+        "podcast"
+      ],
+      "aliases": [],
+      "contexts": [
+        "media",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/media/podcast.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "podcast",
+          "media",
+          "interface",
+          "content",
+          "playback"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "power",
+      "title": "Power",
+      "category": "actions",
+      "tags": [
+        "power",
+        "power"
+      ],
+      "aliases": [],
+      "contexts": [
+        "actions",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/actions/power.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "power",
+          "actions",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "profile",
+      "title": "Profile",
+      "category": "people",
+      "tags": [
+        "profile",
+        "profile"
+      ],
+      "aliases": [],
+      "contexts": [
+        "people",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/people/profile.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "account"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "people"
+        ],
+        "queryTerms": [
+          "profile",
+          "people",
+          "interface",
+          "account"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "pull-request",
+      "title": "Pull Request",
+      "category": "developer",
+      "tags": [
+        "pull-request",
+        "pull",
+        "request"
+      ],
+      "aliases": [],
+      "contexts": [
+        "developer",
+        "tooling"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/developer/pull-request.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "pull-request",
+          "pull request",
+          "pull",
+          "request",
+          "developer",
+          "tooling",
+          "engineering",
+          "software"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "qr-code",
+      "title": "Qr Code",
+      "category": "objects",
+      "tags": [
+        "qr-code",
+        "qr",
+        "code"
+      ],
+      "aliases": [],
+      "contexts": [
+        "objects",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/objects/qr-code.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer",
+          "ai"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "code"
+        ],
+        "queryTerms": [
+          "qr-code",
+          "qr code",
+          "qr",
+          "code",
+          "objects",
+          "interface",
+          "developer",
+          "ai"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "radio",
+      "title": "Radio",
+      "category": "media",
+      "tags": [
+        "radio",
+        "radio"
+      ],
+      "aliases": [],
+      "contexts": [
+        "media",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/media/radio.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "radio",
+          "media",
+          "interface",
+          "content",
+          "playback"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "react",
+      "title": "React",
+      "category": "brands",
+      "tags": [
+        "react",
+        "react"
+      ],
+      "aliases": [],
+      "contexts": [
+        "brands",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "brand"
+      },
+      "path": "/icons/brands/react.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "react",
+          "brands",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
       "name": "receipt",
       "title": "Receipt",
       "category": "commerce",
@@ -3765,9 +9739,7 @@
         "receipt",
         "invoice"
       ],
-      "aliases": [
-        "invoice"
-      ],
+      "aliases": [],
       "contexts": [
         "commerce",
         "checkout"
@@ -3805,6 +9777,52 @@
           "paired": [
             "credit-card"
           ],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "receipt-text",
+      "title": "Receipt Text",
+      "category": "commerce",
+      "tags": [
+        "receipt-text",
+        "receipt",
+        "text"
+      ],
+      "aliases": [],
+      "contexts": [
+        "commerce",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/commerce/receipt-text.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "commerce"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "receipt"
+        ],
+        "queryTerms": [
+          "receipt-text",
+          "receipt text",
+          "receipt",
+          "text",
+          "commerce",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
           "state": []
         }
       }
@@ -3917,6 +9935,128 @@
       }
     },
     {
+      "name": "refresh-alert",
+      "title": "Refresh Alert",
+      "category": "system",
+      "tags": [
+        "refresh-alert",
+        "refresh",
+        "alert"
+      ],
+      "aliases": [],
+      "contexts": [
+        "system",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/system/refresh-alert.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [
+          "refresh"
+        ],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "refresh-alert",
+          "refresh alert",
+          "refresh",
+          "alert",
+          "system",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "repeat",
+      "title": "Repeat",
+      "category": "media",
+      "tags": [
+        "repeat",
+        "repeat"
+      ],
+      "aliases": [],
+      "contexts": [
+        "media",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/media/repeat.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "repeat",
+          "media",
+          "interface",
+          "content",
+          "playback"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "reply",
+      "title": "Reply",
+      "category": "communication",
+      "tags": [
+        "reply",
+        "reply"
+      ],
+      "aliases": [],
+      "contexts": [
+        "communication",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/communication/reply.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "reply",
+          "communication",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
       "name": "rocket",
       "title": "Rocket",
       "category": "developer",
@@ -3966,6 +10106,128 @@
       }
     },
     {
+      "name": "rotate-ccw",
+      "title": "Rotate Ccw",
+      "category": "actions",
+      "tags": [
+        "rotate-ccw",
+        "rotate",
+        "ccw"
+      ],
+      "aliases": [],
+      "contexts": [
+        "actions",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/actions/rotate-ccw.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "rotate-ccw",
+          "rotate ccw",
+          "rotate",
+          "ccw",
+          "actions",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "rotate-cw",
+      "title": "Rotate Cw",
+      "category": "actions",
+      "tags": [
+        "rotate-cw",
+        "rotate",
+        "cw"
+      ],
+      "aliases": [],
+      "contexts": [
+        "actions",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/actions/rotate-cw.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "rotate-cw",
+          "rotate cw",
+          "rotate",
+          "cw",
+          "actions",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "rss",
+      "title": "Rss",
+      "category": "communication",
+      "tags": [
+        "rss",
+        "rss"
+      ],
+      "aliases": [],
+      "contexts": [
+        "communication",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/communication/rss.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "rss",
+          "communication",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
       "name": "save",
       "title": "Save",
       "category": "actions",
@@ -3973,9 +10235,7 @@
         "save",
         "store"
       ],
-      "aliases": [
-        "store"
-      ],
+      "aliases": [],
       "contexts": [
         "toolbar",
         "editor"
@@ -4020,6 +10280,135 @@
       }
     },
     {
+      "name": "save-cloud",
+      "title": "Save Cloud",
+      "category": "files",
+      "tags": [
+        "save-cloud",
+        "save",
+        "cloud"
+      ],
+      "aliases": [],
+      "contexts": [
+        "files",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/files/save-cloud.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "edit"
+        ],
+        "actions": [
+          "save"
+        ],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "save-cloud",
+          "save cloud",
+          "save",
+          "cloud",
+          "files",
+          "interface",
+          "edit",
+          "storage",
+          "documents"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "scan",
+      "title": "Scan",
+      "category": "objects",
+      "tags": [
+        "scan",
+        "scan"
+      ],
+      "aliases": [],
+      "contexts": [
+        "objects",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/objects/scan.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "scan",
+          "objects",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "schema",
+      "title": "Schema",
+      "category": "developer",
+      "tags": [
+        "schema",
+        "schema"
+      ],
+      "aliases": [],
+      "contexts": [
+        "developer",
+        "tooling"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/developer/schema.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "schema",
+          "developer",
+          "tooling",
+          "engineering",
+          "software"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
       "name": "search",
       "title": "Search",
       "category": "navigation",
@@ -4048,7 +10437,8 @@
       "family": "line",
       "semantics": {
         "intents": [
-          "search"
+          "search",
+          "ai"
         ],
         "actions": [
           "search"
@@ -4063,6 +10453,7 @@
           "navigation",
           "toolbar",
           "command",
+          "ai",
           "wayfinding",
           "interface",
           "actions"
@@ -4071,6 +10462,159 @@
           "related": [
             "menu"
           ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "search-file",
+      "title": "Search File",
+      "category": "files",
+      "tags": [
+        "search-file",
+        "search",
+        "file"
+      ],
+      "aliases": [],
+      "contexts": [
+        "files",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/files/search-file.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "search",
+          "files",
+          "ai"
+        ],
+        "actions": [
+          "search"
+        ],
+        "states": [],
+        "objects": [
+          "file"
+        ],
+        "queryTerms": [
+          "search-file",
+          "search file",
+          "search",
+          "file",
+          "files",
+          "interface",
+          "ai",
+          "storage",
+          "documents"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "search-minus",
+      "title": "Search Minus",
+      "category": "actions",
+      "tags": [
+        "search-minus",
+        "search",
+        "minus"
+      ],
+      "aliases": [],
+      "contexts": [
+        "actions",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/actions/search-minus.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "remove",
+          "search",
+          "ai"
+        ],
+        "actions": [
+          "search"
+        ],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "search-minus",
+          "search minus",
+          "search",
+          "minus",
+          "actions",
+          "interface",
+          "remove",
+          "ai"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "search-plus",
+      "title": "Search Plus",
+      "category": "actions",
+      "tags": [
+        "search-plus",
+        "search",
+        "plus"
+      ],
+      "aliases": [],
+      "contexts": [
+        "actions",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/actions/search-plus.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "create",
+          "search",
+          "ai"
+        ],
+        "actions": [
+          "search"
+        ],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "search-plus",
+          "search plus",
+          "search",
+          "plus",
+          "actions",
+          "interface",
+          "create",
+          "ai"
+        ],
+        "relations": {
+          "related": [],
           "alternative": [],
           "opposite": [],
           "paired": [],
@@ -4122,6 +10666,54 @@
           "related": [
             "share"
           ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "send-horizontal",
+      "title": "Send Horizontal",
+      "category": "communication",
+      "tags": [
+        "send-horizontal",
+        "send",
+        "horizontal"
+      ],
+      "aliases": [],
+      "contexts": [
+        "communication",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/communication/send-horizontal.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "transfer",
+          "communication"
+        ],
+        "actions": [
+          "send"
+        ],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "send-horizontal",
+          "send horizontal",
+          "send",
+          "horizontal",
+          "communication",
+          "interface",
+          "transfer"
+        ],
+        "relations": {
+          "related": [],
           "alternative": [],
           "opposite": [],
           "paired": [],
@@ -4297,6 +10889,519 @@
       }
     },
     {
+      "name": "share-2",
+      "title": "Share 2",
+      "category": "communication",
+      "tags": [
+        "share-2",
+        "share",
+        "2"
+      ],
+      "aliases": [],
+      "contexts": [
+        "communication",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/communication/share-2.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "communication"
+        ],
+        "actions": [
+          "share"
+        ],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "share-2",
+          "share 2",
+          "share",
+          "2",
+          "communication",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "shield",
+      "title": "Shield",
+      "category": "objects",
+      "tags": [
+        "shield",
+        "shield"
+      ],
+      "aliases": [],
+      "contexts": [
+        "objects",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/objects/shield.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "shield",
+          "objects",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "shield-alert",
+      "title": "Shield Alert",
+      "category": "system",
+      "tags": [
+        "shield-alert",
+        "shield",
+        "alert"
+      ],
+      "aliases": [],
+      "contexts": [
+        "system",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/system/shield-alert.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "shield-alert",
+          "shield alert",
+          "shield",
+          "alert",
+          "system",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "shield-check",
+      "title": "Shield Check",
+      "category": "developer",
+      "tags": [
+        "shield-check",
+        "shield",
+        "check"
+      ],
+      "aliases": [],
+      "contexts": [
+        "developer",
+        "tooling"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/developer/shield-check.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer",
+          "status"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "shield-check",
+          "shield check",
+          "shield",
+          "check",
+          "developer",
+          "tooling",
+          "status",
+          "engineering",
+          "software"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "shuffle",
+      "title": "Shuffle",
+      "category": "media",
+      "tags": [
+        "shuffle",
+        "shuffle"
+      ],
+      "aliases": [],
+      "contexts": [
+        "media",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/media/shuffle.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "shuffle",
+          "media",
+          "interface",
+          "content",
+          "playback"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "sidebar",
+      "title": "Sidebar",
+      "category": "navigation",
+      "tags": [
+        "sidebar",
+        "sidebar"
+      ],
+      "aliases": [],
+      "contexts": [
+        "navigation",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/navigation/sidebar.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "sidebar",
+          "navigation",
+          "interface",
+          "wayfinding"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "skip-back",
+      "title": "Skip Back",
+      "category": "navigation",
+      "tags": [
+        "skip-back",
+        "skip",
+        "back"
+      ],
+      "aliases": [],
+      "contexts": [
+        "navigation",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/navigation/skip-back.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "navigation"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "skip-back",
+          "skip back",
+          "skip",
+          "back",
+          "navigation",
+          "interface",
+          "wayfinding"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "skip-forward",
+      "title": "Skip Forward",
+      "category": "navigation",
+      "tags": [
+        "skip-forward",
+        "skip",
+        "forward"
+      ],
+      "aliases": [],
+      "contexts": [
+        "navigation",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/navigation/skip-forward.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "navigation"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "skip-forward",
+          "skip forward",
+          "skip",
+          "forward",
+          "navigation",
+          "interface",
+          "wayfinding"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "skip-next",
+      "title": "Skip Next",
+      "category": "media",
+      "tags": [
+        "skip-next",
+        "skip",
+        "next"
+      ],
+      "aliases": [],
+      "contexts": [
+        "media",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/media/skip-next.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "navigation"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "skip-next",
+          "skip next",
+          "skip",
+          "next",
+          "media",
+          "interface",
+          "navigation",
+          "content",
+          "playback"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "skip-previous",
+      "title": "Skip Previous",
+      "category": "media",
+      "tags": [
+        "skip-previous",
+        "skip",
+        "previous"
+      ],
+      "aliases": [],
+      "contexts": [
+        "media",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/media/skip-previous.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "navigation"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "skip-previous",
+          "skip previous",
+          "skip",
+          "previous",
+          "media",
+          "interface",
+          "navigation",
+          "content",
+          "playback"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "sliders",
+      "title": "Sliders",
+      "category": "actions",
+      "tags": [
+        "sliders",
+        "sliders"
+      ],
+      "aliases": [],
+      "contexts": [
+        "actions",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/actions/sliders.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "sliders",
+          "actions",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "smile",
+      "title": "Smile",
+      "category": "communication",
+      "tags": [
+        "smile",
+        "smile"
+      ],
+      "aliases": [],
+      "contexts": [
+        "communication",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/communication/smile.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "smile",
+          "communication",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
       "name": "sort",
       "title": "Sort",
       "category": "objects",
@@ -4336,6 +11441,94 @@
           "related": [
             "filter"
           ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "sparkle-code",
+      "title": "Sparkle Code",
+      "category": "developer",
+      "tags": [
+        "sparkle-code",
+        "sparkle",
+        "code"
+      ],
+      "aliases": [],
+      "contexts": [
+        "developer",
+        "tooling"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/developer/sparkle-code.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer",
+          "ai"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "code"
+        ],
+        "queryTerms": [
+          "sparkle-code",
+          "sparkle code",
+          "sparkle",
+          "code",
+          "developer",
+          "tooling",
+          "ai",
+          "engineering",
+          "software"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "sparkles",
+      "title": "Sparkles",
+      "category": "objects",
+      "tags": [
+        "sparkles",
+        "sparkles"
+      ],
+      "aliases": [],
+      "contexts": [
+        "objects",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/objects/sparkles.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "sparkles",
+          "objects",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
           "alternative": [],
           "opposite": [],
           "paired": [],
@@ -4450,6 +11643,91 @@
       }
     },
     {
+      "name": "stop-circle",
+      "title": "Stop Circle",
+      "category": "actions",
+      "tags": [
+        "stop-circle",
+        "stop",
+        "circle"
+      ],
+      "aliases": [],
+      "contexts": [
+        "actions",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/actions/stop-circle.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "media"
+        ],
+        "actions": [
+          "stop"
+        ],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "stop-circle",
+          "stop circle",
+          "stop",
+          "circle",
+          "actions",
+          "interface",
+          "media"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "store",
+      "title": "Store",
+      "category": "commerce",
+      "tags": [
+        "store",
+        "store"
+      ],
+      "aliases": [],
+      "contexts": [
+        "commerce",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/commerce/store.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "store",
+          "commerce",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
       "name": "success",
       "title": "Success",
       "category": "system",
@@ -4546,6 +11824,85 @@
       }
     },
     {
+      "name": "svelte",
+      "title": "Svelte",
+      "category": "brands",
+      "tags": [
+        "svelte",
+        "svelte"
+      ],
+      "aliases": [],
+      "contexts": [
+        "brands",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "brand"
+      },
+      "path": "/icons/brands/svelte.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "svelte",
+          "brands",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "system-update",
+      "title": "System Update",
+      "category": "system",
+      "tags": [
+        "system-update",
+        "system",
+        "update"
+      ],
+      "aliases": [],
+      "contexts": [
+        "system",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/system/system-update.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "system-update",
+          "system update",
+          "system",
+          "update",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
       "name": "tag",
       "title": "Tag",
       "category": "commerce",
@@ -4588,6 +11945,87 @@
           "related": [
             "bag"
           ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "target",
+      "title": "Target",
+      "category": "actions",
+      "tags": [
+        "target",
+        "target"
+      ],
+      "aliases": [],
+      "contexts": [
+        "actions",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/actions/target.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "target",
+          "actions",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "team",
+      "title": "Team",
+      "category": "people",
+      "tags": [
+        "team",
+        "team"
+      ],
+      "aliases": [],
+      "contexts": [
+        "people",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/people/team.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "account"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "people"
+        ],
+        "queryTerms": [
+          "team",
+          "people",
+          "interface",
+          "account"
+        ],
+        "relations": {
+          "related": [],
           "alternative": [],
           "opposite": [],
           "paired": [],
@@ -4639,6 +12077,351 @@
           "related": [
             "code"
           ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "terminal-error",
+      "title": "Terminal Error",
+      "category": "system",
+      "tags": [
+        "terminal-error",
+        "terminal",
+        "error"
+      ],
+      "aliases": [],
+      "contexts": [
+        "system",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/system/terminal-error.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer",
+          "status"
+        ],
+        "actions": [],
+        "states": [
+          "error"
+        ],
+        "objects": [
+          "terminal"
+        ],
+        "queryTerms": [
+          "terminal-error",
+          "terminal error",
+          "terminal",
+          "error",
+          "system",
+          "interface",
+          "developer",
+          "status"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "terminal-square",
+      "title": "Terminal Square",
+      "category": "objects",
+      "tags": [
+        "terminal-square",
+        "terminal",
+        "square"
+      ],
+      "aliases": [],
+      "contexts": [
+        "objects",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/objects/terminal-square.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "terminal"
+        ],
+        "queryTerms": [
+          "terminal-square",
+          "terminal square",
+          "terminal",
+          "square",
+          "objects",
+          "interface",
+          "developer"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "test-tube",
+      "title": "Test Tube",
+      "category": "developer",
+      "tags": [
+        "test-tube",
+        "test",
+        "tube"
+      ],
+      "aliases": [],
+      "contexts": [
+        "developer",
+        "tooling"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/developer/test-tube.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "test-tube",
+          "test tube",
+          "test",
+          "tube",
+          "developer",
+          "tooling",
+          "engineering",
+          "software"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "thumbs-down",
+      "title": "Thumbs Down",
+      "category": "communication",
+      "tags": [
+        "thumbs-down",
+        "thumbs",
+        "down"
+      ],
+      "aliases": [],
+      "contexts": [
+        "communication",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/communication/thumbs-down.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "thumbs-down",
+          "thumbs down",
+          "thumbs",
+          "down",
+          "communication",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "thumbs-up",
+      "title": "Thumbs Up",
+      "category": "communication",
+      "tags": [
+        "thumbs-up",
+        "thumbs",
+        "up"
+      ],
+      "aliases": [],
+      "contexts": [
+        "communication",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/communication/thumbs-up.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "thumbs-up",
+          "thumbs up",
+          "thumbs",
+          "up",
+          "communication",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "timeout",
+      "title": "Timeout",
+      "category": "system",
+      "tags": [
+        "timeout",
+        "timeout"
+      ],
+      "aliases": [],
+      "contexts": [
+        "system",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/system/timeout.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "timeout",
+          "system",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "trash",
+      "title": "Trash",
+      "category": "actions",
+      "tags": [
+        "trash",
+        "trash"
+      ],
+      "aliases": [],
+      "contexts": [
+        "actions",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/actions/trash.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "remove"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "trash",
+          "actions",
+          "interface",
+          "remove"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "typescript",
+      "title": "Typescript",
+      "category": "brands",
+      "tags": [
+        "typescript",
+        "typescript"
+      ],
+      "aliases": [],
+      "contexts": [
+        "brands",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "brand"
+      },
+      "path": "/icons/brands/typescript.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "typescript",
+          "brands",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
           "alternative": [],
           "opposite": [],
           "paired": [],
@@ -4871,6 +12654,56 @@
       }
     },
     {
+      "name": "user-check",
+      "title": "User Check",
+      "category": "people",
+      "tags": [
+        "user-check",
+        "user",
+        "check"
+      ],
+      "aliases": [],
+      "contexts": [
+        "people",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/people/user-check.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "account",
+          "status"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "people",
+          "user"
+        ],
+        "queryTerms": [
+          "user-check",
+          "user check",
+          "user",
+          "check",
+          "people",
+          "interface",
+          "account",
+          "status"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
       "name": "user-circle",
       "title": "User Circle",
       "category": "people",
@@ -4880,9 +12713,7 @@
         "circle",
         "profile"
       ],
-      "aliases": [
-        "profile"
-      ],
+      "aliases": [],
       "contexts": [
         "accounts",
         "social"
@@ -5052,6 +12883,157 @@
       }
     },
     {
+      "name": "user-search",
+      "title": "User Search",
+      "category": "people",
+      "tags": [
+        "user-search",
+        "user",
+        "search"
+      ],
+      "aliases": [],
+      "contexts": [
+        "people",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/people/user-search.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "account",
+          "search",
+          "ai"
+        ],
+        "actions": [
+          "search"
+        ],
+        "states": [],
+        "objects": [
+          "people",
+          "user"
+        ],
+        "queryTerms": [
+          "user-search",
+          "user search",
+          "user",
+          "search",
+          "people",
+          "interface",
+          "account",
+          "ai"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "user-settings",
+      "title": "User Settings",
+      "category": "people",
+      "tags": [
+        "user-settings",
+        "user",
+        "settings"
+      ],
+      "aliases": [],
+      "contexts": [
+        "people",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/people/user-settings.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "account",
+          "settings"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "people",
+          "settings",
+          "user"
+        ],
+        "queryTerms": [
+          "user-settings",
+          "user settings",
+          "user",
+          "settings",
+          "people",
+          "interface",
+          "account"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "user-x",
+      "title": "User X",
+      "category": "people",
+      "tags": [
+        "user-x",
+        "user",
+        "x"
+      ],
+      "aliases": [],
+      "contexts": [
+        "people",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/people/user-x.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "account"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "people",
+          "user"
+        ],
+        "queryTerms": [
+          "user-x",
+          "user x",
+          "user",
+          "x",
+          "people",
+          "interface",
+          "account"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
       "name": "users",
       "title": "Users",
       "category": "people",
@@ -5106,6 +13088,129 @@
       }
     },
     {
+      "name": "users-round",
+      "title": "Users Round",
+      "category": "people",
+      "tags": [
+        "users-round",
+        "users",
+        "round"
+      ],
+      "aliases": [],
+      "contexts": [
+        "people",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/people/users-round.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "account"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "people"
+        ],
+        "queryTerms": [
+          "users-round",
+          "users round",
+          "users",
+          "round",
+          "people",
+          "interface",
+          "account"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "vercel",
+      "title": "Vercel",
+      "category": "brands",
+      "tags": [
+        "vercel",
+        "vercel"
+      ],
+      "aliases": [],
+      "contexts": [
+        "brands",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "brand"
+      },
+      "path": "/icons/brands/vercel.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "vercel",
+          "brands",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "verified",
+      "title": "Verified",
+      "category": "system",
+      "tags": [
+        "verified",
+        "verified"
+      ],
+      "aliases": [],
+      "contexts": [
+        "system",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/system/verified.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "verified",
+          "system",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
       "name": "video",
       "title": "Video",
       "category": "media",
@@ -5113,9 +13218,7 @@
         "video",
         "film"
       ],
-      "aliases": [
-        "film"
-      ],
+      "aliases": [],
       "contexts": [
         "media",
         "content"
@@ -5148,6 +13251,92 @@
           "related": [
             "play-circle"
           ],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "video-off",
+      "title": "Video Off",
+      "category": "media",
+      "tags": [
+        "video-off",
+        "video",
+        "off"
+      ],
+      "aliases": [],
+      "contexts": [
+        "media",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/media/video-off.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "media"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "video"
+        ],
+        "queryTerms": [
+          "video-off",
+          "video off",
+          "video",
+          "off",
+          "media",
+          "interface",
+          "content",
+          "playback"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "voicemail",
+      "title": "Voicemail",
+      "category": "communication",
+      "tags": [
+        "voicemail",
+        "voicemail"
+      ],
+      "aliases": [],
+      "contexts": [
+        "communication",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/communication/voicemail.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "voicemail",
+          "communication",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
           "alternative": [],
           "opposite": [],
           "paired": [],
@@ -5265,6 +13454,172 @@
       }
     },
     {
+      "name": "volume-x",
+      "title": "Volume X",
+      "category": "media",
+      "tags": [
+        "volume-x",
+        "volume",
+        "x"
+      ],
+      "aliases": [],
+      "contexts": [
+        "media",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/media/volume-x.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "media"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [
+          "volume"
+        ],
+        "queryTerms": [
+          "volume-x",
+          "volume x",
+          "volume",
+          "x",
+          "media",
+          "interface",
+          "content",
+          "playback"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "vue",
+      "title": "Vue",
+      "category": "brands",
+      "tags": [
+        "vue",
+        "vue"
+      ],
+      "aliases": [],
+      "contexts": [
+        "brands",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "brand"
+      },
+      "path": "/icons/brands/vue.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "vue",
+          "brands",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "wallet",
+      "title": "Wallet",
+      "category": "commerce",
+      "tags": [
+        "wallet",
+        "wallet"
+      ],
+      "aliases": [],
+      "contexts": [
+        "commerce",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/commerce/wallet.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "wallet",
+          "commerce",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "wallet-cards",
+      "title": "Wallet Cards",
+      "category": "commerce",
+      "tags": [
+        "wallet-cards",
+        "wallet",
+        "cards"
+      ],
+      "aliases": [],
+      "contexts": [
+        "commerce",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/commerce/wallet-cards.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "wallet-cards",
+          "wallet cards",
+          "wallet",
+          "cards",
+          "commerce",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
       "name": "warning",
       "title": "Warning",
       "category": "system",
@@ -5310,6 +13665,170 @@
           "opposite": [
             "success"
           ],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "webhook",
+      "title": "Webhook",
+      "category": "developer",
+      "tags": [
+        "webhook",
+        "webhook"
+      ],
+      "aliases": [],
+      "contexts": [
+        "developer",
+        "tooling"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/developer/webhook.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "webhook",
+          "developer",
+          "tooling",
+          "engineering",
+          "software"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "wifi",
+      "title": "Wifi",
+      "category": "objects",
+      "tags": [
+        "wifi",
+        "wifi"
+      ],
+      "aliases": [],
+      "contexts": [
+        "objects",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/objects/wifi.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "wifi",
+          "objects",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "wifi-off",
+      "title": "Wifi Off",
+      "category": "objects",
+      "tags": [
+        "wifi-off",
+        "wifi",
+        "off"
+      ],
+      "aliases": [],
+      "contexts": [
+        "objects",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/objects/wifi-off.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "wifi-off",
+          "wifi off",
+          "wifi",
+          "off",
+          "objects",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "workflow",
+      "title": "Workflow",
+      "category": "developer",
+      "tags": [
+        "workflow",
+        "workflow"
+      ],
+      "aliases": [],
+      "contexts": [
+        "developer",
+        "tooling"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/developer/workflow.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [
+          "developer"
+        ],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "workflow",
+          "developer",
+          "tooling",
+          "engineering",
+          "software"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
           "paired": [],
           "state": []
         }
@@ -5375,6 +13894,48 @@
           "opposite": [
             "check"
           ],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "x-circle",
+      "title": "X Circle",
+      "category": "system",
+      "tags": [
+        "x-circle",
+        "x",
+        "circle"
+      ],
+      "aliases": [],
+      "contexts": [
+        "system",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/system/x-circle.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "x-circle",
+          "x circle",
+          "x",
+          "circle",
+          "system",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
           "paired": [],
           "state": []
         }
@@ -5462,6 +14023,130 @@
           "media",
           "communication",
           "community"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "zip",
+      "title": "Zip",
+      "category": "files",
+      "tags": [
+        "zip",
+        "zip"
+      ],
+      "aliases": [],
+      "contexts": [
+        "files",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "meaningful"
+      },
+      "path": "/icons/files/zip.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "zip",
+          "files",
+          "interface",
+          "storage",
+          "documents"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "zoom-in",
+      "title": "Zoom In",
+      "category": "actions",
+      "tags": [
+        "zoom-in",
+        "zoom",
+        "in"
+      ],
+      "aliases": [],
+      "contexts": [
+        "actions",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/actions/zoom-in.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "zoom-in",
+          "zoom in",
+          "zoom",
+          "in",
+          "actions",
+          "interface"
+        ],
+        "relations": {
+          "related": [],
+          "alternative": [],
+          "opposite": [],
+          "paired": [],
+          "state": []
+        }
+      }
+    },
+    {
+      "name": "zoom-out",
+      "title": "Zoom Out",
+      "category": "actions",
+      "tags": [
+        "zoom-out",
+        "zoom",
+        "out"
+      ],
+      "aliases": [],
+      "contexts": [
+        "actions",
+        "interface"
+      ],
+      "related": [],
+      "accessibility": {
+        "default": "interactive"
+      },
+      "path": "/icons/actions/zoom-out.svg",
+      "family": "line",
+      "semantics": {
+        "intents": [],
+        "actions": [],
+        "states": [],
+        "objects": [],
+        "queryTerms": [
+          "zoom-out",
+          "zoom out",
+          "zoom",
+          "out",
+          "actions",
+          "interface"
         ],
         "relations": {
           "related": [],

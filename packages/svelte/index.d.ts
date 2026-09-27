@@ -1,13 +1,3 @@
-export interface JttIconProps {
-  name: string;
-  title?: string;
-  size?: number | string;
-  [key: string]: unknown;
-}
-export declare function JttIcon(props: JttIconProps): {
-  name: string;
-  title: string;
-  size: number | string;
-  attrs: Record<string, unknown>;
-  svg: string;
-};
+import type { SvelteComponentTyped } from "svelte";
+export interface JttIconProps { name:string; size?:number|string; title?:string; [key:string]:any }
+export default class JttIcon extends SvelteComponentTyped<JttIconProps> {}

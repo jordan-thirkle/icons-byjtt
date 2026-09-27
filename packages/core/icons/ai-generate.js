@@ -1,0 +1,5 @@
+export const name = "ai-generate";
+export const title = "Ai Generate";
+export const category = "developer";
+export const svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3Z\"/></svg>";
+export const metadata = {"name":"ai-generate","title":"Ai Generate","category":"developer","tags":["ai-generate","ai","generate","ai","agent","llm"],"aliases":[],"contexts":["developer","tooling"],"related":["ai-model"],"accessibility":{"default":"meaningful"},"path":"/icons/developer/ai-generate.svg","family":"line"};

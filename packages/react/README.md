@@ -1,6 +1,6 @@
 # @byjtt/icons-react
 
-React components for JTT Icons. Version 0.1.0.
+React components for JTT Icons. Version 0.2.0.
 
 ## Install
 

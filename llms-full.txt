@@ -1,6 +1,6 @@
 # JTT Icons — Full AI Reference
 
-This document explains how agents should discover and consume JTT Icons. Semantic ontology version: `2.0.0`.
+This document explains how agents should discover and consume JTT Icons. Semantic ontology version: `2.1.0`.
 
 ## Selection contract
 
@@ -31,6 +31,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
 - `reaction`: heart, star, like, bookmark, favorite
 - `time`: calendar, date, clock, time
 - `location`: location, pin, map, maps
+- `ai`: ai, agent, model, prompt, generate, generation, assistant, chat, search, code
 
 ## Canonical rendering
 
@@ -52,6 +53,146 @@ This document explains how agents should discover and consume JTT Icons. Semanti
 
 ## Current catalogue
 
+- `activity` — Activity · objects · meaningful
+  - tags: activity, activity
+  - aliases: none
+  - contexts: objects, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/objects/activity.svg`
+- `ai-agent` — Ai Agent · developer · meaningful
+  - tags: ai-agent, ai, agent, ai, agent, llm
+  - aliases: none
+  - contexts: developer, tooling
+  - intents: developer, ai
+  - actions: none
+  - objects: agent, ai
+  - states: none
+  - related: ai-model, ai-prompt
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/developer/ai-agent.svg`
+- `ai-chat` — Ai Chat · developer · meaningful
+  - tags: ai-chat, ai, chat, ai, agent, llm
+  - aliases: none
+  - contexts: developer, tooling
+  - intents: communication, developer, ai
+  - actions: none
+  - objects: agent, ai
+  - states: none
+  - related: ai-agent
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/developer/ai-chat.svg`
+- `ai-code` — Ai Code · developer · meaningful
+  - tags: ai-code, ai, code, ai, agent, llm
+  - aliases: none
+  - contexts: developer, tooling
+  - intents: developer, ai
+  - actions: none
+  - objects: code, agent, ai
+  - states: none
+  - related: ai-agent
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/developer/ai-code.svg`
+- `ai-generate` — Ai Generate · developer · meaningful
+  - tags: ai-generate, ai, generate, ai, agent, llm
+  - aliases: none
+  - contexts: developer, tooling
+  - intents: developer, ai
+  - actions: generate
+  - objects: agent, ai
+  - states: none
+  - related: ai-model
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/developer/ai-generate.svg`
+- `ai-model` — Ai Model · developer · meaningful
+  - tags: ai-model, ai, model, ai, agent, llm
+  - aliases: none
+  - contexts: developer, tooling
+  - intents: developer, ai
+  - actions: none
+  - objects: agent, model, ai
+  - states: none
+  - related: ai-agent, ai-generate
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/developer/ai-model.svg`
+- `ai-prompt` — Ai Prompt · developer · meaningful
+  - tags: ai-prompt, ai, prompt, ai, agent, llm
+  - aliases: none
+  - contexts: developer, tooling
+  - intents: developer, ai
+  - actions: prompt
+  - objects: agent, prompt, ai
+  - states: none
+  - related: ai-agent
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/developer/ai-prompt.svg`
+- `ai-search` — Ai Search · developer · meaningful
+  - tags: ai-search, ai, search, ai, agent, llm
+  - aliases: none
+  - contexts: developer, tooling
+  - intents: search, developer, ai
+  - actions: search
+  - objects: agent, ai
+  - states: none
+  - related: ai-agent
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/developer/ai-search.svg`
+- `android` — Android · brands · brand
+  - tags: android, android
+  - aliases: none
+  - contexts: brands, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/brands/android.svg`
+- `api` — Api · developer · meaningful
+  - tags: api, api
+  - aliases: none
+  - contexts: developer, tooling
+  - intents: developer
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/developer/api.svg`
 - `apple` — Apple · brands · brand
   - tags: apple, ios
   - aliases: ios
@@ -80,6 +221,20 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/files/archive.svg`
+- `archive-box` — Archive Box · actions · interactive
+  - tags: archive-box, archive, box
+  - aliases: none
+  - contexts: actions, interface
+  - intents: files
+  - actions: archive
+  - objects: archive
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/actions/archive-box.svg`
 - `arrow-down` — Arrow Down · navigation · interactive
   - tags: arrow-down, arrow, down
   - aliases: down
@@ -94,6 +249,20 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/navigation/arrow-down.svg`
+- `arrow-down-circle` — Arrow Down Circle · navigation · interactive
+  - tags: arrow-down-circle, arrow, down, circle
+  - aliases: none
+  - contexts: navigation, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/navigation/arrow-down-circle.svg`
 - `arrow-down-left` — Arrow Down Left · navigation · interactive
   - tags: arrow-down-left, arrow, down, left, southwest
   - aliases: southwest
@@ -136,6 +305,20 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/navigation/arrow-left.svg`
+- `arrow-left-circle` — Arrow Left Circle · navigation · interactive
+  - tags: arrow-left-circle, arrow, left, circle
+  - aliases: none
+  - contexts: navigation, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/navigation/arrow-left-circle.svg`
 - `arrow-right` — Arrow Right · navigation · interactive
   - tags: arrow-right, arrow, right, forward
   - aliases: forward
@@ -150,6 +333,20 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/navigation/arrow-right.svg`
+- `arrow-right-circle` — Arrow Right Circle · navigation · interactive
+  - tags: arrow-right-circle, arrow, right, circle
+  - aliases: none
+  - contexts: navigation, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/navigation/arrow-right-circle.svg`
 - `arrow-up` — Arrow Up · navigation · interactive
   - tags: arrow-up, arrow, up
   - aliases: up
@@ -164,6 +361,20 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/navigation/arrow-up.svg`
+- `arrow-up-circle` — Arrow Up Circle · navigation · interactive
+  - tags: arrow-up-circle, arrow, up, circle
+  - aliases: none
+  - contexts: navigation, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/navigation/arrow-up-circle.svg`
 - `arrow-up-left` — Arrow Up Left · navigation · interactive
   - tags: arrow-up-left, arrow, up, left, northwest
   - aliases: northwest
@@ -180,7 +391,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - SVG: `/icons/navigation/arrow-up-left.svg`
 - `arrow-up-right` — Arrow Up Right · navigation · interactive
   - tags: arrow-up-right, arrow, direction, external, diagonal, up, right
-  - aliases: external-link
+  - aliases: none
   - contexts: navigation, links, toolbar
   - intents: none
   - actions: none
@@ -192,9 +403,23 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/navigation/arrow-up-right.svg`
+- `at-sign` — At Sign · communication · interactive
+  - tags: at-sign, at, sign
+  - aliases: none
+  - contexts: communication, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/communication/at-sign.svg`
 - `attachment` — Attachment · files · meaningful
   - tags: attachment, paperclip
-  - aliases: paperclip
+  - aliases: none
   - contexts: files, editor
   - intents: files
   - actions: none
@@ -206,6 +431,20 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/files/attachment.svg`
+- `audio-lines` — Audio Lines · media · meaningful
+  - tags: audio-lines, audio, lines
+  - aliases: none
+  - contexts: media, interface
+  - intents: media
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/media/audio-lines.svg`
 - `bag` — Bag · commerce · meaningful
   - tags: bag, shopping-bag
   - aliases: shopping-bag
@@ -220,6 +459,34 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/commerce/bag.svg`
+- `ban` — Ban · actions · interactive
+  - tags: ban, ban
+  - aliases: none
+  - contexts: actions, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/actions/ban.svg`
+- `barcode` — Barcode · commerce · meaningful
+  - tags: barcode, barcode
+  - aliases: none
+  - contexts: commerce, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/commerce/barcode.svg`
 - `bell` — Bell · communication · interactive
   - tags: bell, notification
   - aliases: notification
@@ -234,6 +501,62 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/communication/bell.svg`
+- `bolt` — Bolt · actions · interactive
+  - tags: bolt, bolt
+  - aliases: none
+  - contexts: actions, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/actions/bolt.svg`
+- `bolt-circle` — Bolt Circle · objects · meaningful
+  - tags: bolt-circle, bolt, circle
+  - aliases: none
+  - contexts: objects, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/objects/bolt-circle.svg`
+- `book` — Book · files · meaningful
+  - tags: book, book
+  - aliases: none
+  - contexts: files, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/files/book.svg`
+- `book-open` — Book Open · files · meaningful
+  - tags: book-open, book, open
+  - aliases: none
+  - contexts: files, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: open
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/files/book-open.svg`
 - `bookmark` — Bookmark · communication · interactive
   - tags: bookmark, saved
   - aliases: saved
@@ -248,6 +571,20 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/communication/bookmark.svg`
+- `box` — Box · files · meaningful
+  - tags: box, box
+  - aliases: none
+  - contexts: files, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/files/box.svg`
 - `braces` — Braces · developer · meaningful
   - tags: braces, code-braces
   - aliases: code-braces
@@ -276,6 +613,20 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/developer/bug.svg`
+- `building` — Building · objects · meaningful
+  - tags: building, building
+  - aliases: none
+  - contexts: objects, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/objects/building.svg`
 - `calendar` — Calendar · objects · meaningful
   - tags: calendar, date
   - aliases: date
@@ -304,6 +655,20 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: image
   - SVG: `/icons/media/camera.svg`
+- `car` — Car · objects · meaningful
+  - tags: car, car
+  - aliases: none
+  - contexts: objects, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/objects/car.svg`
 - `cart` — Cart · commerce · meaningful
   - tags: cart, shopping-cart
   - aliases: shopping-cart
@@ -318,6 +683,34 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/commerce/cart.svg`
+- `cash` — Cash · commerce · meaningful
+  - tags: cash, cash
+  - aliases: none
+  - contexts: commerce, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/commerce/cash.svg`
+- `chat` — Chat · communication · interactive
+  - tags: chat, chat
+  - aliases: none
+  - contexts: communication, interface
+  - intents: communication, ai
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/communication/chat.svg`
 - `check` — Check · actions · status
   - tags: check, confirm, done, success, tick
   - aliases: tick, confirm
@@ -332,6 +725,20 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/actions/check.svg`
+- `check-circle` — Check Circle · actions · interactive
+  - tags: check-circle, check, circle
+  - aliases: none
+  - contexts: actions, interface
+  - intents: status
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/actions/check-circle.svg`
 - `chevron-down` — Chevron Down · navigation · interactive
   - tags: chevron-down, chevron, down
   - aliases: none
@@ -388,6 +795,62 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/navigation/chevron-up.svg`
+- `chrome` — Chrome · brands · brand
+  - tags: chrome, chrome
+  - aliases: none
+  - contexts: brands, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/brands/chrome.svg`
+- `circle-help` — Circle Help · system · meaningful
+  - tags: circle-help, circle, help
+  - aliases: none
+  - contexts: system, interface
+  - intents: status
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/system/circle-help.svg`
+- `circle-info` — Circle Info · system · meaningful
+  - tags: circle-info, circle, info
+  - aliases: none
+  - contexts: system, interface
+  - intents: status
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/system/circle-info.svg`
+- `circle-x` — Circle X · system · meaningful
+  - tags: circle-x, circle, x
+  - aliases: none
+  - contexts: system, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/system/circle-x.svg`
 - `clipboard` — Clipboard · files · meaningful
   - tags: clipboard, copy-board
   - aliases: copy-board
@@ -416,11 +879,81 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: calendar
   - SVG: `/icons/objects/clock.svg`
+- `close-circle` — Close Circle · actions · interactive
+  - tags: close-circle, close, circle
+  - aliases: none
+  - contexts: actions, interface
+  - intents: dismiss
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/actions/close-circle.svg`
+- `cloud` — Cloud · objects · meaningful
+  - tags: cloud, cloud
+  - aliases: none
+  - contexts: objects, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/objects/cloud.svg`
+- `cloud-code` — Cloud Code · developer · meaningful
+  - tags: cloud-code, cloud, code
+  - aliases: none
+  - contexts: developer, tooling
+  - intents: developer, ai
+  - actions: none
+  - objects: code
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/developer/cloud-code.svg`
+- `cloud-rain` — Cloud Rain · objects · meaningful
+  - tags: cloud-rain, cloud, rain
+  - aliases: none
+  - contexts: objects, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/objects/cloud-rain.svg`
+- `cloud-sun` — Cloud Sun · objects · meaningful
+  - tags: cloud-sun, cloud, sun
+  - aliases: none
+  - contexts: objects, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/objects/cloud-sun.svg`
 - `code` — Code · developer · meaningful
   - tags: code, developer, programming, source
   - aliases: programming, source-code
   - contexts: developer, editor, documentation
-  - intents: developer
+  - intents: developer, ai
   - actions: none
   - objects: code
   - states: none
@@ -430,6 +963,90 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/developer/code.svg`
+- `coins` — Coins · commerce · meaningful
+  - tags: coins, coins
+  - aliases: none
+  - contexts: commerce, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/commerce/coins.svg`
+- `comment` — Comment · communication · interactive
+  - tags: comment, comment
+  - aliases: none
+  - contexts: communication, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/communication/comment.svg`
+- `comments` — Comments · communication · interactive
+  - tags: comments, comments
+  - aliases: none
+  - contexts: communication, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/communication/comments.svg`
+- `contact` — Contact · people · meaningful
+  - tags: contact, contact
+  - aliases: none
+  - contexts: people, interface
+  - intents: account
+  - actions: none
+  - objects: people
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/people/contact.svg`
+- `contacts` — Contacts · people · meaningful
+  - tags: contacts, contacts
+  - aliases: none
+  - contexts: people, interface
+  - intents: account
+  - actions: none
+  - objects: people
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/people/contacts.svg`
+- `container` — Container · developer · meaningful
+  - tags: container, container
+  - aliases: none
+  - contexts: developer, tooling
+  - intents: developer
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/developer/container.svg`
 - `copy` — Copy · actions · interactive
   - tags: copy, duplicate
   - aliases: duplicate
@@ -444,6 +1061,76 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/actions/copy.svg`
+- `corner-down-left` — Corner Down Left · navigation · interactive
+  - tags: corner-down-left, corner, down, left
+  - aliases: none
+  - contexts: navigation, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/navigation/corner-down-left.svg`
+- `corner-down-right` — Corner Down Right · navigation · interactive
+  - tags: corner-down-right, corner, down, right
+  - aliases: none
+  - contexts: navigation, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/navigation/corner-down-right.svg`
+- `corner-left-down` — Corner Left Down · navigation · interactive
+  - tags: corner-left-down, corner, left, down
+  - aliases: none
+  - contexts: navigation, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/navigation/corner-left-down.svg`
+- `corner-right-down` — Corner Right Down · navigation · interactive
+  - tags: corner-right-down, corner, right, down
+  - aliases: none
+  - contexts: navigation, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/navigation/corner-right-down.svg`
+- `cpu-warning` — Cpu Warning · system · meaningful
+  - tags: cpu-warning, cpu, warning
+  - aliases: none
+  - contexts: system, interface
+  - intents: status
+  - actions: none
+  - objects: none
+  - states: warning
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/system/cpu-warning.svg`
 - `credit-card` — Credit Card · commerce · meaningful
   - tags: credit-card, credit, card, payment
   - aliases: payment
@@ -472,6 +1159,20 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: server
   - SVG: `/icons/developer/database.svg`
+- `database-error` — Database Error · system · meaningful
+  - tags: database-error, database, error
+  - aliases: none
+  - contexts: system, interface
+  - intents: developer, status
+  - actions: none
+  - objects: database
+  - states: error
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/system/database-error.svg`
 - `delete` — Delete · actions · interactive
   - tags: delete, remove
   - aliases: remove
@@ -486,11 +1187,25 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/actions/delete.svg`
+- `dependency` — Dependency · developer · meaningful
+  - tags: dependency, dependency
+  - aliases: none
+  - contexts: developer, tooling
+  - intents: developer
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/developer/dependency.svg`
 - `discord` — Discord · brands · brand
   - tags: discord, chat
   - aliases: none
   - contexts: brand, social
-  - intents: communication
+  - intents: communication, ai
   - actions: none
   - objects: none
   - states: none
@@ -500,6 +1215,34 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/brands/discord.svg`
+- `discount` — Discount · commerce · meaningful
+  - tags: discount, discount
+  - aliases: none
+  - contexts: commerce, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/commerce/discount.svg`
+- `docker` — Docker · developer · meaningful
+  - tags: docker, docker
+  - aliases: none
+  - contexts: developer, tooling
+  - intents: developer
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/developer/docker.svg`
 - `document` — Document · files · meaningful
   - tags: document, text-file
   - aliases: text-file
@@ -528,6 +1271,34 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: upload
   - SVG: `/icons/actions/download.svg`
+- `download-cloud` — Download Cloud · actions · interactive
+  - tags: download-cloud, download, cloud
+  - aliases: none
+  - contexts: actions, interface
+  - intents: transfer
+  - actions: download
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/actions/download-cloud.svg`
+- `download-error` — Download Error · system · meaningful
+  - tags: download-error, download, error
+  - aliases: none
+  - contexts: system, interface
+  - intents: transfer, status
+  - actions: download
+  - objects: none
+  - states: error
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/system/download-error.svg`
 - `edit` — Edit · actions · interactive
   - tags: edit, modify
   - aliases: modify
@@ -542,6 +1313,20 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/actions/edit.svg`
+- `email` — Email · communication · interactive
+  - tags: email, email
+  - aliases: none
+  - contexts: communication, interface
+  - intents: communication
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/communication/email.svg`
 - `error` — Error · system · status
   - tags: error, failure
   - aliases: failure
@@ -556,6 +1341,48 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/system/error.svg`
+- `expand` — Expand · actions · interactive
+  - tags: expand, expand
+  - aliases: none
+  - contexts: actions, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/actions/expand.svg`
+- `external` — External · navigation · interactive
+  - tags: external, external
+  - aliases: none
+  - contexts: navigation, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/navigation/external.svg`
+- `external-link` — External Link · actions · interactive
+  - tags: external-link, external, link
+  - aliases: none
+  - contexts: actions, interface
+  - intents: none
+  - actions: link
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/actions/external-link.svg`
 - `eye` — Eye · objects · meaningful
   - tags: eye, view
   - aliases: view
@@ -570,6 +1397,34 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/objects/eye.svg`
+- `eye-off` — Eye Off · actions · interactive
+  - tags: eye-off, eye, off
+  - aliases: none
+  - contexts: actions, interface
+  - intents: visibility
+  - actions: none
+  - objects: eye
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/actions/eye-off.svg`
+- `figma` — Figma · brands · brand
+  - tags: figma, figma
+  - aliases: none
+  - contexts: brands, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/brands/figma.svg`
 - `file` — File · files · meaningful
   - tags: file, document-file
   - aliases: document-file
@@ -584,6 +1439,48 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: folder
   - SVG: `/icons/files/file.svg`
+- `file-check` — File Check · files · meaningful
+  - tags: file-check, file, check
+  - aliases: none
+  - contexts: files, interface
+  - intents: files, status
+  - actions: none
+  - objects: file
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/files/file-check.svg`
+- `file-code` — File Code · files · meaningful
+  - tags: file-code, file, code
+  - aliases: none
+  - contexts: files, interface
+  - intents: developer, files, ai
+  - actions: none
+  - objects: code, file
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/files/file-code.svg`
+- `file-image` — File Image · files · meaningful
+  - tags: file-image, file, image
+  - aliases: none
+  - contexts: files, interface
+  - intents: media, files
+  - actions: none
+  - objects: file, image
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/files/file-image.svg`
 - `file-minus` — File Minus · files · meaningful
   - tags: file-minus, file, minus, remove-file
   - aliases: remove-file
@@ -612,6 +1509,62 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/files/file-plus.svg`
+- `file-text` — File Text · files · meaningful
+  - tags: file-text, file, text
+  - aliases: none
+  - contexts: files, interface
+  - intents: files
+  - actions: none
+  - objects: file
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/files/file-text.svg`
+- `file-video` — File Video · files · meaningful
+  - tags: file-video, file, video
+  - aliases: none
+  - contexts: files, interface
+  - intents: media, files
+  - actions: none
+  - objects: file, video
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/files/file-video.svg`
+- `files` — Files · files · meaningful
+  - tags: files, files
+  - aliases: none
+  - contexts: files, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/files/files.svg`
+- `film` — Film · media · meaningful
+  - tags: film, film
+  - aliases: none
+  - contexts: media, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/media/film.svg`
 - `filter` — Filter · objects · meaningful
   - tags: filter, refine
   - aliases: refine
@@ -626,6 +1579,20 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/objects/filter.svg`
+- `filter-off` — Filter Off · actions · interactive
+  - tags: filter-off, filter, off
+  - aliases: none
+  - contexts: actions, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/actions/filter-off.svg`
 - `folder` — Folder · files · meaningful
   - tags: folder, directory
   - aliases: directory
@@ -640,6 +1607,34 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: file
   - SVG: `/icons/files/folder.svg`
+- `folder-closed` — Folder Closed · files · meaningful
+  - tags: folder-closed, folder, closed
+  - aliases: none
+  - contexts: files, interface
+  - intents: files
+  - actions: none
+  - objects: folder
+  - states: closed
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/files/folder-closed.svg`
+- `folder-minus` — Folder Minus · files · meaningful
+  - tags: folder-minus, folder, minus
+  - aliases: none
+  - contexts: files, interface
+  - intents: remove, files
+  - actions: none
+  - objects: folder
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/files/folder-minus.svg`
 - `folder-open` — Folder Open · files · meaningful
   - tags: folder-open, folder, open, open-folder
   - aliases: open-folder
@@ -668,6 +1663,48 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/files/folder-plus.svg`
+- `folder-search` — Folder Search · files · meaningful
+  - tags: folder-search, folder, search
+  - aliases: none
+  - contexts: files, interface
+  - intents: search, files, ai
+  - actions: search
+  - objects: folder
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/files/folder-search.svg`
+- `forbidden` — Forbidden · system · meaningful
+  - tags: forbidden, forbidden
+  - aliases: none
+  - contexts: system, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/system/forbidden.svg`
+- `gift` — Gift · commerce · meaningful
+  - tags: gift, gift
+  - aliases: none
+  - contexts: commerce, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/commerce/gift.svg`
 - `git-branch` — Git Branch · developer · meaningful
   - tags: git-branch, git, branch
   - aliases: branch
@@ -710,11 +1747,39 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: git-branch
   - SVG: `/icons/developer/git-merge.svg`
+- `git-pull-request` — Git Pull Request · developer · meaningful
+  - tags: git-pull-request, git, pull, request
+  - aliases: none
+  - contexts: developer, tooling
+  - intents: developer
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/developer/git-pull-request.svg`
+- `git-pull-request-closed` — Git Pull Request Closed · developer · meaningful
+  - tags: git-pull-request-closed, git, pull, request, closed
+  - aliases: none
+  - contexts: developer, tooling
+  - intents: developer
+  - actions: none
+  - objects: none
+  - states: closed
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/developer/git-pull-request-closed.svg`
 - `github` — GitHub · brands · brand
   - tags: github, git, developer, code
   - aliases: none
   - contexts: developer, source-control, brand
-  - intents: developer
+  - intents: developer, ai
   - actions: none
   - objects: code, github
   - states: none
@@ -724,6 +1789,104 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/brands/github.svg`
+- `gitlab` — Gitlab · brands · brand
+  - tags: gitlab, gitlab
+  - aliases: none
+  - contexts: brands, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/brands/gitlab.svg`
+- `globe` — Globe · objects · meaningful
+  - tags: globe, globe
+  - aliases: none
+  - contexts: objects, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/objects/globe.svg`
+- `globe-code` — Globe Code · developer · meaningful
+  - tags: globe-code, globe, code
+  - aliases: none
+  - contexts: developer, tooling
+  - intents: developer, ai
+  - actions: none
+  - objects: code
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/developer/globe-code.svg`
+- `globe-warning` — Globe Warning · system · meaningful
+  - tags: globe-warning, globe, warning
+  - aliases: none
+  - contexts: system, interface
+  - intents: status
+  - actions: none
+  - objects: none
+  - states: warning
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/system/globe-warning.svg`
+- `grid` — Grid · navigation · interactive
+  - tags: grid, grid
+  - aliases: none
+  - contexts: navigation, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/navigation/grid.svg`
+- `hard-drive` — Hard Drive · files · meaningful
+  - tags: hard-drive, hard, drive
+  - aliases: none
+  - contexts: files, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/files/hard-drive.svg`
+- `headphones` — Headphones · media · meaningful
+  - tags: headphones, headphones
+  - aliases: none
+  - contexts: media, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/media/headphones.svg`
 - `heart` — Heart · communication · interactive
   - tags: heart, like, favourite, favorite, reaction
   - aliases: like, favourite, favorite
@@ -766,6 +1929,20 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/navigation/home.svg`
+- `id-card` — Id Card · people · meaningful
+  - tags: id-card, id, card
+  - aliases: none
+  - contexts: people, interface
+  - intents: account
+  - actions: none
+  - objects: people
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/people/id-card.svg`
 - `image` — Image · media · meaningful
   - tags: image, photo
   - aliases: photo
@@ -780,6 +1957,48 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: camera
   - SVG: `/icons/media/image.svg`
+- `image-off` — Image Off · media · meaningful
+  - tags: image-off, image, off
+  - aliases: none
+  - contexts: media, interface
+  - intents: media
+  - actions: none
+  - objects: image
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/media/image-off.svg`
+- `inbox` — Inbox · communication · interactive
+  - tags: inbox, inbox
+  - aliases: none
+  - contexts: communication, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/communication/inbox.svg`
+- `inbox-file` — Inbox File · files · meaningful
+  - tags: inbox-file, inbox, file
+  - aliases: none
+  - contexts: files, interface
+  - intents: files
+  - actions: none
+  - objects: file
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/files/inbox-file.svg`
 - `info` — Info · system · status
   - tags: info, information
   - aliases: information
@@ -794,6 +2013,90 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/system/info.svg`
+- `invoice` — Invoice · commerce · meaningful
+  - tags: invoice, invoice
+  - aliases: none
+  - contexts: commerce, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/commerce/invoice.svg`
+- `key` — Key · objects · meaningful
+  - tags: key, key
+  - aliases: none
+  - contexts: objects, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/objects/key.svg`
+- `key-code` — Key Code · developer · meaningful
+  - tags: key-code, key, code
+  - aliases: none
+  - contexts: developer, tooling
+  - intents: developer, ai
+  - actions: none
+  - objects: code
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/developer/key-code.svg`
+- `keyboard` — Keyboard · objects · meaningful
+  - tags: keyboard, keyboard
+  - aliases: none
+  - contexts: objects, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/objects/keyboard.svg`
+- `layers` — Layers · objects · meaningful
+  - tags: layers, layers
+  - aliases: none
+  - contexts: objects, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/objects/layers.svg`
+- `lightbulb` — Lightbulb · objects · meaningful
+  - tags: lightbulb, lightbulb
+  - aliases: none
+  - contexts: objects, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/objects/lightbulb.svg`
 - `link` — Link · communication · interactive
   - tags: link, url
   - aliases: url
@@ -808,6 +2111,48 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/communication/link.svg`
+- `link-2` — Link 2 · objects · meaningful
+  - tags: link-2, link, 2
+  - aliases: none
+  - contexts: objects, interface
+  - intents: none
+  - actions: link
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/objects/link-2.svg`
+- `linkedin` — Linkedin · brands · brand
+  - tags: linkedin, linkedin
+  - aliases: none
+  - contexts: brands, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/brands/linkedin.svg`
+- `list` — List · navigation · interactive
+  - tags: list, list
+  - aliases: none
+  - contexts: navigation, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/navigation/list.svg`
 - `loading` — Loading · system · status
   - tags: loading, progress
   - aliases: progress
@@ -824,7 +2169,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - SVG: `/icons/system/loading.svg`
 - `location` — Location · objects · meaningful
   - tags: location, pin
-  - aliases: pin
+  - aliases: none
   - contexts: utility, interface
   - intents: location
   - actions: none
@@ -850,9 +2195,51 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/objects/lock.svg`
+- `log-in` — Log In · navigation · interactive
+  - tags: log-in, log, in
+  - aliases: none
+  - contexts: navigation, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/navigation/log-in.svg`
+- `log-out` — Log Out · navigation · interactive
+  - tags: log-out, log, out
+  - aliases: none
+  - contexts: navigation, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/navigation/log-out.svg`
+- `logs` — Logs · developer · meaningful
+  - tags: logs, logs
+  - aliases: none
+  - contexts: developer, tooling
+  - intents: developer
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/developer/logs.svg`
 - `mail` — Mail · communication · interactive
   - tags: mail, email
-  - aliases: email
+  - aliases: none
   - contexts: communication, content
   - intents: communication
   - actions: none
@@ -864,6 +2251,20 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: message
   - SVG: `/icons/communication/mail.svg`
+- `maintenance` — Maintenance · system · meaningful
+  - tags: maintenance, maintenance
+  - aliases: none
+  - contexts: system, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/system/maintenance.svg`
 - `map` — Map · objects · meaningful
   - tags: map, maps
   - aliases: maps
@@ -878,6 +2279,48 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/objects/map.svg`
+- `map-pin` — Map Pin · objects · meaningful
+  - tags: map-pin, map, pin
+  - aliases: none
+  - contexts: objects, interface
+  - intents: location
+  - actions: none
+  - objects: map
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/objects/map-pin.svg`
+- `maximize` — Maximize · actions · interactive
+  - tags: maximize, maximize
+  - aliases: none
+  - contexts: actions, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/actions/maximize.svg`
+- `mention` — Mention · communication · interactive
+  - tags: mention, mention
+  - aliases: none
+  - contexts: communication, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/communication/mention.svg`
 - `menu` — Menu · navigation · interactive
   - tags: menu, navigation, hamburger
   - aliases: hamburger, navigation-menu
@@ -894,9 +2337,9 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - SVG: `/icons/navigation/menu.svg`
 - `message` — Message · communication · interactive
   - tags: message, chat
-  - aliases: chat
+  - aliases: none
   - contexts: communication, content
-  - intents: communication
+  - intents: communication, ai
   - actions: none
   - objects: message
   - states: none
@@ -920,6 +2363,20 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/media/mic.svg`
+- `minimize` — Minimize · actions · interactive
+  - tags: minimize, minimize
+  - aliases: none
+  - contexts: actions, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/actions/minimize.svg`
 - `minus` — Minus · actions · interactive
   - tags: minus, subtract, remove, less
   - aliases: subtract
@@ -934,6 +2391,118 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/actions/minus.svg`
+- `mobile` — Mobile · objects · meaningful
+  - tags: mobile, mobile
+  - aliases: none
+  - contexts: objects, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/objects/mobile.svg`
+- `money` — Money · commerce · meaningful
+  - tags: money, money
+  - aliases: none
+  - contexts: commerce, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/commerce/money.svg`
+- `monitor` — Monitor · objects · meaningful
+  - tags: monitor, monitor
+  - aliases: none
+  - contexts: objects, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/objects/monitor.svg`
+- `monitor-code` — Monitor Code · developer · meaningful
+  - tags: monitor-code, monitor, code
+  - aliases: none
+  - contexts: developer, tooling
+  - intents: developer, ai
+  - actions: none
+  - objects: code
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/developer/monitor-code.svg`
+- `more-horizontal` — More Horizontal · actions · interactive
+  - tags: more-horizontal, more, horizontal
+  - aliases: none
+  - contexts: actions, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/actions/more-horizontal.svg`
+- `more-vertical` — More Vertical · actions · interactive
+  - tags: more-vertical, more, vertical
+  - aliases: none
+  - contexts: actions, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/actions/more-vertical.svg`
+- `mouse` — Mouse · objects · meaningful
+  - tags: mouse, mouse
+  - aliases: none
+  - contexts: objects, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/objects/mouse.svg`
+- `move` — Move · actions · interactive
+  - tags: move, move
+  - aliases: none
+  - contexts: actions, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/actions/move.svg`
 - `music` — Music · media · meaningful
   - tags: music, audio
   - aliases: audio
@@ -948,6 +2517,174 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/media/music.svg`
+- `music-note` — Music Note · media · meaningful
+  - tags: music-note, music, note
+  - aliases: none
+  - contexts: media, interface
+  - intents: media
+  - actions: none
+  - objects: music
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/media/music-note.svg`
+- `npm` — Npm · brands · brand
+  - tags: npm, npm
+  - aliases: none
+  - contexts: brands, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/brands/npm.svg`
+- `offline` — Offline · system · meaningful
+  - tags: offline, offline
+  - aliases: none
+  - contexts: system, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/system/offline.svg`
+- `online` — Online · system · meaningful
+  - tags: online, online
+  - aliases: none
+  - contexts: system, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/system/online.svg`
+- `openai` — Openai · brands · brand
+  - tags: openai, openai
+  - aliases: none
+  - contexts: brands, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/brands/openai.svg`
+- `package` — Package · objects · meaningful
+  - tags: package, package
+  - aliases: none
+  - contexts: objects, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/objects/package.svg`
+- `package-check` — Package Check · commerce · meaningful
+  - tags: package-check, package, check
+  - aliases: none
+  - contexts: commerce, interface
+  - intents: status
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/commerce/package-check.svg`
+- `package-code` — Package Code · developer · meaningful
+  - tags: package-code, package, code
+  - aliases: none
+  - contexts: developer, tooling
+  - intents: developer, ai
+  - actions: none
+  - objects: code
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/developer/package-code.svg`
+- `palette` — Palette · objects · meaningful
+  - tags: palette, palette
+  - aliases: none
+  - contexts: objects, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/objects/palette.svg`
+- `panel-left` — Panel Left · navigation · interactive
+  - tags: panel-left, panel, left
+  - aliases: none
+  - contexts: navigation, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/navigation/panel-left.svg`
+- `panel-right` — Panel Right · navigation · interactive
+  - tags: panel-right, panel, right
+  - aliases: none
+  - contexts: navigation, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/navigation/panel-right.svg`
+- `paperclip` — Paperclip · files · meaningful
+  - tags: paperclip, paperclip
+  - aliases: none
+  - contexts: files, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/files/paperclip.svg`
 - `pause` — Pause · media · meaningful
   - tags: pause, paused
   - aliases: paused
@@ -962,6 +2699,76 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/media/pause.svg`
+- `pause-circle` — Pause Circle · actions · interactive
+  - tags: pause-circle, pause, circle
+  - aliases: none
+  - contexts: actions, interface
+  - intents: media
+  - actions: pause
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/actions/pause-circle.svg`
+- `person-standing` — Person Standing · people · meaningful
+  - tags: person-standing, person, standing
+  - aliases: none
+  - contexts: people, interface
+  - intents: account
+  - actions: none
+  - objects: people
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/people/person-standing.svg`
+- `phone` — Phone · communication · interactive
+  - tags: phone, phone
+  - aliases: none
+  - contexts: communication, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/communication/phone.svg`
+- `pin` — Pin · actions · interactive
+  - tags: pin, pin
+  - aliases: none
+  - contexts: actions, interface
+  - intents: location
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/actions/pin.svg`
+- `pipeline` — Pipeline · developer · meaningful
+  - tags: pipeline, pipeline
+  - aliases: none
+  - contexts: developer, tooling
+  - intents: developer
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/developer/pipeline.svg`
 - `play` — Play · actions · interactive
   - tags: play, start
   - aliases: start
@@ -990,6 +2797,20 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/media/play-circle.svg`
+- `play-square` — Play Square · media · meaningful
+  - tags: play-square, play, square
+  - aliases: none
+  - contexts: media, interface
+  - intents: media
+  - actions: play
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/media/play-square.svg`
 - `plus` — Plus · actions · interactive
   - tags: plus, add, create, new
   - aliases: add, create
@@ -1004,9 +2825,107 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/actions/plus.svg`
+- `podcast` — Podcast · media · meaningful
+  - tags: podcast, podcast
+  - aliases: none
+  - contexts: media, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/media/podcast.svg`
+- `power` — Power · actions · interactive
+  - tags: power, power
+  - aliases: none
+  - contexts: actions, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/actions/power.svg`
+- `profile` — Profile · people · meaningful
+  - tags: profile, profile
+  - aliases: none
+  - contexts: people, interface
+  - intents: account
+  - actions: none
+  - objects: people
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/people/profile.svg`
+- `pull-request` — Pull Request · developer · meaningful
+  - tags: pull-request, pull, request
+  - aliases: none
+  - contexts: developer, tooling
+  - intents: developer
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/developer/pull-request.svg`
+- `qr-code` — Qr Code · objects · meaningful
+  - tags: qr-code, qr, code
+  - aliases: none
+  - contexts: objects, interface
+  - intents: developer, ai
+  - actions: none
+  - objects: code
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/objects/qr-code.svg`
+- `radio` — Radio · media · meaningful
+  - tags: radio, radio
+  - aliases: none
+  - contexts: media, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/media/radio.svg`
+- `react` — React · brands · brand
+  - tags: react, react
+  - aliases: none
+  - contexts: brands, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/brands/react.svg`
 - `receipt` — Receipt · commerce · meaningful
   - tags: receipt, invoice
-  - aliases: invoice
+  - aliases: none
   - contexts: commerce, checkout
   - intents: commerce
   - actions: none
@@ -1018,6 +2937,20 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: credit-card
   - SVG: `/icons/commerce/receipt.svg`
+- `receipt-text` — Receipt Text · commerce · meaningful
+  - tags: receipt-text, receipt, text
+  - aliases: none
+  - contexts: commerce, interface
+  - intents: commerce
+  - actions: none
+  - objects: receipt
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/commerce/receipt-text.svg`
 - `redo` — Redo · actions · interactive
   - tags: redo, forward
   - aliases: none
@@ -1046,6 +2979,48 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/actions/refresh.svg`
+- `refresh-alert` — Refresh Alert · system · meaningful
+  - tags: refresh-alert, refresh, alert
+  - aliases: none
+  - contexts: system, interface
+  - intents: none
+  - actions: refresh
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/system/refresh-alert.svg`
+- `repeat` — Repeat · media · meaningful
+  - tags: repeat, repeat
+  - aliases: none
+  - contexts: media, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/media/repeat.svg`
+- `reply` — Reply · communication · interactive
+  - tags: reply, reply
+  - aliases: none
+  - contexts: communication, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/communication/reply.svg`
 - `rocket` — Rocket · developer · meaningful
   - tags: rocket, launch
   - aliases: launch
@@ -1060,9 +3035,51 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/developer/rocket.svg`
+- `rotate-ccw` — Rotate Ccw · actions · interactive
+  - tags: rotate-ccw, rotate, ccw
+  - aliases: none
+  - contexts: actions, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/actions/rotate-ccw.svg`
+- `rotate-cw` — Rotate Cw · actions · interactive
+  - tags: rotate-cw, rotate, cw
+  - aliases: none
+  - contexts: actions, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/actions/rotate-cw.svg`
+- `rss` — Rss · communication · interactive
+  - tags: rss, rss
+  - aliases: none
+  - contexts: communication, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/communication/rss.svg`
 - `save` — Save · actions · interactive
   - tags: save, store
-  - aliases: store
+  - aliases: none
   - contexts: toolbar, editor
   - intents: edit
   - actions: save
@@ -1074,11 +3091,53 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/actions/save.svg`
+- `save-cloud` — Save Cloud · files · meaningful
+  - tags: save-cloud, save, cloud
+  - aliases: none
+  - contexts: files, interface
+  - intents: edit
+  - actions: save
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/files/save-cloud.svg`
+- `scan` — Scan · objects · meaningful
+  - tags: scan, scan
+  - aliases: none
+  - contexts: objects, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/objects/scan.svg`
+- `schema` — Schema · developer · meaningful
+  - tags: schema, schema
+  - aliases: none
+  - contexts: developer, tooling
+  - intents: developer
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/developer/schema.svg`
 - `search` — Search · navigation · interactive
   - tags: search, find, lookup, magnify
   - aliases: find, lookup
   - contexts: navigation, toolbar, command
-  - intents: search
+  - intents: search, ai
   - actions: search
   - objects: none
   - states: none
@@ -1088,6 +3147,48 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/navigation/search.svg`
+- `search-file` — Search File · files · meaningful
+  - tags: search-file, search, file
+  - aliases: none
+  - contexts: files, interface
+  - intents: search, files, ai
+  - actions: search
+  - objects: file
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/files/search-file.svg`
+- `search-minus` — Search Minus · actions · interactive
+  - tags: search-minus, search, minus
+  - aliases: none
+  - contexts: actions, interface
+  - intents: remove, search, ai
+  - actions: search
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/actions/search-minus.svg`
+- `search-plus` — Search Plus · actions · interactive
+  - tags: search-plus, search, plus
+  - aliases: none
+  - contexts: actions, interface
+  - intents: create, search, ai
+  - actions: search
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/actions/search-plus.svg`
 - `send` — Send · communication · interactive
   - tags: send, submit
   - aliases: submit
@@ -1102,6 +3203,20 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/communication/send.svg`
+- `send-horizontal` — Send Horizontal · communication · interactive
+  - tags: send-horizontal, send, horizontal
+  - aliases: none
+  - contexts: communication, interface
+  - intents: transfer, communication
+  - actions: send
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/communication/send-horizontal.svg`
 - `server` — Server · developer · meaningful
   - tags: server, backend
   - aliases: backend
@@ -1144,6 +3259,174 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/actions/share.svg`
+- `share-2` — Share 2 · communication · interactive
+  - tags: share-2, share, 2
+  - aliases: none
+  - contexts: communication, interface
+  - intents: communication
+  - actions: share
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/communication/share-2.svg`
+- `shield` — Shield · objects · meaningful
+  - tags: shield, shield
+  - aliases: none
+  - contexts: objects, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/objects/shield.svg`
+- `shield-alert` — Shield Alert · system · meaningful
+  - tags: shield-alert, shield, alert
+  - aliases: none
+  - contexts: system, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/system/shield-alert.svg`
+- `shield-check` — Shield Check · developer · meaningful
+  - tags: shield-check, shield, check
+  - aliases: none
+  - contexts: developer, tooling
+  - intents: developer, status
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/developer/shield-check.svg`
+- `shuffle` — Shuffle · media · meaningful
+  - tags: shuffle, shuffle
+  - aliases: none
+  - contexts: media, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/media/shuffle.svg`
+- `sidebar` — Sidebar · navigation · interactive
+  - tags: sidebar, sidebar
+  - aliases: none
+  - contexts: navigation, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/navigation/sidebar.svg`
+- `skip-back` — Skip Back · navigation · interactive
+  - tags: skip-back, skip, back
+  - aliases: none
+  - contexts: navigation, interface
+  - intents: navigation
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/navigation/skip-back.svg`
+- `skip-forward` — Skip Forward · navigation · interactive
+  - tags: skip-forward, skip, forward
+  - aliases: none
+  - contexts: navigation, interface
+  - intents: navigation
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/navigation/skip-forward.svg`
+- `skip-next` — Skip Next · media · meaningful
+  - tags: skip-next, skip, next
+  - aliases: none
+  - contexts: media, interface
+  - intents: navigation
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/media/skip-next.svg`
+- `skip-previous` — Skip Previous · media · meaningful
+  - tags: skip-previous, skip, previous
+  - aliases: none
+  - contexts: media, interface
+  - intents: navigation
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/media/skip-previous.svg`
+- `sliders` — Sliders · actions · interactive
+  - tags: sliders, sliders
+  - aliases: none
+  - contexts: actions, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/actions/sliders.svg`
+- `smile` — Smile · communication · interactive
+  - tags: smile, smile
+  - aliases: none
+  - contexts: communication, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/communication/smile.svg`
 - `sort` — Sort · objects · meaningful
   - tags: sort, order
   - aliases: order
@@ -1158,6 +3441,34 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/objects/sort.svg`
+- `sparkle-code` — Sparkle Code · developer · meaningful
+  - tags: sparkle-code, sparkle, code
+  - aliases: none
+  - contexts: developer, tooling
+  - intents: developer, ai
+  - actions: none
+  - objects: code
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/developer/sparkle-code.svg`
+- `sparkles` — Sparkles · objects · meaningful
+  - tags: sparkles, sparkles
+  - aliases: none
+  - contexts: objects, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/objects/sparkles.svg`
 - `star` — Star · communication · interactive
   - tags: star, favorite, favourite, rating
   - aliases: rating
@@ -1186,6 +3497,34 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/media/stop.svg`
+- `stop-circle` — Stop Circle · actions · interactive
+  - tags: stop-circle, stop, circle
+  - aliases: none
+  - contexts: actions, interface
+  - intents: media
+  - actions: stop
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/actions/stop-circle.svg`
+- `store` — Store · commerce · meaningful
+  - tags: store, store
+  - aliases: none
+  - contexts: commerce, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/commerce/store.svg`
 - `success` — Success · system · status
   - tags: success, passed
   - aliases: passed
@@ -1214,6 +3553,34 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/system/sun.svg`
+- `svelte` — Svelte · brands · brand
+  - tags: svelte, svelte
+  - aliases: none
+  - contexts: brands, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/brands/svelte.svg`
+- `system-update` — System Update · system · meaningful
+  - tags: system-update, system, update
+  - aliases: none
+  - contexts: system, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/system/system-update.svg`
 - `tag` — Tag · commerce · meaningful
   - tags: tag, label
   - aliases: label
@@ -1228,6 +3595,34 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/commerce/tag.svg`
+- `target` — Target · actions · interactive
+  - tags: target, target
+  - aliases: none
+  - contexts: actions, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/actions/target.svg`
+- `team` — Team · people · meaningful
+  - tags: team, team
+  - aliases: none
+  - contexts: people, interface
+  - intents: account
+  - actions: none
+  - objects: people
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/people/team.svg`
 - `terminal` — Terminal · developer · meaningful
   - tags: terminal, console
   - aliases: console
@@ -1242,6 +3637,118 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/developer/terminal.svg`
+- `terminal-error` — Terminal Error · system · meaningful
+  - tags: terminal-error, terminal, error
+  - aliases: none
+  - contexts: system, interface
+  - intents: developer, status
+  - actions: none
+  - objects: terminal
+  - states: error
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/system/terminal-error.svg`
+- `terminal-square` — Terminal Square · objects · meaningful
+  - tags: terminal-square, terminal, square
+  - aliases: none
+  - contexts: objects, interface
+  - intents: developer
+  - actions: none
+  - objects: terminal
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/objects/terminal-square.svg`
+- `test-tube` — Test Tube · developer · meaningful
+  - tags: test-tube, test, tube
+  - aliases: none
+  - contexts: developer, tooling
+  - intents: developer
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/developer/test-tube.svg`
+- `thumbs-down` — Thumbs Down · communication · interactive
+  - tags: thumbs-down, thumbs, down
+  - aliases: none
+  - contexts: communication, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/communication/thumbs-down.svg`
+- `thumbs-up` — Thumbs Up · communication · interactive
+  - tags: thumbs-up, thumbs, up
+  - aliases: none
+  - contexts: communication, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/communication/thumbs-up.svg`
+- `timeout` — Timeout · system · meaningful
+  - tags: timeout, timeout
+  - aliases: none
+  - contexts: system, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/system/timeout.svg`
+- `trash` — Trash · actions · interactive
+  - tags: trash, trash
+  - aliases: none
+  - contexts: actions, interface
+  - intents: remove
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/actions/trash.svg`
+- `typescript` — Typescript · brands · brand
+  - tags: typescript, typescript
+  - aliases: none
+  - contexts: brands, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/brands/typescript.svg`
 - `undo` — Undo · actions · interactive
   - tags: undo, revert
   - aliases: revert
@@ -1298,9 +3805,23 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/people/user.svg`
+- `user-check` — User Check · people · meaningful
+  - tags: user-check, user, check
+  - aliases: none
+  - contexts: people, interface
+  - intents: account, status
+  - actions: none
+  - objects: people, user
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/people/user-check.svg`
 - `user-circle` — User Circle · people · meaningful
   - tags: user-circle, user, circle, profile
-  - aliases: profile
+  - aliases: none
   - contexts: accounts, social
   - intents: account
   - actions: none
@@ -1340,6 +3861,48 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/people/user-plus.svg`
+- `user-search` — User Search · people · meaningful
+  - tags: user-search, user, search
+  - aliases: none
+  - contexts: people, interface
+  - intents: account, search, ai
+  - actions: search
+  - objects: people, user
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/people/user-search.svg`
+- `user-settings` — User Settings · people · meaningful
+  - tags: user-settings, user, settings
+  - aliases: none
+  - contexts: people, interface
+  - intents: account, settings
+  - actions: none
+  - objects: people, settings, user
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/people/user-settings.svg`
+- `user-x` — User X · people · meaningful
+  - tags: user-x, user, x
+  - aliases: none
+  - contexts: people, interface
+  - intents: account
+  - actions: none
+  - objects: people, user
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/people/user-x.svg`
 - `users` — Users · people · meaningful
   - tags: users, people
   - aliases: people
@@ -1354,9 +3917,51 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/people/users.svg`
+- `users-round` — Users Round · people · meaningful
+  - tags: users-round, users, round
+  - aliases: none
+  - contexts: people, interface
+  - intents: account
+  - actions: none
+  - objects: people
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/people/users-round.svg`
+- `vercel` — Vercel · brands · brand
+  - tags: vercel, vercel
+  - aliases: none
+  - contexts: brands, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/brands/vercel.svg`
+- `verified` — Verified · system · meaningful
+  - tags: verified, verified
+  - aliases: none
+  - contexts: system, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/system/verified.svg`
 - `video` — Video · media · meaningful
   - tags: video, film
-  - aliases: film
+  - aliases: none
   - contexts: media, content
   - intents: media
   - actions: none
@@ -1368,6 +3973,34 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/media/video.svg`
+- `video-off` — Video Off · media · meaningful
+  - tags: video-off, video, off
+  - aliases: none
+  - contexts: media, interface
+  - intents: media
+  - actions: none
+  - objects: video
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/media/video-off.svg`
+- `voicemail` — Voicemail · communication · interactive
+  - tags: voicemail, voicemail
+  - aliases: none
+  - contexts: communication, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/communication/voicemail.svg`
 - `volume` — Volume · media · meaningful
   - tags: volume, sound
   - aliases: sound
@@ -1396,6 +4029,62 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/media/volume-off.svg`
+- `volume-x` — Volume X · media · meaningful
+  - tags: volume-x, volume, x
+  - aliases: none
+  - contexts: media, interface
+  - intents: media
+  - actions: none
+  - objects: volume
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/media/volume-x.svg`
+- `vue` — Vue · brands · brand
+  - tags: vue, vue
+  - aliases: none
+  - contexts: brands, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/brands/vue.svg`
+- `wallet` — Wallet · commerce · meaningful
+  - tags: wallet, wallet
+  - aliases: none
+  - contexts: commerce, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/commerce/wallet.svg`
+- `wallet-cards` — Wallet Cards · commerce · meaningful
+  - tags: wallet-cards, wallet, cards
+  - aliases: none
+  - contexts: commerce, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/commerce/wallet-cards.svg`
 - `warning` — Warning · system · status
   - tags: warning, caution
   - aliases: caution
@@ -1410,6 +4099,62 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/system/warning.svg`
+- `webhook` — Webhook · developer · meaningful
+  - tags: webhook, webhook
+  - aliases: none
+  - contexts: developer, tooling
+  - intents: developer
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/developer/webhook.svg`
+- `wifi` — Wifi · objects · meaningful
+  - tags: wifi, wifi
+  - aliases: none
+  - contexts: objects, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/objects/wifi.svg`
+- `wifi-off` — Wifi Off · objects · meaningful
+  - tags: wifi-off, wifi, off
+  - aliases: none
+  - contexts: objects, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/objects/wifi-off.svg`
+- `workflow` — Workflow · developer · meaningful
+  - tags: workflow, workflow
+  - aliases: none
+  - contexts: developer, tooling
+  - intents: developer
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/developer/workflow.svg`
 - `x` — X · actions · interactive
   - tags: x, close, dismiss, remove, cancel
   - aliases: close, dismiss
@@ -1424,6 +4169,20 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/actions/x.svg`
+- `x-circle` — X Circle · system · meaningful
+  - tags: x-circle, x, circle
+  - aliases: none
+  - contexts: system, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/system/x-circle.svg`
 - `x-twitter` — X Twitter · brands · brand
   - tags: x-twitter, x, twitter
   - aliases: twitter
@@ -1452,6 +4211,48 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - state: none
   - paired: none
   - SVG: `/icons/brands/youtube.svg`
+- `zip` — Zip · files · meaningful
+  - tags: zip, zip
+  - aliases: none
+  - contexts: files, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/files/zip.svg`
+- `zoom-in` — Zoom In · actions · interactive
+  - tags: zoom-in, zoom, in
+  - aliases: none
+  - contexts: actions, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/actions/zoom-in.svg`
+- `zoom-out` — Zoom Out · actions · interactive
+  - tags: zoom-out, zoom, out
+  - aliases: none
+  - contexts: actions, interface
+  - intents: none
+  - actions: none
+  - objects: none
+  - states: none
+  - related: none
+  - alternative: none
+  - opposite: none
+  - state: none
+  - paired: none
+  - SVG: `/icons/actions/zoom-out.svg`
 
 ## Consumption
 
