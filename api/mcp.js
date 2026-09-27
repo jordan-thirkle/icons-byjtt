@@ -61,12 +61,12 @@ function findIcon(name) {
 function server() {
   const mcp = new McpServer(
     { name: "jtt-icons", version: catalogue.version || "0.1.0" },
-    { instructions: "JTT Icons is an SVG-first semantic icon system. Search by intent, retrieve canonical names and implementations, and never invent identifiers." }
+    { instructions: "JTT Icons is an SVG-first semantic icon system. Search by intent, retrieve canonical names and implementations, and never invent identifiers. Treat metadata/icons.json and metadata/ontology.json as the canonical identity layer. Prefer exact canonical matches before semantic alternatives. Return the canonical name, integration/import guidance, minimal implementation, accessibility treatment, and source path when appropriate." }
   );
 
   mcp.registerTool("search_icons", {
     title: "Search JTT Icons",
-    description: "Search JTT Icons by meaning, canonical name, alias, tag, context, intent, action, object, state, or relationship.",
+    description: "Search JTT Icons by meaning, canonical name, alias, tag, context, intent, action, object, state, or relationship. Designed for ChatGPT, Claude, coding agents and other MCP clients.",
     inputSchema: z.object({ query: z.string().min(1), limit: z.number().int().min(1).max(50).default(10) })
   }, async ({ query, limit }) => {
     const results = icons.map(icon => ({ icon, score: score(icon, query) })).filter(x => x.score > 0).sort((a,b) => b.score - a.score || a.icon.name.localeCompare(b.icon.name)).slice(0, limit).map(x => ({ score:x.score, ...fields(x.icon) }));
