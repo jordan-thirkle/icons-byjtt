@@ -55,6 +55,13 @@ test("generated surfaces materialize every canonical Core 100 icon", () => {
   for (const slug of ["navigation-icons","interface-actions","developer-tools","communication-ui"]) assert.ok(sitemap.includes(`/use-cases/${slug}/`));
   for (const icon of metadata.icons) assert.ok(sitemap.includes(`/icons/${icon.name}/`));
 
+  const homepage = fs.readFileSync(path.join(root, "index.html"), "utf8");
+  assert.match(homepage, /SEMANTIC_INTENTS/);
+  assert.match(homepage, /SEARCH_FIELD_WEIGHTS/);
+  assert.match(homepage, /clear-search/);
+  assert.match(homepage, /related/);
+  assert.match(homepage, /Escape/);
+
   const aiReference = fs.readFileSync(path.join(root, "llms-full.txt"), "utf8");
   for (const icon of metadata.icons) assert.ok(aiReference.includes(`\`${icon.name}\``));
 });
