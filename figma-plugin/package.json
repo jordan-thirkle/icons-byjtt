@@ -1,0 +1,8 @@
+{
+  "name": "@byjtt/icons-figma-plugin",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --check code.js"
+  }
+}

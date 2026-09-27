@@ -1,5 +1,5 @@
 {
-  "version": "2.0.0",
+  "version": "2.1.0",
   "relationTypes": {
     "related": "Nearby concept useful for discovery.",
     "alternative": "Another icon representing the same intent.",
@@ -158,6 +158,18 @@
       "pin",
       "map",
       "maps"
+    ],
+    "ai": [
+      "ai",
+      "agent",
+      "model",
+      "prompt",
+      "generate",
+      "generation",
+      "assistant",
+      "chat",
+      "search",
+      "code"
     ]
   },
   "actionTerms": [
@@ -186,7 +198,14 @@
     "undo",
     "redo",
     "unlock",
-    "upload"
+    "upload",
+    "generate",
+    "prompt",
+    "infer",
+    "reason",
+    "run",
+    "invoke",
+    "compose"
   ],
   "stateTerms": [
     "active",
@@ -236,7 +255,12 @@
     "terminal",
     "user",
     "video",
-    "volume"
+    "volume",
+    "agent",
+    "model",
+    "prompt",
+    "assistant",
+    "ai"
   ],
   "contextAliases": {
     "toolbar": [
@@ -275,6 +299,11 @@
     "navigation": [
       "wayfinding",
       "interface"
+    ],
+    "ai": [
+      "developer",
+      "tooling",
+      "assistant"
     ]
   }
 }
