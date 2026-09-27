@@ -64,13 +64,16 @@ test("generated surfaces materialize every canonical Core 100 icon", () => {
   for (const icon of metadata.icons) assert.ok(sitemap.includes(`/icons/${icon.name}/`));
 
   const homepage = fs.readFileSync(path.join(root, "index.html"), "utf8");
-  assert.match(homepage, /ONTOLOGY_INTENTS/);
-  assert.match(homepage, /SEARCH_FIELD_WEIGHTS/);
-  assert.match(homepage, /clear-search/);
-  assert.match(homepage, /related/);
-  assert.match(homepage, /queryTerms/);
-  assert.match(homepage, /ensureAll/);
-  assert.match(homepage, /Escape/);
+  assert.match(homepage, /assets\/site\.css/);
+  assert.match(homepage, /assets\/search\.js/);
+  const searchScript = fs.readFileSync(path.join(root, "assets", "search.js"), "utf8");
+  assert.match(searchScript, /ONTOLOGY_INTENTS/);
+  assert.match(searchScript, /SEARCH_FIELD_WEIGHTS/);
+  assert.match(searchScript, /clear-search/);
+  assert.match(searchScript, /related/);
+  assert.match(searchScript, /queryTerms/);
+  assert.match(searchScript, /ensureAll/);
+  assert.match(searchScript, /Escape/);
 
   const aiReference = fs.readFileSync(path.join(root, "llms-full.txt"), "utf8");
   for (const icon of metadata.icons) assert.ok(aiReference.includes(`\`${icon.name}\``));
