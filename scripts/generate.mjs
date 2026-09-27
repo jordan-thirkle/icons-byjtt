@@ -4,6 +4,7 @@ import { generateCatalogue } from "./lib/generate-catalogue.mjs";
 import { generatePackage } from "./lib/generate-package.mjs";
 import { homepage, iconPage, categoryPage, useCasePage, docsPage, sitemap, favicon, USE_CASES } from "./lib/generate-site.mjs";
 import { generateAiReference } from "./lib/generate-ai-reference.mjs";
+import { generateVuePackage } from "./lib/generate-vue.mjs";
 
 const root = process.cwd();
 const metadata = JSON.parse(fs.readFileSync(path.join(root, "metadata/icons.json"), "utf8"));
@@ -28,6 +29,7 @@ write("sitemap.xml", sitemap(catalogue));
 write("llms-full.txt", generateAiReference(metadata));
 
 for (const [file, content] of Object.entries(files)) write(file, content);
+for (const [file, content] of Object.entries(generateVuePackage(metadata, svgByName))) write(file, content);
 
 write("packages/react/package.json", JSON.stringify({
   name: "@byjtt/icons-react",
