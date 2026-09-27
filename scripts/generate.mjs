@@ -41,7 +41,7 @@ write("packages/react/package.json", JSON.stringify({
 }, null, 2) + "\n");
 write("packages/react/index.js", [
   'import React from "react";',
-  ...catalogue.icons.map(icon => `export function ${icon.name.replace(/-([a-z])/g, (_, c) => c.toUpperCase()).replace(/^(delete)$/, "IconDelete")}({ title, size = 24, ...props }) { return React.createElement("svg", { ...props, width: size, height: size, viewBox: "0 0 24 24", role: title ? "img" : "presentation", "aria-hidden": title ? undefined : "true", "aria-label": title, dangerouslySetInnerHTML: { __html: ${JSON.stringify(svgByName[icon.name].replace(/<svg[^>]*>/, "").replace(/<\\/svg>\\s*$/, ""))} } }); }`),
+  ...catalogue.icons.map(icon => `export function ${icon.name.replace(/-([a-z])/g, (_, c) => c.toUpperCase()).replace(/^(delete)$/, "IconDelete")}({ title, size = 24, ...props }) { return React.createElement("svg", { ...props, width: size, height: size, viewBox: "0 0 24 24", role: title ? "img" : "presentation", "aria-hidden": title ? undefined : "true", "aria-label": title, dangerouslySetInnerHTML: { __html: ${JSON.stringify(svgByName[icon.name].replace(/<svg[^>]*>/, "").replace(/<\/svg>\s*$/, ""))} } }); }`),
 ].join("\n") + "\n");
 write("packages/react/index.d.ts", [
   'import type { SVGProps } from "react";',
