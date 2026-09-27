@@ -3,7 +3,7 @@ name: Generate JTT Icons
 
 on:
   push:
-    branches: ["main"]
+    branches: ["main", "product/public-library-v2"]
   workflow_dispatch:
 
 permissions:
