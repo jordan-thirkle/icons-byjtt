@@ -1,6 +1,6 @@
 const BASE = "https://icons.byjtt.com";
 
-const USE_CASES = {
+export const USE_CASES = {
   "navigation-icons": {
     title: "Navigation Icons",
     description: "Open-source navigation icons for menus, breadcrumbs, tabs, search, links and moving through digital products.",
