@@ -36,6 +36,7 @@ write("packages/react/package.json", JSON.stringify({
   license: "MIT",
   type: "module",
   sideEffects: false,
+  publishConfig: { access: "public" },
   repository: { type: "git", url: "https://github.com/jordan-thirkle/icons-byjtt.git", directory: "packages/react" },
   homepage: "https://icons.byjtt.com",
   bugs: { url: "https://github.com/jordan-thirkle/icons-byjtt/issues" },
