@@ -248,9 +248,7 @@
         "up",
         "right"
       ],
-      "aliases": [
-        "external-link"
-      ],
+      "aliases": [],
       "contexts": [
         "navigation",
         "links",
@@ -271,9 +269,7 @@
         "attachment",
         "paperclip"
       ],
-      "aliases": [
-        "paperclip"
-      ],
+      "aliases": [],
       "contexts": [
         "files",
         "editor"
@@ -1368,9 +1364,7 @@
         "location",
         "pin"
       ],
-      "aliases": [
-        "pin"
-      ],
+      "aliases": [],
       "contexts": [
         "utility",
         "interface"
@@ -1416,9 +1410,7 @@
         "mail",
         "email"
       ],
-      "aliases": [
-        "email"
-      ],
+      "aliases": [],
       "contexts": [
         "communication",
         "content"
@@ -1491,9 +1483,7 @@
         "message",
         "chat"
       ],
-      "aliases": [
-        "chat"
-      ],
+      "aliases": [],
       "contexts": [
         "communication",
         "content"
@@ -1692,9 +1682,7 @@
         "receipt",
         "invoice"
       ],
-      "aliases": [
-        "invoice"
-      ],
+      "aliases": [],
       "contexts": [
         "commerce",
         "checkout"
@@ -1786,9 +1774,7 @@
         "save",
         "store"
       ],
-      "aliases": [
-        "store"
-      ],
+      "aliases": [],
       "contexts": [
         "toolbar",
         "editor"
@@ -2206,9 +2192,7 @@
         "circle",
         "profile"
       ],
-      "aliases": [
-        "profile"
-      ],
+      "aliases": [],
       "contexts": [
         "accounts",
         "social"
@@ -2306,9 +2290,7 @@
         "video",
         "film"
       ],
-      "aliases": [
-        "film"
-      ],
+      "aliases": [],
       "contexts": [
         "media",
         "content"
