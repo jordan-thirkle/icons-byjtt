@@ -238,7 +238,7 @@ export function aiPage() {
 <a href="/llms.txt">llms.txt → Concise machine-readable entry point</a>
 <a href="/llms-full.txt">Full AI reference → Canonical catalogue and implementation details</a>
 <a href="/api/icons.json">JSON catalogue → Stable machine-readable source</a>
-<a href="/docs/ai-agents/">Agent documentation → Integration guidance</a>
+<a href="/docs/ai-agents.md">Agent documentation → Integration guidance</a>
 </div></section>
 <section class="section"><h2>What stays canonical</h2><p class="section-lead">Every consumer resolves the same icon identity: canonical name, SVG path, metadata, aliases, contexts, ontology and relationships. AI can help choose the icon; JTT still gives the exact asset to ship.</p></section>
 </main>`;
@@ -256,7 +256,7 @@ export function docsPage() {
 <section class="section"><h2>Install for your stack</h2><p>The generated packages are built from the same canonical catalogue.</p><div class="code"><pre><code>npm install @byjtt/icons
 npm install @byjtt/icons-react
 npm install @byjtt/icons-vue
-npm install @byjtt/icons-svelte</code></pre></div><p>Web Components are available through <a href="/docs/">the Web package documentation</a>.</p></section>
+npm install @byjtt/icons-svelte</code></pre></div><p>Web Components are available from the generated <code>@byjtt/icons-web</code> package.</p></section>
 <section class="section"><h2>Build with AI</h2><p>AI-assisted development works better when identifiers are predictable. Give an agent the JTT catalogue or use the MCP interface so it can search by intent, resolve a canonical name and retrieve the exact SVG or framework implementation.</p><div class="actions"><a class="button primary" href="/ai/">Explore AI tooling</a><a class="button" href="/llms.txt">Read llms.txt</a></div></section>
 <section class="section"><h2>License and trademarks</h2><p>JTT Icons is MIT licensed. Third-party brand marks are included as reference assets where applicable and remain subject to their respective trademark rights and policies.</p></section>
 </main>`;
