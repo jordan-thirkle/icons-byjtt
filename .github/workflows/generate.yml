@@ -22,6 +22,14 @@ jobs:
       - run: node scripts/generate-optical.mjs
       - run: npm test
       - run: npm run check
+      - name: Upload optical review surfaces
+        uses: actions/upload-artifact@v4
+        with:
+          name: jtt-optical-review-${{ github.sha }}
+          path: |
+            visual-snapshots/**/*.svg
+            metadata/optical-audit.json
+          if-no-files-found: error
       - name: Commit generated surfaces
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
