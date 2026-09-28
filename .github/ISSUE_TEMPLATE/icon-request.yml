@@ -1,0 +1,34 @@
+name: Icon request
+description: Suggest a missing canonical concept.
+title: "[Icon]: "
+labels:
+  - icon-request
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Request a semantic concept, not a drawing. Explain the meaning, context and why existing icons do not cover it.
+  - type: input
+    id: concept
+    attributes:
+      label: Concept
+      description: The icon concept you need.
+    validations:
+      required: true
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use case
+      description: Where would the icon be used?
+    validations:
+      required: true
+  - type: textarea
+    id: existing
+    attributes:
+      label: Existing alternatives
+      description: Which JTT Icons did you consider, and why are they insufficient?
+  - type: textarea
+    id: vocabulary
+    attributes:
+      label: Search vocabulary
+      description: Terms a developer, designer or AI agent might use to find this concept.

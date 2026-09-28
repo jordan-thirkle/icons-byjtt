@@ -1,30 +1,95 @@
-# JTT Icons Contributing
+# Contributing to JTT Icons
 
-A new icon must follow the system rather than invent a new local convention.
+JTT Icons is an open-source icon system. Contributions should improve the canonical system, not create parallel conventions.
 
-## Workflow
+## Before you change anything
 
-1. Define the concept and intended use.
-2. Choose a stable canonical name.
-3. Add semantic metadata: title, tags, aliases, contexts and relationships.
-4. Draw the canonical Line SVG on the 24 × 24 grid.
-5. Review optical balance.
-6. Run the optical infrastructure at 12px, 16px, 20px and 24px.
-7. Assign the accessibility classification.
-8. Run `npm test`.
-9. Run `npm run check`.
-10. Regenerate with `node scripts/generate.mjs`.
-11. Confirm generated outputs are deterministic.
-12. Review the optical snapshots and public catalogue page.
+1. Read `AGENTS.md`.
+2. Read the relevant document in `docs/`.
+3. Search the canonical metadata and existing tests.
+4. Identify the source-of-truth file.
+5. Check whether the requested change already exists under another name or relationship.
 
 ## Source of truth
 
-Author only canonical geometry and semantic metadata. Do not hand-edit generated `icons.json`, `api/icons.json`, package icon modules, sitemap entries or generated detail pages.
+Author canonical source files and regenerate outputs.
 
-## Quality gate
+Do not hand-edit generated:
+- `icons.json`
+- `api/icons.json`
+- generated icon detail pages
+- package icon modules
+- sitemap/AI reference outputs
 
-Meaning → naming → metadata → geometry → optical review → small-size review → accessibility → validation → generation → catalogue integration.
+unless the generator itself is the thing being changed.
+
+## Adding an icon
+
+An icon should close a real semantic gap.
+
+Required:
+1. stable lowercase kebab-case canonical name;
+2. canonical 24×24 Line SVG;
+3. title, category, tags, aliases, contexts;
+4. semantic intent/action/object/state fields;
+5. relevant relationships;
+6. intentional accessibility classification;
+7. optical review at practical sizes;
+8. tests and deterministic generation.
+
+Read `docs/design-principles.md`, `docs/naming.md` and `docs/accessibility.md` before submitting.
+
+## Changing an icon
+
+Assume the identifier and geometry are public API. Avoid changing meaning or geometry casually.
+
+Explain any change that could affect:
+- recognition;
+- small-size rendering;
+- semantic meaning;
+- accessibility;
+- package output;
+- AI discovery.
+
+## Website and AI changes
+
+Change the generator/canonical source where possible. Verify:
+- keyboard access;
+- visible focus;
+- colour contrast;
+- reduced motion;
+- responsive layout;
+- crawlable links;
+- canonical URLs;
+- AI references;
+- MCP behaviour.
 
 ## Pull requests
 
-Keep icon additions focused. Explain unusual geometry decisions. A new icon should solve a real semantic gap rather than duplicate an existing concept.
+Keep PRs focused. Use the repository PR template.
+
+Every PR should describe:
+- the user or maintenance problem;
+- the source-of-truth files changed;
+- important design/semantic decisions;
+- verification performed;
+- deliberate exceptions;
+- any account-side step that cannot be represented in repository code.
+
+## Validation
+
+Run before requesting review:
+
+```bash
+npm test
+npm run check
+npm run generate
+```
+
+Confirm generation leaves no unexpected diff.
+
+## Security
+
+Everything committed to the public repository is public. Never commit secrets, credentials, private data or local machine paths.
+
+For vulnerabilities, follow `SECURITY.md` rather than opening a public issue.
