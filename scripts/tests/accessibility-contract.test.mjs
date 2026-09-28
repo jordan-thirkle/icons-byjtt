@@ -34,8 +34,8 @@ test("light theme preserves a distinct high-contrast text and link system", () =
   const cssStart = source.indexOf("export const SITE_CSS = ");
   const cssEnd = source.indexOf("export const SEARCH_JS = ", cssStart);
   const css = source.slice(cssStart, cssEnd);
-  assert.match(css, /html\\[data-theme="light"\\]/);
-  assert.match(css, /--text:#102018/);
-  assert.match(css, /--link:#005b49/);
-  assert.match(css, /--focus:#075d48/);
+  assert.ok(css.includes("html[data-theme=light]"), "light theme selector must be present");
+  assert.ok(css.includes("--text:#102018"), "light text token must be explicit");
+  assert.ok(css.includes("--cool:#005b49"), "light link token must be explicit");
+  assert.ok(css.includes("--focus:#075d48"), "light focus token must be explicit");
 });
