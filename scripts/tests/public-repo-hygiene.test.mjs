@@ -42,3 +42,14 @@ test("source does not contain obvious credential material", () => {
   }
   assert.deepEqual(hits, []);
 });
+
+test("Vercel deployment is isolated from repository source", () => {
+  const config = JSON.parse(fs.readFileSync(path.join(root, "vercel.json"), "utf8"));
+  assert.equal(config.outputDirectory, "dist");
+  assert.match(config.buildCommand, /prepare-vercel/);
+  const prepare = fs.readFileSync(path.join(root, "scripts/prepare-vercel.mjs"), "utf8");
+  assert.match(prepare, /"index\.html"/);
+  assert.match(prepare, /"icons"/);
+  assert.doesNotMatch(prepare, /cpSync\(path\.join\(root, "scripts"/);
+  assert.doesNotMatch(prepare, /cpSync\(path\.join\(root, "\.github"/);
+});
