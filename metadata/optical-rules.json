@@ -6,7 +6,13 @@
     "liveAreaOffset": 3,
     "strokeWidth": 2
   },
-  "reviewSizes": [12, 16, 20, 24],
+  "reviewSizes": [
+    12,
+    14,
+    16,
+    20,
+    24
+  ],
   "optical": {
     "primaryLiveAreaRatio": 0.75,
     "principle": "optical alignment takes precedence over mathematical centering",

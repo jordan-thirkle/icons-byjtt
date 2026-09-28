@@ -26,7 +26,8 @@ const directories = [
   "icons",
   "use-cases",
   "skills",
-  "metadata"
+  "metadata",
+  "visual-snapshots"
 ];
 
 const singleFiles = [
@@ -48,5 +49,7 @@ for (const [source, target] of singleFiles) {
   fs.mkdirSync(path.dirname(destination), { recursive: true });
   fs.copyFileSync(path.join(root, source), destination);
 }
+
+fs.copyFileSync(path.join(root, "icons.json"), path.join(out, "icons", "catalogue.json"));
 
 console.log("Prepared Vercel public output:", out);

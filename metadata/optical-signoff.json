@@ -1,0 +1,63 @@
+{
+  "version": "0.2.0",
+  "status": "locked",
+  "catalogueSize": 300,
+  "reviewSizes": [
+    12,
+    14,
+    16,
+    20,
+    24
+  ],
+  "renderedInstances": 1500,
+  "categorySheets": 11,
+  "reviewedAt": "2026-09-28",
+  "method": [
+    "canonical SVG source",
+    "five-size family contact sheets",
+    "full 300-icon catalogue masters",
+    "visual optical inspection after renderer correction",
+    "post-redesign visual re-review"
+  ],
+  "redesignedIcons": [
+    "external",
+    "grid",
+    "list",
+    "log-in",
+    "log-out",
+    "panel-left",
+    "panel-right",
+    "sidebar",
+    "skip-back",
+    "skip-forward",
+    "box",
+    "hard-drive",
+    "inbox-file",
+    "paperclip",
+    "search-file",
+    "save-cloud",
+    "sparkles",
+    "terminal-square",
+    "shield-check",
+    "sparkle-code",
+    "help",
+    "info",
+    "search-plus",
+    "search-minus",
+    "zoom-in",
+    "zoom-out"
+  ],
+  "releaseDecision": "Art Direction v2 locked for the 300-icon catalogue. Catalogue expansion remains frozen until a separate expansion gate is opened.",
+  "criteria": [
+    "recognition at 12px",
+    "stable optical weight at 14/16/20/24px",
+    "deliberate negative space",
+    "no accidental tangencies",
+    "semantic silhouette",
+    "consistent family construction",
+    "controlled radii and terminals",
+    "no obvious visual duplicates outside intentional variants",
+    "brand recognisability",
+    "JTT visual grammar"
+  ]
+}
