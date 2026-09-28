@@ -337,7 +337,9 @@
     {
       "query": "warning",
       "expected": [
-        "alert"
+        "shield-alert",
+        "warning",
+        "globe-warning"
       ]
     },
     {
