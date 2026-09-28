@@ -9,7 +9,7 @@ const rules = JSON.parse(fs.readFileSync(path.join(root, "metadata/optical-rules
 const audit = JSON.parse(fs.readFileSync(path.join(root, "metadata/optical-audit.json"), "utf8"));
 
 test("optical infrastructure covers the full catalogue", () => {
-  assert.deepEqual(rules.reviewSizes, [12, 16, 20, 24]);
+  assert.deepEqual(rules.reviewSizes, [12, 14, 16, 20, 24]);
   assert.equal(metadata.icons.length, 300);
   assert.equal(audit.summary.icons, 300);
   assert.equal(audit.icons.length, 300);
