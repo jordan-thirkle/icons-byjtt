@@ -363,7 +363,8 @@
     {
       "query": "locked",
       "expected": [
-        "lock"
+        "lock",
+        "unlock"
       ]
     },
     {
@@ -399,7 +400,10 @@
     {
       "query": "AI",
       "expected": [
-        "ai"
+        "ai-agent",
+        "ai-model",
+        "ai-chat",
+        "ai-code"
       ]
     },
     {
@@ -411,7 +415,10 @@
     {
       "query": "artificial intelligence",
       "expected": [
-        "ai"
+        "ai-agent",
+        "ai-model",
+        "ai-chat",
+        "ai-code"
       ]
     },
     {
