@@ -6,7 +6,7 @@ import benchmark from "../../metadata/search-benchmark.json" with { type: "json"
 
 const ontology=JSON.parse(fs.readFileSync("metadata/ontology.json","utf8"));
 const weights={exact:120,prefix:65,title:40,tag:34,alias:32,related:22,context:22,category:20,semantic:18,text:5,alternative:28,opposite:14,paired:20,intent:32,phrase:46};
-const QUERY_SYNONYMS={"look up":"lookup","look something up":"lookup","find something":"search","magnifying glass":"search","close dialog":"x","close modal":"x","shopping basket":"cart","shopping bag":"bag","artificial intelligence":"ai-agent","AI assistant":"ai-agent","favourite":"heart"};
+const QUERY_SYNONYMS={"look up":"lookup","look something up":"lookup","find something":"search","magnifying glass":"search","close dialog":"x","close modal":"x","shopping basket":"cart","shopping bag":"bag","artificial intelligence":"ai-agent","AI assistant":"ai-agent","favourite":"heart","locked":"lock","fullscreen":"maximize"};
 const normalize=s=>String(s||"").toLowerCase().normalize("NFKD").replace(/[^a-z0-9\\s-]/g," ").replace(/\\s+/g," ").trim();
 const tokens=s=>normalize(s).split(" ").filter(Boolean);
 const intentGroups=ontology.intentGroups||{};
