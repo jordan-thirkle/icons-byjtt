@@ -1,5 +1,5 @@
 export const name = "file-video";
 export const title = "File Video";
 export const category = "files";
-export const svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"4\" y=\"4\" width=\"16\" height=\"16\" rx=\"3\"/></svg>";
+export const svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"4\" y=\"3\" width=\"16\" height=\"18\" rx=\"2\"/><path d=\"M14 3v5h5\"/><rect x=\"9\" y=\"8\" width=\"7\" height=\"8\" rx=\"1\"/><path d=\"m16 10 3-2v8l-3-2\"/></svg>";
 export const metadata = {"name":"file-video","title":"File Video","category":"files","tags":["file-video","file","video"],"aliases":[],"contexts":["files","interface"],"related":[],"accessibility":{"default":"meaningful"},"path":"/icons/files/file-video.svg","family":"line","semantics":{"intents":["media","files"],"actions":[],"states":[],"objects":["file","video"],"queryTerms":["file-video","file video","file","video","files","interface","media","storage","documents"],"relations":{"related":[],"alternative":[],"opposite":[],"paired":[],"state":[]}}};

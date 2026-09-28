@@ -1,5 +1,5 @@
 export const name = "archive-box";
 export const title = "Archive Box";
 export const category = "actions";
-export const svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"8\"/></svg>";
+export const svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"4\" y=\"7\" width=\"16\" height=\"13\" rx=\"2\"/><line x1=\"4\" y1=\"7\" x2=\"20\" y2=\"7\"/><line x1=\"9\" y1=\"11\" x2=\"15\" y2=\"11\"/></svg>";
 export const metadata = {"name":"archive-box","title":"Archive Box","category":"actions","tags":["archive-box","archive","box"],"aliases":[],"contexts":["actions","interface"],"related":[],"accessibility":{"default":"interactive"},"path":"/icons/actions/archive-box.svg","family":"line","semantics":{"intents":["files"],"actions":["archive"],"states":[],"objects":["archive"],"queryTerms":["archive-box","archive box","archive","box","actions","interface","files"],"relations":{"related":[],"alternative":[],"opposite":[],"paired":[],"state":[]}}};

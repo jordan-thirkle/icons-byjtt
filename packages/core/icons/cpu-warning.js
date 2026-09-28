@@ -1,5 +1,5 @@
 export const name = "cpu-warning";
 export const title = "Cpu Warning";
 export const category = "system";
-export const svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"8\"/><path d=\"M12 8v5M12 16v.1\"/></svg>";
+export const svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"5\" y=\"5\" width=\"14\" height=\"14\" rx=\"2\"/><line x1=\"8\" y1=\"5\" x2=\"8\" y2=\"3\"/><line x1=\"12\" y1=\"5\" x2=\"12\" y2=\"3\"/><line x1=\"16\" y1=\"5\" x2=\"16\" y2=\"3\"/><path d=\"M12 9v4\"/><circle cx=\"12\" cy=\"16\" r=\"0.7\"/></svg>";
 export const metadata = {"name":"cpu-warning","title":"Cpu Warning","category":"system","tags":["cpu-warning","cpu","warning"],"aliases":[],"contexts":["system","interface"],"related":[],"accessibility":{"default":"meaningful"},"path":"/icons/system/cpu-warning.svg","family":"line","semantics":{"intents":["status"],"actions":[],"states":["warning"],"objects":[],"queryTerms":["cpu-warning","cpu warning","cpu","warning","system","interface","status"],"relations":{"related":[],"alternative":[],"opposite":[],"paired":[],"state":[]}}};

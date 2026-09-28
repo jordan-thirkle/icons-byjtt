@@ -1,5 +1,5 @@
 export const name = "grid";
 export const title = "Grid";
 export const category = "navigation";
-export const svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 5h14v14H5zM9 9h6v6H9z\"/></svg>";
+export const svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"4\" y=\"4\" width=\"6\" height=\"6\" rx=\"1\"/><rect x=\"14\" y=\"4\" width=\"6\" height=\"6\" rx=\"1\"/><rect x=\"4\" y=\"14\" width=\"6\" height=\"6\" rx=\"1\"/><rect x=\"14\" y=\"14\" width=\"6\" height=\"6\" rx=\"1\"/></svg>\n";
 export const metadata = {"name":"grid","title":"Grid","category":"navigation","tags":["grid"],"aliases":[],"contexts":["navigation","interface"],"related":[],"accessibility":{"default":"interactive"},"path":"/icons/navigation/grid.svg","family":"line","semantics":{"intents":["navigation"],"actions":[],"states":[],"objects":[],"queryTerms":["grid","navigation","interface","wayfinding"],"relations":{"related":[],"alternative":[],"opposite":[],"paired":[],"state":[]}}};

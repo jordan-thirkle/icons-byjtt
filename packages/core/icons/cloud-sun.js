@@ -1,5 +1,5 @@
 export const name = "cloud-sun";
 export const title = "Cloud Sun";
 export const category = "objects";
-export const svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M7 18h10a4 4 0 0 0 .5-8A6 6 0 0 0 6 9a4.5 4.5 0 0 0 1 9Z\"/></svg>";
+export const svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6.5 18h10.8a4.2 4.2 0 0 0 .7-8.34A6.2 6.2 0 0 0 6.1 9.4 4.3 4.3 0 0 0 6.5 18z\"/><circle cx=\"7\" cy=\"7\" r=\"2.2\"/><line x1=\"7\" y1=\"3\" x2=\"7\" y2=\"2\"/><line x1=\"2.5\" y1=\"7\" x2=\"1.5\" y2=\"7\"/><line x1=\"10.5\" y1=\"3.5\" x2=\"11.5\" y2=\"2.5\"/></svg>";
 export const metadata = {"name":"cloud-sun","title":"Cloud Sun","category":"objects","tags":["cloud-sun","cloud","sun"],"aliases":[],"contexts":["objects","interface"],"related":[],"accessibility":{"default":"meaningful"},"path":"/icons/objects/cloud-sun.svg","family":"line","semantics":{"intents":["objects"],"actions":[],"states":[],"objects":[],"queryTerms":["cloud-sun","cloud sun","cloud","sun","objects","interface"],"relations":{"related":[],"alternative":[],"opposite":[],"paired":[],"state":[]}}};

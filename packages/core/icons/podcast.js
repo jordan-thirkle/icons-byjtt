@@ -1,5 +1,5 @@
 export const name = "podcast";
 export const title = "Podcast";
 export const category = "media";
-export const svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"8\"/></svg>";
+export const svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"13\" r=\"2\"/><path d=\"M5 13a7 7 0 0 1 14 0M2.5 13a9.5 9.5 0 0 1 19 0\"/><line x1=\"12\" y1=\"15\" x2=\"12\" y2=\"21\"/></svg>";
 export const metadata = {"name":"podcast","title":"Podcast","category":"media","tags":["podcast"],"aliases":[],"contexts":["media","interface"],"related":[],"accessibility":{"default":"meaningful"},"path":"/icons/media/podcast.svg","family":"line","semantics":{"intents":["media"],"actions":[],"states":[],"objects":[],"queryTerms":["podcast","media","interface","content","playback"],"relations":{"related":[],"alternative":[],"opposite":[],"paired":[],"state":[]}}};

@@ -1,5 +1,5 @@
 export const name = "corner-down-left";
 export const title = "Corner Down Left";
 export const category = "navigation";
-export const svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"8\"/></svg>";
+export const svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M19 5v8a6 6 0 0 1-6 6H5M9 15l-4 4 4 4\"/></svg>";
 export const metadata = {"name":"corner-down-left","title":"Corner Down Left","category":"navigation","tags":["corner-down-left","corner","down","left"],"aliases":[],"contexts":["navigation","interface"],"related":[],"accessibility":{"default":"interactive"},"path":"/icons/navigation/corner-down-left.svg","family":"line","semantics":{"intents":["navigation"],"actions":[],"states":[],"objects":[],"queryTerms":["corner-down-left","corner down left","corner","down","left","navigation","interface","wayfinding"],"relations":{"related":[],"alternative":[],"opposite":[],"paired":[],"state":[]}}};

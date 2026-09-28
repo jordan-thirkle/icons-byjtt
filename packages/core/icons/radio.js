@@ -1,5 +1,5 @@
 export const name = "radio";
 export const title = "Radio";
 export const category = "media";
-export const svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 5h14v14H5zM9 9h6v6H9z\"/></svg>";
+export const svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"4\" y=\"6\" width=\"16\" height=\"13\" rx=\"2\"/><line x1=\"8\" y1=\"6\" x2=\"16\" y2=\"2\"/><circle cx=\"9\" cy=\"13\" r=\"2\"/><line x1=\"13\" y1=\"11\" x2=\"17\" y2=\"11\"/><line x1=\"13\" y1=\"14\" x2=\"17\" y2=\"14\"/></svg>";
 export const metadata = {"name":"radio","title":"Radio","category":"media","tags":["radio"],"aliases":[],"contexts":["media","interface"],"related":[],"accessibility":{"default":"meaningful"},"path":"/icons/media/radio.svg","family":"line","semantics":{"intents":["media"],"actions":[],"states":[],"objects":[],"queryTerms":["radio","media","interface","content","playback"],"relations":{"related":[],"alternative":[],"opposite":[],"paired":[],"state":[]}}};

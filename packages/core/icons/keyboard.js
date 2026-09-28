@@ -1,5 +1,5 @@
 export const name = "keyboard";
 export const title = "Keyboard";
 export const category = "objects";
-export const svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"8\"/></svg>";
+export const svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"7\" width=\"18\" height=\"10\" rx=\"2\"/><line x1=\"6\" y1=\"11\" x2=\"6\" y2=\"11\"/><line x1=\"9\" y1=\"11\" x2=\"9\" y2=\"11\"/><line x1=\"12\" y1=\"11\" x2=\"12\" y2=\"11\"/><line x1=\"15\" y1=\"11\" x2=\"15\" y2=\"11\"/><line x1=\"6\" y1=\"14\" x2=\"18\" y2=\"14\"/></svg>";
 export const metadata = {"name":"keyboard","title":"Keyboard","category":"objects","tags":["keyboard"],"aliases":[],"contexts":["objects","interface"],"related":[],"accessibility":{"default":"meaningful"},"path":"/icons/objects/keyboard.svg","family":"line","semantics":{"intents":["objects"],"actions":[],"states":[],"objects":[],"queryTerms":["keyboard","objects","interface"],"relations":{"related":[],"alternative":[],"opposite":[],"paired":[],"state":[]}}};

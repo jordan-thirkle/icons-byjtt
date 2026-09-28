@@ -1,5 +1,5 @@
 export const name = "terminal-error";
 export const title = "Terminal Error";
 export const category = "system";
-export const svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"8\"/><path d=\"M12 8v5M12 16v.1\"/></svg>";
+export const svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"4\" y=\"5\" width=\"16\" height=\"14\" rx=\"2\"/><path d=\"m7 9 3 3-3 3\"/><line x1=\"13\" y1=\"15\" x2=\"18\" y2=\"15\"/><path d=\"M17 7v3M15.5 8.5h3\"/></svg>";
 export const metadata = {"name":"terminal-error","title":"Terminal Error","category":"system","tags":["terminal-error","terminal","error"],"aliases":[],"contexts":["system","interface"],"related":[],"accessibility":{"default":"meaningful"},"path":"/icons/system/terminal-error.svg","family":"line","semantics":{"intents":["developer","status"],"actions":[],"states":["error"],"objects":["terminal"],"queryTerms":["terminal-error","terminal error","terminal","error","system","interface","developer","status"],"relations":{"related":[],"alternative":[],"opposite":[],"paired":[],"state":[]}}};

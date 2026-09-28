@@ -1,5 +1,5 @@
 export const name = "image-off";
 export const title = "Image Off";
 export const category = "media";
-export const svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 5h14v14H5zM9 9h6v6H9z\"/></svg>";
+export const svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"14\" rx=\"2\"/><path d=\"m6 16 4-4 3 3 2-2 4 4\"/><circle cx=\"9\" cy=\"9\" r=\"1\"/><line x1=\"4\" y1=\"4\" x2=\"20\" y2=\"20\"/></svg>";
 export const metadata = {"name":"image-off","title":"Image Off","category":"media","tags":["image-off","image","off"],"aliases":[],"contexts":["media","interface"],"related":[],"accessibility":{"default":"meaningful"},"path":"/icons/media/image-off.svg","family":"line","semantics":{"intents":["media"],"actions":[],"states":[],"objects":["image"],"queryTerms":["image-off","image off","image","off","media","interface","content","playback"],"relations":{"related":[],"alternative":[],"opposite":[],"paired":[],"state":[]}}};

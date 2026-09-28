@@ -11,6 +11,7 @@
     },
     "reviewSizes": [
       12,
+      14,
       16,
       20,
       24
@@ -39,8 +40,8 @@
   },
   "summary": {
     "icons": 300,
-    "microReviewCount": 82,
-    "maxComplexityScore": 25
+    "microReviewCount": 112,
+    "maxComplexityScore": 33
   },
   "icons": [
     {
@@ -52,65 +53,65 @@
     },
     {
       "name": "ai-agent",
-      "drawableElements": 1,
-      "pathCommands": 10,
-      "complexityScore": 12,
-      "microReview": true
+      "drawableElements": 5,
+      "pathCommands": 0,
+      "complexityScore": 10,
+      "microReview": false
     },
     {
       "name": "ai-chat",
-      "drawableElements": 1,
-      "pathCommands": 10,
-      "complexityScore": 12,
-      "microReview": true
+      "drawableElements": 4,
+      "pathCommands": 2,
+      "complexityScore": 10,
+      "microReview": false
     },
     {
       "name": "ai-code",
-      "drawableElements": 1,
-      "pathCommands": 10,
-      "complexityScore": 12,
-      "microReview": true
+      "drawableElements": 2,
+      "pathCommands": 5,
+      "complexityScore": 9,
+      "microReview": false
     },
     {
       "name": "ai-generate",
-      "drawableElements": 1,
-      "pathCommands": 10,
-      "complexityScore": 12,
+      "drawableElements": 3,
+      "pathCommands": 9,
+      "complexityScore": 15,
       "microReview": true
     },
     {
       "name": "ai-model",
-      "drawableElements": 1,
-      "pathCommands": 10,
-      "complexityScore": 12,
+      "drawableElements": 8,
+      "pathCommands": 0,
+      "complexityScore": 16,
       "microReview": true
     },
     {
       "name": "ai-prompt",
-      "drawableElements": 1,
-      "pathCommands": 10,
-      "complexityScore": 12,
-      "microReview": true
-    },
-    {
-      "name": "ai-search",
-      "drawableElements": 2,
+      "drawableElements": 3,
       "pathCommands": 1,
-      "complexityScore": 5,
-      "microReview": false
-    },
-    {
-      "name": "android",
-      "drawableElements": 1,
-      "pathCommands": 5,
       "complexityScore": 7,
       "microReview": false
     },
     {
+      "name": "ai-search",
+      "drawableElements": 3,
+      "pathCommands": 4,
+      "complexityScore": 10,
+      "microReview": false
+    },
+    {
+      "name": "android",
+      "drawableElements": 3,
+      "pathCommands": 17,
+      "complexityScore": 23,
+      "microReview": true
+    },
+    {
       "name": "api",
-      "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
+      "drawableElements": 2,
+      "pathCommands": 3,
+      "complexityScore": 7,
       "microReview": false
     },
     {
@@ -129,9 +130,9 @@
     },
     {
       "name": "archive-box",
-      "drawableElements": 1,
+      "drawableElements": 3,
       "pathCommands": 0,
-      "complexityScore": 2,
+      "complexityScore": 6,
       "microReview": false
     },
     {
@@ -143,9 +144,9 @@
     },
     {
       "name": "arrow-down-circle",
-      "drawableElements": 1,
-      "pathCommands": 4,
-      "complexityScore": 6,
+      "drawableElements": 2,
+      "pathCommands": 3,
+      "complexityScore": 7,
       "microReview": false
     },
     {
@@ -171,9 +172,9 @@
     },
     {
       "name": "arrow-left-circle",
-      "drawableElements": 1,
-      "pathCommands": 4,
-      "complexityScore": 6,
+      "drawableElements": 2,
+      "pathCommands": 3,
+      "complexityScore": 7,
       "microReview": false
     },
     {
@@ -185,9 +186,9 @@
     },
     {
       "name": "arrow-right-circle",
-      "drawableElements": 1,
-      "pathCommands": 4,
-      "complexityScore": 6,
+      "drawableElements": 2,
+      "pathCommands": 3,
+      "complexityScore": 7,
       "microReview": false
     },
     {
@@ -199,9 +200,9 @@
     },
     {
       "name": "arrow-up-circle",
-      "drawableElements": 1,
-      "pathCommands": 4,
-      "complexityScore": 6,
+      "drawableElements": 2,
+      "pathCommands": 3,
+      "complexityScore": 7,
       "microReview": false
     },
     {
@@ -220,9 +221,9 @@
     },
     {
       "name": "at-sign",
-      "drawableElements": 1,
+      "drawableElements": 3,
       "pathCommands": 4,
-      "complexityScore": 6,
+      "complexityScore": 10,
       "microReview": false
     },
     {
@@ -234,9 +235,9 @@
     },
     {
       "name": "audio-lines",
-      "drawableElements": 1,
-      "pathCommands": 4,
-      "complexityScore": 6,
+      "drawableElements": 4,
+      "pathCommands": 0,
+      "complexityScore": 8,
       "microReview": false
     },
     {
@@ -248,17 +249,17 @@
     },
     {
       "name": "ban",
-      "drawableElements": 1,
-      "pathCommands": 10,
-      "complexityScore": 12,
-      "microReview": true
+      "drawableElements": 2,
+      "pathCommands": 0,
+      "complexityScore": 4,
+      "microReview": false
     },
     {
       "name": "barcode",
-      "drawableElements": 1,
+      "drawableElements": 6,
       "pathCommands": 0,
-      "complexityScore": 2,
-      "microReview": false
+      "complexityScore": 12,
+      "microReview": true
     },
     {
       "name": "bell",
@@ -270,29 +271,29 @@
     {
       "name": "bolt",
       "drawableElements": 1,
-      "pathCommands": 4,
-      "complexityScore": 6,
+      "pathCommands": 5,
+      "complexityScore": 7,
       "microReview": false
     },
     {
       "name": "bolt-circle",
-      "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
+      "drawableElements": 2,
+      "pathCommands": 5,
+      "complexityScore": 9,
       "microReview": false
     },
     {
       "name": "book",
-      "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
+      "drawableElements": 2,
+      "pathCommands": 7,
+      "complexityScore": 11,
       "microReview": false
     },
     {
       "name": "book-open",
-      "drawableElements": 1,
-      "pathCommands": 10,
-      "complexityScore": 12,
+      "drawableElements": 2,
+      "pathCommands": 14,
+      "complexityScore": 18,
       "microReview": true
     },
     {
@@ -304,10 +305,10 @@
     },
     {
       "name": "box",
-      "drawableElements": 1,
-      "pathCommands": 4,
-      "complexityScore": 6,
-      "microReview": false
+      "drawableElements": 3,
+      "pathCommands": 8,
+      "complexityScore": 14,
+      "microReview": true
     },
     {
       "name": "braces",
@@ -325,10 +326,10 @@
     },
     {
       "name": "building",
-      "drawableElements": 1,
+      "drawableElements": 8,
       "pathCommands": 0,
-      "complexityScore": 2,
-      "microReview": false
+      "complexityScore": 16,
+      "microReview": true
     },
     {
       "name": "calendar",
@@ -346,9 +347,9 @@
     },
     {
       "name": "car",
-      "drawableElements": 1,
-      "pathCommands": 10,
-      "complexityScore": 12,
+      "drawableElements": 3,
+      "pathCommands": 9,
+      "complexityScore": 15,
       "microReview": true
     },
     {
@@ -360,16 +361,16 @@
     },
     {
       "name": "cash",
-      "drawableElements": 1,
+      "drawableElements": 4,
       "pathCommands": 0,
-      "complexityScore": 2,
+      "complexityScore": 8,
       "microReview": false
     },
     {
       "name": "chat",
-      "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
+      "drawableElements": 2,
+      "pathCommands": 3,
+      "complexityScore": 7,
       "microReview": false
     },
     {
@@ -382,8 +383,8 @@
     {
       "name": "check-circle",
       "drawableElements": 2,
-      "pathCommands": 2,
-      "complexityScore": 6,
+      "pathCommands": 1,
+      "complexityScore": 5,
       "microReview": false
     },
     {
@@ -416,30 +417,30 @@
     },
     {
       "name": "chrome",
-      "drawableElements": 1,
-      "pathCommands": 5,
-      "complexityScore": 7,
+      "drawableElements": 2,
+      "pathCommands": 6,
+      "complexityScore": 10,
       "microReview": false
     },
     {
       "name": "circle-help",
-      "drawableElements": 1,
-      "pathCommands": 4,
-      "complexityScore": 6,
+      "drawableElements": 3,
+      "pathCommands": 3,
+      "complexityScore": 9,
       "microReview": false
     },
     {
       "name": "circle-info",
-      "drawableElements": 1,
+      "drawableElements": 3,
       "pathCommands": 0,
-      "complexityScore": 2,
+      "complexityScore": 6,
       "microReview": false
     },
     {
       "name": "circle-x",
-      "drawableElements": 2,
-      "pathCommands": 4,
-      "complexityScore": 8,
+      "drawableElements": 3,
+      "pathCommands": 0,
+      "complexityScore": 6,
       "microReview": false
     },
     {
@@ -458,38 +459,38 @@
     },
     {
       "name": "close-circle",
-      "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
+      "drawableElements": 3,
+      "pathCommands": 4,
+      "complexityScore": 10,
       "microReview": false
     },
     {
       "name": "cloud",
       "drawableElements": 1,
-      "pathCommands": 6,
-      "complexityScore": 8,
+      "pathCommands": 5,
+      "complexityScore": 7,
       "microReview": false
     },
     {
       "name": "cloud-code",
-      "drawableElements": 1,
-      "pathCommands": 6,
-      "complexityScore": 8,
+      "drawableElements": 2,
+      "pathCommands": 7,
+      "complexityScore": 11,
       "microReview": false
     },
     {
       "name": "cloud-rain",
-      "drawableElements": 1,
-      "pathCommands": 6,
-      "complexityScore": 8,
-      "microReview": false
+      "drawableElements": 4,
+      "pathCommands": 5,
+      "complexityScore": 13,
+      "microReview": true
     },
     {
       "name": "cloud-sun",
-      "drawableElements": 1,
-      "pathCommands": 6,
-      "complexityScore": 8,
-      "microReview": false
+      "drawableElements": 5,
+      "pathCommands": 5,
+      "complexityScore": 15,
+      "microReview": true
     },
     {
       "name": "code",
@@ -500,45 +501,45 @@
     },
     {
       "name": "coins",
-      "drawableElements": 1,
-      "pathCommands": 10,
-      "complexityScore": 12,
-      "microReview": true
+      "drawableElements": 4,
+      "pathCommands": 0,
+      "complexityScore": 8,
+      "microReview": false
     },
     {
       "name": "comment",
-      "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
+      "drawableElements": 2,
+      "pathCommands": 2,
+      "complexityScore": 6,
       "microReview": false
     },
     {
       "name": "comments",
-      "drawableElements": 1,
-      "pathCommands": 10,
-      "complexityScore": 12,
-      "microReview": true
+      "drawableElements": 3,
+      "pathCommands": 2,
+      "complexityScore": 8,
+      "microReview": false
     },
     {
       "name": "contact",
-      "drawableElements": 2,
-      "pathCommands": 2,
-      "complexityScore": 6,
-      "microReview": false
+      "drawableElements": 3,
+      "pathCommands": 6,
+      "complexityScore": 12,
+      "microReview": true
     },
     {
       "name": "contacts",
-      "drawableElements": 2,
-      "pathCommands": 2,
-      "complexityScore": 6,
-      "microReview": false
+      "drawableElements": 7,
+      "pathCommands": 0,
+      "complexityScore": 14,
+      "microReview": true
     },
     {
       "name": "container",
-      "drawableElements": 1,
-      "pathCommands": 10,
-      "complexityScore": 12,
-      "microReview": true
+      "drawableElements": 3,
+      "pathCommands": 0,
+      "complexityScore": 6,
+      "microReview": false
     },
     {
       "name": "copy",
@@ -550,37 +551,37 @@
     {
       "name": "corner-down-left",
       "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
+      "pathCommands": 6,
+      "complexityScore": 8,
       "microReview": false
     },
     {
       "name": "corner-down-right",
       "drawableElements": 1,
-      "pathCommands": 10,
-      "complexityScore": 12,
-      "microReview": true
+      "pathCommands": 6,
+      "complexityScore": 8,
+      "microReview": false
     },
     {
       "name": "corner-left-down",
       "drawableElements": 1,
-      "pathCommands": 4,
-      "complexityScore": 6,
+      "pathCommands": 6,
+      "complexityScore": 8,
       "microReview": false
     },
     {
       "name": "corner-right-down",
       "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
+      "pathCommands": 6,
+      "complexityScore": 8,
       "microReview": false
     },
     {
       "name": "cpu-warning",
-      "drawableElements": 2,
-      "pathCommands": 4,
-      "complexityScore": 8,
-      "microReview": false
+      "drawableElements": 6,
+      "pathCommands": 2,
+      "complexityScore": 14,
+      "microReview": true
     },
     {
       "name": "credit-card",
@@ -598,10 +599,10 @@
     },
     {
       "name": "database-error",
-      "drawableElements": 2,
-      "pathCommands": 4,
-      "complexityScore": 8,
-      "microReview": false
+      "drawableElements": 4,
+      "pathCommands": 9,
+      "complexityScore": 17,
+      "microReview": true
     },
     {
       "name": "delete",
@@ -612,31 +613,31 @@
     },
     {
       "name": "dependency",
-      "drawableElements": 1,
-      "pathCommands": 4,
+      "drawableElements": 3,
+      "pathCommands": 0,
       "complexityScore": 6,
       "microReview": false
     },
     {
       "name": "discord",
-      "drawableElements": 1,
-      "pathCommands": 21,
-      "complexityScore": 23,
+      "drawableElements": 3,
+      "pathCommands": 9,
+      "complexityScore": 15,
       "microReview": true
     },
     {
       "name": "discount",
-      "drawableElements": 1,
-      "pathCommands": 4,
-      "complexityScore": 6,
+      "drawableElements": 2,
+      "pathCommands": 6,
+      "complexityScore": 10,
       "microReview": false
     },
     {
       "name": "docker",
       "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
-      "microReview": false
+      "pathCommands": 20,
+      "complexityScore": 22,
+      "microReview": true
     },
     {
       "name": "document",
@@ -654,17 +655,17 @@
     },
     {
       "name": "download-cloud",
-      "drawableElements": 1,
-      "pathCommands": 6,
-      "complexityScore": 8,
-      "microReview": false
+      "drawableElements": 3,
+      "pathCommands": 8,
+      "complexityScore": 14,
+      "microReview": true
     },
     {
       "name": "download-error",
       "drawableElements": 2,
-      "pathCommands": 4,
-      "complexityScore": 8,
-      "microReview": false
+      "pathCommands": 11,
+      "complexityScore": 15,
+      "microReview": true
     },
     {
       "name": "edit",
@@ -690,22 +691,22 @@
     {
       "name": "expand",
       "drawableElements": 1,
-      "pathCommands": 4,
-      "complexityScore": 6,
-      "microReview": false
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
     },
     {
       "name": "external",
-      "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
+      "drawableElements": 3,
+      "pathCommands": 5,
+      "complexityScore": 11,
       "microReview": false
     },
     {
       "name": "external-link",
-      "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
+      "drawableElements": 2,
+      "pathCommands": 5,
+      "complexityScore": 9,
       "microReview": false
     },
     {
@@ -717,16 +718,16 @@
     },
     {
       "name": "eye-off",
-      "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
-      "microReview": false
+      "drawableElements": 2,
+      "pathCommands": 10,
+      "complexityScore": 14,
+      "microReview": true
     },
     {
       "name": "figma",
-      "drawableElements": 1,
-      "pathCommands": 5,
-      "complexityScore": 7,
+      "drawableElements": 5,
+      "pathCommands": 0,
+      "complexityScore": 10,
       "microReview": false
     },
     {
@@ -738,22 +739,22 @@
     },
     {
       "name": "file-check",
-      "drawableElements": 2,
-      "pathCommands": 2,
-      "complexityScore": 6,
+      "drawableElements": 3,
+      "pathCommands": 5,
+      "complexityScore": 11,
       "microReview": false
     },
     {
       "name": "file-code",
-      "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
+      "drawableElements": 3,
+      "pathCommands": 5,
+      "complexityScore": 11,
       "microReview": false
     },
     {
       "name": "file-image",
-      "drawableElements": 1,
-      "pathCommands": 10,
+      "drawableElements": 4,
+      "pathCommands": 4,
       "complexityScore": 12,
       "microReview": true
     },
@@ -773,31 +774,31 @@
     },
     {
       "name": "file-text",
-      "drawableElements": 1,
-      "pathCommands": 4,
-      "complexityScore": 6,
+      "drawableElements": 4,
+      "pathCommands": 3,
+      "complexityScore": 11,
       "microReview": false
     },
     {
       "name": "file-video",
-      "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
-      "microReview": false
+      "drawableElements": 4,
+      "pathCommands": 6,
+      "complexityScore": 14,
+      "microReview": true
     },
     {
       "name": "files",
-      "drawableElements": 1,
+      "drawableElements": 4,
       "pathCommands": 0,
-      "complexityScore": 2,
+      "complexityScore": 8,
       "microReview": false
     },
     {
       "name": "film",
-      "drawableElements": 1,
+      "drawableElements": 7,
       "pathCommands": 0,
-      "complexityScore": 2,
-      "microReview": false
+      "complexityScore": 14,
+      "microReview": true
     },
     {
       "name": "filter",
@@ -808,10 +809,10 @@
     },
     {
       "name": "filter-off",
-      "drawableElements": 1,
-      "pathCommands": 10,
-      "complexityScore": 12,
-      "microReview": true
+      "drawableElements": 2,
+      "pathCommands": 7,
+      "complexityScore": 11,
+      "microReview": false
     },
     {
       "name": "folder",
@@ -823,16 +824,16 @@
     {
       "name": "folder-closed",
       "drawableElements": 1,
-      "pathCommands": 10,
-      "complexityScore": 12,
+      "pathCommands": 11,
+      "complexityScore": 13,
       "microReview": true
     },
     {
       "name": "folder-minus",
-      "drawableElements": 1,
-      "pathCommands": 4,
-      "complexityScore": 6,
-      "microReview": false
+      "drawableElements": 2,
+      "pathCommands": 11,
+      "complexityScore": 15,
+      "microReview": true
     },
     {
       "name": "folder-open",
@@ -850,24 +851,24 @@
     },
     {
       "name": "folder-search",
-      "drawableElements": 2,
-      "pathCommands": 1,
-      "complexityScore": 5,
-      "microReview": false
+      "drawableElements": 3,
+      "pathCommands": 11,
+      "complexityScore": 17,
+      "microReview": true
     },
     {
       "name": "forbidden",
-      "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
+      "drawableElements": 2,
+      "pathCommands": 2,
+      "complexityScore": 6,
       "microReview": false
     },
     {
       "name": "gift",
-      "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
-      "microReview": false
+      "drawableElements": 4,
+      "pathCommands": 10,
+      "complexityScore": 18,
+      "microReview": true
     },
     {
       "name": "git-branch",
@@ -892,17 +893,17 @@
     },
     {
       "name": "git-pull-request",
-      "drawableElements": 3,
-      "pathCommands": 8,
+      "drawableElements": 5,
+      "pathCommands": 4,
       "complexityScore": 14,
       "microReview": true
     },
     {
       "name": "git-pull-request-closed",
-      "drawableElements": 3,
-      "pathCommands": 8,
-      "complexityScore": 14,
-      "microReview": true
+      "drawableElements": 5,
+      "pathCommands": 0,
+      "complexityScore": 10,
+      "microReview": false
     },
     {
       "name": "github",
@@ -914,50 +915,50 @@
     {
       "name": "gitlab",
       "drawableElements": 1,
-      "pathCommands": 5,
-      "complexityScore": 7,
+      "pathCommands": 2,
+      "complexityScore": 4,
       "microReview": false
     },
     {
       "name": "globe",
       "drawableElements": 2,
-      "pathCommands": 4,
-      "complexityScore": 8,
-      "microReview": false
+      "pathCommands": 10,
+      "complexityScore": 14,
+      "microReview": true
     },
     {
       "name": "globe-code",
       "drawableElements": 2,
-      "pathCommands": 4,
-      "complexityScore": 8,
+      "pathCommands": 7,
+      "complexityScore": 11,
       "microReview": false
     },
     {
       "name": "globe-warning",
-      "drawableElements": 2,
-      "pathCommands": 4,
+      "drawableElements": 3,
+      "pathCommands": 9,
+      "complexityScore": 15,
+      "microReview": true
+    },
+    {
+      "name": "grid",
+      "drawableElements": 4,
+      "pathCommands": 0,
       "complexityScore": 8,
       "microReview": false
     },
     {
-      "name": "grid",
-      "drawableElements": 1,
-      "pathCommands": 10,
-      "complexityScore": 12,
+      "name": "hard-drive",
+      "drawableElements": 3,
+      "pathCommands": 8,
+      "complexityScore": 14,
       "microReview": true
     },
     {
-      "name": "hard-drive",
-      "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
-      "microReview": false
-    },
-    {
       "name": "headphones",
-      "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
+      "drawableElements": 3,
+      "pathCommands": 4,
+      "complexityScore": 10,
       "microReview": false
     },
     {
@@ -983,9 +984,9 @@
     },
     {
       "name": "id-card",
-      "drawableElements": 1,
+      "drawableElements": 4,
       "pathCommands": 0,
-      "complexityScore": 2,
+      "complexityScore": 8,
       "microReview": false
     },
     {
@@ -997,24 +998,24 @@
     },
     {
       "name": "image-off",
-      "drawableElements": 1,
-      "pathCommands": 10,
-      "complexityScore": 12,
-      "microReview": true
+      "drawableElements": 4,
+      "pathCommands": 1,
+      "complexityScore": 9,
+      "microReview": false
     },
     {
       "name": "inbox",
       "drawableElements": 2,
-      "pathCommands": 1,
-      "complexityScore": 5,
+      "pathCommands": 2,
+      "complexityScore": 6,
       "microReview": false
     },
     {
       "name": "inbox-file",
-      "drawableElements": 2,
-      "pathCommands": 1,
-      "complexityScore": 5,
-      "microReview": false
+      "drawableElements": 3,
+      "pathCommands": 15,
+      "complexityScore": 21,
+      "microReview": true
     },
     {
       "name": "info",
@@ -1025,44 +1026,44 @@
     },
     {
       "name": "invoice",
-      "drawableElements": 1,
+      "drawableElements": 4,
       "pathCommands": 0,
-      "complexityScore": 2,
+      "complexityScore": 8,
       "microReview": false
     },
     {
       "name": "key",
-      "drawableElements": 1,
-      "pathCommands": 4,
-      "complexityScore": 6,
+      "drawableElements": 3,
+      "pathCommands": 5,
+      "complexityScore": 11,
       "microReview": false
     },
     {
       "name": "key-code",
-      "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
+      "drawableElements": 2,
+      "pathCommands": 4,
+      "complexityScore": 8,
       "microReview": false
     },
     {
       "name": "keyboard",
-      "drawableElements": 1,
+      "drawableElements": 6,
       "pathCommands": 0,
-      "complexityScore": 2,
-      "microReview": false
+      "complexityScore": 12,
+      "microReview": true
     },
     {
       "name": "layers",
       "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
+      "pathCommands": 7,
+      "complexityScore": 9,
       "microReview": false
     },
     {
       "name": "lightbulb",
-      "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
+      "drawableElements": 2,
+      "pathCommands": 4,
+      "complexityScore": 8,
       "microReview": false
     },
     {
@@ -1081,17 +1082,17 @@
     },
     {
       "name": "linkedin",
-      "drawableElements": 1,
-      "pathCommands": 5,
-      "complexityScore": 7,
-      "microReview": false
+      "drawableElements": 3,
+      "pathCommands": 8,
+      "complexityScore": 14,
+      "microReview": true
     },
     {
       "name": "list",
-      "drawableElements": 1,
-      "pathCommands": 4,
-      "complexityScore": 6,
-      "microReview": false
+      "drawableElements": 2,
+      "pathCommands": 12,
+      "complexityScore": 16,
+      "microReview": true
     },
     {
       "name": "loading",
@@ -1116,37 +1117,37 @@
     },
     {
       "name": "log-in",
-      "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
-      "microReview": false
+      "drawableElements": 3,
+      "pathCommands": 6,
+      "complexityScore": 12,
+      "microReview": true
     },
     {
       "name": "log-out",
-      "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
-      "microReview": false
+      "drawableElements": 3,
+      "pathCommands": 6,
+      "complexityScore": 12,
+      "microReview": true
     },
     {
       "name": "logs",
-      "drawableElements": 1,
+      "drawableElements": 4,
       "pathCommands": 0,
-      "complexityScore": 2,
+      "complexityScore": 8,
       "microReview": false
     },
     {
       "name": "mail",
-      "drawableElements": 2,
-      "pathCommands": 1,
-      "complexityScore": 5,
+      "drawableElements": 3,
+      "pathCommands": 4,
+      "complexityScore": 10,
       "microReview": false
     },
     {
       "name": "maintenance",
-      "drawableElements": 1,
+      "drawableElements": 3,
       "pathCommands": 4,
-      "complexityScore": 6,
+      "complexityScore": 10,
       "microReview": false
     },
     {
@@ -1158,23 +1159,23 @@
     },
     {
       "name": "map-pin",
-      "drawableElements": 1,
-      "pathCommands": 4,
-      "complexityScore": 6,
+      "drawableElements": 3,
+      "pathCommands": 5,
+      "complexityScore": 11,
       "microReview": false
     },
     {
       "name": "maximize",
       "drawableElements": 1,
-      "pathCommands": 4,
-      "complexityScore": 6,
-      "microReview": false
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
     },
     {
       "name": "mention",
-      "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
+      "drawableElements": 4,
+      "pathCommands": 3,
+      "complexityScore": 11,
       "microReview": false
     },
     {
@@ -1214,58 +1215,58 @@
     },
     {
       "name": "mobile",
-      "drawableElements": 1,
+      "drawableElements": 3,
       "pathCommands": 0,
-      "complexityScore": 2,
+      "complexityScore": 6,
       "microReview": false
     },
     {
       "name": "money",
-      "drawableElements": 1,
-      "pathCommands": 10,
+      "drawableElements": 3,
+      "pathCommands": 6,
       "complexityScore": 12,
       "microReview": true
     },
     {
       "name": "monitor",
-      "drawableElements": 1,
-      "pathCommands": 4,
+      "drawableElements": 3,
+      "pathCommands": 0,
       "complexityScore": 6,
       "microReview": false
     },
     {
       "name": "monitor-code",
-      "drawableElements": 1,
-      "pathCommands": 10,
-      "complexityScore": 12,
-      "microReview": true
+      "drawableElements": 4,
+      "pathCommands": 2,
+      "complexityScore": 10,
+      "microReview": false
     },
     {
       "name": "more-horizontal",
-      "drawableElements": 1,
+      "drawableElements": 3,
       "pathCommands": 0,
-      "complexityScore": 2,
+      "complexityScore": 6,
       "microReview": false
     },
     {
       "name": "more-vertical",
-      "drawableElements": 1,
-      "pathCommands": 10,
-      "complexityScore": 12,
-      "microReview": true
+      "drawableElements": 3,
+      "pathCommands": 0,
+      "complexityScore": 6,
+      "microReview": false
     },
     {
       "name": "mouse",
-      "drawableElements": 1,
-      "pathCommands": 10,
-      "complexityScore": 12,
-      "microReview": true
+      "drawableElements": 3,
+      "pathCommands": 0,
+      "complexityScore": 6,
+      "microReview": false
     },
     {
       "name": "move",
       "drawableElements": 1,
-      "pathCommands": 4,
-      "complexityScore": 6,
+      "pathCommands": 6,
+      "complexityScore": 8,
       "microReview": false
     },
     {
@@ -1277,86 +1278,86 @@
     },
     {
       "name": "music-note",
-      "drawableElements": 1,
+      "drawableElements": 3,
       "pathCommands": 4,
-      "complexityScore": 6,
+      "complexityScore": 10,
       "microReview": false
     },
     {
       "name": "npm",
-      "drawableElements": 1,
-      "pathCommands": 5,
-      "complexityScore": 7,
-      "microReview": false
+      "drawableElements": 2,
+      "pathCommands": 13,
+      "complexityScore": 17,
+      "microReview": true
     },
     {
       "name": "offline",
-      "drawableElements": 1,
+      "drawableElements": 2,
       "pathCommands": 0,
-      "complexityScore": 2,
+      "complexityScore": 4,
       "microReview": false
     },
     {
       "name": "online",
-      "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
-      "microReview": false
-    },
-    {
-      "name": "openai",
-      "drawableElements": 1,
-      "pathCommands": 5,
-      "complexityScore": 7,
-      "microReview": false
-    },
-    {
-      "name": "package",
-      "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
-      "microReview": false
-    },
-    {
-      "name": "package-check",
       "drawableElements": 2,
       "pathCommands": 2,
       "complexityScore": 6,
       "microReview": false
     },
     {
+      "name": "openai",
+      "drawableElements": 2,
+      "pathCommands": 13,
+      "complexityScore": 17,
+      "microReview": true
+    },
+    {
+      "name": "package",
+      "drawableElements": 2,
+      "pathCommands": 6,
+      "complexityScore": 10,
+      "microReview": false
+    },
+    {
+      "name": "package-check",
+      "drawableElements": 3,
+      "pathCommands": 5,
+      "complexityScore": 11,
+      "microReview": false
+    },
+    {
       "name": "package-code",
-      "drawableElements": 1,
+      "drawableElements": 3,
       "pathCommands": 4,
-      "complexityScore": 6,
+      "complexityScore": 10,
       "microReview": false
     },
     {
       "name": "palette",
-      "drawableElements": 1,
+      "drawableElements": 5,
       "pathCommands": 0,
-      "complexityScore": 2,
+      "complexityScore": 10,
       "microReview": false
     },
     {
       "name": "panel-left",
-      "drawableElements": 1,
-      "pathCommands": 10,
-      "complexityScore": 12,
-      "microReview": true
+      "drawableElements": 2,
+      "pathCommands": 2,
+      "complexityScore": 6,
+      "microReview": false
     },
     {
       "name": "panel-right",
-      "drawableElements": 1,
-      "pathCommands": 4,
+      "drawableElements": 2,
+      "pathCommands": 2,
       "complexityScore": 6,
       "microReview": false
     },
     {
       "name": "paperclip",
       "drawableElements": 1,
-      "pathCommands": 4,
-      "complexityScore": 6,
+      "pathCommands": 5,
+      "complexityScore": 7,
       "microReview": false
     },
     {
@@ -1389,17 +1390,17 @@
     },
     {
       "name": "pin",
-      "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
+      "drawableElements": 3,
+      "pathCommands": 5,
+      "complexityScore": 11,
       "microReview": false
     },
     {
       "name": "pipeline",
       "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
-      "microReview": false
+      "pathCommands": 15,
+      "complexityScore": 17,
+      "microReview": true
     },
     {
       "name": "play",
@@ -1431,52 +1432,52 @@
     },
     {
       "name": "podcast",
-      "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
+      "drawableElements": 3,
+      "pathCommands": 4,
+      "complexityScore": 10,
       "microReview": false
     },
     {
       "name": "power",
-      "drawableElements": 1,
-      "pathCommands": 10,
-      "complexityScore": 12,
-      "microReview": true
+      "drawableElements": 2,
+      "pathCommands": 4,
+      "complexityScore": 8,
+      "microReview": false
     },
     {
       "name": "profile",
-      "drawableElements": 2,
+      "drawableElements": 3,
       "pathCommands": 2,
-      "complexityScore": 6,
+      "complexityScore": 8,
       "microReview": false
     },
     {
       "name": "pull-request",
-      "drawableElements": 3,
-      "pathCommands": 8,
-      "complexityScore": 14,
+      "drawableElements": 4,
+      "pathCommands": 4,
+      "complexityScore": 12,
       "microReview": true
     },
     {
       "name": "qr-code",
-      "drawableElements": 1,
-      "pathCommands": 10,
-      "complexityScore": 12,
-      "microReview": true
+      "drawableElements": 5,
+      "pathCommands": 0,
+      "complexityScore": 10,
+      "microReview": false
     },
     {
       "name": "radio",
-      "drawableElements": 1,
-      "pathCommands": 10,
-      "complexityScore": 12,
-      "microReview": true
+      "drawableElements": 5,
+      "pathCommands": 0,
+      "complexityScore": 10,
+      "microReview": false
     },
     {
       "name": "react",
-      "drawableElements": 1,
-      "pathCommands": 5,
-      "complexityScore": 7,
-      "microReview": false
+      "drawableElements": 2,
+      "pathCommands": 10,
+      "complexityScore": 14,
+      "microReview": true
     },
     {
       "name": "receipt",
@@ -1487,9 +1488,9 @@
     },
     {
       "name": "receipt-text",
-      "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
+      "drawableElements": 3,
+      "pathCommands": 5,
+      "complexityScore": 11,
       "microReview": false
     },
     {
@@ -1508,23 +1509,23 @@
     },
     {
       "name": "refresh-alert",
-      "drawableElements": 1,
-      "pathCommands": 10,
-      "complexityScore": 12,
+      "drawableElements": 2,
+      "pathCommands": 13,
+      "complexityScore": 17,
       "microReview": true
     },
     {
       "name": "repeat",
-      "drawableElements": 1,
-      "pathCommands": 4,
-      "complexityScore": 6,
-      "microReview": false
+      "drawableElements": 3,
+      "pathCommands": 18,
+      "complexityScore": 24,
+      "microReview": true
     },
     {
       "name": "reply",
       "drawableElements": 1,
-      "pathCommands": 4,
-      "complexityScore": 6,
+      "pathCommands": 7,
+      "complexityScore": 9,
       "microReview": false
     },
     {
@@ -1537,22 +1538,22 @@
     {
       "name": "rotate-ccw",
       "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
+      "pathCommands": 6,
+      "complexityScore": 8,
       "microReview": false
     },
     {
       "name": "rotate-cw",
       "drawableElements": 1,
-      "pathCommands": 4,
-      "complexityScore": 6,
+      "pathCommands": 6,
+      "complexityScore": 8,
       "microReview": false
     },
     {
       "name": "rss",
-      "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
+      "drawableElements": 2,
+      "pathCommands": 4,
+      "complexityScore": 8,
       "microReview": false
     },
     {
@@ -1564,23 +1565,23 @@
     },
     {
       "name": "save-cloud",
-      "drawableElements": 1,
-      "pathCommands": 6,
-      "complexityScore": 8,
-      "microReview": false
+      "drawableElements": 2,
+      "pathCommands": 9,
+      "complexityScore": 13,
+      "microReview": true
     },
     {
       "name": "scan",
-      "drawableElements": 1,
-      "pathCommands": 4,
-      "complexityScore": 6,
-      "microReview": false
+      "drawableElements": 2,
+      "pathCommands": 16,
+      "complexityScore": 20,
+      "microReview": true
     },
     {
       "name": "schema",
-      "drawableElements": 1,
-      "pathCommands": 10,
-      "complexityScore": 12,
+      "drawableElements": 9,
+      "pathCommands": 0,
+      "complexityScore": 18,
       "microReview": true
     },
     {
@@ -1592,23 +1593,23 @@
     },
     {
       "name": "search-file",
-      "drawableElements": 2,
-      "pathCommands": 1,
-      "complexityScore": 5,
-      "microReview": false
+      "drawableElements": 5,
+      "pathCommands": 11,
+      "complexityScore": 21,
+      "microReview": true
     },
     {
       "name": "search-minus",
-      "drawableElements": 2,
-      "pathCommands": 1,
-      "complexityScore": 5,
+      "drawableElements": 3,
+      "pathCommands": 3,
+      "complexityScore": 9,
       "microReview": false
     },
     {
       "name": "search-plus",
-      "drawableElements": 2,
-      "pathCommands": 1,
-      "complexityScore": 5,
+      "drawableElements": 3,
+      "pathCommands": 5,
+      "complexityScore": 11,
       "microReview": false
     },
     {
@@ -1621,9 +1622,9 @@
     {
       "name": "send-horizontal",
       "drawableElements": 1,
-      "pathCommands": 10,
-      "complexityScore": 12,
-      "microReview": true
+      "pathCommands": 5,
+      "complexityScore": 7,
+      "microReview": false
     },
     {
       "name": "server",
@@ -1648,87 +1649,87 @@
     },
     {
       "name": "share-2",
-      "drawableElements": 1,
+      "drawableElements": 5,
       "pathCommands": 0,
-      "complexityScore": 2,
+      "complexityScore": 10,
       "microReview": false
     },
     {
       "name": "shield",
       "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
+      "pathCommands": 6,
+      "complexityScore": 8,
       "microReview": false
     },
     {
       "name": "shield-alert",
-      "drawableElements": 1,
-      "pathCommands": 4,
-      "complexityScore": 6,
-      "microReview": false
+      "drawableElements": 3,
+      "pathCommands": 8,
+      "complexityScore": 14,
+      "microReview": true
     },
     {
       "name": "shield-check",
       "drawableElements": 2,
-      "pathCommands": 2,
-      "complexityScore": 6,
+      "pathCommands": 7,
+      "complexityScore": 11,
       "microReview": false
     },
     {
       "name": "shuffle",
-      "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
-      "microReview": false
+      "drawableElements": 2,
+      "pathCommands": 11,
+      "complexityScore": 15,
+      "microReview": true
     },
     {
       "name": "sidebar",
-      "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
-      "microReview": false
+      "drawableElements": 3,
+      "pathCommands": 8,
+      "complexityScore": 14,
+      "microReview": true
     },
     {
       "name": "skip-back",
-      "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
+      "drawableElements": 2,
+      "pathCommands": 6,
+      "complexityScore": 10,
       "microReview": false
     },
     {
       "name": "skip-forward",
-      "drawableElements": 1,
-      "pathCommands": 10,
-      "complexityScore": 12,
-      "microReview": true
+      "drawableElements": 2,
+      "pathCommands": 6,
+      "complexityScore": 10,
+      "microReview": false
     },
     {
       "name": "skip-next",
       "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
+      "pathCommands": 7,
+      "complexityScore": 9,
       "microReview": false
     },
     {
       "name": "skip-previous",
       "drawableElements": 1,
-      "pathCommands": 10,
-      "complexityScore": 12,
-      "microReview": true
-    },
-    {
-      "name": "sliders",
-      "drawableElements": 1,
-      "pathCommands": 4,
-      "complexityScore": 6,
+      "pathCommands": 7,
+      "complexityScore": 9,
       "microReview": false
     },
     {
-      "name": "smile",
-      "drawableElements": 1,
-      "pathCommands": 10,
+      "name": "sliders",
+      "drawableElements": 6,
+      "pathCommands": 0,
       "complexityScore": 12,
       "microReview": true
+    },
+    {
+      "name": "smile",
+      "drawableElements": 4,
+      "pathCommands": 2,
+      "complexityScore": 10,
+      "microReview": false
     },
     {
       "name": "sort",
@@ -1739,17 +1740,17 @@
     },
     {
       "name": "sparkle-code",
-      "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
-      "microReview": false
+      "drawableElements": 3,
+      "pathCommands": 13,
+      "complexityScore": 19,
+      "microReview": true
     },
     {
       "name": "sparkles",
-      "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
-      "microReview": false
+      "drawableElements": 3,
+      "pathCommands": 27,
+      "complexityScore": 33,
+      "microReview": true
     },
     {
       "name": "star",
@@ -1760,24 +1761,24 @@
     },
     {
       "name": "stop",
-      "drawableElements": 1,
+      "drawableElements": 2,
       "pathCommands": 0,
-      "complexityScore": 2,
+      "complexityScore": 4,
       "microReview": false
     },
     {
       "name": "stop-circle",
-      "drawableElements": 1,
+      "drawableElements": 2,
       "pathCommands": 0,
-      "complexityScore": 2,
+      "complexityScore": 4,
       "microReview": false
     },
     {
       "name": "store",
-      "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
-      "microReview": false
+      "drawableElements": 5,
+      "pathCommands": 5,
+      "complexityScore": 15,
+      "microReview": true
     },
     {
       "name": "success",
@@ -1796,15 +1797,15 @@
     {
       "name": "svelte",
       "drawableElements": 1,
-      "pathCommands": 5,
-      "complexityScore": 7,
-      "microReview": false
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
     },
     {
       "name": "system-update",
-      "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
+      "drawableElements": 3,
+      "pathCommands": 3,
+      "complexityScore": 9,
       "microReview": false
     },
     {
@@ -1816,16 +1817,16 @@
     },
     {
       "name": "target",
-      "drawableElements": 1,
+      "drawableElements": 4,
       "pathCommands": 0,
-      "complexityScore": 2,
+      "complexityScore": 8,
       "microReview": false
     },
     {
       "name": "team",
-      "drawableElements": 2,
-      "pathCommands": 2,
-      "complexityScore": 6,
+      "drawableElements": 3,
+      "pathCommands": 4,
+      "complexityScore": 10,
       "microReview": false
     },
     {
@@ -1837,59 +1838,59 @@
     },
     {
       "name": "terminal-error",
-      "drawableElements": 2,
-      "pathCommands": 4,
-      "complexityScore": 8,
-      "microReview": false
-    },
-    {
-      "name": "terminal-square",
-      "drawableElements": 1,
-      "pathCommands": 10,
-      "complexityScore": 12,
+      "drawableElements": 4,
+      "pathCommands": 5,
+      "complexityScore": 13,
       "microReview": true
     },
     {
-      "name": "test-tube",
-      "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
+      "name": "terminal-square",
+      "drawableElements": 3,
+      "pathCommands": 3,
+      "complexityScore": 9,
       "microReview": false
+    },
+    {
+      "name": "test-tube",
+      "drawableElements": 2,
+      "pathCommands": 10,
+      "complexityScore": 14,
+      "microReview": true
     },
     {
       "name": "thumbs-down",
       "drawableElements": 1,
-      "pathCommands": 4,
-      "complexityScore": 6,
-      "microReview": false
+      "pathCommands": 12,
+      "complexityScore": 14,
+      "microReview": true
     },
     {
       "name": "thumbs-up",
       "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
-      "microReview": false
+      "pathCommands": 12,
+      "complexityScore": 14,
+      "microReview": true
     },
     {
       "name": "timeout",
-      "drawableElements": 1,
-      "pathCommands": 10,
-      "complexityScore": 12,
-      "microReview": true
+      "drawableElements": 3,
+      "pathCommands": 5,
+      "complexityScore": 11,
+      "microReview": false
     },
     {
       "name": "trash",
-      "drawableElements": 1,
-      "pathCommands": 10,
-      "complexityScore": 12,
-      "microReview": true
+      "drawableElements": 5,
+      "pathCommands": 0,
+      "complexityScore": 10,
+      "microReview": false
     },
     {
       "name": "typescript",
-      "drawableElements": 1,
-      "pathCommands": 5,
-      "complexityScore": 7,
-      "microReview": false
+      "drawableElements": 2,
+      "pathCommands": 8,
+      "complexityScore": 12,
+      "microReview": true
     },
     {
       "name": "undo",
@@ -1921,9 +1922,9 @@
     },
     {
       "name": "user-check",
-      "drawableElements": 2,
-      "pathCommands": 2,
-      "complexityScore": 6,
+      "drawableElements": 3,
+      "pathCommands": 4,
+      "complexityScore": 10,
       "microReview": false
     },
     {
@@ -1949,23 +1950,23 @@
     },
     {
       "name": "user-search",
-      "drawableElements": 2,
-      "pathCommands": 1,
-      "complexityScore": 5,
+      "drawableElements": 4,
+      "pathCommands": 2,
+      "complexityScore": 10,
       "microReview": false
     },
     {
       "name": "user-settings",
-      "drawableElements": 2,
-      "pathCommands": 2,
-      "complexityScore": 6,
-      "microReview": false
+      "drawableElements": 4,
+      "pathCommands": 10,
+      "complexityScore": 18,
+      "microReview": true
     },
     {
       "name": "user-x",
-      "drawableElements": 2,
+      "drawableElements": 4,
       "pathCommands": 2,
-      "complexityScore": 6,
+      "complexityScore": 10,
       "microReview": false
     },
     {
@@ -1977,23 +1978,23 @@
     },
     {
       "name": "users-round",
-      "drawableElements": 2,
-      "pathCommands": 2,
-      "complexityScore": 6,
+      "drawableElements": 3,
+      "pathCommands": 4,
+      "complexityScore": 10,
       "microReview": false
     },
     {
       "name": "vercel",
       "drawableElements": 1,
-      "pathCommands": 5,
-      "complexityScore": 7,
+      "pathCommands": 3,
+      "complexityScore": 5,
       "microReview": false
     },
     {
       "name": "verified",
-      "drawableElements": 2,
-      "pathCommands": 2,
-      "complexityScore": 6,
+      "drawableElements": 1,
+      "pathCommands": 1,
+      "complexityScore": 3,
       "microReview": false
     },
     {
@@ -2005,16 +2006,16 @@
     },
     {
       "name": "video-off",
-      "drawableElements": 1,
-      "pathCommands": 4,
-      "complexityScore": 6,
+      "drawableElements": 3,
+      "pathCommands": 3,
+      "complexityScore": 9,
       "microReview": false
     },
     {
       "name": "voicemail",
-      "drawableElements": 2,
-      "pathCommands": 1,
-      "complexityScore": 5,
+      "drawableElements": 3,
+      "pathCommands": 0,
+      "complexityScore": 6,
       "microReview": false
     },
     {
@@ -2033,31 +2034,31 @@
     },
     {
       "name": "volume-x",
-      "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
-      "microReview": false
+      "drawableElements": 3,
+      "pathCommands": 7,
+      "complexityScore": 13,
+      "microReview": true
     },
     {
       "name": "vue",
-      "drawableElements": 1,
-      "pathCommands": 5,
-      "complexityScore": 7,
-      "microReview": false
-    },
-    {
-      "name": "wallet",
-      "drawableElements": 1,
-      "pathCommands": 10,
+      "drawableElements": 2,
+      "pathCommands": 8,
       "complexityScore": 12,
       "microReview": true
     },
     {
-      "name": "wallet-cards",
-      "drawableElements": 1,
-      "pathCommands": 4,
-      "complexityScore": 6,
+      "name": "wallet",
+      "drawableElements": 2,
+      "pathCommands": 6,
+      "complexityScore": 10,
       "microReview": false
+    },
+    {
+      "name": "wallet-cards",
+      "drawableElements": 3,
+      "pathCommands": 6,
+      "complexityScore": 12,
+      "microReview": true
     },
     {
       "name": "warning",
@@ -2069,30 +2070,30 @@
     {
       "name": "webhook",
       "drawableElements": 1,
-      "pathCommands": 10,
-      "complexityScore": 12,
-      "microReview": true
+      "pathCommands": 8,
+      "complexityScore": 10,
+      "microReview": false
     },
     {
       "name": "wifi",
-      "drawableElements": 1,
-      "pathCommands": 4,
-      "complexityScore": 6,
+      "drawableElements": 2,
+      "pathCommands": 6,
+      "complexityScore": 10,
       "microReview": false
     },
     {
       "name": "wifi-off",
-      "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
-      "microReview": false
+      "drawableElements": 2,
+      "pathCommands": 8,
+      "complexityScore": 12,
+      "microReview": true
     },
     {
       "name": "workflow",
       "drawableElements": 1,
-      "pathCommands": 4,
-      "complexityScore": 6,
-      "microReview": false
+      "pathCommands": 13,
+      "complexityScore": 15,
+      "microReview": true
     },
     {
       "name": "x",
@@ -2104,44 +2105,44 @@
     {
       "name": "x-circle",
       "drawableElements": 2,
-      "pathCommands": 4,
-      "complexityScore": 8,
+      "pathCommands": 0,
+      "complexityScore": 4,
       "microReview": false
     },
     {
       "name": "x-twitter",
       "drawableElements": 1,
-      "pathCommands": 13,
-      "complexityScore": 15,
+      "pathCommands": 12,
+      "complexityScore": 14,
       "microReview": true
     },
     {
       "name": "youtube",
-      "drawableElements": 1,
-      "pathCommands": 14,
-      "complexityScore": 16,
+      "drawableElements": 2,
+      "pathCommands": 16,
+      "complexityScore": 20,
       "microReview": true
     },
     {
       "name": "zip",
-      "drawableElements": 1,
-      "pathCommands": 10,
-      "complexityScore": 12,
+      "drawableElements": 5,
+      "pathCommands": 3,
+      "complexityScore": 13,
       "microReview": true
     },
     {
       "name": "zoom-in",
-      "drawableElements": 1,
-      "pathCommands": 4,
-      "complexityScore": 6,
-      "microReview": false
+      "drawableElements": 3,
+      "pathCommands": 17,
+      "complexityScore": 23,
+      "microReview": true
     },
     {
       "name": "zoom-out",
-      "drawableElements": 1,
-      "pathCommands": 0,
-      "complexityScore": 2,
-      "microReview": false
+      "drawableElements": 3,
+      "pathCommands": 15,
+      "complexityScore": 21,
+      "microReview": true
     }
   ]
 }

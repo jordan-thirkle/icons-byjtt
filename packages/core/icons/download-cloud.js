@@ -1,5 +1,5 @@
 export const name = "download-cloud";
 export const title = "Download Cloud";
 export const category = "actions";
-export const svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M7 18h10a4 4 0 0 0 .5-8A6 6 0 0 0 6 9a4.5 4.5 0 0 0 1 9Z\"/></svg>";
+export const svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6.5 18h10.8a4.2 4.2 0 0 0 .7-8.34A6.2 6.2 0 0 0 6.1 9.4 4.3 4.3 0 0 0 6.5 18z\"/><path d=\"m12 10v6m-3-3 3 3 3-3\"/><line x1=\"8\" y1=\"20\" x2=\"16\" y2=\"20\"/></svg>";
 export const metadata = {"name":"download-cloud","title":"Download Cloud","category":"actions","tags":["download-cloud","download","cloud"],"aliases":[],"contexts":["actions","interface"],"related":[],"accessibility":{"default":"interactive"},"path":"/icons/actions/download-cloud.svg","family":"line","semantics":{"intents":["transfer"],"actions":["download"],"states":[],"objects":[],"queryTerms":["download-cloud","download cloud","download","cloud","actions","interface","transfer"],"relations":{"related":[],"alternative":[],"opposite":[],"paired":[],"state":[]}}};

@@ -1,5 +1,5 @@
 export const name = "ai-generate";
 export const title = "AI Generate";
 export const category = "developer";
-export const svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3Z\"/></svg>";
+export const svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 17h5l7-7\"/><path d=\"M15 5h4v4\"/><path d=\"M16 3l1 2 2 1-2 1-1 2-1-2-2-1 2-1z\"/></svg>";
 export const metadata = {"name":"ai-generate","title":"AI Generate","category":"developer","tags":["ai-generate","ai","generate","agent","llm"],"aliases":[],"contexts":["developer","tooling"],"related":["ai-model"],"accessibility":{"default":"meaningful"},"path":"/icons/developer/ai-generate.svg","family":"line","semantics":{"intents":["developer","ai"],"actions":["generate"],"states":[],"objects":["agent","ai"],"queryTerms":["ai-generate","ai generate","ai","generate","agent","llm","developer","tooling","engineering","software"],"relations":{"related":["ai-model"],"alternative":[],"opposite":[],"paired":[],"state":[]}}};

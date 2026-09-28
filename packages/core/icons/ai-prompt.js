@@ -1,5 +1,5 @@
 export const name = "ai-prompt";
 export const title = "AI Prompt";
 export const category = "developer";
-export const svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3Z\"/></svg>";
+export const svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"4\" y=\"5\" width=\"16\" height=\"13\" rx=\"2\"/><path d=\"m7 9 3 3-3 3\"/><line x1=\"12\" y1=\"15\" x2=\"17\" y2=\"15\"/></svg>";
 export const metadata = {"name":"ai-prompt","title":"AI Prompt","category":"developer","tags":["ai-prompt","ai","prompt","agent","llm"],"aliases":[],"contexts":["developer","tooling"],"related":["ai-agent"],"accessibility":{"default":"meaningful"},"path":"/icons/developer/ai-prompt.svg","family":"line","semantics":{"intents":["developer","ai"],"actions":["prompt"],"states":[],"objects":["agent","prompt","ai"],"queryTerms":["ai-prompt","ai prompt","ai","prompt","agent","llm","developer","tooling","engineering","software"],"relations":{"related":["ai-agent"],"alternative":[],"opposite":[],"paired":[],"state":[]}}};
