@@ -52,7 +52,7 @@ for (const size of sizes) {
     "<rect width=\"100%\" height=\"100%\" fill=\"#f4f4f4\"/><text x=\"16\" y=\"16\" font-family=\"system-ui,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#111\">JTT Icons · Catalogue 300 · ", size, "px</text>",
     cells, "</svg>\n"
   ].join("");
-  fs.writeFileSync(path.join(outputDir, "core-100-" + size + ".svg"), snapshot);
+  fs.writeFileSync(path.join(outputDir, "catalogue-300-" + size + ".svg"), snapshot);
 }
 
 const opticalAudit = {
