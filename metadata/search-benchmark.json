@@ -176,7 +176,10 @@
     {
       "query": "git repository",
       "expected": [
-        "github"
+        "github",
+        "git-branch",
+        "git-commit",
+        "git-merge"
       ]
     },
     {
