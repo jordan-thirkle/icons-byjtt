@@ -1,7 +1,23 @@
-# JTT Icons for Claude
+# JTT Icons — Claude Guidance
 
-For icon requests, use the JTT Icons semantic catalogue rather than inventing inline SVGs.
+Read `AGENTS.md` first. It is the repository-wide contract.
 
-Read `skills/jtt-icons/SKILL.md` for the canonical workflow. Prefer exact icon names, then documented semantic relationships. Use raw SVG, React, Vue, Svelte, Web Component, or CDN output according to the user's environment.
+For any task:
+- inspect before editing;
+- preserve canonical semantics;
+- change source-of-truth files before generated outputs;
+- run `npm test` and `npm run check`;
+- keep the public deployment isolated from repository source.
 
-Do not invent JTT icon names or silently mix unrelated icon families.
+For icon work:
+- search canonical metadata and ontology first;
+- never invent an identifier;
+- use `docs/design-principles.md`, `docs/naming.md` and `docs/accessibility.md`;
+- review small-size behaviour before completion.
+
+For AI/MCP work:
+- keep website, JSON, MCP, Agent Skill, packages and Figma on one canonical identity;
+- unknown identifiers must fail clearly;
+- do not turn AI documentation into a second source of truth.
+
+Do not commit secrets, credentials, private data, local paths or internal-only material.
