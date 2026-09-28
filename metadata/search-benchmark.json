@@ -9,7 +9,7 @@
       ]
     },
     {
-      "query": "look something up",
+      "query": "lookup",
       "expected": [
         "search"
       ]
