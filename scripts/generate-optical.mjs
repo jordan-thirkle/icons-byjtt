@@ -68,7 +68,8 @@ for (const category of categories) {
     const height = headerHeight + rows * cellHeight;
     const cells = familyIcons.map((icon, index) => {
       const svg = fs.readFileSync(path.join(root, icon.path.slice(1)), "utf8");
-      const rootAttrs = (svg.match(/^<svg\\b([^>]*)>/)?.[1] ?? "").replace(/\\s(?:x|y|width|height)="[^"]*"/g, "");
+      const openTag = svg.slice(0, svg.indexOf(">") + 1);
+      const rootAttrs = openTag.slice(4, -1).replace(/ (?:x|y|width|height)="[^"]*"/g, "");
       const body = svg.replace(/^<svg[^>]*>/, "").replace(/<\/svg>\s*$/, "");
       const x = (index % columns) * cellWidth;
       const y = headerHeight + Math.floor(index / columns) * cellHeight;
