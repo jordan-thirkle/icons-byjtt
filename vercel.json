@@ -4,7 +4,10 @@
   "framework": null,
   "functions": {
     "api/mcp.js": {
-      "includeFiles": "dist/icons/**"
+      "includeFiles": [
+        "icons.json",
+        "icons/**/*.svg"
+      ]
     }
   }
 }

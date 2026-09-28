@@ -49,6 +49,4 @@ for (const [source, target] of singleFiles) {
   fs.copyFileSync(path.join(root, source), destination);
 }
 
-fs.copyFileSync(path.join(root, "icons.json"), path.join(out, "icons", "catalogue.json"));
-
 console.log("Prepared Vercel public output:", out);
