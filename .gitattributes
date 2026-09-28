@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.svg text linguist-language=SVG
+*.json text linguist-language=JSON
+*.md text
+*.html text linguist-language=HTML
+*.js text linguist-language=JavaScript
