@@ -119,7 +119,8 @@
     {
       "query": "attach file",
       "expected": [
-        "attachment"
+        "attachment",
+        "file"
       ]
     },
     {
