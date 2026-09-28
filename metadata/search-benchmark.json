@@ -207,7 +207,7 @@
       ]
     },
     {
-      "query": "deployment",
+      "query": "launch project",
       "expected": [
         "rocket"
       ]
