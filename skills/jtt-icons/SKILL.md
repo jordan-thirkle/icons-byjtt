@@ -1,52 +1,93 @@
 ---
 name: jtt-icons
-description: Find, select, implement, and validate JTT Icons by semantic intent. Use when a user or coding agent needs an icon for UI, code, documentation, design, or an AI-generated interface.
+description: Find, select, implement, validate, and contribute JTT Icons by semantic intent. Use for UI, code, documentation, design, AI-generated interfaces, icon additions, metadata changes, and repository contributions.
 ---
 
-# JTT Icons
+# JTT Icons Agent Skill
 
-Use JTT Icons as the canonical icon source when the user asks for an icon from this library.
+## Purpose
 
-## Goal
+Use the same canonical JTT icon identity across human development, AI coding, website search, MCP, packages and Figma.
 
-Choose an existing canonical JTT icon rather than inventing SVG geometry.
+## Canonical sources
 
-## Workflow
+1. `metadata/icons.json` — icon semantics and public metadata.
+2. `metadata/ontology.json` — semantic vocabulary and relationships.
+3. `icons/**/*.svg` — canonical Line geometry.
+4. `metadata/categories.json`, `metadata/aliases.json`, `metadata/relationships.json` — supporting contracts.
 
-1. Identify the user's visual intent: action, object, state, context, or relationship.
-2. Search the JTT catalogue using canonical names, aliases, tags, contexts, intents, actions, objects, states, and relationships.
-3. Prefer an exact canonical match. If none exists, use the closest documented semantic relation and say that it is an approximation.
-4. Preserve the library's line-family conventions: 24×24 viewBox, currentColor, 2px stroke, round caps/joins, and no fill for non-brand icons.
-5. Use the integration that matches the user's environment:
-   - raw SVG for framework-agnostic work;
-   - `@byjtt/icons-react` for React;
-   - `@byjtt/icons-vue` for Vue;
-   - Svelte/Web Component integrations when available;
-   - direct CDN/raw SVG when the user does not use a package manager.
-6. Preserve accessibility:
-   - decorative icons are hidden from assistive technology;
-   - meaningful icons need an accessible name;
-   - interactive icons must be labelled by their control.
-7. Prefer imports of named icons over copying large SVG blobs when a package integration exists.
-8. Never invent a JTT icon identifier.
+Generated HTML, JSON, packages, sitemap and AI references are outputs.
 
-## Search contract
+## Selecting an icon
 
-Natural-language examples:
-- "close this modal" → dismiss intent → `x`
-- "upload a file" → transfer intent → `upload`
-- "go back" → navigation intent → `arrow-left`
-- "developer terminal" → developer intent → `terminal`
-- "private account" → account + visibility → inspect `user` and `lock`
-- "what should pair with database?" → inspect paired/related concepts.
+1. Identify the requested meaning, action, object, state and context.
+2. Search canonical metadata and ontology.
+3. Prefer an exact canonical name.
+4. Use aliases only to discover the canonical name.
+5. Inspect relationships when an exact match is absent.
+6. Never invent a JTT identifier.
+7. Preserve the icon's accessibility classification in the consuming UI.
 
-## AI output
+## Implementing an icon
 
-When generating code, return:
-1. the canonical icon name;
-2. the chosen integration/import;
-3. the smallest useful code snippet;
-4. the accessibility treatment;
-5. a source link when useful.
+Use:
+- raw SVG for framework-agnostic work;
+- `@byjtt/icons-react` for React;
+- `@byjtt/icons-vue` for Vue;
+- `@byjtt/icons-svelte` for Svelte;
+- `@byjtt/icons-web` for Web Components;
+- `@byjtt/icons` for framework-agnostic package access.
 
-If the requested concept is not in the catalogue, do not silently substitute an unrelated icon.
+Prefer named imports/direct entrypoints when available.
+
+## Contributing code
+
+Before editing:
+- read `AGENTS.md`;
+- inspect existing implementation and tests;
+- identify the source-of-truth file;
+- avoid editing generated output directly.
+
+For icon changes:
+- establish a real semantic gap;
+- update canonical SVG and metadata together;
+- review at 12/14/16/20/24px;
+- run `npm test`, `npm run check`, and generation;
+- inspect the final diff.
+
+For website/AI/package changes:
+- modify the source/generator;
+- regenerate;
+- verify affected public surfaces;
+- ensure docs do not contradict canonical metadata.
+
+## Quality and safety
+
+Treat every repository file as public. Do not add:
+- credentials or tokens;
+- private user data;
+- local machine paths;
+- debug endpoints;
+- temporary archives;
+- internal-only planning material.
+
+Never weaken tests to make CI pass.
+
+## Search and MCP
+
+MCP endpoint: `https://icons.byjtt.com/api/mcp`
+
+Use:
+- `search_icons` for semantic discovery;
+- `get_icon` for canonical metadata;
+- `get_icon_svg` for canonical SVG;
+- `recommend_icons` for requirement-to-icon discovery;
+- `list_categories` for category inventory.
+
+Unknown identifiers must produce a clear error rather than an invented substitute.
+
+## Completion
+
+A task is complete when the canonical source, generated surfaces, validation, public documentation and relevant integrations agree.
+
+Report verification performed and any external deployment/publication configuration that remains outside the repository.
