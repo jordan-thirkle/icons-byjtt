@@ -1,5 +1,12 @@
 # JTT Icons — Release Hardening 0.2
 
+## Current status — 2026-09-28
+
+**Source hardening: complete.** The 300-icon canonical catalogue, ontology, human/AI search, public site, generated surfaces and package verification are green on `main`.
+
+**Publication blockers:** npm publication requires the repository `NPM_TOKEN` secret; the first 0.2.0 release workflow reached `npm publish` and failed with `ENEEDAUTH`. Production Vercel is also still serving an older production deployment, so the hardened site should not be described as live production until a new production deployment is created and verified.
+
+
 ## Objective
 
 Turn the 300-icon catalogue from a strong production build into a verifiable public release.
