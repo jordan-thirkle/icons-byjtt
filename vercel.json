@@ -1,5 +1,13 @@
 {
-  "buildCommand": "npm run generate",
-  "outputDirectory": ".",
-  "framework": null
+  "buildCommand": "npm run generate && node scripts/prepare-vercel.mjs",
+  "outputDirectory": "dist",
+  "framework": null,
+  "functions": {
+    "api/mcp.js": {
+      "includeFiles": [
+        "icons.json",
+        "icons/**/*.svg"
+      ]
+    }
+  }
 }

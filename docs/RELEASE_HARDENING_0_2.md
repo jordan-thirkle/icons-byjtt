@@ -4,7 +4,7 @@
 
 **Source hardening: complete.** The 300-icon canonical catalogue, ontology, human/AI search, public site, generated surfaces and package verification are green on `main`.
 
-**Publication blockers:** npm publication requires the repository `NPM_TOKEN` secret; the first 0.2.0 release workflow reached `npm publish` and failed with `ENEEDAUTH`. Production Vercel is also still serving an older production deployment, so the hardened site should not be described as live production until a new production deployment is created and verified.
+**Publication blockers:** npm trusted publishing must be configured for each package against the GitHub Actions publish workflow. The previous token-based workflow reached `npm publish` and failed with `ENEEDAUTH`; the repository no longer requires a long-lived `NPM_TOKEN` because publishing is now prepared for OIDC trusted publishing. Production Vercel also needs a new deployment and verification.
 
 
 ## Objective
@@ -62,6 +62,7 @@ Before publishing, test each package from a clean temporary consumer project and
 ## Gate F — Quality and discoverability
 
 - [ ] Production Chromium smoke test.
+- [ ] Verify the Vercel deployment serves only the prepared public output and does not expose repository source/configuration files.
 - [ ] Lighthouse performance/accessibility/best-practices/SEO audit.
 - [ ] Keyboard navigation and reduced-motion audit.
 - [ ] Mobile layout audit.
