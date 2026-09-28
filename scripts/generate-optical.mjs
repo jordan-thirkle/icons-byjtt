@@ -32,7 +32,9 @@ for (const size of sizes) {
   const height = headerHeight + rows * cellHeight;
   const cells = icons.map((icon, index) => {
     const svg = fs.readFileSync(path.join(root, icon.path.slice(1)), "utf8");
+    const rootAttrs = (svg.match(/^<svg\\b([^>]*)>/)?.[1] ?? "").replace(/\\s(?:x|y|width|height)="[^"]*"/g, "");
     const body = svg.replace(/^<svg[^>]*>/, "").replace(/<\/svg>\s*$/, "");
+    const embedded = "<svg x=\"" + iconX + "\" y=\"" + iconY + "\" width=\"" + size + "\" height=\"" + size + "\" " + rootAttrs + ">" + body + "</svg>";
     const x = (index % columns) * cellWidth;
     const y = headerHeight + Math.floor(index / columns) * cellHeight;
     const iconX = x + (cellWidth - size) / 2;
@@ -43,7 +45,7 @@ for (const size of sizes) {
     return [
       "<g data-icon=\"", escapeXml(icon.name), "\"><rect x=\"", x, "\" y=\"", y, "\" width=\"", cellWidth, "\" height=\"", cellHeight, "\" fill=\"#fff\"/>",
       "<rect x=\"", guideX.toFixed(3), "\" y=\"", guideY.toFixed(3), "\" width=\"", guide.toFixed(3), "\" height=\"", guide.toFixed(3), "\" fill=\"none\" stroke=\"#d8d8d8\" stroke-width=\"0.5\" stroke-dasharray=\"2 2\"/>",
-      "<svg x=\"", iconX, "\" y=\"", iconY, "\" width=\"", size, "\" height=\"", size, "\" viewBox=\"0 0 24 24\">", body, "</svg>",
+      embedded,
       "<text x=\"", x + cellWidth / 2, "\" y=\"", y + 56, "\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"9\" fill=\"#111\">", escapeXml(icon.name), "</text></g>"
     ].join("");
   }).join("");
