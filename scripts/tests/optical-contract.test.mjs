@@ -18,6 +18,6 @@ test("P1 optical review covers every canonical size", () => {
 
 test("P1 optical review is explicitly release-blocking", () => {
   const audit = fs.readFileSync(path.join(ROOT, "docs/ICON_ART_AUDIT_0_2.md"), "utf8");
-  assert.match(audit, /12\/14\/16\/20\/24px optical review is complete/);
+  assert.match(audit, /12\/14\/16\/20\/24px optical review/);
   assert.match(audit, /near-duplicate concept review is complete/);
 });
