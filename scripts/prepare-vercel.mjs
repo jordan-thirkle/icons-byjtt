@@ -26,7 +26,8 @@ const directories = [
   "icons",
   "use-cases",
   "skills",
-  "metadata"
+  "metadata",
+  "visual-snapshots"
 ];
 
 const singleFiles = [
