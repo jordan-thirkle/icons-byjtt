@@ -79,9 +79,10 @@
     ],
     "developer": [
       "developer",
+      "engineering",
+      "software",
       "code",
-      "programming",
-      "terminal",
+      "tooling",
       "repository",
       "git",
       "database",
@@ -111,12 +112,12 @@
       "checkout"
     ],
     "files": [
+      "files",
       "file",
       "document",
       "folder",
-      "archive",
       "attachment",
-      "clipboard"
+      "archive"
     ],
     "status": [
       "success",
@@ -164,12 +165,44 @@
       "agent",
       "model",
       "prompt",
-      "generate",
-      "generation",
       "assistant",
-      "chat",
-      "search",
-      "code"
+      "generation",
+      "inference",
+      "reasoning"
+    ],
+    "actions": [
+      "action",
+      "actions",
+      "interface action",
+      "control"
+    ],
+    "people": [
+      "people",
+      "person",
+      "user",
+      "account",
+      "profile",
+      "identity",
+      "team"
+    ],
+    "objects": [
+      "object",
+      "objects",
+      "utility",
+      "interface object"
+    ],
+    "system": [
+      "system",
+      "utility",
+      "status",
+      "feedback",
+      "settings"
+    ],
+    "brands": [
+      "brand",
+      "brands",
+      "logo",
+      "social mark"
     ]
   },
   "actionTerms": [
