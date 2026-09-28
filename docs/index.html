@@ -3,30 +3,33 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="JTT Icons documentation: install, use, search, accessibility, licensing and AI discovery.">
-<meta name="theme-color" content="#08090b">
+<meta name="description" content="JTT Icons documentation for finding, downloading, installing and using open-source SVG icons in web projects, design tools and AI-assisted development.">
+<meta name="theme-color" content="#070809">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="canonical" href="https://icons.byjtt.com/docs/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="JTT Icons Documentation">
-<meta property="og:description" content="JTT Icons documentation: install, use, search, accessibility, licensing and AI discovery.">
+<meta property="og:title" content="JTT Icons Documentation — Use Open-Source SVG Icons">
+<meta property="og:description" content="JTT Icons documentation for finding, downloading, installing and using open-source SVG icons in web projects, design tools and AI-assisted development.">
 <meta property="og:url" content="https://icons.byjtt.com/docs/">
 <meta property="og:site_name" content="JTT Icons">
 <meta name="twitter:card" content="summary">
-<title>JTT Icons Documentation</title>
+<title>JTT Icons Documentation — Use Open-Source SVG Icons</title>
 <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body><a class="skip-link" href="#main-content">Skip to content</a><div class="wrap">
-<header class="site-header"><a class="brand" href="/">JTT / ICONS</a><nav class="nav" aria-label="Primary navigation"><a href="/">Library</a><a href="/categories/developer/">Categories</a><a href="/llms.txt">AI</a><a href="https://github.com/jordan-thirkle/icons-byjtt">GitHub</a></nav></header>
+<header class="site-header"><a class="brand" href="/" aria-label="JTT Icons home"><span class="brand-mark">J</span><span>JTT Icons</span></a><nav class="nav" aria-label="Primary navigation"><a href="/">Library</a><a href="/docs/">Docs</a><a href="/ai/" class="nav-signal">AI</a><a href="/categories/developer/">Categories</a><a href="https://github.com/jordan-thirkle/icons-byjtt">GitHub</a></nav></header>
 
 <main id="main-content" class="page">
-<div class="collection-head"><div class="kicker">JTT Icons documentation</div><h1>Ship with JTT Icons.</h1><p>Everything you need to find an icon, copy it into an interface, or consume the generated package.</p></div>
-<section class="section"><h2>1. Find</h2><p>Use the library search by name, alias, meaning, context or category. Search is enhanced in the browser while the catalogue remains statically crawlable.</p></section>
-<section class="section"><h2>2. Use the SVG</h2><div class="code"><pre><code>&lt;img src="https://icons.byjtt.com/icons/search.svg" alt="Search"&gt;</code></pre></div></section>
-<section class="section"><h2>3. Install the package</h2><div class="code"><pre><code>npm install @byjtt/icons</code></pre></div><p>The package is generated from the canonical catalogue and exposes individual icon modules plus the full icon map.</p></section>
-<section class="section"><h2>4. Accessibility</h2><p>Each icon carries an accessibility classification in canonical metadata. Decorative icons should be hidden from assistive technology; meaningful icons should receive an appropriate accessible name; interactive controls should use the surrounding control label rather than relying on the glyph alone.</p></section>
-<section class="section"><h2>5. AI discovery</h2><p>Agents can use <a href="/llms.txt">llms.txt</a>, <a href="/llms-full.txt">llms-full.txt</a> and <a href="/api/icons.json">the stable catalogue</a>. Match requests against canonical names, aliases, tags and contexts rather than inventing identifiers.</p></section>
-<section class="section"><h2>6. License</h2><p>JTT Icons is MIT licensed. Brand marks remain subject to the relevant trademark rights and policies.</p></section>
+<div class="collection-head"><div class="kicker">Documentation</div><h1>Use an icon in minutes.</h1><p>JTT Icons is deliberately simple. Download one SVG, copy it into a project, install a package, or let your AI tool find the right icon.</p></div>
+<section class="install-grid"><div class="install-card"><div class="mini-label">1 · Fastest</div><h2>Download SVG</h2><p>Open any icon, copy its SVG or download the file. No build tool and no account required.</p><code>&lt;img src="/icons/navigation/search.svg"&gt;</code></div><div class="install-card"><div class="mini-label">2 · Developers</div><h2>Install a package</h2><p>Use the generated package that matches your stack while keeping the same canonical icon names.</p><code>npm install @byjtt/icons-react</code></div><div class="install-card"><div class="mini-label">3 · AI</div><h2>Search by meaning</h2><p>Use natural-language search, the JSON catalogue, Agent Skill or MCP instead of guessing icon names.</p><code>search → resolve → ship</code></div></section>
+<section class="section"><h2>Find an icon</h2><p>Search by name, alias, category, context or meaning. Try phrases such as “upload”, “close”, “developer”, “account” or “notification”. JTT keeps the canonical name visible so you can use the same icon again.</p></section>
+<section class="section"><h2>Use the SVG</h2><p>Every icon has a stable public SVG path. For meaningful images, provide an appropriate accessible name. For decorative icons, hide them from assistive technology. For icon-only controls, label the control itself rather than relying on the glyph.</p><div class="code"><pre><code>&lt;img src="https://icons.byjtt.com/icons/navigation/search.svg" alt="Search"&gt;</code></pre></div></section>
+<section class="section"><h2>Install for your stack</h2><p>The generated packages are built from the same canonical catalogue.</p><div class="code"><pre><code>npm install @byjtt/icons
+npm install @byjtt/icons-react
+npm install @byjtt/icons-vue
+npm install @byjtt/icons-svelte</code></pre></div><p>Web Components are available from the generated <code>@byjtt/icons-web</code> package.</p></section>
+<section class="section"><h2>Build with AI</h2><p>AI-assisted development works better when identifiers are predictable. Give an agent the JTT catalogue or use the MCP interface so it can search by intent, resolve a canonical name and retrieve the exact SVG or framework implementation.</p><div class="actions"><a class="button primary" href="/ai/">Explore AI tooling</a><a class="button" href="/llms.txt">Read llms.txt</a></div></section>
+<section class="section"><h2>License and trademarks</h2><p>JTT Icons is MIT licensed. Third-party brand marks are included as reference assets where applicable and remain subject to their respective trademark rights and policies.</p></section>
 </main>
-<footer><div>JTT Icons · open-source SVG icons engineered for modern interfaces and AI-assisted development.</div><div class="footer-links"><a href="/">Library</a><a href="/api/icons.json">Catalogue API</a><a href="/llms.txt">AI reference</a><a href="https://github.com/jordan-thirkle/icons-byjtt">Source</a></div></footer>
+<footer><div><strong>JTT Icons</strong> · 300 open-source SVG icons, designed for humans and machine-readable for AI-assisted development.</div><div class="footer-links"><a href="/">Library</a><a href="/docs/">Docs</a><a href="/api/icons.json">Catalogue API</a><a href="/llms.txt">AI reference</a><a href="https://github.com/jordan-thirkle/icons-byjtt">Source</a><a href="/LICENSE">MIT License</a></div></footer>
 </div></body></html>

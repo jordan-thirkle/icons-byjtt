@@ -1,6 +1,6 @@
 # @byjtt/icons
 
-Open-source, semantic SVG icons from JTT Icons. Version 0.1.0.
+Open-source, semantic SVG icons from JTT Icons. Version 0.2.0.
 
 ## Install
 

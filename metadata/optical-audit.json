@@ -38,11 +38,81 @@
     }
   },
   "summary": {
-    "icons": 100,
-    "microReviewCount": 39,
+    "icons": 300,
+    "microReviewCount": 82,
     "maxComplexityScore": 25
   },
   "icons": [
+    {
+      "name": "activity",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "ai-agent",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
+    },
+    {
+      "name": "ai-chat",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
+    },
+    {
+      "name": "ai-code",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
+    },
+    {
+      "name": "ai-generate",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
+    },
+    {
+      "name": "ai-model",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
+    },
+    {
+      "name": "ai-prompt",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
+    },
+    {
+      "name": "ai-search",
+      "drawableElements": 2,
+      "pathCommands": 1,
+      "complexityScore": 5,
+      "microReview": false
+    },
+    {
+      "name": "android",
+      "drawableElements": 1,
+      "pathCommands": 5,
+      "complexityScore": 7,
+      "microReview": false
+    },
+    {
+      "name": "api",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
     {
       "name": "apple",
       "drawableElements": 1,
@@ -58,10 +128,24 @@
       "microReview": true
     },
     {
+      "name": "archive-box",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
       "name": "arrow-down",
       "drawableElements": 2,
       "pathCommands": 3,
       "complexityScore": 7,
+      "microReview": false
+    },
+    {
+      "name": "arrow-down-circle",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
       "microReview": false
     },
     {
@@ -86,6 +170,13 @@
       "microReview": false
     },
     {
+      "name": "arrow-left-circle",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
       "name": "arrow-right",
       "drawableElements": 2,
       "pathCommands": 3,
@@ -93,10 +184,24 @@
       "microReview": false
     },
     {
+      "name": "arrow-right-circle",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
       "name": "arrow-up",
       "drawableElements": 2,
       "pathCommands": 3,
       "complexityScore": 7,
+      "microReview": false
+    },
+    {
+      "name": "arrow-up-circle",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
       "microReview": false
     },
     {
@@ -114,10 +219,24 @@
       "microReview": false
     },
     {
+      "name": "at-sign",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
       "name": "attachment",
       "drawableElements": 1,
       "pathCommands": 5,
       "complexityScore": 7,
+      "microReview": false
+    },
+    {
+      "name": "audio-lines",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
       "microReview": false
     },
     {
@@ -128,6 +247,20 @@
       "microReview": true
     },
     {
+      "name": "ban",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
+    },
+    {
+      "name": "barcode",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
       "name": "bell",
       "drawableElements": 2,
       "pathCommands": 7,
@@ -135,10 +268,45 @@
       "microReview": false
     },
     {
+      "name": "bolt",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "bolt-circle",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "book",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "book-open",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
+    },
+    {
       "name": "bookmark",
       "drawableElements": 1,
       "pathCommands": 6,
       "complexityScore": 8,
+      "microReview": false
+    },
+    {
+      "name": "box",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
       "microReview": false
     },
     {
@@ -156,6 +324,13 @@
       "microReview": true
     },
     {
+      "name": "building",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
       "name": "calendar",
       "drawableElements": 2,
       "pathCommands": 12,
@@ -170,6 +345,13 @@
       "microReview": true
     },
     {
+      "name": "car",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
+    },
+    {
       "name": "cart",
       "drawableElements": 3,
       "pathCommands": 6,
@@ -177,10 +359,31 @@
       "microReview": true
     },
     {
+      "name": "cash",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "chat",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
       "name": "check",
       "drawableElements": 1,
       "pathCommands": 2,
       "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "check-circle",
+      "drawableElements": 2,
+      "pathCommands": 2,
+      "complexityScore": 6,
       "microReview": false
     },
     {
@@ -212,6 +415,34 @@
       "microReview": false
     },
     {
+      "name": "chrome",
+      "drawableElements": 1,
+      "pathCommands": 5,
+      "complexityScore": 7,
+      "microReview": false
+    },
+    {
+      "name": "circle-help",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "circle-info",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "circle-x",
+      "drawableElements": 2,
+      "pathCommands": 4,
+      "complexityScore": 8,
+      "microReview": false
+    },
+    {
       "name": "clipboard",
       "drawableElements": 2,
       "pathCommands": 8,
@@ -226,6 +457,41 @@
       "microReview": false
     },
     {
+      "name": "close-circle",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "cloud",
+      "drawableElements": 1,
+      "pathCommands": 6,
+      "complexityScore": 8,
+      "microReview": false
+    },
+    {
+      "name": "cloud-code",
+      "drawableElements": 1,
+      "pathCommands": 6,
+      "complexityScore": 8,
+      "microReview": false
+    },
+    {
+      "name": "cloud-rain",
+      "drawableElements": 1,
+      "pathCommands": 6,
+      "complexityScore": 8,
+      "microReview": false
+    },
+    {
+      "name": "cloud-sun",
+      "drawableElements": 1,
+      "pathCommands": 6,
+      "complexityScore": 8,
+      "microReview": false
+    },
+    {
       "name": "code",
       "drawableElements": 1,
       "pathCommands": 5,
@@ -233,11 +499,88 @@
       "microReview": false
     },
     {
+      "name": "coins",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
+    },
+    {
+      "name": "comment",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "comments",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
+    },
+    {
+      "name": "contact",
+      "drawableElements": 2,
+      "pathCommands": 2,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "contacts",
+      "drawableElements": 2,
+      "pathCommands": 2,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "container",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
+    },
+    {
       "name": "copy",
       "drawableElements": 2,
       "pathCommands": 8,
       "complexityScore": 12,
       "microReview": true
+    },
+    {
+      "name": "corner-down-left",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "corner-down-right",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
+    },
+    {
+      "name": "corner-left-down",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "corner-right-down",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "cpu-warning",
+      "drawableElements": 2,
+      "pathCommands": 4,
+      "complexityScore": 8,
+      "microReview": false
     },
     {
       "name": "credit-card",
@@ -254,6 +597,13 @@
       "microReview": true
     },
     {
+      "name": "database-error",
+      "drawableElements": 2,
+      "pathCommands": 4,
+      "complexityScore": 8,
+      "microReview": false
+    },
+    {
       "name": "delete",
       "drawableElements": 4,
       "pathCommands": 13,
@@ -261,11 +611,32 @@
       "microReview": true
     },
     {
+      "name": "dependency",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
       "name": "discord",
       "drawableElements": 1,
       "pathCommands": 21,
       "complexityScore": 23,
       "microReview": true
+    },
+    {
+      "name": "discount",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "docker",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
     },
     {
       "name": "document",
@@ -282,6 +653,20 @@
       "microReview": false
     },
     {
+      "name": "download-cloud",
+      "drawableElements": 1,
+      "pathCommands": 6,
+      "complexityScore": 8,
+      "microReview": false
+    },
+    {
+      "name": "download-error",
+      "drawableElements": 2,
+      "pathCommands": 4,
+      "complexityScore": 8,
+      "microReview": false
+    },
+    {
       "name": "edit",
       "drawableElements": 2,
       "pathCommands": 8,
@@ -289,10 +674,38 @@
       "microReview": true
     },
     {
+      "name": "email",
+      "drawableElements": 2,
+      "pathCommands": 1,
+      "complexityScore": 5,
+      "microReview": false
+    },
+    {
       "name": "error",
       "drawableElements": 2,
       "pathCommands": 3,
       "complexityScore": 7,
+      "microReview": false
+    },
+    {
+      "name": "expand",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "external",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "external-link",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
       "microReview": false
     },
     {
@@ -303,10 +716,45 @@
       "microReview": false
     },
     {
+      "name": "eye-off",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "figma",
+      "drawableElements": 1,
+      "pathCommands": 5,
+      "complexityScore": 7,
+      "microReview": false
+    },
+    {
       "name": "file",
       "drawableElements": 2,
       "pathCommands": 9,
       "complexityScore": 13,
+      "microReview": true
+    },
+    {
+      "name": "file-check",
+      "drawableElements": 2,
+      "pathCommands": 2,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "file-code",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "file-image",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
       "microReview": true
     },
     {
@@ -324,6 +772,34 @@
       "microReview": true
     },
     {
+      "name": "file-text",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "file-video",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "files",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "film",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
       "name": "filter",
       "drawableElements": 1,
       "pathCommands": 8,
@@ -331,10 +807,31 @@
       "microReview": false
     },
     {
+      "name": "filter-off",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
+    },
+    {
       "name": "folder",
       "drawableElements": 1,
       "pathCommands": 7,
       "complexityScore": 9,
+      "microReview": false
+    },
+    {
+      "name": "folder-closed",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
+    },
+    {
+      "name": "folder-minus",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
       "microReview": false
     },
     {
@@ -350,6 +847,27 @@
       "pathCommands": 11,
       "complexityScore": 15,
       "microReview": true
+    },
+    {
+      "name": "folder-search",
+      "drawableElements": 2,
+      "pathCommands": 1,
+      "complexityScore": 5,
+      "microReview": false
+    },
+    {
+      "name": "forbidden",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "gift",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
     },
     {
       "name": "git-branch",
@@ -373,11 +891,74 @@
       "microReview": true
     },
     {
+      "name": "git-pull-request",
+      "drawableElements": 3,
+      "pathCommands": 8,
+      "complexityScore": 14,
+      "microReview": true
+    },
+    {
+      "name": "git-pull-request-closed",
+      "drawableElements": 3,
+      "pathCommands": 8,
+      "complexityScore": 14,
+      "microReview": true
+    },
+    {
       "name": "github",
       "drawableElements": 1,
       "pathCommands": 11,
       "complexityScore": 13,
       "microReview": true
+    },
+    {
+      "name": "gitlab",
+      "drawableElements": 1,
+      "pathCommands": 5,
+      "complexityScore": 7,
+      "microReview": false
+    },
+    {
+      "name": "globe",
+      "drawableElements": 2,
+      "pathCommands": 4,
+      "complexityScore": 8,
+      "microReview": false
+    },
+    {
+      "name": "globe-code",
+      "drawableElements": 2,
+      "pathCommands": 4,
+      "complexityScore": 8,
+      "microReview": false
+    },
+    {
+      "name": "globe-warning",
+      "drawableElements": 2,
+      "pathCommands": 4,
+      "complexityScore": 8,
+      "microReview": false
+    },
+    {
+      "name": "grid",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
+    },
+    {
+      "name": "hard-drive",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "headphones",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
     },
     {
       "name": "heart",
@@ -401,10 +982,38 @@
       "microReview": true
     },
     {
+      "name": "id-card",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
       "name": "image",
       "drawableElements": 3,
       "pathCommands": 2,
       "complexityScore": 8,
+      "microReview": false
+    },
+    {
+      "name": "image-off",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
+    },
+    {
+      "name": "inbox",
+      "drawableElements": 2,
+      "pathCommands": 1,
+      "complexityScore": 5,
+      "microReview": false
+    },
+    {
+      "name": "inbox-file",
+      "drawableElements": 2,
+      "pathCommands": 1,
+      "complexityScore": 5,
       "microReview": false
     },
     {
@@ -415,11 +1024,74 @@
       "microReview": false
     },
     {
+      "name": "invoice",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "key",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "key-code",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "keyboard",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "layers",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "lightbulb",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
       "name": "link",
       "drawableElements": 2,
       "pathCommands": 10,
       "complexityScore": 14,
       "microReview": true
+    },
+    {
+      "name": "link-2",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
+    },
+    {
+      "name": "linkedin",
+      "drawableElements": 1,
+      "pathCommands": 5,
+      "complexityScore": 7,
+      "microReview": false
+    },
+    {
+      "name": "list",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
+      "microReview": false
     },
     {
       "name": "loading",
@@ -443,10 +1115,38 @@
       "microReview": false
     },
     {
+      "name": "log-in",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "log-out",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "logs",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
       "name": "mail",
       "drawableElements": 2,
       "pathCommands": 1,
       "complexityScore": 5,
+      "microReview": false
+    },
+    {
+      "name": "maintenance",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
       "microReview": false
     },
     {
@@ -455,6 +1155,27 @@
       "pathCommands": 9,
       "complexityScore": 13,
       "microReview": true
+    },
+    {
+      "name": "map-pin",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "maximize",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "mention",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
     },
     {
       "name": "menu",
@@ -478,10 +1199,73 @@
       "microReview": false
     },
     {
+      "name": "minimize",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
       "name": "minus",
       "drawableElements": 1,
       "pathCommands": 2,
       "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "mobile",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "money",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
+    },
+    {
+      "name": "monitor",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "monitor-code",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
+    },
+    {
+      "name": "more-horizontal",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "more-vertical",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
+    },
+    {
+      "name": "mouse",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
+    },
+    {
+      "name": "move",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
       "microReview": false
     },
     {
@@ -492,10 +1276,129 @@
       "microReview": false
     },
     {
+      "name": "music-note",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "npm",
+      "drawableElements": 1,
+      "pathCommands": 5,
+      "complexityScore": 7,
+      "microReview": false
+    },
+    {
+      "name": "offline",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "online",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "openai",
+      "drawableElements": 1,
+      "pathCommands": 5,
+      "complexityScore": 7,
+      "microReview": false
+    },
+    {
+      "name": "package",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "package-check",
+      "drawableElements": 2,
+      "pathCommands": 2,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "package-code",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "palette",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "panel-left",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
+    },
+    {
+      "name": "panel-right",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "paperclip",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
       "name": "pause",
       "drawableElements": 1,
       "pathCommands": 4,
       "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "pause-circle",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "person-standing",
+      "drawableElements": 2,
+      "pathCommands": 2,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "phone",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
+    },
+    {
+      "name": "pin",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "pipeline",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
       "microReview": false
     },
     {
@@ -513,10 +1416,66 @@
       "microReview": false
     },
     {
+      "name": "play-square",
+      "drawableElements": 1,
+      "pathCommands": 3,
+      "complexityScore": 5,
+      "microReview": false
+    },
+    {
       "name": "plus",
       "drawableElements": 1,
       "pathCommands": 4,
       "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "podcast",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "power",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
+    },
+    {
+      "name": "profile",
+      "drawableElements": 2,
+      "pathCommands": 2,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "pull-request",
+      "drawableElements": 3,
+      "pathCommands": 8,
+      "complexityScore": 14,
+      "microReview": true
+    },
+    {
+      "name": "qr-code",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
+    },
+    {
+      "name": "radio",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
+    },
+    {
+      "name": "react",
+      "drawableElements": 1,
+      "pathCommands": 5,
+      "complexityScore": 7,
       "microReview": false
     },
     {
@@ -525,6 +1484,13 @@
       "pathCommands": 12,
       "complexityScore": 16,
       "microReview": true
+    },
+    {
+      "name": "receipt-text",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
     },
     {
       "name": "redo",
@@ -541,11 +1507,53 @@
       "microReview": true
     },
     {
+      "name": "refresh-alert",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
+    },
+    {
+      "name": "repeat",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "reply",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
       "name": "rocket",
       "drawableElements": 3,
       "pathCommands": 7,
       "complexityScore": 13,
       "microReview": true
+    },
+    {
+      "name": "rotate-ccw",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "rotate-cw",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "rss",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
     },
     {
       "name": "save",
@@ -555,7 +1563,49 @@
       "microReview": true
     },
     {
+      "name": "save-cloud",
+      "drawableElements": 1,
+      "pathCommands": 6,
+      "complexityScore": 8,
+      "microReview": false
+    },
+    {
+      "name": "scan",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "schema",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
+    },
+    {
       "name": "search",
+      "drawableElements": 2,
+      "pathCommands": 1,
+      "complexityScore": 5,
+      "microReview": false
+    },
+    {
+      "name": "search-file",
+      "drawableElements": 2,
+      "pathCommands": 1,
+      "complexityScore": 5,
+      "microReview": false
+    },
+    {
+      "name": "search-minus",
+      "drawableElements": 2,
+      "pathCommands": 1,
+      "complexityScore": 5,
+      "microReview": false
+    },
+    {
+      "name": "search-plus",
       "drawableElements": 2,
       "pathCommands": 1,
       "complexityScore": 5,
@@ -567,6 +1617,13 @@
       "pathCommands": 3,
       "complexityScore": 7,
       "microReview": false
+    },
+    {
+      "name": "send-horizontal",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
     },
     {
       "name": "server",
@@ -590,10 +1647,108 @@
       "microReview": false
     },
     {
+      "name": "share-2",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "shield",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "shield-alert",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "shield-check",
+      "drawableElements": 2,
+      "pathCommands": 2,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "shuffle",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "sidebar",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "skip-back",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "skip-forward",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
+    },
+    {
+      "name": "skip-next",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "skip-previous",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
+    },
+    {
+      "name": "sliders",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "smile",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
+    },
+    {
       "name": "sort",
       "drawableElements": 1,
       "pathCommands": 6,
       "complexityScore": 8,
+      "microReview": false
+    },
+    {
+      "name": "sparkle-code",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "sparkles",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
       "microReview": false
     },
     {
@@ -605,6 +1760,20 @@
     },
     {
       "name": "stop",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "stop-circle",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "store",
       "drawableElements": 1,
       "pathCommands": 0,
       "complexityScore": 2,
@@ -625,6 +1794,20 @@
       "microReview": true
     },
     {
+      "name": "svelte",
+      "drawableElements": 1,
+      "pathCommands": 5,
+      "complexityScore": 7,
+      "microReview": false
+    },
+    {
+      "name": "system-update",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
       "name": "tag",
       "drawableElements": 2,
       "pathCommands": 5,
@@ -632,9 +1815,79 @@
       "microReview": false
     },
     {
+      "name": "target",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "team",
+      "drawableElements": 2,
+      "pathCommands": 2,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
       "name": "terminal",
       "drawableElements": 2,
       "pathCommands": 3,
+      "complexityScore": 7,
+      "microReview": false
+    },
+    {
+      "name": "terminal-error",
+      "drawableElements": 2,
+      "pathCommands": 4,
+      "complexityScore": 8,
+      "microReview": false
+    },
+    {
+      "name": "terminal-square",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
+    },
+    {
+      "name": "test-tube",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "thumbs-down",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "thumbs-up",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "timeout",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
+    },
+    {
+      "name": "trash",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
+    },
+    {
+      "name": "typescript",
+      "drawableElements": 1,
+      "pathCommands": 5,
       "complexityScore": 7,
       "microReview": false
     },
@@ -667,6 +1920,13 @@
       "microReview": false
     },
     {
+      "name": "user-check",
+      "drawableElements": 2,
+      "pathCommands": 2,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
       "name": "user-circle",
       "drawableElements": 3,
       "pathCommands": 2,
@@ -688,6 +1948,27 @@
       "microReview": false
     },
     {
+      "name": "user-search",
+      "drawableElements": 2,
+      "pathCommands": 1,
+      "complexityScore": 5,
+      "microReview": false
+    },
+    {
+      "name": "user-settings",
+      "drawableElements": 2,
+      "pathCommands": 2,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "user-x",
+      "drawableElements": 2,
+      "pathCommands": 2,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
       "name": "users",
       "drawableElements": 4,
       "pathCommands": 4,
@@ -695,10 +1976,45 @@
       "microReview": true
     },
     {
+      "name": "users-round",
+      "drawableElements": 2,
+      "pathCommands": 2,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "vercel",
+      "drawableElements": 1,
+      "pathCommands": 5,
+      "complexityScore": 7,
+      "microReview": false
+    },
+    {
+      "name": "verified",
+      "drawableElements": 2,
+      "pathCommands": 2,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
       "name": "video",
       "drawableElements": 2,
       "pathCommands": 5,
       "complexityScore": 9,
+      "microReview": false
+    },
+    {
+      "name": "video-off",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "voicemail",
+      "drawableElements": 2,
+      "pathCommands": 1,
+      "complexityScore": 5,
       "microReview": false
     },
     {
@@ -716,6 +2032,34 @@
       "microReview": true
     },
     {
+      "name": "volume-x",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "vue",
+      "drawableElements": 1,
+      "pathCommands": 5,
+      "complexityScore": 7,
+      "microReview": false
+    },
+    {
+      "name": "wallet",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
+    },
+    {
+      "name": "wallet-cards",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
       "name": "warning",
       "drawableElements": 2,
       "pathCommands": 8,
@@ -723,10 +2067,45 @@
       "microReview": true
     },
     {
+      "name": "webhook",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
+    },
+    {
+      "name": "wifi",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "wifi-off",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
+    },
+    {
+      "name": "workflow",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
       "name": "x",
       "drawableElements": 1,
       "pathCommands": 2,
       "complexityScore": 4,
+      "microReview": false
+    },
+    {
+      "name": "x-circle",
+      "drawableElements": 2,
+      "pathCommands": 4,
+      "complexityScore": 8,
       "microReview": false
     },
     {
@@ -742,6 +2121,27 @@
       "pathCommands": 14,
       "complexityScore": 16,
       "microReview": true
+    },
+    {
+      "name": "zip",
+      "drawableElements": 1,
+      "pathCommands": 10,
+      "complexityScore": 12,
+      "microReview": true
+    },
+    {
+      "name": "zoom-in",
+      "drawableElements": 1,
+      "pathCommands": 4,
+      "complexityScore": 6,
+      "microReview": false
+    },
+    {
+      "name": "zoom-out",
+      "drawableElements": 1,
+      "pathCommands": 0,
+      "complexityScore": 2,
+      "microReview": false
     }
   ]
 }

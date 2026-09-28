@@ -1,6 +1,2 @@
-export class JttIconElement extends HTMLElement {}
-declare global {
-  interface HTMLElementTagNameMap {
-    "jtt-icon": JttIconElement;
-  }
-}
+export class JttIcon extends HTMLElement {}
+declare global { interface HTMLElementTagNameMap { "jtt-icon": JttIcon; } }

@@ -1,0 +1,491 @@
+{
+  "version": "0.2.0",
+  "description": "Human-language retrieval regression set for the JTT Icons browser search and AI discovery surfaces.",
+  "queries": [
+    {
+      "query": "find",
+      "expected": [
+        "search"
+      ]
+    },
+    {
+      "query": "lookup",
+      "expected": [
+        "search"
+      ]
+    },
+    {
+      "query": "magnifying glass",
+      "expected": [
+        "search"
+      ]
+    },
+    {
+      "query": "close dialog",
+      "expected": [
+        "x"
+      ]
+    },
+    {
+      "query": "dismiss popup",
+      "expected": [
+        "x"
+      ]
+    },
+    {
+      "query": "cancel",
+      "expected": [
+        "x"
+      ]
+    },
+    {
+      "query": "go back",
+      "expected": [
+        "arrow-left"
+      ]
+    },
+    {
+      "query": "go forward",
+      "expected": [
+        "arrow-right"
+      ]
+    },
+    {
+      "query": "move down",
+      "expected": [
+        "arrow-down"
+      ]
+    },
+    {
+      "query": "move up",
+      "expected": [
+        "arrow-up"
+      ]
+    },
+    {
+      "query": "add item",
+      "expected": [
+        "plus"
+      ]
+    },
+    {
+      "query": "create new",
+      "expected": [
+        "plus"
+      ]
+    },
+    {
+      "query": "remove item",
+      "expected": [
+        "minus"
+      ]
+    },
+    {
+      "query": "delete something",
+      "expected": [
+        "delete"
+      ]
+    },
+    {
+      "query": "edit content",
+      "expected": [
+        "edit"
+      ]
+    },
+    {
+      "query": "save changes",
+      "expected": [
+        "save"
+      ]
+    },
+    {
+      "query": "copy this",
+      "expected": [
+        "copy"
+      ]
+    },
+    {
+      "query": "download file",
+      "expected": [
+        "download"
+      ]
+    },
+    {
+      "query": "upload file",
+      "expected": [
+        "upload"
+      ]
+    },
+    {
+      "query": "attach file",
+      "expected": [
+        "attachment",
+        "file"
+      ]
+    },
+    {
+      "query": "send message",
+      "expected": [
+        "send"
+      ]
+    },
+    {
+      "query": "write a message",
+      "expected": [
+        "message"
+      ]
+    },
+    {
+      "query": "email",
+      "expected": [
+        "mail"
+      ]
+    },
+    {
+      "query": "notification",
+      "expected": [
+        "bell"
+      ]
+    },
+    {
+      "query": "share",
+      "expected": [
+        "share"
+      ]
+    },
+    {
+      "query": "developer",
+      "expected": [
+        "code",
+        "github",
+        "ai-code"
+      ]
+    },
+    {
+      "query": "source code",
+      "expected": [
+        "code"
+      ]
+    },
+    {
+      "query": "terminal",
+      "expected": [
+        "terminal"
+      ]
+    },
+    {
+      "query": "git repository",
+      "expected": [
+        "github",
+        "git-branch",
+        "git-commit",
+        "git-merge"
+      ]
+    },
+    {
+      "query": "version control branch",
+      "expected": [
+        "git-branch"
+      ]
+    },
+    {
+      "query": "database",
+      "expected": [
+        "database"
+      ]
+    },
+    {
+      "query": "server infrastructure",
+      "expected": [
+        "server"
+      ]
+    },
+    {
+      "query": "bug report",
+      "expected": [
+        "bug"
+      ]
+    },
+    {
+      "query": "launch project",
+      "expected": [
+        "rocket"
+      ]
+    },
+    {
+      "query": "play video",
+      "expected": [
+        "play"
+      ]
+    },
+    {
+      "query": "pause audio",
+      "expected": [
+        "pause"
+      ]
+    },
+    {
+      "query": "stop playback",
+      "expected": [
+        "stop"
+      ]
+    },
+    {
+      "query": "volume muted",
+      "expected": [
+        "volume-off"
+      ]
+    },
+    {
+      "query": "camera",
+      "expected": [
+        "camera"
+      ]
+    },
+    {
+      "query": "photo",
+      "expected": [
+        "image"
+      ]
+    },
+    {
+      "query": "shopping basket",
+      "expected": [
+        "cart"
+      ]
+    },
+    {
+      "query": "shopping bag",
+      "expected": [
+        "bag"
+      ]
+    },
+    {
+      "query": "payment card",
+      "expected": [
+        "credit-card"
+      ]
+    },
+    {
+      "query": "receipt",
+      "expected": [
+        "receipt"
+      ]
+    },
+    {
+      "query": "calendar date",
+      "expected": [
+        "calendar"
+      ]
+    },
+    {
+      "query": "time",
+      "expected": [
+        "clock"
+      ]
+    },
+    {
+      "query": "map",
+      "expected": [
+        "map"
+      ]
+    },
+    {
+      "query": "location pin",
+      "expected": [
+        "location"
+      ]
+    },
+    {
+      "query": "user account",
+      "expected": [
+        "user"
+      ]
+    },
+    {
+      "query": "profile",
+      "expected": [
+        "user"
+      ]
+    },
+    {
+      "query": "team",
+      "expected": [
+        "users",
+        "user",
+        "team"
+      ]
+    },
+    {
+      "query": "settings",
+      "expected": [
+        "settings"
+      ]
+    },
+    {
+      "query": "configuration",
+      "expected": [
+        "settings"
+      ]
+    },
+    {
+      "query": "success",
+      "expected": [
+        "check"
+      ]
+    },
+    {
+      "query": "warning",
+      "expected": [
+        "shield-alert",
+        "warning",
+        "globe-warning"
+      ]
+    },
+    {
+      "query": "error",
+      "expected": [
+        "error"
+      ]
+    },
+    {
+      "query": "information",
+      "expected": [
+        "info"
+      ]
+    },
+    {
+      "query": "help",
+      "expected": [
+        "help"
+      ]
+    },
+    {
+      "query": "locked",
+      "expected": [
+        "lock",
+        "unlock"
+      ]
+    },
+    {
+      "query": "private",
+      "expected": [
+        "lock"
+      ]
+    },
+    {
+      "query": "unlock account",
+      "expected": [
+        "unlock"
+      ]
+    },
+    {
+      "query": "bookmark",
+      "expected": [
+        "bookmark"
+      ]
+    },
+    {
+      "query": "favourite",
+      "expected": [
+        "heart"
+      ]
+    },
+    {
+      "query": "star rating",
+      "expected": [
+        "star"
+      ]
+    },
+    {
+      "query": "AI",
+      "expected": [
+        "ai-agent",
+        "ai-model",
+        "ai-chat",
+        "ai-code"
+      ]
+    },
+    {
+      "query": "AI agent",
+      "expected": [
+        "ai-agent"
+      ]
+    },
+    {
+      "query": "artificial intelligence",
+      "expected": [
+        "ai-agent",
+        "ai-model",
+        "ai-chat",
+        "ai-code"
+      ]
+    },
+    {
+      "query": "external link",
+      "expected": [
+        "external"
+      ]
+    },
+    {
+      "query": "filter results",
+      "expected": [
+        "filter"
+      ]
+    },
+    {
+      "query": "sort list",
+      "expected": [
+        "sort"
+      ]
+    },
+    {
+      "query": "refresh data",
+      "expected": [
+        "refresh"
+      ]
+    },
+    {
+      "query": "undo action",
+      "expected": [
+        "undo"
+      ]
+    },
+    {
+      "query": "redo action",
+      "expected": [
+        "redo"
+      ]
+    },
+    {
+      "query": "fullscreen",
+      "expected": [
+        "maximize"
+      ]
+    },
+    {
+      "query": "zoom in",
+      "expected": [
+        "zoom-in"
+      ]
+    },
+    {
+      "query": "zoom out",
+      "expected": [
+        "zoom-out"
+      ]
+    },
+    {
+      "query": "offline",
+      "expected": [
+        "offline"
+      ]
+    },
+    {
+      "query": "online",
+      "expected": [
+        "online"
+      ]
+    }
+  ]
+}

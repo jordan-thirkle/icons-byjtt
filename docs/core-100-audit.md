@@ -1,52 +1,70 @@
-# Core 100 Release Audit
+# Core 100 → Catalogue 300 Release Audit
 
-Status: **Core 100 + Optical Infrastructure operational**
+Status: **300 canonical icons generated and live; Core 100 optical infrastructure retained as the original visual regression baseline.**
 
-## Release integrity
+## Current release integrity
 
-- 100 canonical SVGs.
-- 100 generated package icon modules.
-- 100 generated public icon pages.
-- 100 catalogue records.
-- 100 sitemap routes.
-- AI reference generated from canonical metadata.
-- deterministic generation and generated-surface integrity tests.
-- semantic metadata and SVG validation in CI.
+- 300 canonical SVGs.
+- 300 generated public icon pages.
+- 300 catalogue records.
+- 300 sitemap routes plus crawlable catalogue pagination.
+- AI reference and stable JSON catalogue generated from the canonical source.
+- Core / React / Vue / Svelte / Web package surfaces generated.
+- Semantic ontology version 2.1.0.
+- MCP and portable Agent Skill surfaces present.
+- Deterministic generation and repository validation run in CI.
 
 ## Optical Infrastructure
 
-The repository now generates four deterministic review grids:
+The original Core 100 established the four-size review system:
 
 - 12px
 - 16px
 - 20px
 - 24px canonical master
 
-The default optical keyline is an 18 × 18 live area centred inside the 24 × 24 master grid. The keyline is a guide rather than a rigid geometric boundary.
+The 18 × 18 optical live area remains the default guide. Core 100 complexity triage identified 39 masters for Micro review.
 
-Every Core 100 icon is represented in every review grid. The generated optical audit also records drawable-element and path-command complexity for deterministic Micro triage.
+Micro 0.1 and 0.2 now exist as experimental proof lanes. They remain downstream derivatives and are deliberately excluded from the canonical catalogue and framework exports until native-size visual review is complete.
 
-Current automated triage identifies **39 of 100** masters for Micro review. The highest-complexity examples include `settings`, `discord`, `bug`, `delete`, `refresh`, `sun`, `camera`, `loading`, and `save`.
+## What changed after Core 100
 
-This is a review queue, not an automatic redesign list. Complexity alone does not establish that an icon is visually wrong.
+The catalogue has intentionally expanded to 300 concepts before the Micro family was fully productised. That means the old Core 100 gate is no longer an expansion blocker; this document is now a historical baseline rather than a current prohibition on Core 101+.
 
-## Visual findings
+The new gate is stronger:
 
-The earlier visual review exposed a real geometry defect in `star`; its canonical path has been corrected. The current optical system exists specifically to prevent source-contract compliance from being mistaken for finished visual quality.
+1. canonical geometry remains the 24px Line source;
+2. semantic metadata must be stored with the icon source rather than inferred only at build time;
+3. Micro derivatives must preserve semantic identity;
+4. generated surfaces must remain deterministic;
+5. package, catalogue, AI and Figma consumers must resolve the same canonical identity.
 
-The 12px boundary remains important: dense masters may remain recognisable while becoming optically noisy. That is the intended reason for a derived Micro family.
+## Current quality risks
 
-## Semantic findings
+The 300-icon source is broad, but the ontology is not yet equally deep across every icon. Some concepts have strong action/object/state semantics while others currently depend mainly on names, tags and contexts.
 
-- no alias collisions remain;
-- related references resolve;
-- accessibility classifications remain valid;
-- `heart`, `star` and `settings` classifications remain defensible within their documented contexts;
-- directional related links are intentionally not required to be symmetric;
-- brand marks remain an explicit rendering exception.
+The catalogue also contains legacy duplicate tags that have now been normalised in the canonical source. Further semantic curation should improve:
+
+- primary concept;
+- action/object/state classification;
+- intent coverage;
+- aliases;
+- relation graph;
+- natural-language query terms;
+- AI-specific retrieval quality.
 
 ## Decision
 
-**Do not expand the catalogue yet.**
+**Do not expand beyond 300 yet.**
 
-The next work is to use the 39-icon Micro review queue to establish actual derived simplifications, then add visual regression snapshots around those derived variants. Core 101+ should wait until the Micro rules have been proven on representative icons.
+The next product gate is **Release Hardening 0.2**:
+
+- finish canonical ontology curation;
+- verify the public catalogue against the canonical source;
+- complete production browser / accessibility / SEO verification;
+- make all five package tarballs independently installable and publishable;
+- validate the public MCP contract against real clients;
+- finish the Figma development plugin workflow;
+- then release/distribute 0.2.
+
+Only after that should catalogue expansion resume, guided by real search demand and explicit ontology gaps.

@@ -8,10 +8,15 @@ const RESERVED_IDENTIFIERS = new Set([
 ]);
 
 const jsIdentifier = name => {
-  const identifier = name.replace(/-([a-z])/g, (_, character) => character.toUpperCase());
-  return RESERVED_IDENTIFIERS.has(identifier)
-    ? `icon${identifier[0].toUpperCase()}${identifier.slice(1)}`
-    : identifier;
+  const identifier = name
+    .split("-")
+    .map((part, index) => index === 0 ? part : part[0].toUpperCase() + part.slice(1))
+    .join("")
+    .replace(/[^A-Za-z0-9_$]/g, "");
+  const safe = /^[A-Za-z_$]/.test(identifier) ? identifier : `icon${identifier}`;
+  return RESERVED_IDENTIFIERS.has(safe)
+    ? `icon${safe[0].toUpperCase()}${safe.slice(1)}`
+    : safe;
 };
 
 export function generatePackage(metadata, svgByName = {}) {

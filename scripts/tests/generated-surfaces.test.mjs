@@ -13,8 +13,8 @@ const sameNames = actual => assert.deepEqual([...actual].sort(), [...names].sort
 const filesIn = directory => fs.readdirSync(directory).filter(name => name.endsWith(".js")).sort((a, b) => a.localeCompare(b));
 const dirsIn = directory => fs.readdirSync(directory, { withFileTypes: true }).filter(entry => entry.isDirectory() && fs.existsSync(path.join(directory, entry.name, "index.html"))).map(entry => entry.name).sort((a, b) => a.localeCompare(b));
 
-test("generated surfaces materialize every canonical Core 100 icon", () => {
-  assert.equal(names.length, 100);
+test("generated surfaces materialize every canonical icon", () => {
+  assert.equal(names.length, 300);
 
   const packageIcons = filesIn(path.join(root, "packages/core/icons")).map(name => name.replace(/\.js$/, ""));
   sameNames(packageIcons);
@@ -25,10 +25,11 @@ test("generated surfaces materialize every canonical Core 100 icon", () => {
   assert.ok(fs.existsSync(path.join(root, "packages/react/README.md")));
   assert.ok(fs.existsSync(path.join(root, "packages/vue/package.json")));
   assert.ok(fs.existsSync(path.join(root, "packages/vue/index.js")));
-  assert.ok(fs.existsSync(path.join(root, "packages/svelte/package.json")));
-  assert.ok(fs.existsSync(path.join(root, "packages/web/package.json")));
   assert.ok(fs.existsSync(path.join(root, "packages/vue/index.d.ts")));
   assert.ok(fs.existsSync(path.join(root, "packages/vue/README.md")));
+  assert.ok(fs.existsSync(path.join(root, "packages/svelte/package.json")));
+  assert.ok(fs.existsSync(path.join(root, "packages/web/package.json")));
+
   const reactSource = fs.readFileSync(path.join(root, "packages/react/index.js"), "utf8");
   for (const icon of metadata.icons) assert.match(reactSource, new RegExp(`function Icon${icon.name.split("-").map(part => part[0].toUpperCase() + part.slice(1)).join("")}\\b`));
   const vueSource = fs.readFileSync(path.join(root, "packages/vue/index.js"), "utf8");
@@ -47,8 +48,8 @@ test("generated surfaces materialize every canonical Core 100 icon", () => {
   const rootPackage = fs.readFileSync(path.join(root, "packages/core/index.js"), "utf8");
   const declaration = fs.readFileSync(path.join(root, "packages/core/index.d.ts"), "utf8");
   for (const icon of metadata.icons) {
-    const identifier = icon.name.replace(/-([a-z])/g, (_, c) => c.toUpperCase());
-    const safeIdentifier = new Set(["delete"]).has(identifier) ? `icon${identifier[0].toUpperCase()}${identifier.slice(1)}` : identifier;
+    const identifier = icon.name.replace(/-([a-z0-9])/g, (_, c) => c.toUpperCase());
+    const safeIdentifier = new Set(["delete","package"]).has(identifier) ? `icon${identifier[0].toUpperCase()}${identifier.slice(1)}` : identifier;
     assert.ok(rootPackage.includes(`from "./icons/${icon.name}.js";`));
     assert.match(rootPackage, new RegExp(`\\b${safeIdentifier}\\b`));
     assert.ok(declaration.includes(`const ${safeIdentifier}: JttIconModule`));
@@ -66,8 +67,8 @@ test("generated surfaces materialize every canonical Core 100 icon", () => {
   for (const icon of metadata.icons) assert.ok(sitemap.includes(`/icons/${icon.name}/`));
 
   const homepage = fs.readFileSync(path.join(root, "index.html"), "utf8");
-  assert.match(homepage, /assets\/site\.css/);
-  assert.match(homepage, /assets\/search\.js/);
+  assert.ok(homepage.includes("assets/site.css"));
+  assert.ok(homepage.includes("assets/search.js"));
   const searchScript = fs.readFileSync(path.join(root, "assets", "search.js"), "utf8");
   assert.match(searchScript, /ONTOLOGY_INTENTS/);
   assert.match(searchScript, /SEARCH_FIELD_WEIGHTS/);
