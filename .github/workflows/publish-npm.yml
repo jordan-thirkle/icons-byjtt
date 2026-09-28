@@ -2,7 +2,7 @@ name: Publish npm packages
 
 on:
   push:
-    branches: ["release/v0.2.0"]
+    tags: ["v*"]
 
 permissions:
   contents: read
@@ -12,23 +12,33 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
         with:
-          node-version: 22
+          node-version: "24"
           registry-url: https://registry.npmjs.org
-      - run: npm publish ./packages/core --access public --provenance
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - run: npm publish ./packages/react --access public --provenance
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - run: npm publish ./packages/vue --access public --provenance
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - run: npm publish ./packages/svelte --access public --provenance
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - run: npm publish ./packages/web --access public --provenance
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          package-manager-cache: false
+      - name: Verify release version
+        shell: bash
+        run: |
+          tag="${GITHUB_REF_NAME#v}"
+          core="$(node -p "require('./packages/core/package.json').version")"
+          react="$(node -p "require('./packages/react/package.json').version")"
+          vue="$(node -p "require('./packages/vue/package.json').version")"
+          svelte="$(node -p "require('./packages/svelte/package.json').version")"
+          web="$(node -p "require('./packages/web/package.json').version")"
+          test "$tag" = "$core" && test "$tag" = "$react" && test "$tag" = "$vue" && test "$tag" = "$svelte" && test "$tag" = "$web"
+      - name: Verify repository
+        run: |
+          npm test
+          npm run check
+      - name: Publish @byjtt/icons
+        run: npm publish ./packages/core --access public
+      - name: Publish @byjtt/icons-react
+        run: npm publish ./packages/react --access public
+      - name: Publish @byjtt/icons-vue
+        run: npm publish ./packages/vue --access public
+      - name: Publish @byjtt/icons-svelte
+        run: npm publish ./packages/svelte --access public
+      - name: Publish @byjtt/icons-web
+        run: npm publish ./packages/web --access public
