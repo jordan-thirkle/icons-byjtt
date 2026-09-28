@@ -53,3 +53,22 @@ test("Vercel deployment is isolated from repository source", () => {
   assert.doesNotMatch(prepare, /cpSync\(path\.join\(root, "scripts"/);
   assert.doesNotMatch(prepare, /cpSync\(path\.join\(root, "\.github"/);
 });
+
+
+test("repository has required agent contribution entry points", () => {
+  const required = [
+    "AGENTS.md",
+    "CLAUDE.md",
+    "GEMINI.md",
+    "skills/jtt-icons/SKILL.md",
+    "docs/agent-workflow.md",
+    "docs/principles-for-ai-contributions.md",
+    "docs/repository-map.md",
+    ".github/pull_request_template.md",
+    ".github/ISSUE_TEMPLATE/bug-report.yml",
+    ".github/ISSUE_TEMPLATE/icon-request.yml",
+    ".github/ISSUE_TEMPLATE/config.yml"
+  ];
+  const files = walk(root);
+  assert.deepEqual(required.filter(file => !files.includes(file)), []);
+});
