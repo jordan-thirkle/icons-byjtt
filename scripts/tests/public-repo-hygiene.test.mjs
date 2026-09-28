@@ -31,16 +31,19 @@ test("public repository contains no obvious secret or local artifacts", () => {
 
 test("public CSS palette meets AA contrast targets", () => {
   const css=fs.readFileSync(path.join(root,"assets/site.css"),"utf8");
-  const readTheme = (theme) => {
-    const block = theme === "dark"
-      ? css.slice(0, css.indexOf("html[data-theme=light]"))
-      : css.slice(css.indexOf("html[data-theme=light]"));
-    return Object.fromEntries([...block.matchAll(/--([a-z-]+):(#[0-9a-f]{6})/gi)].map(m=>[m[1],m[2]]));
-  };
-  const dark = readTheme("dark");
-  const light = readTheme("light");
-  for(const [fg,bg,min] of [["text","bg",4.5],["muted","bg",4.5],["soft","bg",4.5],["signal","bg",4.5],["text","panel",4.5],["muted","panel",4.5],["soft","panel",4.5],["signal","bg",4.5]]) {
+  const rootVars = Object.fromEntries([...css.matchAll(/:root\\{([^}]*)\\}/g)][0][1].matchAll(/--([a-z-]+):(#[0-9a-f]{6})/gi));
+  const lightMatch = css.match(/html\\[data-theme=light\\]\\{([^}]*)\\}/);
+  assert.ok(lightMatch, "explicit light theme token block is required");
+  const lightVars = Object.fromEntries([...lightMatch[1].matchAll(/--([a-z-]+):(#[0-9a-f]{6})/gi)]);
+  const light = Object.fromEntries(lightVars);
+  const dark = rootVars;
+  for(const [fg,bg,min] of [["text","bg",4.5],["muted","bg",4.5],["soft","bg",4.5],["signal","bg",4.5],["text","panel",4.5],["muted","panel",4.5],["soft","panel",4.5]]) {
     assert.ok(ratio(dark[fg],dark[bg])>=min, `dark ${fg} on ${bg} contrast below ${min}:1`);
+  }
+  for(const [fg,bg,min] of [["text","bg",4.5],["muted","bg",4.5],["soft","bg",4.5],["signal","bg",3]]) {
+    assert.ok(ratio(light[fg],light[bg])>=min, `light ${fg} on ${bg} contrast below ${min}:1`);
+  }
+  assert.ok(ratio(dark[fg],dark[bg])>=min, `dark ${fg} on ${bg} contrast below ${min}:1`);
   }
   for(const [fg,bg,min] of [["text","bg",4.5],["muted","bg",4.5],["soft","bg",4.5],["signal","bg",4.5],["text","panel",4.5],["muted","panel",4.5],["soft","panel",4.5],["signal","bg",3]]) {
     assert.ok(ratio(light[fg],light[bg])>=min, `light ${fg} on ${bg} contrast below ${min}:1`);
