@@ -79,9 +79,10 @@
       ],
       "developer": [
         "developer",
+        "engineering",
+        "software",
         "code",
-        "programming",
-        "terminal",
+        "tooling",
         "repository",
         "git",
         "database",
@@ -111,12 +112,12 @@
         "checkout"
       ],
       "files": [
+        "files",
         "file",
         "document",
         "folder",
-        "archive",
         "attachment",
-        "clipboard"
+        "archive"
       ],
       "status": [
         "success",
@@ -164,12 +165,44 @@
         "agent",
         "model",
         "prompt",
-        "generate",
-        "generation",
         "assistant",
-        "chat",
-        "search",
-        "code"
+        "generation",
+        "inference",
+        "reasoning"
+      ],
+      "actions": [
+        "action",
+        "actions",
+        "interface action",
+        "control"
+      ],
+      "people": [
+        "people",
+        "person",
+        "user",
+        "account",
+        "profile",
+        "identity",
+        "team"
+      ],
+      "objects": [
+        "object",
+        "objects",
+        "utility",
+        "interface object"
+      ],
+      "system": [
+        "system",
+        "utility",
+        "status",
+        "feedback",
+        "settings"
+      ],
+      "brands": [
+        "brand",
+        "brands",
+        "logo",
+        "social mark"
       ]
     }
   },
@@ -193,7 +226,9 @@
       "path": "/icons/objects/activity.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "objects"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -650,7 +685,9 @@
       "path": "/icons/brands/android.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "brands"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -731,7 +768,9 @@
       "path": "/icons/brands/apple.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "brands"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -741,7 +780,8 @@
           "brand",
           "social",
           "communication",
-          "community"
+          "community",
+          "brands"
         ],
         "relations": {
           "related": [],
@@ -881,7 +921,9 @@
       "path": "/icons/navigation/arrow-down.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "navigation"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -929,7 +971,9 @@
       "path": "/icons/navigation/arrow-down-circle.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "navigation"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -979,7 +1023,9 @@
       "path": "/icons/navigation/arrow-down-left.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "navigation"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -1032,7 +1078,9 @@
       "path": "/icons/navigation/arrow-down-right.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "navigation"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -1135,7 +1183,9 @@
       "path": "/icons/navigation/arrow-left-circle.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "navigation"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -1235,7 +1285,9 @@
       "path": "/icons/navigation/arrow-right-circle.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "navigation"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -1283,7 +1335,9 @@
       "path": "/icons/navigation/arrow-up.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "navigation"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -1331,7 +1385,9 @@
       "path": "/icons/navigation/arrow-up-circle.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "navigation"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -1381,7 +1437,9 @@
       "path": "/icons/navigation/arrow-up-left.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "navigation"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -1433,7 +1491,9 @@
       "path": "/icons/navigation/arrow-up-right.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "navigation"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -1483,7 +1543,9 @@
       "path": "/icons/communication/at-sign.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "communication"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -1669,7 +1731,9 @@
       "path": "/icons/actions/ban.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "actions"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -1706,7 +1770,9 @@
       "path": "/icons/commerce/barcode.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "commerce"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -1792,7 +1858,9 @@
       "path": "/icons/actions/bolt.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "actions"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -1831,7 +1899,9 @@
       "path": "/icons/objects/bolt-circle.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "objects"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -1871,7 +1941,9 @@
       "path": "/icons/files/book.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "files"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -1912,7 +1984,9 @@
       "path": "/icons/files/book-open.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "files"
+        ],
         "actions": [],
         "states": [
           "open"
@@ -2008,7 +2082,9 @@
       "path": "/icons/files/box.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "files"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -2147,7 +2223,9 @@
       "path": "/icons/objects/building.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "objects"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -2288,7 +2366,9 @@
       "path": "/icons/objects/car.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "objects"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -2375,7 +2455,9 @@
       "path": "/icons/commerce/cash.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "commerce"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -2558,7 +2640,9 @@
       "path": "/icons/navigation/chevron-down.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "navigation"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -2607,7 +2691,9 @@
       "path": "/icons/navigation/chevron-left.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "navigation"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -2656,7 +2742,9 @@
       "path": "/icons/navigation/chevron-right.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "navigation"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -2705,7 +2793,9 @@
       "path": "/icons/navigation/chevron-up.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "navigation"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -2750,7 +2840,9 @@
       "path": "/icons/brands/chrome.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "brands"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -2879,7 +2971,9 @@
       "path": "/icons/system/circle-x.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "system"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -3065,7 +3159,9 @@
       "path": "/icons/objects/cloud.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "objects"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -3154,7 +3250,9 @@
       "path": "/icons/objects/cloud-rain.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "objects"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -3196,7 +3294,9 @@
       "path": "/icons/objects/cloud-sun.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "objects"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -3299,7 +3399,9 @@
       "path": "/icons/commerce/coins.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "commerce"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -3336,7 +3438,9 @@
       "path": "/icons/communication/comment.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "communication"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -3373,7 +3477,9 @@
       "path": "/icons/communication/comments.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "communication"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -3592,7 +3698,9 @@
       "path": "/icons/navigation/corner-down-left.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "navigation"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -3637,7 +3745,9 @@
       "path": "/icons/navigation/corner-down-right.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "navigation"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -3682,7 +3792,9 @@
       "path": "/icons/navigation/corner-left-down.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "navigation"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -3727,7 +3839,9 @@
       "path": "/icons/navigation/corner-right-down.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "navigation"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -4113,7 +4227,9 @@
       "path": "/icons/commerce/discount.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "commerce"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -4547,7 +4663,9 @@
       "path": "/icons/actions/expand.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "actions"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -4584,7 +4702,9 @@
       "path": "/icons/navigation/external.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "navigation"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -4624,7 +4744,9 @@
       "path": "/icons/actions/external-link.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "actions"
+        ],
         "actions": [
           "link"
         ],
@@ -4763,7 +4885,9 @@
       "path": "/icons/brands/figma.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "brands"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -5231,7 +5355,9 @@
       "path": "/icons/files/files.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "files"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -5269,7 +5395,9 @@
       "path": "/icons/media/film.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "media"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -5313,7 +5441,9 @@
       "path": "/icons/objects/filter.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "objects"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -5321,7 +5451,8 @@
           "filter",
           "refine",
           "utility",
-          "interface"
+          "interface",
+          "objects"
         ],
         "relations": {
           "related": [
@@ -5355,7 +5486,9 @@
       "path": "/icons/actions/filter-off.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "actions"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -5726,7 +5859,9 @@
       "path": "/icons/system/forbidden.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "system"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -5763,7 +5898,9 @@
       "path": "/icons/commerce/gift.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "commerce"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -6122,7 +6259,9 @@
       "path": "/icons/brands/gitlab.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "brands"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -6159,7 +6298,9 @@
       "path": "/icons/objects/globe.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "objects"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -6293,7 +6434,9 @@
       "path": "/icons/navigation/grid.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "navigation"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -6333,7 +6476,9 @@
       "path": "/icons/files/hard-drive.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "files"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -6375,7 +6520,9 @@
       "path": "/icons/media/headphones.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "media"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -6718,7 +6865,9 @@
       "path": "/icons/communication/inbox.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "communication"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -6850,7 +6999,9 @@
       "path": "/icons/commerce/invoice.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "commerce"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -6887,7 +7038,9 @@
       "path": "/icons/objects/key.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "objects"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -6974,7 +7127,9 @@
       "path": "/icons/objects/keyboard.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "objects"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -7011,7 +7166,9 @@
       "path": "/icons/objects/layers.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "objects"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -7048,7 +7205,9 @@
       "path": "/icons/objects/lightbulb.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "objects"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -7090,7 +7249,9 @@
       "path": "/icons/communication/link.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "communication"
+        ],
         "actions": [
           "link"
         ],
@@ -7134,7 +7295,9 @@
       "path": "/icons/objects/link-2.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "objects"
+        ],
         "actions": [
           "link"
         ],
@@ -7176,7 +7339,9 @@
       "path": "/icons/brands/linkedin.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "brands"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -7213,7 +7378,9 @@
       "path": "/icons/navigation/list.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "navigation"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -7401,7 +7568,9 @@
       "path": "/icons/navigation/log-in.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "navigation"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -7444,7 +7613,9 @@
       "path": "/icons/navigation/log-out.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "navigation"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -7575,7 +7746,9 @@
       "path": "/icons/system/maintenance.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "system"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -7709,7 +7882,9 @@
       "path": "/icons/actions/maximize.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "actions"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -7746,7 +7921,9 @@
       "path": "/icons/communication/mention.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "communication"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -7894,7 +8071,9 @@
       "path": "/icons/media/mic.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "media"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -7935,7 +8114,9 @@
       "path": "/icons/actions/minimize.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "actions"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -8036,7 +8217,9 @@
       "path": "/icons/objects/mobile.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "objects"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -8073,7 +8256,9 @@
       "path": "/icons/commerce/money.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "commerce"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -8110,7 +8295,9 @@
       "path": "/icons/objects/monitor.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "objects"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -8199,7 +8386,9 @@
       "path": "/icons/actions/more-horizontal.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "actions"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -8241,7 +8430,9 @@
       "path": "/icons/actions/more-vertical.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "actions"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -8281,7 +8472,9 @@
       "path": "/icons/objects/mouse.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "objects"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -8318,7 +8511,9 @@
       "path": "/icons/actions/move.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "actions"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -8453,7 +8648,9 @@
       "path": "/icons/brands/npm.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "brands"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -8490,7 +8687,9 @@
       "path": "/icons/system/offline.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "system"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -8527,7 +8726,9 @@
       "path": "/icons/system/online.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "system"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -8564,7 +8765,9 @@
       "path": "/icons/brands/openai.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "brands"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -8601,7 +8804,9 @@
       "path": "/icons/objects/package.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "objects"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -8733,7 +8938,9 @@
       "path": "/icons/objects/palette.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "objects"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -8772,7 +8979,9 @@
       "path": "/icons/navigation/panel-left.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "navigation"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -8815,7 +9024,9 @@
       "path": "/icons/navigation/panel-right.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "navigation"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -8856,7 +9067,9 @@
       "path": "/icons/files/paperclip.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "files"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -9043,7 +9256,9 @@
       "path": "/icons/communication/phone.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "communication"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -9385,7 +9600,9 @@
       "path": "/icons/media/podcast.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "media"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -9424,7 +9641,9 @@
       "path": "/icons/actions/power.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "actions"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -9598,7 +9817,9 @@
       "path": "/icons/media/radio.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "media"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -9637,7 +9858,9 @@
       "path": "/icons/brands/react.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "brands"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -9830,7 +10053,9 @@
       "path": "/icons/actions/refresh.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "actions"
+        ],
         "actions": [
           "refresh"
         ],
@@ -9879,7 +10104,9 @@
       "path": "/icons/system/refresh-alert.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "system"
+        ],
         "actions": [
           "refresh"
         ],
@@ -9921,7 +10148,9 @@
       "path": "/icons/media/repeat.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "media"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -9960,7 +10189,9 @@
       "path": "/icons/communication/reply.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "communication"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -10048,7 +10279,9 @@
       "path": "/icons/actions/rotate-ccw.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "actions"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -10090,7 +10323,9 @@
       "path": "/icons/actions/rotate-cw.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "actions"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -10130,7 +10365,9 @@
       "path": "/icons/communication/rss.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "communication"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -10268,7 +10505,9 @@
       "path": "/icons/objects/scan.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "objects"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -10872,7 +11111,9 @@
       "path": "/icons/objects/shield.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "objects"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -10911,7 +11152,9 @@
       "path": "/icons/system/shield-alert.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "system"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -10999,7 +11242,9 @@
       "path": "/icons/media/shuffle.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "media"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -11038,7 +11283,9 @@
       "path": "/icons/navigation/sidebar.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "navigation"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -11260,7 +11507,9 @@
       "path": "/icons/actions/sliders.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "actions"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -11297,7 +11546,9 @@
       "path": "/icons/communication/smile.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "communication"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -11339,7 +11590,9 @@
       "path": "/icons/objects/sort.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "objects"
+        ],
         "actions": [
           "sort"
         ],
@@ -11349,7 +11602,8 @@
           "sort",
           "order",
           "utility",
-          "interface"
+          "interface",
+          "objects"
         ],
         "relations": {
           "related": [
@@ -11431,7 +11685,9 @@
       "path": "/icons/objects/sparkles.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "objects"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -11621,7 +11877,9 @@
       "path": "/icons/commerce/store.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "commerce"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -11714,7 +11972,9 @@
       "path": "/icons/system/sun.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "system"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -11754,7 +12014,9 @@
       "path": "/icons/brands/svelte.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "brands"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -11793,7 +12055,9 @@
       "path": "/icons/system/system-update.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "system"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -11882,7 +12146,9 @@
       "path": "/icons/actions/target.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "actions"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -12158,7 +12424,9 @@
       "path": "/icons/communication/thumbs-down.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "communication"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -12200,7 +12468,9 @@
       "path": "/icons/communication/thumbs-up.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "communication"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -12240,7 +12510,9 @@
       "path": "/icons/system/timeout.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "system"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -12317,7 +12589,9 @@
       "path": "/icons/brands/typescript.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "brands"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -12359,7 +12633,9 @@
       "path": "/icons/actions/undo.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "actions"
+        ],
         "actions": [
           "undo"
         ],
@@ -13059,7 +13335,9 @@
       "path": "/icons/brands/vercel.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "brands"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -13096,7 +13374,9 @@
       "path": "/icons/system/verified.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "system"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -13229,7 +13509,9 @@
       "path": "/icons/communication/voicemail.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "communication"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -13423,7 +13705,9 @@
       "path": "/icons/brands/vue.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "brands"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -13460,7 +13744,9 @@
       "path": "/icons/commerce/wallet.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "commerce"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -13499,7 +13785,9 @@
       "path": "/icons/commerce/wallet-cards.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "commerce"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -13631,7 +13919,9 @@
       "path": "/icons/objects/wifi.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "objects"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -13670,7 +13960,9 @@
       "path": "/icons/objects/wifi-off.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "objects"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -13818,7 +14110,9 @@
       "path": "/icons/system/x-circle.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "system"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -13862,7 +14156,9 @@
       "path": "/icons/brands/x-twitter.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "brands"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -13874,7 +14170,8 @@
           "brand",
           "social",
           "communication",
-          "community"
+          "community",
+          "brands"
         ],
         "relations": {
           "related": [],
@@ -13950,7 +14247,9 @@
       "path": "/icons/files/zip.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "files"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -13991,7 +14290,9 @@
       "path": "/icons/actions/zoom-in.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "actions"
+        ],
         "actions": [],
         "states": [],
         "objects": [],
@@ -14033,7 +14334,9 @@
       "path": "/icons/actions/zoom-out.svg",
       "family": "line",
       "semantics": {
-        "intents": [],
+        "intents": [
+          "actions"
+        ],
         "actions": [],
         "states": [],
         "objects": [],

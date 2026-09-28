@@ -21,17 +21,22 @@ This document explains how agents should discover and consume JTT Icons. Semanti
 - `transfer`: upload, import, attach, download, export, send
 - `edit`: edit, modify, save, copy, duplicate
 - `communication`: message, chat, mail, email, notification, bell, send, share
-- `developer`: developer, code, programming, terminal, repository, git, database, server, deploy, bug
+- `developer`: developer, engineering, software, code, tooling, repository, git, database, server, deploy, bug
 - `media`: image, photo, camera, video, play, pause, stop, music, audio, volume
 - `commerce`: cart, bag, shopping, payment, credit-card, receipt, checkout
-- `files`: file, document, folder, archive, attachment, clipboard
+- `files`: files, file, document, folder, attachment, archive
 - `status`: success, check, error, warning, loading, info, help
 - `visibility`: eye, view, lock, unlock
 - `settings`: settings, configure, configuration, preferences, options
 - `reaction`: heart, star, like, bookmark, favorite
 - `time`: calendar, date, clock, time
 - `location`: location, pin, map, maps
-- `ai`: ai, agent, model, prompt, generate, generation, assistant, chat, search, code
+- `ai`: ai, agent, model, prompt, assistant, generation, inference, reasoning
+- `actions`: action, actions, interface action, control
+- `people`: people, person, user, account, profile, identity, team
+- `objects`: object, objects, utility, interface object
+- `system`: system, utility, status, feedback, settings
+- `brands`: brand, brands, logo, social mark
 
 ## Canonical rendering
 
@@ -57,7 +62,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: activity
   - aliases: none
   - contexts: objects, interface
-  - intents: none
+  - intents: objects
   - actions: none
   - objects: none
   - states: none
@@ -169,7 +174,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: android
   - aliases: none
   - contexts: brands, interface
-  - intents: none
+  - intents: brands
   - actions: none
   - objects: none
   - states: none
@@ -197,7 +202,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: apple, ios
   - aliases: ios
   - contexts: brand, social
-  - intents: none
+  - intents: brands
   - actions: none
   - objects: none
   - states: none
@@ -239,7 +244,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: arrow-down, arrow, down
   - aliases: down
   - contexts: navigation, interface
-  - intents: none
+  - intents: navigation
   - actions: none
   - objects: none
   - states: none
@@ -253,7 +258,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: arrow-down-circle, arrow, down, circle
   - aliases: none
   - contexts: navigation, interface
-  - intents: none
+  - intents: navigation
   - actions: none
   - objects: none
   - states: none
@@ -267,7 +272,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: arrow-down-left, arrow, down, left, southwest
   - aliases: southwest
   - contexts: navigation, interface
-  - intents: none
+  - intents: navigation
   - actions: none
   - objects: none
   - states: none
@@ -281,7 +286,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: arrow-down-right, arrow, down, right, southeast
   - aliases: southeast
   - contexts: navigation, interface
-  - intents: none
+  - intents: navigation
   - actions: none
   - objects: none
   - states: none
@@ -309,7 +314,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: arrow-left-circle, arrow, left, circle
   - aliases: none
   - contexts: navigation, interface
-  - intents: none
+  - intents: navigation
   - actions: none
   - objects: none
   - states: none
@@ -337,7 +342,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: arrow-right-circle, arrow, right, circle
   - aliases: none
   - contexts: navigation, interface
-  - intents: none
+  - intents: navigation
   - actions: none
   - objects: none
   - states: none
@@ -351,7 +356,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: arrow-up, arrow, up
   - aliases: up
   - contexts: navigation, interface
-  - intents: none
+  - intents: navigation
   - actions: none
   - objects: none
   - states: none
@@ -365,7 +370,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: arrow-up-circle, arrow, up, circle
   - aliases: none
   - contexts: navigation, interface
-  - intents: none
+  - intents: navigation
   - actions: none
   - objects: none
   - states: none
@@ -379,7 +384,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: arrow-up-left, arrow, up, left, northwest
   - aliases: northwest
   - contexts: navigation, interface
-  - intents: none
+  - intents: navigation
   - actions: none
   - objects: none
   - states: none
@@ -393,7 +398,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: arrow-up-right, arrow, direction, external, diagonal, up, right
   - aliases: none
   - contexts: navigation, links, toolbar
-  - intents: none
+  - intents: navigation
   - actions: none
   - objects: none
   - states: none
@@ -407,7 +412,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: at-sign, at, sign
   - aliases: none
   - contexts: communication, interface
-  - intents: none
+  - intents: communication
   - actions: none
   - objects: none
   - states: none
@@ -463,7 +468,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: ban
   - aliases: none
   - contexts: actions, interface
-  - intents: none
+  - intents: actions
   - actions: none
   - objects: none
   - states: none
@@ -477,7 +482,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: barcode
   - aliases: none
   - contexts: commerce, interface
-  - intents: none
+  - intents: commerce
   - actions: none
   - objects: none
   - states: none
@@ -505,7 +510,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: bolt
   - aliases: none
   - contexts: actions, interface
-  - intents: none
+  - intents: actions
   - actions: none
   - objects: none
   - states: none
@@ -519,7 +524,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: bolt-circle, bolt, circle
   - aliases: none
   - contexts: objects, interface
-  - intents: none
+  - intents: objects
   - actions: none
   - objects: none
   - states: none
@@ -533,7 +538,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: book
   - aliases: none
   - contexts: files, interface
-  - intents: none
+  - intents: files
   - actions: none
   - objects: none
   - states: none
@@ -547,7 +552,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: book-open, book, open
   - aliases: none
   - contexts: files, interface
-  - intents: none
+  - intents: files
   - actions: none
   - objects: none
   - states: open
@@ -575,7 +580,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: box
   - aliases: none
   - contexts: files, interface
-  - intents: none
+  - intents: files
   - actions: none
   - objects: none
   - states: none
@@ -617,7 +622,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: building
   - aliases: none
   - contexts: objects, interface
-  - intents: none
+  - intents: objects
   - actions: none
   - objects: none
   - states: none
@@ -659,7 +664,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: car
   - aliases: none
   - contexts: objects, interface
-  - intents: none
+  - intents: objects
   - actions: none
   - objects: none
   - states: none
@@ -687,7 +692,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: cash
   - aliases: none
   - contexts: commerce, interface
-  - intents: none
+  - intents: commerce
   - actions: none
   - objects: none
   - states: none
@@ -743,7 +748,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: chevron-down, chevron, down
   - aliases: none
   - contexts: navigation, interface
-  - intents: none
+  - intents: navigation
   - actions: none
   - objects: none
   - states: none
@@ -757,7 +762,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: chevron-left, chevron, left
   - aliases: none
   - contexts: navigation, interface
-  - intents: none
+  - intents: navigation
   - actions: none
   - objects: none
   - states: none
@@ -771,7 +776,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: chevron-right, chevron, right
   - aliases: none
   - contexts: navigation, interface
-  - intents: none
+  - intents: navigation
   - actions: none
   - objects: none
   - states: none
@@ -785,7 +790,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: chevron-up, chevron, up
   - aliases: none
   - contexts: navigation, interface
-  - intents: none
+  - intents: navigation
   - actions: none
   - objects: none
   - states: none
@@ -799,7 +804,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: chrome
   - aliases: none
   - contexts: brands, interface
-  - intents: none
+  - intents: brands
   - actions: none
   - objects: none
   - states: none
@@ -841,7 +846,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: circle-x, circle, x
   - aliases: none
   - contexts: system, interface
-  - intents: none
+  - intents: system
   - actions: none
   - objects: none
   - states: none
@@ -897,7 +902,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: cloud
   - aliases: none
   - contexts: objects, interface
-  - intents: none
+  - intents: objects
   - actions: none
   - objects: none
   - states: none
@@ -925,7 +930,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: cloud-rain, cloud, rain
   - aliases: none
   - contexts: objects, interface
-  - intents: none
+  - intents: objects
   - actions: none
   - objects: none
   - states: none
@@ -939,7 +944,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: cloud-sun, cloud, sun
   - aliases: none
   - contexts: objects, interface
-  - intents: none
+  - intents: objects
   - actions: none
   - objects: none
   - states: none
@@ -967,7 +972,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: coins
   - aliases: none
   - contexts: commerce, interface
-  - intents: none
+  - intents: commerce
   - actions: none
   - objects: none
   - states: none
@@ -981,7 +986,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: comment
   - aliases: none
   - contexts: communication, interface
-  - intents: none
+  - intents: communication
   - actions: none
   - objects: none
   - states: none
@@ -995,7 +1000,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: comments
   - aliases: none
   - contexts: communication, interface
-  - intents: none
+  - intents: communication
   - actions: none
   - objects: none
   - states: none
@@ -1065,7 +1070,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: corner-down-left, corner, down, left
   - aliases: none
   - contexts: navigation, interface
-  - intents: none
+  - intents: navigation
   - actions: none
   - objects: none
   - states: none
@@ -1079,7 +1084,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: corner-down-right, corner, down, right
   - aliases: none
   - contexts: navigation, interface
-  - intents: none
+  - intents: navigation
   - actions: none
   - objects: none
   - states: none
@@ -1093,7 +1098,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: corner-left-down, corner, left, down
   - aliases: none
   - contexts: navigation, interface
-  - intents: none
+  - intents: navigation
   - actions: none
   - objects: none
   - states: none
@@ -1107,7 +1112,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: corner-right-down, corner, right, down
   - aliases: none
   - contexts: navigation, interface
-  - intents: none
+  - intents: navigation
   - actions: none
   - objects: none
   - states: none
@@ -1219,7 +1224,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: discount
   - aliases: none
   - contexts: commerce, interface
-  - intents: none
+  - intents: commerce
   - actions: none
   - objects: none
   - states: none
@@ -1345,7 +1350,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: expand
   - aliases: none
   - contexts: actions, interface
-  - intents: none
+  - intents: actions
   - actions: none
   - objects: none
   - states: none
@@ -1359,7 +1364,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: external
   - aliases: none
   - contexts: navigation, interface
-  - intents: none
+  - intents: navigation
   - actions: none
   - objects: none
   - states: none
@@ -1373,7 +1378,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: external-link, external, link
   - aliases: none
   - contexts: actions, interface
-  - intents: none
+  - intents: actions
   - actions: link
   - objects: none
   - states: none
@@ -1415,7 +1420,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: figma
   - aliases: none
   - contexts: brands, interface
-  - intents: none
+  - intents: brands
   - actions: none
   - objects: none
   - states: none
@@ -1541,7 +1546,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: files
   - aliases: none
   - contexts: files, interface
-  - intents: none
+  - intents: files
   - actions: none
   - objects: none
   - states: none
@@ -1555,7 +1560,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: film
   - aliases: none
   - contexts: media, interface
-  - intents: none
+  - intents: media
   - actions: none
   - objects: none
   - states: none
@@ -1569,7 +1574,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: filter, refine
   - aliases: refine
   - contexts: utility, interface
-  - intents: none
+  - intents: objects
   - actions: none
   - objects: none
   - states: none
@@ -1583,7 +1588,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: filter-off, filter, off
   - aliases: none
   - contexts: actions, interface
-  - intents: none
+  - intents: actions
   - actions: none
   - objects: none
   - states: none
@@ -1681,7 +1686,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: forbidden
   - aliases: none
   - contexts: system, interface
-  - intents: none
+  - intents: system
   - actions: none
   - objects: none
   - states: none
@@ -1695,7 +1700,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: gift
   - aliases: none
   - contexts: commerce, interface
-  - intents: none
+  - intents: commerce
   - actions: none
   - objects: none
   - states: none
@@ -1793,7 +1798,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: gitlab
   - aliases: none
   - contexts: brands, interface
-  - intents: none
+  - intents: brands
   - actions: none
   - objects: none
   - states: none
@@ -1807,7 +1812,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: globe
   - aliases: none
   - contexts: objects, interface
-  - intents: none
+  - intents: objects
   - actions: none
   - objects: none
   - states: none
@@ -1849,7 +1854,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: grid
   - aliases: none
   - contexts: navigation, interface
-  - intents: none
+  - intents: navigation
   - actions: none
   - objects: none
   - states: none
@@ -1863,7 +1868,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: hard-drive, hard, drive
   - aliases: none
   - contexts: files, interface
-  - intents: none
+  - intents: files
   - actions: none
   - objects: none
   - states: none
@@ -1877,7 +1882,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: headphones
   - aliases: none
   - contexts: media, interface
-  - intents: none
+  - intents: media
   - actions: none
   - objects: none
   - states: none
@@ -1975,7 +1980,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: inbox
   - aliases: none
   - contexts: communication, interface
-  - intents: none
+  - intents: communication
   - actions: none
   - objects: none
   - states: none
@@ -2017,7 +2022,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: invoice
   - aliases: none
   - contexts: commerce, interface
-  - intents: none
+  - intents: commerce
   - actions: none
   - objects: none
   - states: none
@@ -2031,7 +2036,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: key
   - aliases: none
   - contexts: objects, interface
-  - intents: none
+  - intents: objects
   - actions: none
   - objects: none
   - states: none
@@ -2059,7 +2064,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: keyboard
   - aliases: none
   - contexts: objects, interface
-  - intents: none
+  - intents: objects
   - actions: none
   - objects: none
   - states: none
@@ -2073,7 +2078,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: layers
   - aliases: none
   - contexts: objects, interface
-  - intents: none
+  - intents: objects
   - actions: none
   - objects: none
   - states: none
@@ -2087,7 +2092,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: lightbulb
   - aliases: none
   - contexts: objects, interface
-  - intents: none
+  - intents: objects
   - actions: none
   - objects: none
   - states: none
@@ -2101,7 +2106,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: link, url
   - aliases: url
   - contexts: communication, content
-  - intents: none
+  - intents: communication
   - actions: link
   - objects: none
   - states: none
@@ -2115,7 +2120,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: link-2, link, 2
   - aliases: none
   - contexts: objects, interface
-  - intents: none
+  - intents: objects
   - actions: link
   - objects: none
   - states: none
@@ -2129,7 +2134,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: linkedin
   - aliases: none
   - contexts: brands, interface
-  - intents: none
+  - intents: brands
   - actions: none
   - objects: none
   - states: none
@@ -2143,7 +2148,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: list
   - aliases: none
   - contexts: navigation, interface
-  - intents: none
+  - intents: navigation
   - actions: none
   - objects: none
   - states: none
@@ -2199,7 +2204,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: log-in, log, in
   - aliases: none
   - contexts: navigation, interface
-  - intents: none
+  - intents: navigation
   - actions: none
   - objects: none
   - states: none
@@ -2213,7 +2218,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: log-out, log, out
   - aliases: none
   - contexts: navigation, interface
-  - intents: none
+  - intents: navigation
   - actions: none
   - objects: none
   - states: none
@@ -2255,7 +2260,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: maintenance
   - aliases: none
   - contexts: system, interface
-  - intents: none
+  - intents: system
   - actions: none
   - objects: none
   - states: none
@@ -2297,7 +2302,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: maximize
   - aliases: none
   - contexts: actions, interface
-  - intents: none
+  - intents: actions
   - actions: none
   - objects: none
   - states: none
@@ -2311,7 +2316,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: mention
   - aliases: none
   - contexts: communication, interface
-  - intents: none
+  - intents: communication
   - actions: none
   - objects: none
   - states: none
@@ -2353,7 +2358,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: mic, microphone
   - aliases: microphone
   - contexts: media, content
-  - intents: none
+  - intents: media
   - actions: none
   - objects: none
   - states: none
@@ -2367,7 +2372,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: minimize
   - aliases: none
   - contexts: actions, interface
-  - intents: none
+  - intents: actions
   - actions: none
   - objects: none
   - states: none
@@ -2395,7 +2400,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: mobile
   - aliases: none
   - contexts: objects, interface
-  - intents: none
+  - intents: objects
   - actions: none
   - objects: none
   - states: none
@@ -2409,7 +2414,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: money
   - aliases: none
   - contexts: commerce, interface
-  - intents: none
+  - intents: commerce
   - actions: none
   - objects: none
   - states: none
@@ -2423,7 +2428,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: monitor
   - aliases: none
   - contexts: objects, interface
-  - intents: none
+  - intents: objects
   - actions: none
   - objects: none
   - states: none
@@ -2451,7 +2456,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: more-horizontal, more, horizontal
   - aliases: none
   - contexts: actions, interface
-  - intents: none
+  - intents: actions
   - actions: none
   - objects: none
   - states: none
@@ -2465,7 +2470,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: more-vertical, more, vertical
   - aliases: none
   - contexts: actions, interface
-  - intents: none
+  - intents: actions
   - actions: none
   - objects: none
   - states: none
@@ -2479,7 +2484,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: mouse
   - aliases: none
   - contexts: objects, interface
-  - intents: none
+  - intents: objects
   - actions: none
   - objects: none
   - states: none
@@ -2493,7 +2498,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: move
   - aliases: none
   - contexts: actions, interface
-  - intents: none
+  - intents: actions
   - actions: none
   - objects: none
   - states: none
@@ -2535,7 +2540,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: npm
   - aliases: none
   - contexts: brands, interface
-  - intents: none
+  - intents: brands
   - actions: none
   - objects: none
   - states: none
@@ -2549,7 +2554,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: offline
   - aliases: none
   - contexts: system, interface
-  - intents: none
+  - intents: system
   - actions: none
   - objects: none
   - states: none
@@ -2563,7 +2568,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: online
   - aliases: none
   - contexts: system, interface
-  - intents: none
+  - intents: system
   - actions: none
   - objects: none
   - states: none
@@ -2577,7 +2582,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: openai
   - aliases: none
   - contexts: brands, interface
-  - intents: none
+  - intents: brands
   - actions: none
   - objects: none
   - states: none
@@ -2591,7 +2596,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: package
   - aliases: none
   - contexts: objects, interface
-  - intents: none
+  - intents: objects
   - actions: none
   - objects: none
   - states: none
@@ -2633,7 +2638,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: palette
   - aliases: none
   - contexts: objects, interface
-  - intents: none
+  - intents: objects
   - actions: none
   - objects: none
   - states: none
@@ -2647,7 +2652,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: panel-left, panel, left
   - aliases: none
   - contexts: navigation, interface
-  - intents: none
+  - intents: navigation
   - actions: none
   - objects: none
   - states: none
@@ -2661,7 +2666,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: panel-right, panel, right
   - aliases: none
   - contexts: navigation, interface
-  - intents: none
+  - intents: navigation
   - actions: none
   - objects: none
   - states: none
@@ -2675,7 +2680,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: paperclip
   - aliases: none
   - contexts: files, interface
-  - intents: none
+  - intents: files
   - actions: none
   - objects: none
   - states: none
@@ -2731,7 +2736,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: phone
   - aliases: none
   - contexts: communication, interface
-  - intents: none
+  - intents: communication
   - actions: none
   - objects: none
   - states: none
@@ -2829,7 +2834,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: podcast
   - aliases: none
   - contexts: media, interface
-  - intents: none
+  - intents: media
   - actions: none
   - objects: none
   - states: none
@@ -2843,7 +2848,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: power
   - aliases: none
   - contexts: actions, interface
-  - intents: none
+  - intents: actions
   - actions: none
   - objects: none
   - states: none
@@ -2899,7 +2904,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: radio
   - aliases: none
   - contexts: media, interface
-  - intents: none
+  - intents: media
   - actions: none
   - objects: none
   - states: none
@@ -2913,7 +2918,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: react
   - aliases: none
   - contexts: brands, interface
-  - intents: none
+  - intents: brands
   - actions: none
   - objects: none
   - states: none
@@ -2969,7 +2974,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: refresh, reload
   - aliases: reload
   - contexts: toolbar, editor
-  - intents: none
+  - intents: actions
   - actions: refresh
   - objects: none
   - states: none
@@ -2983,7 +2988,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: refresh-alert, refresh, alert
   - aliases: none
   - contexts: system, interface
-  - intents: none
+  - intents: system
   - actions: refresh
   - objects: none
   - states: none
@@ -2997,7 +3002,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: repeat
   - aliases: none
   - contexts: media, interface
-  - intents: none
+  - intents: media
   - actions: none
   - objects: none
   - states: none
@@ -3011,7 +3016,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: reply
   - aliases: none
   - contexts: communication, interface
-  - intents: none
+  - intents: communication
   - actions: none
   - objects: none
   - states: none
@@ -3039,7 +3044,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: rotate-ccw, rotate, ccw
   - aliases: none
   - contexts: actions, interface
-  - intents: none
+  - intents: actions
   - actions: none
   - objects: none
   - states: none
@@ -3053,7 +3058,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: rotate-cw, rotate, cw
   - aliases: none
   - contexts: actions, interface
-  - intents: none
+  - intents: actions
   - actions: none
   - objects: none
   - states: none
@@ -3067,7 +3072,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: rss
   - aliases: none
   - contexts: communication, interface
-  - intents: none
+  - intents: communication
   - actions: none
   - objects: none
   - states: none
@@ -3109,7 +3114,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: scan
   - aliases: none
   - contexts: objects, interface
-  - intents: none
+  - intents: objects
   - actions: none
   - objects: none
   - states: none
@@ -3277,7 +3282,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: shield
   - aliases: none
   - contexts: objects, interface
-  - intents: none
+  - intents: objects
   - actions: none
   - objects: none
   - states: none
@@ -3291,7 +3296,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: shield-alert, shield, alert
   - aliases: none
   - contexts: system, interface
-  - intents: none
+  - intents: system
   - actions: none
   - objects: none
   - states: none
@@ -3319,7 +3324,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: shuffle
   - aliases: none
   - contexts: media, interface
-  - intents: none
+  - intents: media
   - actions: none
   - objects: none
   - states: none
@@ -3333,7 +3338,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: sidebar
   - aliases: none
   - contexts: navigation, interface
-  - intents: none
+  - intents: navigation
   - actions: none
   - objects: none
   - states: none
@@ -3403,7 +3408,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: sliders
   - aliases: none
   - contexts: actions, interface
-  - intents: none
+  - intents: actions
   - actions: none
   - objects: none
   - states: none
@@ -3417,7 +3422,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: smile
   - aliases: none
   - contexts: communication, interface
-  - intents: none
+  - intents: communication
   - actions: none
   - objects: none
   - states: none
@@ -3431,7 +3436,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: sort, order
   - aliases: order
   - contexts: utility, interface
-  - intents: none
+  - intents: objects
   - actions: sort
   - objects: none
   - states: none
@@ -3459,7 +3464,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: sparkles
   - aliases: none
   - contexts: objects, interface
-  - intents: none
+  - intents: objects
   - actions: none
   - objects: none
   - states: none
@@ -3515,7 +3520,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: store
   - aliases: none
   - contexts: commerce, interface
-  - intents: none
+  - intents: commerce
   - actions: none
   - objects: none
   - states: none
@@ -3543,7 +3548,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: sun, light
   - aliases: light
   - contexts: system, status
-  - intents: none
+  - intents: system
   - actions: none
   - objects: none
   - states: none
@@ -3557,7 +3562,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: svelte
   - aliases: none
   - contexts: brands, interface
-  - intents: none
+  - intents: brands
   - actions: none
   - objects: none
   - states: none
@@ -3571,7 +3576,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: system-update, system, update
   - aliases: none
   - contexts: system, interface
-  - intents: none
+  - intents: system
   - actions: none
   - objects: none
   - states: none
@@ -3599,7 +3604,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: target
   - aliases: none
   - contexts: actions, interface
-  - intents: none
+  - intents: actions
   - actions: none
   - objects: none
   - states: none
@@ -3683,7 +3688,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: thumbs-down, thumbs, down
   - aliases: none
   - contexts: communication, interface
-  - intents: none
+  - intents: communication
   - actions: none
   - objects: none
   - states: none
@@ -3697,7 +3702,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: thumbs-up, thumbs, up
   - aliases: none
   - contexts: communication, interface
-  - intents: none
+  - intents: communication
   - actions: none
   - objects: none
   - states: none
@@ -3711,7 +3716,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: timeout
   - aliases: none
   - contexts: system, interface
-  - intents: none
+  - intents: system
   - actions: none
   - objects: none
   - states: none
@@ -3739,7 +3744,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: typescript
   - aliases: none
   - contexts: brands, interface
-  - intents: none
+  - intents: brands
   - actions: none
   - objects: none
   - states: none
@@ -3753,7 +3758,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: undo, revert
   - aliases: revert
   - contexts: toolbar, editor
-  - intents: none
+  - intents: actions
   - actions: undo
   - objects: none
   - states: none
@@ -3935,7 +3940,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: vercel
   - aliases: none
   - contexts: brands, interface
-  - intents: none
+  - intents: brands
   - actions: none
   - objects: none
   - states: none
@@ -3949,7 +3954,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: verified
   - aliases: none
   - contexts: system, interface
-  - intents: none
+  - intents: system
   - actions: none
   - objects: none
   - states: none
@@ -3991,7 +3996,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: voicemail
   - aliases: none
   - contexts: communication, interface
-  - intents: none
+  - intents: communication
   - actions: none
   - objects: none
   - states: none
@@ -4047,7 +4052,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: vue
   - aliases: none
   - contexts: brands, interface
-  - intents: none
+  - intents: brands
   - actions: none
   - objects: none
   - states: none
@@ -4061,7 +4066,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: wallet
   - aliases: none
   - contexts: commerce, interface
-  - intents: none
+  - intents: commerce
   - actions: none
   - objects: none
   - states: none
@@ -4075,7 +4080,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: wallet-cards, wallet, cards
   - aliases: none
   - contexts: commerce, interface
-  - intents: none
+  - intents: commerce
   - actions: none
   - objects: none
   - states: none
@@ -4117,7 +4122,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: wifi
   - aliases: none
   - contexts: objects, interface
-  - intents: none
+  - intents: objects
   - actions: none
   - objects: none
   - states: none
@@ -4131,7 +4136,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: wifi-off, wifi, off
   - aliases: none
   - contexts: objects, interface
-  - intents: none
+  - intents: objects
   - actions: none
   - objects: none
   - states: none
@@ -4173,7 +4178,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: x-circle, x, circle
   - aliases: none
   - contexts: system, interface
-  - intents: none
+  - intents: system
   - actions: none
   - objects: none
   - states: none
@@ -4187,7 +4192,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: x-twitter, x, twitter
   - aliases: twitter
   - contexts: brand, social
-  - intents: none
+  - intents: brands
   - actions: none
   - objects: none
   - states: none
@@ -4215,7 +4220,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: zip
   - aliases: none
   - contexts: files, interface
-  - intents: none
+  - intents: files
   - actions: none
   - objects: none
   - states: none
@@ -4229,7 +4234,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: zoom-in, zoom, in
   - aliases: none
   - contexts: actions, interface
-  - intents: none
+  - intents: actions
   - actions: none
   - objects: none
   - states: none
@@ -4243,7 +4248,7 @@ This document explains how agents should discover and consume JTT Icons. Semanti
   - tags: zoom-out, zoom, out
   - aliases: none
   - contexts: actions, interface
-  - intents: none
+  - intents: actions
   - actions: none
   - objects: none
   - states: none
