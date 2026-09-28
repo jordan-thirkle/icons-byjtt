@@ -12,14 +12,16 @@ jobs:
   pack:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
         with:
           node-version: 22
       - run: mkdir -p dist
       - run: npm pack ./packages/core --pack-destination ./dist
       - run: npm pack ./packages/react --pack-destination ./dist
       - run: npm pack ./packages/vue --pack-destination ./dist
+      - run: npm pack ./packages/svelte --pack-destination ./dist
+      - run: npm pack ./packages/web --pack-destination ./dist
       - run: |
           cd dist
           for archive in *.tgz; do
