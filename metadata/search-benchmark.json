@@ -311,7 +311,9 @@
     {
       "query": "team",
       "expected": [
-        "users"
+        "users",
+        "user",
+        "team"
       ]
     },
     {
