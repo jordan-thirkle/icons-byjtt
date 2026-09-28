@@ -1,6 +1,6 @@
 # JTT Icons — Art Direction v2
 
-Status: P1 optical review contract active; catalogue expansion remains frozen.
+Status: **LOCKED — Art Direction v2 signed off for the 300-icon catalogue.** Catalogue expansion remains frozen.
 
 ## Canonical visual grammar
 
@@ -59,3 +59,25 @@ A technically valid SVG is not considered art-complete until all five sizes pass
 ## Release rule
 
 No catalogue expansion until the five-size review, family review, near-duplicate review and final JTT distinctiveness pass are explicitly signed off.
+
+
+## Final 300-icon optical sign-off — 2026-09-28
+
+The 300-icon catalogue has completed the release-gated optical pass.
+
+- **300 canonical icons × 5 sizes = 1,500 rendered instances reviewed.**
+- Review sizes: **12px, 14px, 16px, 20px, 24px**.
+- All **11 catalogue categories** were reviewed family-by-family.
+- The complete 300-icon catalogue masters were also reviewed at all five sizes.
+- The optical renderer was corrected to preserve each canonical SVG root fill, stroke, stroke-width, caps, joins and other rendering attributes before the final review.
+- **26 icons were redesigned** where the visual review exposed weak, generic, ambiguous or placeholder-level geometry.
+- The redesigned icons were regenerated and visually re-reviewed across all five sizes.
+- The final review confirms the catalogue follows the construction grammar above, with intentional exceptions only where brand recognisability or semantic convention requires them.
+
+### Redesigned in the final pass
+
+external, grid, list, log-in, log-out, panel-left, panel-right, sidebar, skip-back, skip-forward, box, hard-drive, inbox-file, paperclip, search-file, save-cloud, sparkles, terminal-square, shield-check, sparkle-code, help, info, search-plus, search-minus, zoom-in, zoom-out.
+
+### Expansion gate
+
+Art Direction v2 is now locked. No icon may be added beyond the 300-icon catalogue until a new catalogue-expansion review explicitly checks semantic coverage, near-duplicate risk, family construction, five-size optical behaviour and JTT distinctiveness.
