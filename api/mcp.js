@@ -5,7 +5,9 @@ import { McpServer, createMcpHandler } from "@modelcontextprotocol/server";
 import * as z from "zod/v4";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const catalogue = JSON.parse(fs.readFileSync(path.join(root, "icons.json"), "utf8"));
+const assetRoot = fs.existsSync(path.join(root, "dist", "icons", "catalogue.json")) ? path.join(root, "dist") : root;
+const cataloguePath = assetRoot === root ? path.join(root, "icons.json") : path.join(assetRoot, "icons", "catalogue.json");
+const catalogue = JSON.parse(fs.readFileSync(cataloguePath, "utf8"));
 const icons = catalogue.icons || [];
 
 const normalize = value => String(value || "").toLowerCase().normalize("NFKD").replace(/[^a-z0-9\\s-]/g, " ").replace(/\\s+/g, " ").trim();
@@ -90,7 +92,7 @@ function server() {
   }, async ({ name }) => {
     const icon = findIcon(name);
     if (!icon) return { content:[{type:"text",text:`No canonical JTT icon exists for "${name}".`}], isError:true };
-    const svgPath = path.join(root, icon.path.replace(/^\//,""));
+    const svgPath = path.join(assetRoot, icon.path.replace(/^\//,""));
     const svg = fs.readFileSync(svgPath, "utf8");
     return { content:[{type:"text",text:svg}], structuredContent:{name:icon.name,path:icon.path,svg} };
   });
