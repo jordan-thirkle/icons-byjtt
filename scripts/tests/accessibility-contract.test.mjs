@@ -26,8 +26,8 @@ test("interactive controls use comfortable minimum hit areas", () => {
   const cssEnd = source.indexOf("export const SEARCH_JS = ", cssStart);
   const css = source.slice(cssStart, cssEnd);
   assert.match(css, /min-height:44px/);
-  assert.match(css, /\\.chip\\{min-height:40px/);
-  assert.match(css, /outline:3px solid var\\(--focus\\)/);
+  assert.ok(css.includes(".chip{min-height:40px"), "chips must have a 40px minimum hit area");
+  assert.ok(css.includes("outline:3px solid var(--focus)"), "focus indicator must be explicit");
 });
 
 test("light theme preserves a distinct high-contrast text and link system", () => {
