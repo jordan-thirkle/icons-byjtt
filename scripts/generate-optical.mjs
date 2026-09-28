@@ -48,8 +48,8 @@ for (const size of sizes) {
     ].join("");
   }).join("");
   const snapshot = [
-    "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"", width, "\" height=\"", height, "\" viewBox=\"0 0 ", width, " ", height, "\" role=\"img\" aria-label=\"JTT Icons Core 100 optical grid at ", size, "px\">",
-    "<rect width=\"100%\" height=\"100%\" fill=\"#f4f4f4\"/><text x=\"16\" y=\"16\" font-family=\"system-ui,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#111\">JTT Icons · Core 100 · ", size, "px</text>",
+    "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"", width, "\" height=\"", height, "\" viewBox=\"0 0 ", width, " ", height, "\" role=\"img\" aria-label=\"JTT Icons Catalogue 300 optical grid at ", size, "px\">",
+    "<rect width=\"100%\" height=\"100%\" fill=\"#f4f4f4\"/><text x=\"16\" y=\"16\" font-family=\"system-ui,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#111\">JTT Icons · Catalogue 300 · ", size, "px</text>",
     cells, "</svg>\n"
   ].join("");
   fs.writeFileSync(path.join(outputDir, "core-100-" + size + ".svg"), snapshot);
