@@ -1,6 +1,6 @@
 # JTT Icons 0.2 — 300-Icon Art Audit
 
-Status: RELEASE BLOCKING
+Status: RELEASE BLOCKING — reconstruction pass complete; final CI verification pending.
 
 ## Findings
 
