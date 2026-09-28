@@ -5,8 +5,9 @@ import { McpServer, createMcpHandler } from "@modelcontextprotocol/server";
 import * as z from "zod/v4";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const assetRoot = fs.existsSync(path.join(root, "dist", "icons", "catalogue.json")) ? path.join(root, "dist", "icons") : root;
-const catalogue = JSON.parse(fs.readFileSync(path.join(assetRoot, "catalogue.json"), "utf8"));
+const assetRoot = fs.existsSync(path.join(root, "dist", "icons", "catalogue.json")) ? path.join(root, "dist") : root;
+const cataloguePath = assetRoot === root ? path.join(root, "icons.json") : path.join(assetRoot, "icons", "catalogue.json");
+const catalogue = JSON.parse(fs.readFileSync(cataloguePath, "utf8"));
 const icons = catalogue.icons || [];
 
 const normalize = value => String(value || "").toLowerCase().normalize("NFKD").replace(/[^a-z0-9\\s-]/g, " ").replace(/\\s+/g, " ").trim();
