@@ -11,9 +11,10 @@ const normalize=s=>String(s||"").toLowerCase().normalize("NFKD").replace(/[^a-z0
 const tokens=s=>normalize(s).split(" ").filter(Boolean);
 const intentGroups=ontology.intentGroups||{};
 const intentByTerm=Object.fromEntries(Object.entries(intentGroups).flatMap(([intent,terms])=>terms.map(term=>[normalize(term),intent])));
+const synonymMatches=query=>Object.entries(QUERY_SYNONYMS).filter(([phrase])=>normalize(query).includes(phrase)).map(([phrase,value])=>({phrase,value,tokens:tokens(phrase)}));
 const expanded=query=>{
   const normalized=normalize(query);
-  const synonyms=Object.entries(QUERY_SYNONYMS).filter(([phrase])=>normalized.includes(phrase)).map(([,value])=>value);
+  const synonyms=synonymMatches(normalized).map(x=>x.value);
   const terms=[...tokens(normalized),...synonyms];
   return [...new Set([...terms,...terms.flatMap(q=>intentGroups[q]||[]),...tokens(normalized).flatMap(q=>intentGroups[q]||[]),...tokens(normalized).flatMap(q=>intentByTerm[q]?[...(intentGroups[intentByTerm[q]]||[])]:[])])];
 };
@@ -29,7 +30,7 @@ const entries=catalogue.icons.map(icon=>{
   }};
 });
 function score(entry,query){
-  const f=entry.fields,q=normalize(query),qt=tokens(q),ex=expanded(q);let total=0;
+  const f=entry.fields,q=normalize(query),matches=synonymMatches(q),consumed=new Set(matches.flatMap(x=>x.tokens)),qt=tokens(q).filter(t=>!consumed.has(t)),ex=expanded(q);let total=0;
   if(f.queryTerms.includes(q))total+=weights.phrase;
   for(const t of qt){
     if(f.name===t)total+=weights.exact;else if(f.name.startsWith(t))total+=weights.prefix;
