@@ -33,10 +33,10 @@ test("public CSS palette meets AA contrast targets", () => {
   const css=fs.readFileSync(path.join(root,"assets/site.css"),"utf8");
   const rootMatch=css.match(/:root\{([^}]*)\}/);
   assert.ok(rootMatch, "dark root token block is required");
-  const dark=Object.fromEntries([...rootMatch[1].matchAll(/--([a-z-]+):(#[0-9a-f]{6})/gi)]);
+  const dark=Object.fromEntries([...rootMatch[1].matchAll(/--([a-z-]+):(#[0-9a-f]{6})/gi)].map(m=>[m[1],m[2]]));
   const lightMatch=css.match(/html\[data-theme=light\]\{([^}]*)\}/);
   assert.ok(lightMatch, "explicit light theme token block is required");
-  const light=Object.fromEntries([...lightMatch[1].matchAll(/--([a-z-]+):(#[0-9a-f]{6})/gi)]);
+  const light=Object.fromEntries([...lightMatch[1].matchAll(/--([a-z-]+):(#[0-9a-f]{6})/gi)].map(m=>[m[1],m[2]]));
   for(const [fg,bg,min] of [["text","bg",4.5],["muted","bg",4.5],["soft","bg",4.5],["signal","bg",4.5],["text","panel",4.5],["muted","panel",4.5],["soft","panel",4.5]]) {
     assert.ok(ratio(dark[fg],dark[bg])>=min, `dark ${fg} on ${bg} contrast below ${min}:1`);
   }
