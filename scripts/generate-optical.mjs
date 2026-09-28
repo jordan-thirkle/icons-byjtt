@@ -55,6 +55,31 @@ for (const size of sizes) {
   fs.writeFileSync(path.join(outputDir, "catalogue-300-" + size + ".svg"), snapshot);
 }
 
+const categories = [...new Set(icons.map(icon => metadata.icons.find(item => item.name === icon.name)?.category).filter(Boolean))].sort();
+for (const category of categories) {
+  const familyIcons = icons.filter(icon => metadata.icons.find(item => item.name === icon.name)?.category === category);
+  for (const size of sizes) {
+    const columns = Math.min(10, Math.max(2, familyIcons.length));
+    const rows = Math.ceil(familyIcons.length / columns);
+    const width = columns * cellWidth;
+    const height = headerHeight + rows * cellHeight;
+    const cells = familyIcons.map((icon, index) => {
+      const svg = fs.readFileSync(path.join(root, icon.path.slice(1)), "utf8");
+      const body = svg.replace(/^<svg[^>]*>/, "").replace(/<\/svg>\s*$/, "");
+      const x = (index % columns) * cellWidth;
+      const y = headerHeight + Math.floor(index / columns) * cellHeight;
+      const iconX = x + (cellWidth - size) / 2;
+      const iconY = y + 8;
+      const guide = size * rules.optical.primaryLiveAreaRatio;
+      const guideX = iconX + (size - guide) / 2;
+      const guideY = iconY + (size - guide) / 2;
+      return "<g><rect x=\"" + x + "\" y=\"" + y + "\" width=\"" + cellWidth + "\" height=\"" + cellHeight + "\" fill=\"#fff\"/><rect x=\"" + guideX.toFixed(3) + "\" y=\"" + guideY.toFixed(3) + "\" width=\"" + guide.toFixed(3) + "\" height=\"" + guide.toFixed(3) + "\" fill=\"none\" stroke=\"#d8d8d8\" stroke-width=\"0.5\" stroke-dasharray=\"2 2\"/><svg x=\"" + iconX + "\" y=\"" + iconY + "\" width=\"" + size + "\" height=\"" + size + "\" viewBox=\"0 0 24 24\">" + body + "</svg><text x=\"" + (x + cellWidth / 2) + "\" y=\"" + (y + 56) + "\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"9\" fill=\"#111\">" + escapeXml(icon.name) + "</text></g>";
+    }).join("");
+    const snapshot = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"" + width + "\" height=\"" + height + "\" viewBox=\"0 0 " + width + " " + height + "\" role=\"img\" aria-label=\"JTT Icons " + category + " family at " + size + "px\"><rect width=\"100%\" height=\"100%\" fill=\"#f4f4f4\"/><text x=\"16\" y=\"16\" font-family=\"system-ui,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#111\">JTT Icons · " + escapeXml(category) + " · " + familyIcons.length + " icons · " + size + "px</text>" + cells + "</svg>\n";
+    fs.writeFileSync(path.join(outputDir, category + "-" + size + ".svg"), snapshot);
+  }
+}
+
 const opticalAudit = {
   version: 1,
   generatedAt: "deterministic",
