@@ -25,7 +25,7 @@ Generated HTML, JSON, packages, sitemap and AI references are outputs.
 3. Prefer an exact canonical name.
 4. Use aliases only to discover the canonical name.
 5. Inspect relationships when an exact match is absent.
-6. Never invent a JTT identifier.
+6. Never invent a JTT icon identifier.
 7. Preserve the icon's accessibility classification in the consuming UI.
 
 ## Implementing an icon
