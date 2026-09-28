@@ -12,10 +12,14 @@
     "generate": "node scripts/generate.mjs",
     "pack:core": "npm pack ./packages/core --pack-destination ./dist",
     "publish:core": "npm publish ./packages/core --access public",
-    "test:mcp": "node --test scripts/tests/mcp.test.mjs"
+    "test:mcp": "node --test scripts/tests/mcp.test.mjs",
+    "prepare:vercel": "node scripts/prepare-vercel.mjs"
   },
   "dependencies": {
     "@modelcontextprotocol/server": "^2.1.0",
     "zod": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=22.14.0"
   }
 }
