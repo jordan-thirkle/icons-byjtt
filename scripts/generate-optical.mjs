@@ -32,13 +32,14 @@ for (const size of sizes) {
   const height = headerHeight + rows * cellHeight;
   const cells = icons.map((icon, index) => {
     const svg = fs.readFileSync(path.join(root, icon.path.slice(1)), "utf8");
-    const rootAttrs = (svg.match(/^<svg\\b([^>]*)>/)?.[1] ?? "").replace(/\\s(?:x|y|width|height)="[^"]*"/g, "");
+    const openTag = svg.slice(0, svg.indexOf(">") + 1);
+    const rootAttrs = openTag.slice(4, -1).replace(/ (?:x|y|width|height)="[^"]*"/g, "");
     const body = svg.replace(/^<svg[^>]*>/, "").replace(/<\/svg>\s*$/, "");
-    const embedded = "<svg x=\"" + iconX + "\" y=\"" + iconY + "\" width=\"" + size + "\" height=\"" + size + "\" " + rootAttrs + ">" + body + "</svg>";
     const x = (index % columns) * cellWidth;
     const y = headerHeight + Math.floor(index / columns) * cellHeight;
     const iconX = x + (cellWidth - size) / 2;
     const iconY = y + 8;
+    const embedded = "<svg x=\"" + iconX + "\" y=\"" + iconY + "\" width=\"" + size + "\" height=\"" + size + "\" " + rootAttrs + ">" + body + "</svg>";
     const guide = size * rules.optical.primaryLiveAreaRatio;
     const guideX = iconX + (size - guide) / 2;
     const guideY = iconY + (size - guide) / 2;
